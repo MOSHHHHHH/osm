@@ -1,9 +1,8 @@
 name: Update Map Data
 on:
-schedule:
+  schedule:
     - cron: '0 0 1,11,21 * *'
-  workflow_dispatch: 
-
+  workflow_dispatch:
 jobs:
   build:
     runs-on: ubuntu-latest
