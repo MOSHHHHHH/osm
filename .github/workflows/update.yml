@@ -1,0 +1,32 @@
+name: Update Map Data
+on:
+  schedule:
+    - cron: '0 0 28 * *' # רץ ב-28 לכל חודש בחצות
+  workflow_dispatch: # מאפשר הרצה ידנית לבדיקה
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+
+      - name: Install dependencies
+        run: |
+          pip install requests beautifulsoup4 googletrans==4.0.0-rc1
+
+      - name: Run script
+        run: python update_maps.py
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name 'GitHub Action'
+          git config --global user.email 'action@github.com'
+          git add maps_data.json
+          git commit -m "Auto-update map data" || exit 0
+          git push
