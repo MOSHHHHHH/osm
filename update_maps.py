@@ -6,11 +6,17 @@ import json
 import os
 from googletrans import Translator
 import time
-import sys
+import re
 
 def clean_name(filename):
+    # הסרת סיומות
     name = filename.replace('.obf.zip', '').replace('.voice.zip', '').replace('.extra.zip', '')
+    # החלפת קו תחתון ברווח
     name = name.replace('_', ' ')
+    # הסרת מספרים (2, 0 וכו')
+    name = re.sub(r'\d+', '', name)
+    # ניקוי רווחים כפולים שנוצרו
+    name = " ".join(name.split())
     return name
 
 def save_json(data):
@@ -20,7 +26,7 @@ def save_json(data):
 def main():
     url = "https://download.osmand.net/list.php"
     
-    # 1. טעינת נתונים קיימים (כדי לא לתרגם מחדש)
+    # 1. טעינת נתונים קיימים
     existing_map = {}
     if os.path.exists('maps_data.json'):
         try:
@@ -28,19 +34,19 @@ def main():
                 old_data = json.load(f)
                 existing_map = {item['en_name']: item['he_name'] for item in old_data if item.get('he_name')}
         except:
-            print("לא נמצא קובץ קיים תקין, יוצר חדש...", flush=True)
+            print("יוצר קובץ JSON חדש...", flush=True)
 
-    # 2. משיכת רשימת הקבצים מהאתר
+    # 2. משיכת רשימת הקבצים
     print("מושך נתונים מאתר OsmAnd...", flush=True)
     try:
         response = requests.get(url, timeout=30)
         soup = BeautifulSoup(response.text, 'html.parser')
         rows = soup.find_all('tr')[1:]
     except Exception as e:
-        print(f"שגיאה במשיכת האתר: {e}", flush=True)
+        print(f"שגיאה בתקשורת עם האתר: {e}", flush=True)
         return
 
-    # 3. יצירת רשימה ראשונית (שלד) ושמירה מיידית
+    # 3. בניית רשימה ראשונית
     final_data = []
     for row in rows:
         cells = row.find_all('td')
@@ -51,8 +57,6 @@ def main():
         filename = link_tag.text
         path = "https://download.osmand.net" + link_tag.get('href')
         cleaned_en = clean_name(filename)
-        
-        # לוקח תרגום קיים אם יש, אם לא - משאיר ריק כרגע
         he_name = existing_map.get(cleaned_en, "")
         
         final_data.append({
@@ -61,41 +65,46 @@ def main():
             "path": path
         })
 
-    # שמירה ראשונית של כל הקבצים שנמצאו
     save_json(final_data)
-    print(f"נמצאו {len(final_data)} קבצים. השלד נשמר ל-JSON. מתחיל תרגום...", flush=True)
+    print(f"נסרקו {len(final_data)} קבצים. מתחיל תרגום...", flush=True)
 
-    # 4. לולאת תרגום עם שמירה אחרי כל פריט
+    # 4. לולאת תרגום עם עצירה במקרה של חסימה
     translator = Translator()
+    blocked = False
     
     for i, item in enumerate(final_data):
-        # אם כבר יש תרגום, מדלגים
         if item["he_name"] != "":
             continue
             
+        if blocked: # אם סומן שנחסמנו, מפסיקים לנסות
+            break
+
         cleaned_en = item["en_name"]
         lower_name = cleaned_en.lower()
         
-        # טיפול ידני במקרים מיוחדים
+        # תרגומים קבועים
         if "israel" in lower_name:
             translated_he = "ישראל הקטנה"
         elif "palestine" in lower_name:
             translated_he = "שטחי יש\"ע"
         else:
             try:
-                print(f"[{i+1}/{len(final_data)}] מתרגם: {cleaned_en}", flush=True)
+                print(f"[{i+1}/{len(final_data)}] מנסה לתרגם: {cleaned_en}...", end=" ", flush=True)
                 translated_he = translator.translate(cleaned_en, dest='he', src='en').text
-                # השהייה קלה למניעת חסימה
-                time.sleep(1.2)
+                print(f"הצליח! תורגם ל: {translated_he}", flush=True)
+                time.sleep(1.5) # השהייה למניעת חסימה
             except Exception as e:
-                print(f"שגיאה בתרגום {cleaned_en}: {e}", flush=True)
-                translated_he = cleaned_en # גיבוי לאנגלית במקרה של שגיאה
+                print(f"\nנכשל! (ייתכן שנחסמנו ע''י גוגל). שומר תוצאות ועוצר. שגיאה: {e}", flush=True)
+                blocked = True
+                continue
 
-        # עדכון הפריט ברשימה ושמירה מיידית לקובץ
         item["he_name"] = translated_he
-        save_json(final_data)
+        save_json(final_data) # שמירה אחרי כל תרגום מוצלח
 
-    print("הסתיים בהצלחה! כל הנתונים מעודכנים ב-maps_data.json", flush=True)
+    if blocked:
+        print("הפעולה נעצרה באמצע עקב חסימה, אך כל מה שתורגם עד כה נשמר.", flush=True)
+    else:
+        print("הסתיים בהצלחה! כל הנתונים מעודכנים.", flush=True)
 
 if __name__ == "__main__":
     main()
