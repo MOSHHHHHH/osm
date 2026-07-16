@@ -1,13 +1,15 @@
 name: Update Map Data
 on:
   schedule:
-    - cron: '*/30 * * * *' # רץ כל 30 דקות בדיוק
-  workflow_dispatch: # מאפשר הרצה ידנית
+    - cron: '*/30 * * * *' # רץ כל 30 דקות
+  workflow_dispatch: 
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    # מונע הרצות חופפות אם אחת מתעכבת
+    # הוספת הרשאות כתיבה מפורשות
+    permissions:
+      contents: write
     concurrency: 
       group: map-update
       cancel-in-progress: false 
