@@ -1,7 +1,7 @@
 name: Update Map Data
 on:
   schedule:
-    - cron: '*/30 * * * *' # רץ כל 30 דקות
+    - cron: '*/8 * * * *' # רץ כל 30 דקות
   workflow_dispatch: 
 
 jobs:
