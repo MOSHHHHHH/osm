@@ -1,38 +1,56 @@
-name: Update OsmAnd List
+name: Monthly OsmAnd Fetch and Translate
 
 on:
   schedule:
-    # מריץ את הסקריפט פעם ביום בשעה 02:00 בלילה UTC
-    - cron: '0 2 * * *'
+    # רץ פעם בחודש, ב-28 בחודש בשעה 00:00 UTC
+    - cron: '0 0 28 * *'
   workflow_dispatch:
-    # מאפשר להריץ את הסקריפט ידנית מתוך ממשק GitHub בכל עת
+    # מאפשר הפעלה ידנית לצורכי בדיקה בכל עת
 
 permissions:
   contents: write
 
 jobs:
-  fetch-and-deploy:
+  build-and-translate:
     runs-on: ubuntu-latest
 
     steps:
-    # 1. שליפת הקוד הקיים מהמאגר
+    # 1. שליפת הקוד מהמאגר
     - name: Checkout repository
       uses: actions/checkout@v4
 
-    # 2. הורדת דף ה-HTML המעודכן
-    - name: Fetch list from OsmAnd
+    # 2. הגדרת סביבת Python
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.10'
+
+    # 3. התקנת תלויות (כולל גרסת ה-alpha של googletrans הפותרת באגים נפוצים)
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install beautifulsoup4 googletrans==3.1.0a0
+
+    # 4. הורדת קובץ המקור מהשרת של OsmAnd
+    - name: Fetch list.html
       run: |
         curl -s "https://download.osmand.net/list.php" -o list.html
 
-    # 3. בדיקה אם חל שינוי בקובץ וביצוע Commit במידת הצורך
-    - name: Commit and push if changed
+    # 5. הרצת סקריפט העיבוד והתרגום
+    - name: Run Python script
+      run: |
+        python update_list.py
+
+    # 6. בדיקה אם נוצר קובץ JSON חדש או מעודכן וביצוע Commit & Push
+    - name: Commit and push changes
       run: |
         git config --local user.email "github-actions[bot]@users.noreply.github.com"
         git config --local user.name "github-actions[bot]"
-        git add list.html
+        git add list.json
+        # נבדוק אם יש שינויים בקובץ ה-JSON
         if ! git diff --cached --exit-code; then
-          git commit -m "Update list.html with latest data from OsmAnd [skip ci]"
+          git commit -m "Automated monthly update of translated list.json [skip ci]"
           git push
         else
-          echo "No changes detected in list.html"
+          echo "No changes detected in list.json"
         fi
