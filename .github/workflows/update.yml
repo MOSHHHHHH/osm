@@ -1,12 +1,16 @@
 name: Update Map Data
 on:
   schedule:
-    - cron: '0 0 28 * *' # רץ ב-28 לכל חודש בחצות
-  workflow_dispatch: # מאפשר הרצה ידנית לבדיקה
+    - cron: '*/30 * * * *' # רץ כל 30 דקות בדיוק
+  workflow_dispatch: # מאפשר הרצה ידנית
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    # מונע הרצות חופפות אם אחת מתעכבת
+    concurrency: 
+      group: map-update
+      cancel-in-progress: false 
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
@@ -28,5 +32,5 @@ jobs:
           git config --global user.name 'GitHub Action'
           git config --global user.email 'action@github.com'
           git add maps_data.json
-          git commit -m "Auto-update map data" || exit 0
+          git commit -m "Auto-update map data (partial)" || exit 0
           git push
