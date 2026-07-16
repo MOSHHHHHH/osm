@@ -1,0 +1,38 @@
+name: Update OsmAnd List
+
+on:
+  schedule:
+    # מריץ את הסקריפט פעם ביום בשעה 02:00 בלילה UTC
+    - cron: '0 2 * * *'
+  workflow_dispatch:
+    # מאפשר להריץ את הסקריפט ידנית מתוך ממשק GitHub בכל עת
+
+permissions:
+  contents: write
+
+jobs:
+  fetch-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    # 1. שליפת הקוד הקיים מהמאגר
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    # 2. הורדת דף ה-HTML המעודכן
+    - name: Fetch list from OsmAnd
+      run: |
+        curl -s "https://download.osmand.net/list.php" -o list.html
+
+    # 3. בדיקה אם חל שינוי בקובץ וביצוע Commit במידת הצורך
+    - name: Commit and push if changed
+      run: |
+        git config --local user.email "github-actions[bot]@users.noreply.github.com"
+        git config --local user.name "github-actions[bot]"
+        git add list.html
+        if ! git diff --cached --exit-code; then
+          git commit -m "Update list.html with latest data from OsmAnd [skip ci]"
+          git push
+        else
+          echo "No changes detected in list.html"
+        fi
