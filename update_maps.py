@@ -62,11 +62,11 @@ def main():
             "path": path
         })
 
-    print(f"נסרקו {len(final_data)} קבצים. מתחיל תרגום (מוגבל ל-50 פריטים חדשים)...", flush=True)
+    print(f"נסרקו {len(final_data)} קבצים. מתחיל תרגום (מוגבל ל-500 פריטים חדשים)...", flush=True)
 
     translator = Translator()
     translation_count = 0
-    limit = 50 # מגבלה לריצה אחת
+    limit = 500 # מגבלה לריצה אחת
     
     for i, item in enumerate(final_data):
         if item["he_name"] != "":
