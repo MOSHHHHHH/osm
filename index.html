@@ -3,89 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ממשק הורדת מפות לאפליקציית OsmAnd</title>
-    <!-- Favicon -->
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🗺️</text></svg>">
-    
+    <title>ממשק הורדת מפות OsmAnd</title>
+    <!-- פייביקון חופשי - סמל מפה -->
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/854/854878.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
-            --primary-color: #ff8c00;
-            --primary-hover: #e67e00;
-            --bg-color: #fcfcfc;
-            --card-bg: #ffffff;
+            --primary-orange: #FF8C00;
+            --dark-orange: #e67e22;
+            --light-orange: #fff3e0;
             --text-color: #333;
-            --shadow: 0 4px 15px rgba(0,0,0,0.1);
+            --bg-color: #f4f4f9;
         }
 
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Assistant', sans-serif;
             background-color: var(--bg-color);
             color: var(--text-color);
             margin: 0;
-            padding: 20px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            padding: 0;
+            line-height: 1.6;
         }
 
         .container {
-            max-width: 800px;
-            width: 100%;
-            animation: fadeIn 0.8s ease-out;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 0;
+            animation: fadeInDown 0.8s ease-out;
         }
 
         h1 {
-            color: var(--primary-color);
-            text-align: center;
-            margin-bottom: 30px;
+            color: var(--primary-orange);
             font-size: 2.5rem;
+            margin-bottom: 10px;
         }
 
-        /* Instructions Section */
-        .instructions {
-            background-color: var(--card-bg);
-            border-right: 5px solid var(--primary-color);
+        /* תיבת הוראות */
+        .instructions-card {
+            background: white;
+            border-right: 5px solid var(--primary-orange);
             padding: 20px;
             border-radius: 8px;
-            box-shadow: var(--shadow);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
             margin-bottom: 30px;
+            animation: fadeIn 1s ease-out;
         }
 
-        .instructions h2 {
+        .instructions-card h2 {
             margin-top: 0;
+            color: var(--dark-orange);
             font-size: 1.2rem;
         }
 
-        .step {
+        .step-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .step-list li {
             margin-bottom: 10px;
             display: flex;
             align-items: center;
         }
 
-        .step-number {
-            background: var(--primary-color);
-            color: white;
-            width: 24px;
-            height: 24px;
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-left: 10px;
+        .step-list li::before {
+            content: "✓";
+            color: var(--primary-orange);
             font-weight: bold;
-            flex-shrink: 0;
+            margin-left: 10px;
         }
 
-        .note-box {
-            background-color: #fff3e0;
-            padding: 15px;
+        .note {
+            background: var(--light-orange);
+            padding: 10px 15px;
             border-radius: 5px;
-            border: 1px dashed var(--primary-color);
-            margin-top: 15px;
             font-size: 0.95rem;
+            margin-top: 15px;
+            border: 1px dashed var(--primary-orange);
         }
 
-        /* Main Buttons */
+        /* מפות ראשיות */
         .main-maps {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -94,285 +96,257 @@
         }
 
         .map-card {
-            background: var(--card-bg);
-            border: 2px solid transparent;
-            border-radius: 12px;
+            background: white;
             padding: 25px;
+            border-radius: 12px;
             text-align: center;
-            text-decoration: none;
-            color: var(--text-color);
-            box-shadow: var(--shadow);
-            transition: all 0.3s ease;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            animation: zoomIn 0.6s ease-out;
         }
 
         .map-card:hover {
             transform: translateY(-5px);
-            border-color: var(--primary-color);
+            box-shadow: 0 8px 20px rgba(255, 140, 0, 0.2);
         }
 
-        .map-card i {
-            font-size: 40px;
-            margin-bottom: 10px;
-        }
-
-        .map-card span {
+        .map-card h3 {
+            margin: 0 0 15px 0;
             font-size: 1.5rem;
-            font-weight: bold;
-            color: var(--primary-color);
         }
 
-        /* Load More & Search */
-        .more-section {
-            text-align: center;
-            margin-bottom: 40px;
-        }
-
-        .btn-load {
-            background: var(--primary-color);
+        .download-btn {
+            background-color: var(--primary-orange);
             color: white;
-            border: none;
-            padding: 12px 30px;
-            font-size: 1.1rem;
-            border-radius: 50px;
-            cursor: pointer;
+            text-decoration: none;
+            padding: 12px 25px;
+            border-radius: 25px;
+            display: inline-block;
+            font-weight: bold;
             transition: background 0.3s;
-            box-shadow: 0 4px 10px rgba(255, 140, 0, 0.3);
         }
 
-        .btn-load:hover {
-            background: var(--primary-hover);
+        .download-btn:hover {
+            background-color: var(--dark-orange);
         }
 
-        #search-container {
+        /* חיפוש ורשימה נוספת */
+        #more-section {
             display: none;
-            margin-top: 20px;
-            animation: slideDown 0.5s ease-in-out;
+            margin-top: 30px;
+            animation: slideUp 0.5s ease-out;
         }
 
-        .search-input {
+        .search-container {
+            margin-bottom: 20px;
+        }
+
+        #searchInput {
             width: 100%;
-            padding: 12px;
+            padding: 15px;
             border: 2px solid #ddd;
-            border-radius: 8px;
+            border-radius: 30px;
             font-size: 1rem;
             outline: none;
+            transition: border-color 0.3s;
             box-sizing: border-box;
         }
 
-        .search-input:focus {
-            border-color: var(--primary-color);
+        #searchInput:focus {
+            border-color: var(--primary-orange);
         }
 
-        /* Results Table */
-        .results-list {
-            margin-top: 20px;
+        .maps-list {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 10px;
+        }
+
+        .list-item {
             background: white;
+            padding: 15px 20px;
             border-radius: 8px;
-            box-shadow: var(--shadow);
-            overflow: hidden;
-            display: none;
-        }
-
-        .file-item {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 15px 20px;
-            border-bottom: 1px solid #eee;
-            transition: background 0.2s;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
         }
 
-        .file-item:last-child {
-            border-bottom: none;
+        .item-info .he-name {
+            display: block;
+            font-weight: bold;
+            font-size: 1.1rem;
         }
 
-        .file-item:hover {
-            background: #fffaf4;
+        .item-info .en-name {
+            display: block;
+            font-size: 0.85rem;
+            color: #777;
         }
 
-        .file-link {
-            background: #f0f0f0;
-            color: #333;
-            text-decoration: none;
-            padding: 6px 15px;
-            border-radius: 4px;
-            font-size: 0.9rem;
-            transition: all 0.2s;
+        .btn-toggle {
+            display: block;
+            width: 200px;
+            margin: 0 auto 40px auto;
+            padding: 10px;
+            background: none;
+            border: 2px solid var(--primary-orange);
+            color: var(--primary-orange);
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.3s;
         }
 
-        .file-link:hover {
-            background: var(--primary-color);
+        .btn-toggle:hover {
+            background: var(--primary-orange);
             color: white;
         }
 
-        .footer-note {
+        footer {
             text-align: center;
-            font-size: 0.85rem;
-            color: #666;
-            margin-top: 50px;
-            padding-bottom: 30px;
+            padding: 40px;
+            font-size: 0.9rem;
+            color: #888;
         }
 
-        /* Animations */
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-
-        @keyframes slideDown {
+        /* אנימציות */
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+        @keyframes fadeInDown {
             from { opacity: 0; transform: translateY(-20px); }
             to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes zoomIn {
+            from { opacity: 0; transform: scale(0.9); }
+            to { opacity: 1; transform: scale(1); }
         }
 
         @media (max-width: 600px) {
             .main-maps { grid-template-columns: 1fr; }
+            h1 { font-size: 1.8rem; }
         }
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <h1>ממשק הורדת מפות ל-OsmAnd</h1>
+<div class="container">
+    <header>
+        <h1>ממשק הורדת מפות לאפליקציית OsmAnd</h1>
+        <p>גישה מהירה להורדת מפות מעודכנות לניווט אופליין</p>
+    </header>
 
-        <div class="instructions">
-            <h2>הוראות התקנה:</h2>
-            <div class="step">
-                <div class="step-number">1</div>
-                <div>הורידו את קבצי המפה הרלוונטיים עבורכם.</div>
-            </div>
-            <div class="step">
-                <div class="step-number">2</div>
-                <div>חלצו את קובץ ה-ZIP שהורדתם (במידה והורדתם קובץ דחוס).</div>
-            </div>
-            <div class="step">
-                <div class="step-number">3</div>
-                <div>העתיקו את הקובץ (בסיומת .obf) לכל תיקייה שנוחה לכם בטלפון.</div>
-            </div>
-            <div class="step">
-                <div class="step-number">4</div>
-                <div>פתחו את הקובץ דרך מנהל הקבצים שלכם באמצעות אפליקציית <b>OsmAnd</b>.</div>
-            </div>
-
-            <div class="note-box">
-                <b>💡 הערה חשובה:</b> כדי שהמיקום יעבוד בצורה תקינה, יש להיכנס באפליקציה ל: 
-                <br> הגדרות > הגדרות OsmAnd > מקור מיקום > ולשנות ל-<b>Android API</b>.
-            </div>
-        </div>
-
-        <div class="main-maps">
-            <a href="/download?standard=yes&file=Israel_asia_2.obf.zip" class="map-card">
-                <i>📍</i>
-                <span>ישראל הקטנה</span>
-            </a>
-            <a href="/download?standard=yes&file=Palestine_asia_2.obf.zip" class="map-card">
-                <i>🏘️</i>
-                <span>שטחי יש"ע</span>
-            </a>
-        </div>
-
-        <div class="more-section">
-            <button class="btn-load" id="loadMoreBtn">הורדות נוספות (כל העולם)</button>
-            
-            <div id="search-container">
-                <input type="text" class="search-input" id="searchInput" placeholder="חפשו מדינה או אזור (לדוגמה: France, London, Germany)...">
-                <div class="results-list" id="resultsList">
-                    <!-- תוצאות יופיעו כאן -->
-                </div>
-            </div>
-        </div>
-
-        <div class="footer-note">
-            הקבצים מתעדכנים אוטומטית ב-1 לכל חודש.
+    <div class="instructions-card">
+        <h2>איך מתקינים את המפות?</h2>
+        <ul class="step-list">
+            <li>בחרו את המפה הרצויה והורידו את הקובץ למכשירכם.</li>
+            <li>אם הקובץ ירד כארכיון (ZIP), יש לחלץ אותו כדי לקבל את קובץ ה-obf.</li>
+            <li>העתיקו את קובץ המפה לתיקייה נגישה בזיכרון הטלפון.</li>
+            <li>נווטו אל הקובץ באמצעות מנהל הקבצים שלכם, פתחו אותו ובחרו ב-OsmAnd כיישום הפתיחה.</li>
+        </ul>
+        <div class="note">
+            <strong>טיפ למיקום:</strong> כדי שהמיקום יעבוד בצורה אופטימלית, היכנסו בתוך האפליקציה אל:
+            <br><em>הגדרות > הגדרות OsmAnd > מקור מיקום > ושנו ל-'Android API'</em>.
         </div>
     </div>
 
-    <script>
-        const loadMoreBtn = document.getElementById('loadMoreBtn');
-        const searchContainer = document.getElementById('search-container');
-        const resultsList = document.getElementById('resultsList');
-        const searchInput = document.getElementById('searchInput');
+    <div class="main-maps">
+        <div class="map-card">
+            <h3>ישראל הקטנה</h3>
+            <p>מפת ישראל המלאה</p>
+            <a href="https://download.osmand.net/download?standard=yes&file=Israel_asia_2.obf.zip" class="download-btn">הורד מפה</a>
+        </div>
+        <div class="map-card">
+            <h3>שטחי יש"ע</h3>
+            <p>יהודה, שומרון וחבל עזה</p>
+            <a href="https://download.osmand.net/download?standard=yes&file=Palestine_asia_2.obf.zip" class="download-btn">הורד מפה</a>
+        </div>
+    </div>
+
+    <button class="btn-toggle" onclick="toggleMoreSection()" id="toggleBtn">הורדות נוספות בעולם...</button>
+
+    <section id="more-section">
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="חפשו מדינה או אזור (עברית / אנגלית)..." onkeyup="filterMaps()">
+        </div>
+        <div id="mapsList" class="maps-list">
+            <!-- כאן יופיעו התוצאות מה-JSON -->
+        </div>
+    </section>
+
+    <footer>
+        <p>הקבצים מתעדכנים אוטומטית ב-1 לחודש.</p>
+        <p>&copy; ממשק הורדה OsmAnd ישראל</p>
+    </footer>
+</div>
+
+<script>
+    let allMaps = [];
+
+    // פונקציה לטעינת הנתונים מהקובץ החיצוני
+    async function loadMapsData() {
+        try {
+            const response = await fetch('maps_data.json');
+            if (!response.ok) throw new Error('לא ניתן היה לטעון את קובץ הנתונים');
+            allMaps = await response.json();
+            renderMaps(allMaps);
+        } catch (error) {
+            console.error('Error:', error);
+            document.getElementById('mapsList').innerHTML = '<p style="text-align:center; color:red;">שגיאה בטעינת רשימת המפות הנוספות.</p>';
+        }
+    }
+
+    function renderMaps(maps) {
+        const listContainer = document.getElementById('mapsList');
+        listContainer.innerHTML = '';
+
+        maps.forEach(map => {
+            // הגיון התצוגה שביקשת: עברית בולט, אנגלית קטן. אם עברית ריקה - אנגלית בולט.
+            const hasHebrew = map.he_name && map.he_name.trim() !== "";
+            const displayName = hasHebrew ? map.he_name : map.en_name;
+            const subName = hasHebrew ? map.en_name : "";
+
+            const item = document.createElement('div');
+            item.className = 'list-item';
+            item.innerHTML = `
+                <div class="item-info">
+                    <span class="he-name">${displayName}</span>
+                    <span class="en-name">${subName}</span>
+                </div>
+                <a href="${map.path}" class="download-btn" style="padding: 8px 15px; font-size: 0.9rem;">הורדה</a>
+            `;
+            listContainer.appendChild(item);
+        });
+    }
+
+    function filterMaps() {
+        const query = document.getElementById('searchInput').value.toLowerCase();
+        const filtered = allMaps.filter(map => {
+            return (map.he_name && map.he_name.toLowerCase().includes(query)) || 
+                   (map.en_name && map.en_name.toLowerCase().includes(query));
+        });
+        renderMaps(filtered);
+    }
+
+    function toggleMoreSection() {
+        const section = document.getElementById('more-section');
+        const btn = document.getElementById('toggleBtn');
         
-        let allFiles = [];
-
-        // פונקציה לטעינת הרשימה מהקובץ החיצוני
-        async function fetchExternalList() {
-            try {
-                const response = await fetch('list.html');
-                const htmlText = await response.text();
-                const parser = new DOMParser();
-                const doc = parser.parseFromString(htmlText, 'text/html');
-                const rows = doc.querySelectorAll('table tr');
-
-                rows.forEach((row, index) => {
-                    if (index === 0) return; // דלג על הכותרת
-                    const cells = row.querySelectorAll('td');
-                    if (cells.length > 0) {
-                        const link = cells[0].querySelector('a');
-                        const description = cells[3] ? cells[3].innerText : '';
-                        
-                        if (link) {
-                            allFiles.push({
-                                name: link.innerText,
-                                url: link.getAttribute('href'),
-                                desc: description
-                            });
-                        }
-                    }
-                });
-                return true;
-            } catch (error) {
-                console.error('Error loading list.html:', error);
-                alert('שגיאה בטעינת רשימת הקבצים. וודא שהקובץ list.html נמצא באותו נתיב.');
-                return false;
+        if (section.style.display === 'block') {
+            section.style.display = 'none';
+            btn.innerText = 'הורדות נוספות בעולם...';
+        } else {
+            section.style.display = 'block';
+            btn.innerText = 'סגור רשימה';
+            if (allMaps.length === 0) {
+                loadMapsData();
             }
         }
+    }
+</script>
 
-        loadMoreBtn.addEventListener('click', async () => {
-            if (allFiles.length === 0) {
-                loadMoreBtn.innerText = 'טוען נתונים...';
-                const success = await fetchExternalList();
-                if (!success) {
-                    loadMoreBtn.innerText = 'שגיאה בטעינה';
-                    return;
-                }
-            }
-            loadMoreBtn.style.display = 'none';
-            searchContainer.style.display = 'block';
-            renderResults('');
-        });
-
-        function renderResults(query) {
-            resultsList.innerHTML = '';
-            const filtered = allFiles.filter(f => 
-                f.name.toLowerCase().includes(query.toLowerCase()) || 
-                f.desc.toLowerCase().includes(query.toLowerCase())
-            );
-
-            if (filtered.length > 0) {
-                resultsList.style.display = 'block';
-                filtered.forEach(file => {
-                    const div = document.createElement('div');
-                    div.className = 'file-item';
-                    div.innerHTML = `
-                        <div style="text-align:right">
-                            <div style="font-weight:bold">${file.name}</div>
-                            <div style="font-size:0.8rem; color:#666">${file.desc}</div>
-                        </div>
-                        <a href="${file.url}" class="file-link">הורדה</a>
-                    `;
-                    resultsList.appendChild(div);
-                });
-            } else {
-                resultsList.innerHTML = '<div style="padding:20px">לא נמצאו תוצאות</div>';
-            }
-        }
-
-        searchInput.addEventListener('input', (e) => {
-            renderResults(e.target.value);
-        });
-    </script>
 </body>
 </html>
