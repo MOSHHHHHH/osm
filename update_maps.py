@@ -5,6 +5,7 @@ from bs4 import BeautifulSoup
 import json
 import os
 import re
+import time
 
 # ==== הגדרות Gemini ====
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")  # שם המשתנה של מפתח ה-API
