@@ -121,7 +121,7 @@ def main():
 
     consecutive_failures = 0
     max_retries = 3
-    retry_wait_seconds = 10
+    retry_wait_seconds = 60
 
     stopped_due_to_failures = False
 
