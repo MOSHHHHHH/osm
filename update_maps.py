@@ -118,6 +118,12 @@ def main():
     translation_count = 0
     limit = 500  # מגבלה לריצה אחת
 
+    consecutive_failures = 0
+    max_retries = 3
+    retry_wait_seconds = 10
+
+    stopped_due_to_failures = False
+
     for i, item in enumerate(final_data):
         if item["he_name"] != "":
             continue
@@ -131,24 +137,49 @@ def main():
 
         lower_name = item["en_name"].lower()
         if "israel" in lower_name:
+            print(f"[{i+1}/{len(final_data)}] '{text_to_translate}' -> מקרה מיוחד: ישראל", flush=True)
             translated_he = "ישראל הקטנה"
+            consecutive_failures = 0
         elif "palestine" in lower_name:
+            print(f"[{i+1}/{len(final_data)}] '{text_to_translate}' -> מקרה מיוחד: פלשתין", flush=True)
             translated_he = "שטחי יש\"ע"
+            consecutive_failures = 0
         else:
-            try:
-                print(f"[{i+1}/{len(final_data)}] מתרגם: {text_to_translate}...", end=" ", flush=True)
-                translated_he = translate_with_gemini(text_to_translate)
-                print(f"הצליח: {translated_he}", flush=True)
-                translation_count += 1
-            except Exception as e:
-                print(f"\nחסימה או שגיאה ב-Gemini. שומר ועוצר. שגיאה: {e}", flush=True)
+            translated_he = None
+            attempt = 1
+            while attempt <= max_retries:
+                print(f"[{i+1}/{len(final_data)}] ניסיון {attempt}/{max_retries} - מתרגם: {text_to_translate}...", end=" ", flush=True)
+                try:
+                    translated_he = translate_with_gemini(text_to_translate)
+                    print(f"הצליח: {translated_he}", flush=True)
+                    translation_count += 1
+                    consecutive_failures = 0
+                    break
+                except Exception as e:
+                    consecutive_failures += 1
+                    print(f"נכשל (שגיאה #{consecutive_failures} ברצף). שגיאה: {e}", flush=True)
+
+                    if consecutive_failures >= max_retries:
+                        print(f"נכשלו {max_retries} ניסיונות ברצף. שומר ומסיים את הריצה.", flush=True)
+                        stopped_due_to_failures = True
+                        break
+
+                    print(f"ממתין {retry_wait_seconds} שניות לפני ניסיון נוסף...", flush=True)
+                    time.sleep(retry_wait_seconds)
+                    attempt += 1
+
+            if stopped_due_to_failures:
                 break
 
         item["he_name"] = translated_he
         save_json(final_data)
+        print(f"[{i+1}/{len(final_data)}] נשמר בקובץ JSON.", flush=True)
 
     save_json(final_data)
-    print(f"הריצה הסתיימה. תורגמו {translation_count} פריטים חדשים.", flush=True)
+    if stopped_due_to_failures:
+        print(f"הריצה הופסקה עקב שגיאות חוזרות. תורגמו {translation_count} פריטים חדשים לפני העצירה.", flush=True)
+    else:
+        print(f"הריצה הסתיימה. תורגמו {translation_count} פריטים חדשים.", flush=True)
 
 if __name__ == "__main__":
     main()
