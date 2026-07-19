@@ -23,9 +23,11 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install requests beautifulsoup4 googletrans==4.0.0-rc1
+          pip install requests beautifulsoup4
 
       - name: Run script
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: python update_maps.py
 
       - name: Commit and push changes
