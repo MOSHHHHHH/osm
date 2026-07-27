@@ -1,22 +1,21 @@
-name: Data update (OsmAnd + Moovitdos)
+name: Tag generator (Gemini)
 
 on:
   schedule:
-    # 00:00 Israel time. GitHub Actions cron is always UTC and does not shift with
-    # Israel's DST, so this runs at 21:00 UTC (~00:00 IDT in summer / 22:00 IST in winter).
-    # Adjust if you need exact midnight year-round.
-    - cron: "0 21 * * *"
+    # 06:00 Israel time (~03:00 UTC in summer / 04:00 UTC in winter). See the comment
+    # in data-update.yml about GitHub Actions cron not tracking Israel's DST.
+    - cron: "0 3 * * *"
   workflow_dispatch: {}
 
 permissions:
   contents: write
 
 concurrency:
-  group: data-update
+  group: tag-generator
   cancel-in-progress: false
 
 jobs:
-  update:
+  tag:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -30,17 +29,19 @@ jobs:
       - name: Install dependencies
         run: pip install -r update-scripts/requirements.txt
 
-      - name: Run data-update.py
-        run: python update-scripts/data-update.py
+      - name: Run tag-generator.py
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python update-scripts/tag-generator.py
 
       - name: Commit and push changes
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/osmand-data.json data/moovitdos-link.json data/update-status.json files/
+          git add data/mapsTags.json
           if git diff --cached --quiet; then
             echo "No changes to commit."
           else
-            git commit -m "chore: automatic data update ($(date -u +%Y-%m-%d))"
+            git commit -m "chore: automatic tag generation ($(date -u +%Y-%m-%d))"
             git push
           fi
