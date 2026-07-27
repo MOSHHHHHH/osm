@@ -1,0 +1,273 @@
+/* ---------------------------------------------------------------------
+ * app.js — front-end logic for the offline maps hub
+ *
+ * Data sources (all same-origin, relative to this page):
+ *   data/osmand-data.json     [{ fileName, updatedDate }]
+ *   data/mapsTags.json        [{ fileName, hebrewTags:{continent,country,city},
+ *                                 englishTags:{...}, emoji }]
+ *   data/moovitdos-link.json  { path, updatedDate }
+ *   data/update-status.json   { osmand-status, moovitdos-status, update-date }
+ *
+ * Analytics: every download fires a fire-and-forget POST to the Google Form
+ * below with the file name and this browser's running download counter
+ * (kept in localStorage, never sent anywhere except this form).
+ * ------------------------------------------------------------------- */
+
+const FORM_ACTION_URL =
+  "https://docs.google.com/forms/u/0/d/e/1FAIpQLScuXM88KBakEGOWv-s5_qz3N5Y2K-T501R0zi5UwHij9gyICg/formResponse";
+const FORM_ENTRY_FILE_NAME = "entry.1612470091";
+const FORM_ENTRY_DOWNLOAD_COUNTER = "entry.307147373";
+
+const OSMAND_ISRAEL_KEYWORDS = ["israel"];
+const OSMAND_YOSH_KEYWORDS = ["west-bank", "west bank", "palestine", "judea", "samaria", "yosh"];
+
+let osmandData = [];
+let mapsTags = [];
+let moovitdosLink = { path: null, updatedDate: null };
+let updateStatus = { "osmand-status": true, "moovitdos-status": true, "update-date": null };
+
+// ------------------------------------------------------------------
+// Data loading
+// ------------------------------------------------------------------
+
+async function fetchJson(path, fallback) {
+  try {
+    const res = await fetch(path, { cache: "no-store" });
+    if (!res.ok) throw new Error(`${path}: ${res.status}`);
+    return await res.json();
+  } catch (err) {
+    console.warn("Failed to load", path, err);
+    return fallback;
+  }
+}
+
+async function loadAllData() {
+  [osmandData, mapsTags, moovitdosLink, updateStatus] = await Promise.all([
+    fetchJson("data/osmand-data.json", []),
+    fetchJson("data/mapsTags.json", []),
+    fetchJson("data/moovitdos-link.json", { path: null, updatedDate: null }),
+    fetchJson("data/update-status.json", {
+      "osmand-status": true,
+      "moovitdos-status": true,
+      "update-date": null,
+    }),
+  ]);
+
+  renderStatus();
+}
+
+// ------------------------------------------------------------------
+// Status pill + modal
+// ------------------------------------------------------------------
+
+function renderStatus() {
+  const allOk = updateStatus["osmand-status"] && updateStatus["moovitdos-status"];
+
+  document.getElementById("statusBadge").textContent = allOk ? "✅" : "❎";
+  document.getElementById("statusText").textContent = allOk
+    ? "כל הנתונים מעודכנים"
+    : "יתכן שחלק מהנתונים לא מעודכנים";
+
+  const dateStr = formatDate(updateStatus["update-date"]);
+
+  document.getElementById("modalOsmandBadge").textContent =
+    updateStatus["osmand-status"] ? "✅" : "❎";
+  document.getElementById("modalOsmandText").textContent = updateStatus["osmand-status"]
+    ? `כל התוכן מעודכן, נבדק לאחרונה`
+    : "תקלה בעדכון, יתכן שחלק מהנתונים לא מעודכנים. אנו פועלים לתקן את התקלה.";
+  document.getElementById("modalOsmandDate").textContent = dateStr;
+
+  document.getElementById("modalMoovitdosBadge").textContent =
+    updateStatus["moovitdos-status"] ? "✅" : "❎";
+  document.getElementById("modalMoovitdosText").textContent = updateStatus["moovitdos-status"]
+    ? `כל התוכן מעודכן, נבדק לאחרונה`
+    : "תקלה בעדכון, יתכן שחלק מהנתונים לא מעודכנים. אנו פועלים לתקן את התקלה.";
+  document.getElementById("modalMoovitdosDate").textContent = dateStr;
+}
+
+function formatDate(isoDateOrDatetime) {
+  if (!isoDateOrDatetime) return "";
+  try {
+    const d = new Date(isoDateOrDatetime);
+    return d.toLocaleString("he-IL", {
+      dateStyle: "medium",
+      timeStyle: isoDateOrDatetime.includes("T") ? "short" : undefined,
+    });
+  } catch {
+    return isoDateOrDatetime;
+  }
+}
+
+function setupModal() {
+  const overlay = document.getElementById("statusModal");
+  document.getElementById("statusPill").addEventListener("click", () => {
+    overlay.classList.add("open");
+  });
+  document.getElementById("modalCloseBtn").addEventListener("click", () => {
+    overlay.classList.remove("open");
+  });
+  overlay.addEventListener("click", (e) => {
+    if (e.target === overlay) overlay.classList.remove("open");
+  });
+}
+
+// ------------------------------------------------------------------
+// Download + analytics
+// ------------------------------------------------------------------
+
+function bumpDownloadCounter() {
+  const current = parseInt(localStorage.getItem("downloadCounter") || "0", 10);
+  const next = current + 1;
+  localStorage.setItem("downloadCounter", String(next));
+  return next;
+}
+
+function pingAnalytics(fileName, counter) {
+  const formData = new FormData();
+  formData.append(FORM_ENTRY_FILE_NAME, fileName);
+  formData.append(FORM_ENTRY_DOWNLOAD_COUNTER, String(counter));
+
+  // Google Forms doesn't return CORS headers, so this is a fire-and-forget request.
+  fetch(FORM_ACTION_URL, { method: "POST", mode: "no-cors", body: formData }).catch(() => {
+    /* analytics failures should never block a download */
+  });
+}
+
+function triggerDownload(url, suggestedName) {
+  const link = document.createElement("a");
+  link.href = url;
+  if (suggestedName) link.download = suggestedName;
+  link.rel = "noopener";
+  document.body.appendChild(link);
+  link.click();
+  link.remove();
+}
+
+function downloadFile(fileName, url) {
+  const counter = bumpDownloadCounter();
+  pingAnalytics(fileName, counter);
+  triggerDownload(url, fileName);
+}
+
+// ------------------------------------------------------------------
+// Big buttons: OsmAnd Israel / Yosh / Moovitdos
+// ------------------------------------------------------------------
+
+function findOsmandFile(keywords) {
+  const lowerKeywords = keywords.map((k) => k.toLowerCase());
+  return osmandData.find((entry) =>
+    lowerKeywords.some((k) => entry.fileName.toLowerCase().includes(k))
+  );
+}
+
+function handleOsmandButton(keywords, label) {
+  const match = findOsmandFile(keywords);
+  if (!match) {
+    alert(`המפה עבור "${label}" עדיין לא זמינה במאגר. נסו שוב מאוחר יותר.`);
+    return;
+  }
+  downloadFile(match.fileName, `files/${match.fileName}`);
+}
+
+function handleMoovitdosButton() {
+  if (!moovitdosLink.path) {
+    alert("קובץ הנתונים למובידוס עדיין לא זמין. נסו שוב מאוחר יותר.");
+    return;
+  }
+  downloadFile(moovitdosLink.path.split("/").pop(), moovitdosLink.path);
+}
+
+function setupBigButtons() {
+  document
+    .getElementById("btnIsrael")
+    .addEventListener("click", () => handleOsmandButton(OSMAND_ISRAEL_KEYWORDS, "ישראל"));
+  document
+    .getElementById("btnYosh")
+    .addEventListener("click", () => handleOsmandButton(OSMAND_YOSH_KEYWORDS, "יהודה ושומרון"));
+  document.getElementById("btnMoovitdos").addEventListener("click", handleMoovitdosButton);
+}
+
+// ------------------------------------------------------------------
+// Search
+// ------------------------------------------------------------------
+
+function tagsFor(fileName) {
+  return mapsTags.find((t) => t.fileName === fileName) || null;
+}
+
+function matchesQuery(fileName, tags, query) {
+  const q = query.toLowerCase();
+  if (fileName.toLowerCase().includes(q)) return true;
+  if (!tags) return false;
+  const fields = [
+    tags.hebrewTags?.continent,
+    tags.hebrewTags?.country,
+    tags.hebrewTags?.city,
+    tags.englishTags?.continent,
+    tags.englishTags?.country,
+    tags.englishTags?.city,
+  ];
+  return fields.some((f) => f && f.toLowerCase().includes(q));
+}
+
+function renderResultLabel(fileName, tags) {
+  if (!tags) return fileName;
+  const parts = [tags.hebrewTags?.country, tags.hebrewTags?.city].filter(Boolean);
+  return parts.length ? parts.join(" · ") : fileName;
+}
+
+function renderResults(query) {
+  const resultsEl = document.getElementById("results");
+  const hintEl = document.getElementById("searchHint");
+  resultsEl.innerHTML = "";
+
+  if (query.length < 2) {
+    hintEl.style.display = "block";
+    hintEl.textContent = "הקלידו לפחות 2 תווים כדי להתחיל בחיפוש";
+    return;
+  }
+
+  hintEl.style.display = "none";
+
+  const matches = osmandData.filter((entry) =>
+    matchesQuery(entry.fileName, tagsFor(entry.fileName), query)
+  );
+
+  if (matches.length === 0) {
+    resultsEl.innerHTML = `<div class="search-empty">לא נמצאו מפות התואמות לחיפוש.</div>`;
+    return;
+  }
+
+  matches.slice(0, 60).forEach((entry) => {
+    const tags = tagsFor(entry.fileName);
+    const emoji = tags?.emoji || "🗂️";
+    const label = renderResultLabel(entry.fileName, tags);
+
+    const row = document.createElement("div");
+    row.className = "result-item";
+    row.innerHTML = `
+      <span class="label"><span class="emoji">${emoji}</span> ${label}</span>
+      <button type="button">הורדה</button>
+    `;
+    row.querySelector("button").addEventListener("click", () => {
+      downloadFile(entry.fileName, `files/${entry.fileName}`);
+    });
+    resultsEl.appendChild(row);
+  });
+}
+
+function setupSearch() {
+  const input = document.getElementById("searchInput");
+  input.addEventListener("input", () => renderResults(input.value.trim()));
+}
+
+// ------------------------------------------------------------------
+// Init
+// ------------------------------------------------------------------
+
+document.addEventListener("DOMContentLoaded", async () => {
+  setupModal();
+  setupBigButtons();
+  setupSearch();
+  await loadAllData();
+});
