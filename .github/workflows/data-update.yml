@@ -1,0 +1,46 @@
+name: Data update (OsmAnd + Moovitdos)
+
+on:
+  schedule:
+    # 00:00 Israel time. GitHub Actions cron is always UTC and does not shift with
+    # Israel's DST, so this runs at 21:00 UTC (~00:00 IDT in summer / 22:00 IST in winter).
+    # Adjust if you need exact midnight year-round.
+    - cron: "0 21 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: data-update
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r update-scripts/requirements.txt
+
+      - name: Run data-update.py
+        run: python update-scripts/data-update.py
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/osmand-data.json data/moovitdos-link.json data/update-status.json files/
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "chore: automatic data update ($(date -u +%Y-%m-%d))"
+            git push
+          fi
