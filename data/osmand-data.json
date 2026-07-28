@@ -723,5 +723,55 @@
     "fileName": "Canada_nova-scotia_northamerica_2.obf",
     "updatedDate": "2026-07-01",
     "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Canada_nova-scotia_northamerica_2.obf"
+  },
+  {
+    "fileName": "Canada_newfoundland-and-labrador_northamerica_2.obf",
+    "updatedDate": "2026-07-01",
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Canada_newfoundland-and-labrador_northamerica_2.obf"
+  },
+  {
+    "fileName": "Canada_northwest-territories_northamerica_2.obf",
+    "updatedDate": "2026-07-01",
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Canada_northwest-territories_northamerica_2.obf"
+  },
+  {
+    "fileName": "Canada_nunavut-central-east_northamerica_2.obf",
+    "updatedDate": "2026-07-01",
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Canada_nunavut-central-east_northamerica_2.obf"
+  },
+  {
+    "fileName": "Canada_nunavut-central-west_northamerica_2.obf",
+    "updatedDate": "2026-07-01",
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Canada_nunavut-central-west_northamerica_2.obf"
+  },
+  {
+    "fileName": "Canada_nunavut-north-east_northamerica_2.obf",
+    "updatedDate": "2026-07-01",
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Canada_nunavut-north-east_northamerica_2.obf"
+  },
+  {
+    "fileName": "Canada_nunavut-north-west_northamerica_2.obf",
+    "updatedDate": "2026-07-01",
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Canada_nunavut-north-west_northamerica_2.obf"
+  },
+  {
+    "fileName": "Canada_ontario_barrie_northamerica_2.obf",
+    "updatedDate": "2026-07-01",
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Canada_ontario_barrie_northamerica_2.obf"
+  },
+  {
+    "fileName": "Canada_ontario_moosonee_northamerica_2.obf",
+    "updatedDate": "2026-07-01",
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Canada_ontario_moosonee_northamerica_2.obf"
+  },
+  {
+    "fileName": "Canada_prince-edward-island_northamerica_2.obf",
+    "updatedDate": "2026-07-01",
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Canada_prince-edward-island_northamerica_2.obf"
+  },
+  {
+    "fileName": "Cayman-islands_centralamerica_2.obf",
+    "updatedDate": "2026-07-01",
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Cayman-islands_centralamerica_2.obf"
   }
 ]
