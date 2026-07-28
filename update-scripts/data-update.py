@@ -12,9 +12,12 @@ Runs every 3 minutes (or manually). Two independent jobs:
              permanent download URL. Non-.obf files inside the OsmAnd list are ignored
              entirely (never downloaded, never recorded).
 
-2. Moovitdos - finds the current release zip URL and, if it changed, updates
-               data/moovitdos-link.json. The actual zip is never copied into this repo;
-               only the absolute URL is stored (the app downloads it directly from GitHub).
+2. Moovitdos - queries the real GitHub Releases API for moovitdos/moovidos directly
+               (no more guessing/scraping) and finds the newest release that has a .zip
+               asset (their releases mix in .apk assets too, which we always ignore).
+               If that zip's URL changed, updates data/moovitdos-link.json. The actual
+               zip is never copied into this repo; only the absolute URL is stored (the
+               app downloads it directly from GitHub).
 
 --- Why release assets instead of committing files to git -----------------------
 Git (and GitHub's push receiver) hard-blocks any single file over 100MB. Many real
@@ -56,7 +59,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 import requests
-from bs4 import BeautifulSoup
+from bs4 import BeautifulSoup  # still used to parse OsmAnd's list.php table
 
 # ---------------------------------------------------------------------------
 # Configuration
@@ -71,17 +74,13 @@ UPDATE_STATUS_JSON = DATA_DIR / "update-status.json"
 
 OSMAND_LIST_URL = "https://download.osmand.net/list.php"
 
-# Moovitdos: the GitHub Pages site itself renders its download link with client-side
-# JS, and the source repo appears to be private, so we can't rely on the public GitHub
-# releases API. Instead we scrape the rendered page's HTML/inline data for a version
-# string and build the well-known download URL pattern the app's developer confirmed:
-#   https://github.com/moovitdos/moovidos/releases/download/v{VERSION}/moovidos_data_v{VERSION}.zip
-MOOVITDOS_PAGE_URL = "https://moovitdos.github.io/moovidos/"
-MOOVITDOS_URL_TEMPLATE = (
-    "https://github.com/moovitdos/moovidos/releases/download/v{version}/moovidos_data_v{version}.zip"
-)
-# As a fallback path (in case the repo/releases are ever made public), also try the API.
-MOOVITDOS_RELEASES_API = "https://api.github.com/repos/moovitdos/moovidos/releases/latest"
+# Moovitdos: read straight from the real GitHub Releases API. Their zip's exact file
+# name has changed between releases before (e.g. "moovidos_data_v1.0.168.zip" vs. an
+# older "transport_v8.db.zip"), so we never guess a name/version pattern - we walk the
+# actual releases list (newest first) and take the first .zip asset we find, ignoring
+# any .apk assets in the same release.
+MOOVITDOS_REPO = "moovitdos/moovidos"
+MOOVITDOS_RELEASES_API = f"https://api.github.com/repos/{MOOVITDOS_REPO}/releases"
 
 REQUEST_TIMEOUT = 60
 UPLOAD_TIMEOUT = 300
@@ -459,53 +458,63 @@ def update_osmand():
 # Moovitdos
 # ---------------------------------------------------------------------------
 
-VERSION_RE = re.compile(r"v?(\d+\.\d+\.\d+)")
+MOOVITDOS_PAGES_TO_CHECK = 5  # sane bound - the newest release with a .zip is normally page 1
 
 
-def find_moovitdos_version_from_page() -> str:
-    """Scrapes the Moovitdos GitHub Pages site for a version string like v1.0.168."""
-    resp = requests.get(MOOVITDOS_PAGE_URL, headers=HEADERS, timeout=REQUEST_TIMEOUT)
-    resp.raise_for_status()
-    matches = VERSION_RE.findall(resp.text)
-    if not matches:
-        raise ValueError("no version string found on Moovitdos page")
-
-    def version_key(v):
-        return tuple(int(part) for part in v.split("."))
-
-    matches.sort(key=version_key)
-    return matches[-1]
+def public_read_headers():
+    """Headers for reading public data from a repo we don't own (Moovitdos).
+    If GITHUB_TOKEN is available (it always is inside our own Actions workflow), we
+    attach it so the request counts against the *authenticated* rate limit
+    (5,000 requests/hour) instead of the unauthenticated one (60/hour per IP) - this
+    works for reading public repos even though the token belongs to a different repo.
+    """
+    h = {"Accept": "application/vnd.github+json", "User-Agent": USER_AGENT}
+    if GH_TOKEN:
+        h["Authorization"] = f"token {GH_TOKEN}"
+    return h
 
 
-def find_moovitdos_version_from_api() -> str:
-    """Fallback: public GitHub releases API (works only if the repo/release is public)."""
-    resp = requests.get(MOOVITDOS_RELEASES_API, headers=HEADERS, timeout=REQUEST_TIMEOUT)
-    resp.raise_for_status()
-    tag = resp.json().get("tag_name", "")
-    m = VERSION_RE.search(tag)
-    if not m:
-        raise ValueError(f"unexpected tag_name format: {tag!r}")
-    return m.group(1)
+def find_latest_moovitdos_zip():
+    """Walks moovitdos/moovidos's real release list (newest first) and returns
+    {"url", "updatedDate"} for the first .zip asset found, skipping .apk assets and
+    skipping draft/prerelease releases. Raises if nothing is found."""
+    for page in range(1, MOOVITDOS_PAGES_TO_CHECK + 1):
+        resp = requests.get(
+            MOOVITDOS_RELEASES_API,
+            headers=public_read_headers(),
+            params={"per_page": 30, "page": page},
+            timeout=REQUEST_TIMEOUT,
+        )
+        resp.raise_for_status()
+        releases = resp.json()
+        if not releases:
+            break
+
+        for release in releases:
+            if release.get("draft") or release.get("prerelease"):
+                continue
+            for asset in release.get("assets", []):
+                name = asset.get("name", "")
+                if name.lower().endswith(".zip"):
+                    updated = (release.get("published_at") or release.get("created_at") or "")[:10]
+                    return {"url": asset["browser_download_url"], "updatedDate": updated}
+
+    raise ValueError(f"no release with a .zip asset found in the first "
+                      f"{MOOVITDOS_PAGES_TO_CHECK} page(s) of {MOOVITDOS_REPO}/releases")
 
 
 def update_moovitdos() -> bool:
     try:
-        try:
-            version = find_moovitdos_version_from_page()
-        except Exception as page_exc:
-            print(f"[moovitdos] page scrape failed ({page_exc}), trying releases API", file=sys.stderr)
-            version = find_moovitdos_version_from_api()
-
-        new_url = MOOVITDOS_URL_TEMPLATE.format(version=version)
+        result = find_latest_moovitdos_zip()
     except Exception as exc:
-        print(f"[moovitdos] failed to determine current version: {exc}", file=sys.stderr)
+        print(f"[moovitdos] failed to determine current release: {exc}", file=sys.stderr)
         return False
 
     stored = load_json(MOOVITDOS_LINK_JSON, {"path": None, "updatedDate": None})
 
-    if stored.get("path") != new_url:
-        save_json(MOOVITDOS_LINK_JSON, {"path": new_url, "updatedDate": now_iso()})
-        print(f"[moovitdos] updated link -> {new_url}")
+    if stored.get("path") != result["url"]:
+        save_json(MOOVITDOS_LINK_JSON, {"path": result["url"], "updatedDate": result["updatedDate"]})
+        print(f"[moovitdos] updated link -> {result['url']}")
     else:
         print("[moovitdos] link unchanged")
 
