@@ -52,6 +52,8 @@
   .status-pill .badge{font-size:1rem}
 
   .status-pill.in-progress{color:var(--orange-deep);border-color:var(--amber)}
+  .status-pill.loading{color:var(--muted);animation:status-pulse 1.4s ease-in-out infinite}
+  @keyframes status-pulse{0%,100%{opacity:1}50%{opacity:.45}}
 
   /* ---------- page heading (below topbar/status) ---------- */
   .page-heading{
@@ -160,10 +162,24 @@
     background:var(--ink);color:#fff;font-family:'Heebo',sans-serif;font-weight:500;
     cursor:pointer;font-size:.9rem;
   }
+  .pending-link{
+    display:inline-block;margin-top:6px;color:var(--orange-deep);font-size:.82rem;
+    text-decoration:underline;cursor:pointer;
+  }
+  .pending-files-list{
+    list-style:none;margin:0;padding:0;max-height:340px;overflow-y:auto;
+    border-top:1px solid var(--line);
+  }
+  .pending-files-list li{
+    padding:9px 2px;border-bottom:1px solid var(--line);font-size:.85rem;
+    font-family:'Space Mono',monospace;color:var(--ink);
+  }
+  .pending-files-empty{color:var(--muted);font-size:.88rem;padding:12px 2px;font-family:'Heebo',sans-serif}
 
   @media (prefers-reduced-motion: reduce){
     .trail path{animation:none;stroke-dashoffset:0}
     .stop-btn,.privacy-btn,.status-pill{transition:none}
+    .status-pill.loading{animation:none;opacity:.7}
   }
 </style>
 </head>
@@ -173,9 +189,9 @@
 
   <div class="topbar">
     <div class="brand"><span class="dot"></span> מפות אופליין</div>
-    <button class="status-pill" id="statusPill" type="button">
-      <span class="badge" id="statusBadge">✅</span>
-      <span id="statusText">כל הנתונים מעודכנים</span>
+    <button class="status-pill loading" id="statusPill" type="button">
+      <span class="badge" id="statusBadge">⏳</span>
+      <span id="statusText">טוען סטטוס...</span>
     </button>
   </div>
 
@@ -255,6 +271,7 @@
         <strong>OsmAnd</strong>
         <span id="modalOsmandText">כל התוכן מעודכן</span>
         <small id="modalOsmandDate"></small>
+        <a href="#" id="osmandPendingLink" class="pending-link" style="display:none">קבצים שממתינים לעדכון: <span id="osmandPendingCount">0</span>. להצגת שמות הקבצים הממתינים</a>
       </div>
     </div>
     <div class="modal-row">
@@ -266,6 +283,14 @@
       </div>
     </div>
     <button class="modal-close" id="modalCloseBtn" type="button">סגירה</button>
+  </div>
+</div>
+
+<div class="modal-overlay" id="pendingFilesModal">
+  <div class="modal">
+    <h3>קבצים שממתינים לעדכון</h3>
+    <ul class="pending-files-list" id="pendingFilesList"></ul>
+    <button class="modal-close" id="pendingFilesCloseBtn" type="button">סגירה</button>
   </div>
 </div>
 

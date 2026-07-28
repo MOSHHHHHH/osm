@@ -6,7 +6,8 @@
  *   data/mapsTags.json        [{ fileName, hebrewTags:{continent,country,city},
  *                                 englishTags:{...}, emoji }]
  *   data/moovitdos-link.json  { path, updatedDate }
- *   data/update-status.json   { osmand-status, moovitdos-status, update-date }
+ *   data/update-status.json   { osmand-status, moovitdos-status, osmand-in-progress,
+ *                                 osmand-pending-files, osmand-oversized-files, update-date }
  *
  * Analytics: every download fires a fire-and-forget POST to the Google Form
  * below with the file name and this browser's running download counter
@@ -78,6 +79,7 @@ function renderStatus() {
   const isUpdatingNow = !hasError && updateStatus["osmand-in-progress"];
 
   const pill = document.getElementById("statusPill");
+  pill.classList.remove("loading");
   pill.classList.toggle("in-progress", isUpdatingNow);
 
   let topBadge = "✅";
@@ -110,6 +112,15 @@ function renderStatus() {
   document.getElementById("modalOsmandText").textContent = osmandText;
   document.getElementById("modalOsmandDate").textContent = dateStr;
 
+  const pendingFiles = updateStatus["osmand-pending-files"] || [];
+  const pendingLink = document.getElementById("osmandPendingLink");
+  if (osmandOk && updateStatus["osmand-in-progress"] && pendingFiles.length > 0) {
+    pendingLink.style.display = "inline-block";
+    document.getElementById("osmandPendingCount").textContent = pendingFiles.length;
+  } else {
+    pendingLink.style.display = "none";
+  }
+
   document.getElementById("modalMoovitdosBadge").textContent = moovitdosOk ? "✅" : "❎";
   document.getElementById("modalMoovitdosText").textContent = moovitdosOk
     ? "כל התוכן מעודכן, נבדק לאחרונה"
@@ -136,6 +147,38 @@ function setupModal() {
     overlay.classList.add("open");
   });
   document.getElementById("modalCloseBtn").addEventListener("click", () => {
+    overlay.classList.remove("open");
+  });
+  overlay.addEventListener("click", (e) => {
+    if (e.target === overlay) overlay.classList.remove("open");
+  });
+}
+
+function renderPendingFilesList() {
+  const listEl = document.getElementById("pendingFilesList");
+  const pendingFiles = updateStatus["osmand-pending-files"] || [];
+  listEl.innerHTML = "";
+
+  if (pendingFiles.length === 0) {
+    listEl.innerHTML = `<li class="pending-files-empty">אין כרגע קבצים הממתינים לעדכון.</li>`;
+    return;
+  }
+
+  pendingFiles.forEach((fileName) => {
+    const li = document.createElement("li");
+    li.textContent = fileName;
+    listEl.appendChild(li);
+  });
+}
+
+function setupPendingFilesModal() {
+  const overlay = document.getElementById("pendingFilesModal");
+  document.getElementById("osmandPendingLink").addEventListener("click", (e) => {
+    e.preventDefault();
+    renderPendingFilesList();
+    overlay.classList.add("open");
+  });
+  document.getElementById("pendingFilesCloseBtn").addEventListener("click", () => {
     overlay.classList.remove("open");
   });
   overlay.addEventListener("click", (e) => {
@@ -299,6 +342,7 @@ function setupSearch() {
 
 document.addEventListener("DOMContentLoaded", async () => {
   setupModal();
+  setupPendingFilesModal();
   setupBigButtons();
   setupSearch();
   await loadAllData();
