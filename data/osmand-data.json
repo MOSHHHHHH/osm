@@ -1,1 +1,122 @@
-[]
+[
+  {
+    "fileName": "Afghanistan_asia_2.obf",
+    "updatedDate": "2026-07-01",
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Afghanistan_asia_2.obf"
+  },
+  {
+    "fileName": "Albania_europe_2.obf",
+    "updatedDate": "2026-07-01",
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Albania_europe_2.obf"
+  },
+  {
+    "fileName": "Algeria_africa_2.obf",
+    "updatedDate": "2026-07-01",
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Algeria_africa_2.obf"
+  },
+  {
+    "fileName": "Andorra_europe_2.obf",
+    "updatedDate": "2026-07-01",
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Andorra_europe_2.obf"
+  },
+  {
+    "fileName": "Angola_africa_2.obf",
+    "updatedDate": "2026-07-01",
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Angola_africa_2.obf"
+  },
+  {
+    "fileName": "Anguilla_centralamerica_2.obf",
+    "updatedDate": "2026-07-01",
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Anguilla_centralamerica_2.obf"
+  },
+  {
+    "fileName": "Antarctica_2.obf",
+    "updatedDate": "2026-07-01",
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Antarctica_2.obf"
+  },
+  {
+    "fileName": "Antigua-and-barbuda_centralamerica_2.obf",
+    "updatedDate": "2026-07-01",
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Antigua-and-barbuda_centralamerica_2.obf"
+  },
+  {
+    "fileName": "Argentina_buenos-aires_southamerica_2.obf",
+    "updatedDate": "2026-07-01",
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Argentina_buenos-aires_southamerica_2.obf"
+  },
+  {
+    "fileName": "Argentina_catamarca_southamerica_2.obf",
+    "updatedDate": "2026-07-01",
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Argentina_catamarca_southamerica_2.obf"
+  },
+  {
+    "fileName": "Argentina_chaco_southamerica_2.obf",
+    "updatedDate": "2026-07-01",
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Argentina_chaco_southamerica_2.obf"
+  },
+  {
+    "fileName": "Argentina_chubut_southamerica_2.obf",
+    "updatedDate": "2026-07-01",
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Argentina_chubut_southamerica_2.obf"
+  },
+  {
+    "fileName": "Argentina_cordoba_southamerica_2.obf",
+    "updatedDate": "2026-07-01",
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Argentina_cordoba_southamerica_2.obf"
+  },
+  {
+    "fileName": "Argentina_corrientes_southamerica_2.obf",
+    "updatedDate": "2026-07-01",
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Argentina_corrientes_southamerica_2.obf"
+  },
+  {
+    "fileName": "Argentina_entre-rios_southamerica_2.obf",
+    "updatedDate": "2026-07-01",
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Argentina_entre-rios_southamerica_2.obf"
+  },
+  {
+    "fileName": "Argentina_formosa_southamerica_2.obf",
+    "updatedDate": "2026-07-01",
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Argentina_formosa_southamerica_2.obf"
+  },
+  {
+    "fileName": "Argentina_jujuy_southamerica_2.obf",
+    "updatedDate": "2026-07-01",
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Argentina_jujuy_southamerica_2.obf"
+  },
+  {
+    "fileName": "Argentina_la-pampa_southamerica_2.obf",
+    "updatedDate": "2026-07-01",
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Argentina_la-pampa_southamerica_2.obf"
+  },
+  {
+    "fileName": "Argentina_la-rioja_southamerica_2.obf",
+    "updatedDate": "2026-07-01",
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Argentina_la-rioja_southamerica_2.obf"
+  },
+  {
+    "fileName": "Argentina_mendoza_southamerica_2.obf",
+    "updatedDate": "2026-07-01",
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Argentina_mendoza_southamerica_2.obf"
+  },
+  {
+    "fileName": "Argentina_misiones_southamerica_2.obf",
+    "updatedDate": "2026-07-01",
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Argentina_misiones_southamerica_2.obf"
+  },
+  {
+    "fileName": "Australia-oceania_ashmore-and-cartier-islands_australia-oceania_2.obf",
+    "updatedDate": "2026-07-01",
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Australia-oceania_ashmore-and-cartier-islands_australia-oceania_2.obf"
+  },
+  {
+    "fileName": "Australia-oceania_cocos-islands_australia-oceania_2.obf",
+    "updatedDate": "2026-07-01",
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Australia-oceania_cocos-islands_australia-oceania_2.obf"
+  },
+  {
+    "fileName": "Australia-oceania_coral-sea-islands_australia-oceania_2.obf",
+    "updatedDate": "2026-07-01",
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Australia-oceania_coral-sea-islands_australia-oceania_2.obf"
+  }
+]
