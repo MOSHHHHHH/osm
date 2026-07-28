@@ -2,22 +2,27 @@ name: Data update (OsmAnd + Moovitdos)
 
 on:
   schedule:
-    # 00:00 Israel time. GitHub Actions cron is always UTC and does not shift with
-    # Israel's DST, so this runs at 21:00 UTC (~00:00 IDT in summer / 22:00 IST in winter).
-    # Adjust if you need exact midnight year-round.
-    - cron: "0 21 * * *"
+    # Every 3 minutes. Each run only imports as many OsmAnd files as fit in a safe
+    # push-size budget (see MAX_RUN_BUDGET_BYTES in data-update.py), so a large backlog
+    # of new/updated maps drains automatically over consecutive runs.
+    # Note: GitHub may delay very frequent schedules under high platform load - this is
+    # expected and harmless here, since the next run just picks up where the last left off.
+    - cron: "*/3 * * * *"
   workflow_dispatch: {}
 
 permissions:
   contents: write
 
 concurrency:
+  # Ensures two runs never execute in parallel: if a run is still going when the next
+  # scheduled trigger fires, the new one queues instead of racing the current one.
   group: data-update
   cancel-in-progress: false
 
 jobs:
   update:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
       - name: Checkout
         uses: actions/checkout@v4
