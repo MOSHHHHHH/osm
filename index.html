@@ -3,8 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>מפות אופליין חינם | OsmAnd &amp; מובידוס</title>
+<title>ממשק הורדת נתונים לאפליקציות מפות לא מקוונות | OsmAnd &amp; מובידוס</title>
 <meta name="description" content="הורדה חופשית וללא הגבלה של מפות אופליין עבור OsmAnd ומובידוס">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500;700;900&family=Heebo:wght@300;400;500;700&family=Space+Mono&display=swap" rel="stylesheet">
@@ -49,6 +50,15 @@
   }
   .status-pill:hover{transform:translateY(-1px);box-shadow:var(--shadow)}
   .status-pill .badge{font-size:1rem}
+
+  .status-pill.in-progress{color:var(--orange-deep);border-color:var(--amber)}
+
+  /* ---------- page heading (below topbar/status) ---------- */
+  .page-heading{
+    text-align:center;font-family:'Rubik',sans-serif;font-weight:700;
+    font-size:clamp(1.05rem,2.4vw,1.4rem);color:var(--orange-deep);
+    margin:18px 0 0;letter-spacing:-.01em;
+  }
 
   /* ---------- hero ---------- */
   .hero{position:relative;padding:56px 0 24px;text-align:center}
@@ -169,6 +179,8 @@
     </button>
   </div>
 
+  <h2 class="page-heading">ממשק הורדת נתונים לאפליקציות מפות לא מקוונות</h2>
+
   <section class="hero">
     <h1>מפות <span>אופליין</span>, בלי אינטרנט, בלי הגבלה</h1>
     <p class="lede">הורידו קבצי מפה עבור OsmAnd ונתוני תחבורה עבור מובידוס — ישירות אל הטלפון, בחינם וללא הרשמה.</p>
@@ -188,6 +200,8 @@
       <li>העתיקו את הקבצים לתיקייה כלשהי במכשיר.</li>
       <li>בטלפון, פתחו את התיקייה באמצעות סייר הקבצים.</li>
       <li>לחצו על הקבצים, ובחרו את האפליקציה הרצויה (OsmAnd / מובידוס).</li>
+      <li>כדי לעדכן מפה שכבר קיימת ב-OsmAnd, יש למחוק קודם את המפה הנוכחית: הורדת מפות
+        ← מקומי ← סמל המחיקה (למעלה) ← בחירת המפות למחיקה ואישור.</li>
     </ol>
     <div class="free">השימוש הוא בחינם וללא הגבלה.</div>
   </div>

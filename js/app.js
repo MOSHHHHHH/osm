@@ -24,7 +24,14 @@ const OSMAND_YOSH_KEYWORDS = ["west-bank", "west bank", "palestine", "judea", "s
 let osmandData = [];
 let mapsTags = [];
 let moovitdosLink = { path: null, updatedDate: null };
-let updateStatus = { "osmand-status": true, "moovitdos-status": true, "update-date": null };
+let updateStatus = {
+  "osmand-status": true,
+  "moovitdos-status": true,
+  "osmand-in-progress": false,
+  "osmand-pending-files": [],
+  "osmand-oversized-files": [],
+  "update-date": null,
+};
 
 // ------------------------------------------------------------------
 // Data loading
@@ -49,6 +56,9 @@ async function loadAllData() {
     fetchJson("data/update-status.json", {
       "osmand-status": true,
       "moovitdos-status": true,
+      "osmand-in-progress": false,
+      "osmand-pending-files": [],
+      "osmand-oversized-files": [],
       "update-date": null,
     }),
   ]);
@@ -61,26 +71,48 @@ async function loadAllData() {
 // ------------------------------------------------------------------
 
 function renderStatus() {
-  const allOk = updateStatus["osmand-status"] && updateStatus["moovitdos-status"];
+  const osmandOk = updateStatus["osmand-status"];
+  const moovitdosOk = updateStatus["moovitdos-status"];
+  const hasError = !osmandOk || !moovitdosOk;
+  // "Updating now" only applies when there's no error - a real error always wins.
+  const isUpdatingNow = !hasError && updateStatus["osmand-in-progress"];
 
-  document.getElementById("statusBadge").textContent = allOk ? "✅" : "❎";
-  document.getElementById("statusText").textContent = allOk
-    ? "כל הנתונים מעודכנים"
-    : "יתכן שחלק מהנתונים לא מעודכנים";
+  const pill = document.getElementById("statusPill");
+  pill.classList.toggle("in-progress", isUpdatingNow);
+
+  let topBadge = "✅";
+  let topText = "כל הנתונים מעודכנים";
+  if (hasError) {
+    topBadge = "❎";
+    topText = "יתכן שחלק מהנתונים לא מעודכנים";
+  } else if (isUpdatingNow) {
+    topBadge = "🔄";
+    topText = "עדכון הנתונים מתבצע כעת";
+  }
+  document.getElementById("statusBadge").textContent = topBadge;
+  document.getElementById("statusText").textContent = topText;
 
   const dateStr = formatDate(updateStatus["update-date"]);
 
-  document.getElementById("modalOsmandBadge").textContent =
-    updateStatus["osmand-status"] ? "✅" : "❎";
-  document.getElementById("modalOsmandText").textContent = updateStatus["osmand-status"]
-    ? `כל התוכן מעודכן, נבדק לאחרונה`
-    : "תקלה בעדכון, יתכן שחלק מהנתונים לא מעודכנים. אנו פועלים לתקן את התקלה.";
+  // OsmAnd row: error > updating now > all good.
+  let osmandBadge = "✅";
+  let osmandText = "כל התוכן מעודכן, נבדק לאחרונה";
+  if (!osmandOk) {
+    osmandBadge = "❎";
+    osmandText = "תקלה בעדכון, יתכן שחלק מהנתונים לא מעודכנים. אנו פועלים לתקן את התקלה.";
+  } else if (updateStatus["osmand-in-progress"]) {
+    osmandBadge = "🔄";
+    osmandText =
+      "עדכון הנתונים מתבצע כעת - השרתים שלנו עובדים במלא המרץ לעדכן את כל הקבצים. " +
+      "ניתן לנסות שוב בעוד מספר שעות או להוריד כעת את הגרסה האחרונה שעודכנה.";
+  }
+  document.getElementById("modalOsmandBadge").textContent = osmandBadge;
+  document.getElementById("modalOsmandText").textContent = osmandText;
   document.getElementById("modalOsmandDate").textContent = dateStr;
 
-  document.getElementById("modalMoovitdosBadge").textContent =
-    updateStatus["moovitdos-status"] ? "✅" : "❎";
-  document.getElementById("modalMoovitdosText").textContent = updateStatus["moovitdos-status"]
-    ? `כל התוכן מעודכן, נבדק לאחרונה`
+  document.getElementById("modalMoovitdosBadge").textContent = moovitdosOk ? "✅" : "❎";
+  document.getElementById("modalMoovitdosText").textContent = moovitdosOk
+    ? "כל התוכן מעודכן, נבדק לאחרונה"
     : "תקלה בעדכון, יתכן שחלק מהנתונים לא מעודכנים. אנו פועלים לתקן את התקלה.";
   document.getElementById("modalMoovitdosDate").textContent = dateStr;
 }

@@ -31,6 +31,7 @@ DATA_DIR = ROOT_DIR / "data"
 
 OSMAND_DATA_JSON = DATA_DIR / "osmand-data.json"
 MAPS_TAGS_JSON = DATA_DIR / "mapsTags.json"
+UPDATE_STATUS_JSON = DATA_DIR / "update-status.json"
 
 import os
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "")
@@ -64,6 +65,9 @@ Respond with ONLY a single JSON object shaped exactly like this (no markdown fen
 }}
 
 Any field that does not apply must be JSON null, never an empty string or a guess.
+If the map includes multiple cities or countries, leave the relevant tag (city and/or
+country) empty - null - rather than guessing one. However, if the map covers the entire
+world, set the "continent" tag to "world" ("עולם" in hebrewTags) instead of null.
 """
 
 
@@ -193,6 +197,12 @@ def main():
     if not GEMINI_API_KEY:
         print("[tags] GEMINI_API_KEY is not set, aborting", file=sys.stderr)
         sys.exit(1)
+
+    status = load_json(UPDATE_STATUS_JSON, {})
+    if status.get("osmand-in-progress"):
+        print("[tags] OsmAnd import is still catching up on a backlog "
+              "(osmand-in-progress=true) - doing nothing this run.")
+        sys.exit(0)
 
     osmand_files = load_json(OSMAND_DATA_JSON, [])
     existing_tags = load_json(MAPS_TAGS_JSON, [])

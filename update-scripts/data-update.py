@@ -2,7 +2,7 @@
 """
 data-update.py
 ==============
-Runs daily (00:00) or manually. Two independent jobs:
+Runs every 3 minutes (or manually). Two independent jobs:
 
 1. OsmAnd  - compares https://download.osmand.net/list.php against data/osmand-data.json.
              For every *.obf.zip that is new or was updated after our stored date:
@@ -14,9 +14,28 @@ Runs daily (00:00) or manually. Two independent jobs:
                data/moovitdos-link.json. The actual zip is never copied into this repo;
                only the absolute URL is stored (the app downloads it directly from GitHub).
 
+--- GitHub size safety -----------------------------------------------------------
+GitHub hard-blocks any single pushed file over 100MB, and pushing very large amounts
+of data in one go risks slow/failing pushes. To stay at 0% error on this, every file
+we might commit is checked against safety margins well under GitHub's actual limits:
+
+  MAX_OBF_FILE_SIZE_BYTES - a single extracted .obf file must be under this to ever
+                             be committed. Files over this are recorded as permanently
+                             "oversized" and are never retried automatically.
+  MAX_RUN_BUDGET_BYTES    - the total bytes of .obf files committed in a single run is
+                             capped here. Anything that doesn't fit this run's budget is
+                             recorded as "pending" and is automatically retried on the
+                             next run (every 3 minutes) - it is not an error, just backlog.
+  MAX_ZIP_DOWNLOAD_BYTES  - sanity cap while streaming a zip download, so we never hold
+                             an unbounded amount of data on disk while probing its size.
+
+Because this script runs every 3 minutes, large backlogs drain automatically over
+consecutive runs without ever risking a push that exceeds GitHub's limits.
+-----------------------------------------------------------------------------------
+
 Both jobs always finish by writing data/update-status.json, which records whether each
-job succeeded on this run and when the attempt was made. A failure in one job never stops
-the other job from running.
+job succeeded on this run, whether OsmAnd import is still catching up on a backlog, and
+when the attempt was made. A failure in one job never stops the other job from running.
 
 Date format used everywhere in this project: ISO-8601 "YYYY-MM-DD" (date only, since none
 of the upstream sources provide finer resolution than a day).
@@ -26,6 +45,7 @@ import io
 import json
 import re
 import sys
+import tempfile
 import zipfile
 from datetime import datetime, timezone
 from pathlib import Path
@@ -46,7 +66,6 @@ MOOVITDOS_LINK_JSON = DATA_DIR / "moovitdos-link.json"
 UPDATE_STATUS_JSON = DATA_DIR / "update-status.json"
 
 OSMAND_LIST_URL = "https://download.osmand.net/list.php"
-OSMAND_DOWNLOAD_BASE = "https://download.osmand.net/download"
 
 # Moovitdos: the GitHub Pages site itself renders its download link with client-side
 # JS, and the source repo appears to be private, so we can't rely on the public GitHub
@@ -62,8 +81,15 @@ MOOVITDOS_RELEASES_API = "https://api.github.com/repos/moovitdos/moovidos/releas
 
 REQUEST_TIMEOUT = 60
 USER_AGENT = "offline-maps-hub-bot/1.0 (+https://github.com/)"
-
 HEADERS = {"User-Agent": USER_AGENT}
+
+# --- GitHub size safety margins (see module docstring) ---
+# GitHub's hard per-file block is 100MB; we stay comfortably under it.
+MAX_OBF_FILE_SIZE_BYTES = 90 * 1024 * 1024        # 90 MB per committed .obf file
+# Keep every push small and fast even though this runs every 3 minutes.
+MAX_RUN_BUDGET_BYTES = 300 * 1024 * 1024          # 300 MB of .obf data committed per run
+# Sanity cap while streaming a zip to disk, before we even know the uncompressed size.
+MAX_ZIP_DOWNLOAD_BYTES = 250 * 1024 * 1024        # 250 MB compressed
 
 
 def now_iso() -> str:
@@ -87,6 +113,10 @@ def save_json(path: Path, data) -> None:
         f.write("\n")
 
 
+def human(num_bytes: int) -> str:
+    return f"{num_bytes / (1024 * 1024):.1f}MB"
+
+
 # ---------------------------------------------------------------------------
 # OsmAnd
 # ---------------------------------------------------------------------------
@@ -108,8 +138,7 @@ def fetch_osmand_list():
     soup = BeautifulSoup(resp.text, "html.parser")
 
     entries = []
-    rows = soup.find_all("tr")
-    for row in rows:
+    for row in soup.find_all("tr"):
         cells = row.find_all("td")
         if not cells:
             continue
@@ -121,10 +150,7 @@ def fetch_osmand_list():
             continue  # Only OBF map files are ever downloaded or recorded.
 
         href = link["href"]
-        if href.startswith("http"):
-            zip_url = href
-        else:
-            zip_url = f"https://download.osmand.net/{href.lstrip('/')}"
+        zip_url = href if href.startswith("http") else f"https://download.osmand.net/{href.lstrip('/')}"
 
         updated_date = None
         if len(cells) > 1:
@@ -139,64 +165,141 @@ def fetch_osmand_list():
     return entries
 
 
-def extract_obf_name_from_zip(zip_bytes: bytes):
-    """Returns (obf_filename, obf_bytes) for the first .obf file found inside the zip."""
-    with zipfile.ZipFile(io.BytesIO(zip_bytes)) as zf:
-        for name in zf.namelist():
-            if name.lower().endswith(".obf"):
-                return Path(name).name, zf.read(name)
+def download_zip_to_temp(url: str) -> Path:
+    """Streams the zip to a temp file on disk, aborting if it exceeds the sanity cap.
+    Never buffers the whole file in memory."""
+    tmp = tempfile.NamedTemporaryFile(prefix="osmand_", suffix=".zip", delete=False)
+    downloaded = 0
+    try:
+        with requests.get(url, headers=HEADERS, timeout=REQUEST_TIMEOUT, stream=True) as resp:
+            resp.raise_for_status()
+            for chunk in resp.iter_content(chunk_size=1024 * 1024):
+                if not chunk:
+                    continue
+                downloaded += len(chunk)
+                if downloaded > MAX_ZIP_DOWNLOAD_BYTES:
+                    raise ValueError(
+                        f"zip exceeds sanity cap of {human(MAX_ZIP_DOWNLOAD_BYTES)} while downloading"
+                    )
+                tmp.write(chunk)
+    except Exception:
+        tmp.close()
+        Path(tmp.name).unlink(missing_ok=True)
+        raise
+    tmp.close()
+    return Path(tmp.name)
+
+
+def find_obf_entry(zip_path: Path):
+    """Returns (obf_name, ZipInfo) for the first .obf entry in the zip, or (None, None)."""
+    with zipfile.ZipFile(zip_path) as zf:
+        for info in zf.infolist():
+            if info.filename.lower().endswith(".obf"):
+                return Path(info.filename).name, info
     return None, None
 
 
-def update_osmand() -> bool:
-    """Returns True on success (even if nothing changed), False on failure."""
+def extract_obf(zip_path: Path, obf_name: str, zip_info) -> Path:
+    dest = FILES_DIR / obf_name
+    with zipfile.ZipFile(zip_path) as zf:
+        with zf.open(zip_info) as src, dest.open("wb") as out:
+            while True:
+                chunk = src.read(1024 * 1024)
+                if not chunk:
+                    break
+                out.write(chunk)
+    return dest
+
+
+def update_osmand():
+    """Returns dict with keys: ok, in_progress, pending_files, oversized_files."""
     try:
         remote_entries = fetch_osmand_list()
     except Exception as exc:  # network / parsing failure
         print(f"[osmand] failed to fetch/parse list.php: {exc}", file=sys.stderr)
-        return False
+        return {"ok": False, "in_progress": False, "pending_files": [], "oversized_files": []}
 
     stored = load_json(OSMAND_DATA_JSON, [])
     stored_by_name = {item["fileName"]: item for item in stored}
 
-    had_error = False
-    FILES_DIR.mkdir(parents=True, exist_ok=True)
+    # Preserve previously known oversized files (they never get retried automatically;
+    # they only leave this list if list.php stops offering them, or the size cap is raised
+    # and a future manual run succeeds).
+    previous_status = load_json(UPDATE_STATUS_JSON, {})
+    oversized_files = set(previous_status.get("osmand-oversized-files", []))
 
+    # Build the list of candidates that need importing (new, or updated since we last saw them).
+    candidates = []
     for entry in remote_entries:
         zip_name = entry["zip_name"]
-        # The extracted .obf filename is the zip name without the trailing .zip
-        # (this matches OsmAnd's own naming convention: X.obf.zip contains X.obf).
         expected_obf_name = zip_name[:-4] if zip_name.lower().endswith(".zip") else zip_name
+
+        if expected_obf_name in oversized_files:
+            continue  # known to be too large; don't keep re-downloading it every 3 minutes
 
         existing = stored_by_name.get(expected_obf_name)
         is_new = existing is None
         is_updated = (not is_new) and entry["updatedDate"] > existing.get("updatedDate", "")
+        if is_new or is_updated:
+            candidates.append({**entry, "expected_obf_name": expected_obf_name})
 
-        if not (is_new or is_updated):
-            continue
+    had_error = False
+    pending_files = []
+    budget_used = 0
+    FILES_DIR.mkdir(parents=True, exist_ok=True)
+
+    for entry in candidates:
+        zip_name = entry["zip_name"]
+        expected_obf_name = entry["expected_obf_name"]
+        tmp_zip = None
 
         try:
-            resp = requests.get(entry["zip_url"], headers=HEADERS, timeout=REQUEST_TIMEOUT)
-            resp.raise_for_status()
-            obf_name, obf_bytes = extract_obf_name_from_zip(resp.content)
+            tmp_zip = download_zip_to_temp(entry["zip_url"])
+            obf_name, zip_info = find_obf_entry(tmp_zip)
+
             if obf_name is None:
                 print(f"[osmand] no .obf file found inside {zip_name}, skipping", file=sys.stderr)
                 continue
 
-            (FILES_DIR / obf_name).write_bytes(obf_bytes)
+            obf_size = zip_info.file_size  # uncompressed size = actual size once committed
 
-            stored_by_name[obf_name] = {
-                "fileName": obf_name,
-                "updatedDate": entry["updatedDate"],
-            }
-            print(f"[osmand] updated {obf_name} ({entry['updatedDate']})")
+            if obf_size > MAX_OBF_FILE_SIZE_BYTES:
+                oversized_files.add(obf_name)
+                print(f"[osmand] {obf_name} is {human(obf_size)}, over the "
+                      f"{human(MAX_OBF_FILE_SIZE_BYTES)} safety margin - will not be "
+                      f"imported automatically", file=sys.stderr)
+                continue
+
+            if budget_used + obf_size > MAX_RUN_BUDGET_BYTES:
+                # Doesn't fit in what's left of this run's push budget - leave it for the
+                # next run (in 3 minutes) rather than risk a very large push right now.
+                pending_files.append(obf_name)
+                continue
+
+            extract_obf(tmp_zip, obf_name, zip_info)
+            budget_used += obf_size
+            stored_by_name[obf_name] = {"fileName": obf_name, "updatedDate": entry["updatedDate"]}
+            print(f"[osmand] updated {obf_name} ({human(obf_size)}, {entry['updatedDate']})")
+
         except Exception as exc:
             had_error = True
             print(f"[osmand] failed to process {zip_name}: {exc}", file=sys.stderr)
-            continue
+        finally:
+            if tmp_zip is not None:
+                Path(tmp_zip).unlink(missing_ok=True)
 
     save_json(OSMAND_DATA_JSON, list(stored_by_name.values()))
-    return not had_error
+
+    print(f"[osmand] this run committed {human(budget_used)} "
+          f"({len(pending_files)} file(s) deferred to next run, "
+          f"{len(oversized_files)} file(s) permanently oversized)")
+
+    return {
+        "ok": not had_error,
+        "in_progress": len(pending_files) > 0,
+        "pending_files": pending_files,
+        "oversized_files": sorted(oversized_files),
+    }
 
 
 # ---------------------------------------------------------------------------
@@ -213,9 +316,10 @@ def find_moovitdos_version_from_page() -> str:
     matches = VERSION_RE.findall(resp.text)
     if not matches:
         raise ValueError("no version string found on Moovitdos page")
-    # Pick the highest version present on the page (handles changelog history too).
+
     def version_key(v):
         return tuple(int(part) for part in v.split("."))
+
     matches.sort(key=version_key)
     return matches[-1]
 
@@ -247,8 +351,7 @@ def update_moovitdos() -> bool:
     stored = load_json(MOOVITDOS_LINK_JSON, {"path": None, "updatedDate": None})
 
     if stored.get("path") != new_url:
-        stored = {"path": new_url, "updatedDate": now_iso()}
-        save_json(MOOVITDOS_LINK_JSON, stored)
+        save_json(MOOVITDOS_LINK_JSON, {"path": new_url, "updatedDate": now_iso()})
         print(f"[moovitdos] updated link -> {new_url}")
     else:
         print("[moovitdos] link unchanged")
@@ -261,16 +364,20 @@ def update_moovitdos() -> bool:
 # ---------------------------------------------------------------------------
 
 def main():
-    osmand_ok = update_osmand()
+    osmand_result = update_osmand()
     moovitdos_ok = update_moovitdos()
 
     save_json(UPDATE_STATUS_JSON, {
-        "osmand-status": osmand_ok,
+        "osmand-status": osmand_result["ok"],
         "moovitdos-status": moovitdos_ok,
+        "osmand-in-progress": osmand_result["in_progress"],
+        "osmand-pending-files": osmand_result["pending_files"],
+        "osmand-oversized-files": osmand_result["oversized_files"],
         "update-date": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
     })
 
-    print(f"[done] osmand={'ok' if osmand_ok else 'FAILED'} "
+    print(f"[done] osmand={'ok' if osmand_result['ok'] else 'FAILED'} "
+          f"(in_progress={osmand_result['in_progress']}) "
           f"moovitdos={'ok' if moovitdos_ok else 'FAILED'}")
 
 

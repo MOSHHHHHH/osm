@@ -1,5 +1,8 @@
 {
   "osmand-status": true,
   "moovitdos-status": true,
+  "osmand-in-progress": false,
+  "osmand-pending-files": [],
+  "osmand-oversized-files": [],
   "update-date": null
 }
