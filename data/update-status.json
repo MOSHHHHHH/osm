@@ -3,13 +3,7 @@
   "moovitdos-status": true,
   "osmand-in-progress": true,
   "osmand-pending-files": [
-    "Canada_ontario_northamerica_2.obf",
-    "Canada_ontario_northwestern_northamerica_2.obf",
-    "Canada_ontario_timmins_northamerica_2.obf",
     "Canada_ontario_toronto_northamerica_2.obf",
-    "Canada_ontario_wawa_northamerica_2.obf",
-    "Canada_quebec_abitibi-temiscamingue_northamerica_2.obf",
-    "Canada_quebec_capitale-nationale_northamerica_2.obf",
     "Canada_quebec_centre-du-quebec_northamerica_2.obf",
     "Canada_quebec_chaudiere-appalaches_northamerica_2.obf",
     "Canada_quebec_cote-nord_northamerica_2.obf",
@@ -24,6 +18,7 @@
     "Canada_quebec_outaouais_northamerica_2.obf",
     "Canada_quebec_saguenay-lac-saint-jean_northamerica_2.obf",
     "Canada_saskatchewan_northamerica_2.obf",
+    "Canada_quebec_northamerica_2.obf",
     "Canada_yukon_northamerica_2.obf",
     "Cape-verde_africa_2.obf",
     "Carribean-archipelago-all_centralamerica_2.obf",
@@ -60,7 +55,6 @@
     "China_henan_asia_2.obf",
     "China_hubei_asia_2.obf",
     "China_hunan_asia_2.obf",
-    "Canada_quebec_northamerica_2.obf",
     "China_jiangsu_asia_2.obf",
     "China_jiangxi_asia_2.obf",
     "China_jilin_asia_2.obf",
@@ -944,5 +938,5 @@
     "Zimbabwe_africa_2.obf"
   ],
   "osmand-oversized-files": [],
-  "update-date": "2026-07-28T22:47:54Z"
+  "update-date": "2026-07-28T23:48:53Z"
 }

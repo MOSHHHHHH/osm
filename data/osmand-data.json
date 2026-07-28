@@ -818,5 +818,35 @@
     "fileName": "Canada_quebec_bas-saint-laurent_northamerica_2.obf",
     "updatedDate": "2026-07-01",
     "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Canada_quebec_bas-saint-laurent_northamerica_2.obf"
+  },
+  {
+    "fileName": "Canada_ontario_northamerica_2.obf",
+    "updatedDate": "2026-06-01",
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Canada_ontario_northamerica_2.obf"
+  },
+  {
+    "fileName": "Canada_ontario_northwestern_northamerica_2.obf",
+    "updatedDate": "2026-07-01",
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Canada_ontario_northwestern_northamerica_2.obf"
+  },
+  {
+    "fileName": "Canada_ontario_timmins_northamerica_2.obf",
+    "updatedDate": "2026-07-01",
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Canada_ontario_timmins_northamerica_2.obf"
+  },
+  {
+    "fileName": "Canada_ontario_wawa_northamerica_2.obf",
+    "updatedDate": "2026-07-01",
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Canada_ontario_wawa_northamerica_2.obf"
+  },
+  {
+    "fileName": "Canada_quebec_abitibi-temiscamingue_northamerica_2.obf",
+    "updatedDate": "2026-07-01",
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Canada_quebec_abitibi-temiscamingue_northamerica_2.obf"
+  },
+  {
+    "fileName": "Canada_quebec_capitale-nationale_northamerica_2.obf",
+    "updatedDate": "2026-07-01",
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Canada_quebec_capitale-nationale_northamerica_2.obf"
   }
 ]
