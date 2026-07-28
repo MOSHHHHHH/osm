@@ -7,7 +7,7 @@ on:
     # large backlog of new/updated maps drains automatically over consecutive runs.
     # Note: GitHub may delay very frequent schedules under high platform load - this is
     # expected and harmless here, since the next run just picks up where the last left off.
-    - cron: "*/3 * * * *"
+    - cron: "*/7 * * * *"
   workflow_dispatch: {}
 
 permissions:
