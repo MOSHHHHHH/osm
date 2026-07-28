@@ -50,6 +50,7 @@ import os
 import re
 import sys
 import tempfile
+import time
 import zipfile
 from datetime import datetime, timezone
 from pathlib import Path
@@ -99,6 +100,14 @@ GH_REPO = os.environ.get("GITHUB_REPOSITORY", "")  # "owner/repo", set automatic
 MAX_OBF_FILE_SIZE_BYTES = 1900 * 1024 * 1024      # ~1.9GB, margin under GitHub's ~2GB per-asset cap
 MAX_RUN_DOWNLOAD_BUDGET_BYTES = 2000 * 1024 * 1024  # bounds one run's network/runtime, not a git limit
 MAX_ZIP_DOWNLOAD_BYTES = 1200 * 1024 * 1024       # sanity cap while streaming a zip to disk
+
+# The GitHub Actions job itself is hard-cancelled at `timeout-minutes: 10` (see the
+# workflow file) - if that fires mid-run, EVERY step including "commit and push" is
+# skipped, so any progress not yet saved to data/osmand-data.json is lost, and the
+# next run wastes time re-uploading files it already uploaded. To avoid that, the
+# script tracks its own wall-clock budget and stops itself well before the job
+# timeout, so it always exits normally and the commit step always runs.
+MAX_RUN_SECONDS = 8 * 60  # 8 minutes, leaving a safety margin under the 10-minute job timeout
 
 
 def now_iso() -> str:
@@ -354,8 +363,14 @@ def update_osmand():
     had_error = False
     pending_files = []
     budget_used = 0
+    start_time = time.monotonic()
+    stopped_on_deadline = False
 
     for entry in candidates:
+        if time.monotonic() - start_time > MAX_RUN_SECONDS:
+            stopped_on_deadline = True
+            break  # everything from here on is deferred to the next run
+
         zip_name = entry["zip_name"]
         tmp_zip = None
         tmp_obf = None
@@ -379,7 +394,7 @@ def update_osmand():
 
             if budget_used + obf_size > MAX_RUN_DOWNLOAD_BUDGET_BYTES:
                 # Doesn't fit in what's left of this run's network/runtime budget - leave
-                # it for the next run (in 3 minutes) rather than making this run too long.
+                # it for the next run rather than making this run too long.
                 pending_files.append(obf_name)
                 continue
 
@@ -401,6 +416,11 @@ def update_osmand():
             }
             print(f"[osmand] uploaded {obf_name} ({human(obf_size)}, {entry['updatedDate']})")
 
+            # Save after every successful upload, not just at the end - so if this run
+            # gets killed by something outside our control (runner failure, etc.), the
+            # next run resumes from here instead of redoing work or losing progress.
+            save_json(OSMAND_DATA_JSON, list(stored_by_name.values()))
+
         except Exception as exc:
             had_error = True
             print(f"[osmand] failed to process {zip_name}: {exc}", file=sys.stderr)
@@ -409,6 +429,17 @@ def update_osmand():
                 Path(tmp_zip).unlink(missing_ok=True)
             if tmp_obf is not None:
                 Path(tmp_obf).unlink(missing_ok=True)
+
+    if stopped_on_deadline:
+        # Everything we hadn't started processing yet when the deadline hit is deferred
+        # to the next run - this is what lets the script always exit normally well
+        # before the job's timeout-minutes, instead of being hard-cancelled mid-file.
+        remaining = [c["expected_obf_name"] for c in candidates
+                     if c["expected_obf_name"] not in stored_by_name
+                     and c["expected_obf_name"] not in oversized_files]
+        pending_files.extend(n for n in remaining if n not in pending_files)
+        print(f"[osmand] stopped at the {MAX_RUN_SECONDS // 60}-minute internal time budget "
+              f"with {len(pending_files)} file(s) left for the next run")
 
     save_json(OSMAND_DATA_JSON, list(stored_by_name.values()))
 
