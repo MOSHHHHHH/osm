@@ -283,5 +283,15 @@
     "fileName": "Brazil_amapa_southamerica_2.obf",
     "updatedDate": "2026-07-01",
     "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Brazil_amapa_southamerica_2.obf"
+  },
+  {
+    "fileName": "Austria_europe_2.obf",
+    "updatedDate": "2026-06-01",
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Austria_europe_2.obf"
+  },
+  {
+    "fileName": "Azerbaijan_asia_2.obf",
+    "updatedDate": "2026-07-01",
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Azerbaijan_asia_2.obf"
   }
 ]
