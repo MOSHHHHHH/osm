@@ -3,21 +3,12 @@
   "moovitdos-status": true,
   "osmand-in-progress": true,
   "osmand-pending-files": [
-    "Canada_nunavut-se_northamerica_2.obf",
-    "Canada_nunavut-sw_northamerica_2.obf",
-    "Canada_ontario_kingston_northamerica_2.obf",
-    "Canada_ontario_london_northamerica_2.obf",
     "Canada_ontario_northamerica_2.obf",
     "Canada_ontario_northwestern_northamerica_2.obf",
-    "Canada_ontario_sault-ste-marie_northamerica_2.obf",
-    "Canada_ontario_sudbury_northamerica_2.obf",
-    "Canada_ontario_temiskaming-shores_northamerica_2.obf",
-    "Canada_ontario_thunder-bay_northamerica_2.obf",
     "Canada_ontario_timmins_northamerica_2.obf",
     "Canada_ontario_toronto_northamerica_2.obf",
     "Canada_ontario_wawa_northamerica_2.obf",
     "Canada_quebec_abitibi-temiscamingue_northamerica_2.obf",
-    "Canada_quebec_bas-saint-laurent_northamerica_2.obf",
     "Canada_quebec_capitale-nationale_northamerica_2.obf",
     "Canada_quebec_centre-du-quebec_northamerica_2.obf",
     "Canada_quebec_chaudiere-appalaches_northamerica_2.obf",
@@ -44,7 +35,6 @@
     "Chile_arica-y-parinacota_southamerica_2.obf",
     "Chile_atacama_southamerica_2.obf",
     "Chile_aysen-del-general-carlos-ibanez-del-campo_southamerica_2.obf",
-    "Canada_quebec_northamerica_2.obf",
     "Chile_biobio_southamerica_2.obf",
     "Chile_coquimbo_southamerica_2.obf",
     "Chile_libertador-bernardo-ohiggins_southamerica_2.obf",
@@ -70,6 +60,7 @@
     "China_henan_asia_2.obf",
     "China_hubei_asia_2.obf",
     "China_hunan_asia_2.obf",
+    "Canada_quebec_northamerica_2.obf",
     "China_jiangsu_asia_2.obf",
     "China_jiangxi_asia_2.obf",
     "China_jilin_asia_2.obf",
@@ -953,5 +944,5 @@
     "Zimbabwe_africa_2.obf"
   ],
   "osmand-oversized-files": [],
-  "update-date": "2026-07-28T21:42:26Z"
+  "update-date": "2026-07-28T22:47:54Z"
 }

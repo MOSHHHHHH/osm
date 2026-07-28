@@ -773,5 +773,50 @@
     "fileName": "Cayman-islands_centralamerica_2.obf",
     "updatedDate": "2026-07-01",
     "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Cayman-islands_centralamerica_2.obf"
+  },
+  {
+    "fileName": "Canada_nunavut-se_northamerica_2.obf",
+    "updatedDate": "2026-07-01",
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Canada_nunavut-se_northamerica_2.obf"
+  },
+  {
+    "fileName": "Canada_nunavut-sw_northamerica_2.obf",
+    "updatedDate": "2026-07-01",
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Canada_nunavut-sw_northamerica_2.obf"
+  },
+  {
+    "fileName": "Canada_ontario_kingston_northamerica_2.obf",
+    "updatedDate": "2026-07-01",
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Canada_ontario_kingston_northamerica_2.obf"
+  },
+  {
+    "fileName": "Canada_ontario_london_northamerica_2.obf",
+    "updatedDate": "2026-07-01",
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Canada_ontario_london_northamerica_2.obf"
+  },
+  {
+    "fileName": "Canada_ontario_sault-ste-marie_northamerica_2.obf",
+    "updatedDate": "2026-07-01",
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Canada_ontario_sault-ste-marie_northamerica_2.obf"
+  },
+  {
+    "fileName": "Canada_ontario_sudbury_northamerica_2.obf",
+    "updatedDate": "2026-07-01",
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Canada_ontario_sudbury_northamerica_2.obf"
+  },
+  {
+    "fileName": "Canada_ontario_temiskaming-shores_northamerica_2.obf",
+    "updatedDate": "2026-07-01",
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Canada_ontario_temiskaming-shores_northamerica_2.obf"
+  },
+  {
+    "fileName": "Canada_ontario_thunder-bay_northamerica_2.obf",
+    "updatedDate": "2026-07-01",
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Canada_ontario_thunder-bay_northamerica_2.obf"
+  },
+  {
+    "fileName": "Canada_quebec_bas-saint-laurent_northamerica_2.obf",
+    "updatedDate": "2026-07-01",
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Canada_quebec_bas-saint-laurent_northamerica_2.obf"
   }
 ]
