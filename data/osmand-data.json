@@ -373,5 +373,20 @@
     "fileName": "British-indian-ocean-territory_asia_2.obf",
     "updatedDate": "2026-07-01",
     "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/British-indian-ocean-territory_asia_2.obf"
+  },
+  {
+    "fileName": "Belgium_europe_2.obf",
+    "updatedDate": "2026-06-01",
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Belgium_europe_2.obf"
+  },
+  {
+    "fileName": "Bolivia_southamerica_2.obf",
+    "updatedDate": "2026-07-01",
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Bolivia_southamerica_2.obf"
+  },
+  {
+    "fileName": "Brazil_alagoas_southamerica_2.obf",
+    "updatedDate": "2026-07-01",
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Brazil_alagoas_southamerica_2.obf"
   }
 ]
