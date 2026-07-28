@@ -9,6 +9,10 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500;700;900&family=Heebo:wght@300;400;500;700&family=Space+Mono&display=swap" rel="stylesheet">
+<!-- Twemoji: Windows' default emoji font doesn't render flag emoji as flags (falls back to
+     showing the raw two-letter country code) - Twemoji replaces every emoji character with a
+     consistent image so flags (and all other emoji) look the same on every OS/browser. -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/twemoji.min.js" crossorigin="anonymous"></script>
 <style>
   :root{
     --ink:#221D1A;
@@ -121,7 +125,11 @@
   }
   @keyframes pop{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:translateY(0)}}
   .result-item .label{display:flex;align-items:center;gap:10px;font-size:.92rem}
+  .result-item .label-text{display:flex;flex-direction:column;gap:1px;text-align:right}
+  .result-item .tags-line{color:var(--ink)}
+  .result-item .file-line{font-size:.72rem;color:var(--muted);font-family:'Space Mono',monospace}
   .result-item .emoji{font-size:1.3rem}
+  img.twemoji{height:1.15em;width:1.15em;margin:0 .06em 0 .1em;vertical-align:-0.2em}
   .result-item button{
     border:none;background:var(--orange);color:#fff;border-radius:8px;padding:8px 14px;
     font-family:'Heebo',sans-serif;font-weight:500;cursor:pointer;font-size:.85rem;

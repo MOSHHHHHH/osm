@@ -285,10 +285,16 @@ function matchesQuery(fileName, tags, query) {
   return fields.some((f) => f && f.toLowerCase().includes(q));
 }
 
-function renderResultLabel(fileName, tags) {
-  if (!tags) return fileName;
-  const parts = [tags.hebrewTags?.country, tags.hebrewTags?.city].filter(Boolean);
-  return parts.length ? parts.join(" · ") : fileName;
+function stripObfExtension(fileName) {
+  return fileName.replace(/\.obf$/i, "");
+}
+
+function renderResultTagsLine(tags) {
+  if (!tags) return "";
+  const parts = [tags.hebrewTags?.continent, tags.hebrewTags?.country, tags.hebrewTags?.city].filter(
+    Boolean
+  );
+  return parts.join(" · ");
 }
 
 function renderResults(query) {
@@ -316,12 +322,19 @@ function renderResults(query) {
   matches.slice(0, 60).forEach((entry) => {
     const tags = tagsFor(entry.fileName);
     const emoji = tags?.emoji || "🗂️";
-    const label = renderResultLabel(entry.fileName, tags);
+    const tagsLine = renderResultTagsLine(tags);
+    const fileLine = stripObfExtension(entry.fileName);
 
     const row = document.createElement("div");
     row.className = "result-item";
     row.innerHTML = `
-      <span class="label"><span class="emoji">${emoji}</span> ${label}</span>
+      <span class="label">
+        <span class="emoji">${emoji}</span>
+        <span class="label-text">
+          ${tagsLine ? `<span class="tags-line">${tagsLine}</span>` : ""}
+          <span class="file-line">${fileLine}</span>
+        </span>
+      </span>
       <button type="button">הורדה</button>
     `;
     row.querySelector("button").addEventListener("click", () => {
@@ -329,6 +342,9 @@ function renderResults(query) {
     });
     resultsEl.appendChild(row);
   });
+
+  // Re-parse just the results list (Twemoji only needs to touch newly inserted emoji).
+  if (window.twemoji) twemoji.parse(resultsEl, { className: "twemoji" });
 }
 
 function setupSearch() {
@@ -346,4 +362,5 @@ document.addEventListener("DOMContentLoaded", async () => {
   setupBigButtons();
   setupSearch();
   await loadAllData();
+  if (window.twemoji) twemoji.parse(document.body, { className: "twemoji" });
 });

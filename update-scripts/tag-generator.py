@@ -68,6 +68,32 @@ Any field that does not apply must be JSON null, never an empty string or a gues
 If the map includes multiple cities or countries, leave the relevant tag (city and/or
 country) empty - null - rather than guessing one. However, if the map covers the entire
 world, set the "continent" tag to "world" ("עולם" in hebrewTags) instead of null.
+
+CONTINENT: choose the englishTags.continent value from EXACTLY this fixed list (and use the
+matching hebrewTags.continent value shown beside it) - never invent or paraphrase a different
+wording, even if it seems more natural:
+  Africa / אפריקה
+  Asia / אסיה
+  Europe / אירופה
+  North America / צפון אמריקה
+  South America / דרום אמריקה
+  Australia and Oceania / אוסטרליה ואוקיאניה
+  Antarctica / אנטארקטיקה
+  World / עולם (only for a file covering the entire world - see above)
+
+TERRITORIES AND DEPENDENCIES: if the file covers an external territory, dependency, or
+uninhabited island group that belongs to a sovereign country (for example Ashmore and Cartier
+Islands, or the Coral Sea Islands, which both belong to Australia), set "country" to that
+sovereign country's own name (e.g. "Australia" / "אוסטרליה"), not the territory's own name.
+Only set "city" if the file is scoped to one specific city/locality within that country.
+
+EMOJI: the emoji must always be the real, standard flag emoji of the ISO 3166-1 country in
+the "country" field (matching its two-letter country code) - never a generic, decorative, or
+thematic emoji (no palm trees, animals, landmarks, or generic map/island icons), even for
+small territories or islands. If "country" is null and the file is a whole continent (e.g.
+Antarctica) or the whole world, use that region's own standard flag/globe emoji instead
+(Antarctica -> the Antarctica flag emoji; World -> 🌐). Examples of correct emoji: Argentina
+-> 🇦🇷, Brazil -> 🇧🇷, an Australian external territory -> 🇦🇺 (never a palm tree or other icon).
 """
 
 
