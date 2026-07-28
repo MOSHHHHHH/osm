@@ -3,15 +3,7 @@
   "moovitdos-status": true,
   "osmand-in-progress": true,
   "osmand-pending-files": [
-    "Belgium_wallonia_europe_2.obf",
-    "Bosnia-herzegovina_europe_2.obf",
-    "Botswana_africa_2.obf",
-    "Brazil_amazonas_southamerica_2.obf",
-    "Brazil_bahia_southamerica_2.obf",
-    "Brazil_ceara_southamerica_2.obf",
-    "Brazil_distrito-federal_southamerica_2.obf",
     "Brazil_espirito-santo_southamerica_2.obf",
-    "Brazil_goias_southamerica_2.obf",
     "Brazil_maranhao_southamerica_2.obf",
     "Brazil_mato-grosso-do-sul_southamerica_2.obf",
     "Brazil_mato-grosso_southamerica_2.obf",
@@ -24,8 +16,6 @@
     "Brazil_rio-de-janeiro_southamerica_2.obf",
     "Brazil_rio-grande-do-norte_southamerica_2.obf",
     "Brazil_rio-grande-do-sul_southamerica_2.obf",
-    "Brazil_rondonia_southamerica_2.obf",
-    "Brazil_roraima_southamerica_2.obf",
     "Brazil_santa-catarina_southamerica_2.obf",
     "Brazil_sao-paulo_southamerica_2.obf",
     "Brazil_sergipe_southamerica_2.obf",
@@ -1030,5 +1020,5 @@
     "Zimbabwe_africa_2.obf"
   ],
   "osmand-oversized-files": [],
-  "update-date": "2026-07-28T18:32:46Z"
+  "update-date": "2026-07-28T18:42:38Z"
 }
