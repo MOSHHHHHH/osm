@@ -3,24 +3,15 @@
   "moovitdos-status": true,
   "osmand-in-progress": true,
   "osmand-pending-files": [
-    "Australia-oceania_new-south-wales_australia-oceania_2.obf",
-    "Australia-oceania_queensland_australia-oceania_2.obf",
-    "Australia-oceania_south-australia_australia-oceania_2.obf",
-    "Australia-oceania_tasmania_australia-oceania_2.obf",
     "Australia-oceania_victoria_australia-oceania_2.obf",
-    "Australia-oceania_western-australia_australia-oceania_2.obf",
-    "Austria_burgenland_europe_2.obf",
-    "Austria_carinthia_europe_2.obf",
     "Austria_europe_2.obf",
     "Austria_lower-austria_europe_2.obf",
     "Austria_salzburg_europe_2.obf",
     "Austria_styria_europe_2.obf",
     "Austria_tyrol_europe_2.obf",
     "Austria_upper-austria_europe_2.obf",
-    "Austria_vorarlberg_europe_2.obf",
     "Azerbaijan_asia_2.obf",
     "Azores_europe_2.obf",
-    "Bahrain_asia_2.obf",
     "Bangladesh_asia_2.obf",
     "Barbados_centralamerica_2.obf",
     "Belarus_brest_europe_2.obf",
@@ -35,7 +26,6 @@
     "Belgium_wallonia_europe_2.obf",
     "Belize_centralamerica_2.obf",
     "Benin_africa_2.obf",
-    "Bermuda_northamerica_2.obf",
     "Bhutan_asia_2.obf",
     "Bolivia_southamerica_2.obf",
     "Bosnia-herzegovina_europe_2.obf",
@@ -1068,5 +1058,5 @@
     "Zimbabwe_africa_2.obf"
   ],
   "osmand-oversized-files": [],
-  "update-date": "2026-07-28T12:16:22Z"
+  "update-date": "2026-07-28T12:26:18Z"
 }
