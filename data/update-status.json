@@ -1,7 +1,7 @@
 {
   "osmand-status": true,
   "moovitdos-status": true,
-  "osmand-in-progress": true,
+  "osmand-in-progress": false,
   "osmand-pending-files": [
     "Canada_british-columbia_bulkley-nechako_northamerica_2.obf",
     "Canada_british-columbia_capital-regional_northamerica_2.obf",
