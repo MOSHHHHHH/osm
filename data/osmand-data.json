@@ -348,5 +348,30 @@
     "fileName": "Bhutan_asia_2.obf",
     "updatedDate": "2026-07-01",
     "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Bhutan_asia_2.obf"
+  },
+  {
+    "fileName": "Belarus_europe_2.obf",
+    "updatedDate": "2026-06-01",
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Belarus_europe_2.obf"
+  },
+  {
+    "fileName": "Belgium_flanders_europe_2.obf",
+    "updatedDate": "2026-07-01",
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Belgium_flanders_europe_2.obf"
+  },
+  {
+    "fileName": "Benin_africa_2.obf",
+    "updatedDate": "2026-07-01",
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Benin_africa_2.obf"
+  },
+  {
+    "fileName": "Brazil_acre_southamerica_2.obf",
+    "updatedDate": "2026-07-01",
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Brazil_acre_southamerica_2.obf"
+  },
+  {
+    "fileName": "British-indian-ocean-territory_asia_2.obf",
+    "updatedDate": "2026-07-01",
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/British-indian-ocean-territory_asia_2.obf"
   }
 ]
