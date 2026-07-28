@@ -2,12 +2,12 @@ name: Data update (OsmAnd + Moovitdos)
 
 on:
   schedule:
-    # Every 3 minutes. Each run only downloads/uploads as many OsmAnd files as fit in a
+    # Every 20 minutes. Each run only downloads/uploads as many OsmAnd files as fit in a
     # bounded per-run budget (see MAX_RUN_DOWNLOAD_BUDGET_BYTES in data-update.py), so a
     # large backlog of new/updated maps drains automatically over consecutive runs.
     # Note: GitHub may delay very frequent schedules under high platform load - this is
     # expected and harmless here, since the next run just picks up where the last left off.
-    - cron: "*/7 * * * *"
+    - cron: "*/20 * * * *"
   workflow_dispatch: {}
 
 permissions:
