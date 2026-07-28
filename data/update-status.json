@@ -3,22 +3,12 @@
   "moovitdos-status": true,
   "osmand-in-progress": true,
   "osmand-pending-files": [
-    "Brazil_espirito-santo_southamerica_2.obf",
-    "Brazil_maranhao_southamerica_2.obf",
-    "Brazil_mato-grosso-do-sul_southamerica_2.obf",
-    "Brazil_mato-grosso_southamerica_2.obf",
-    "Brazil_minas-gerais_southamerica_2.obf",
-    "Brazil_para_southamerica_2.obf",
-    "Brazil_paraiba_southamerica_2.obf",
-    "Brazil_parana_southamerica_2.obf",
     "Brazil_pernambuco_southamerica_2.obf",
-    "Brazil_piaui_southamerica_2.obf",
     "Brazil_rio-de-janeiro_southamerica_2.obf",
     "Brazil_rio-grande-do-norte_southamerica_2.obf",
     "Brazil_rio-grande-do-sul_southamerica_2.obf",
     "Brazil_santa-catarina_southamerica_2.obf",
     "Brazil_sao-paulo_southamerica_2.obf",
-    "Brazil_sergipe_southamerica_2.obf",
     "Brazil_tocantins_southamerica_2.obf",
     "Brunei_asia_2.obf",
     "Bulgaria_europe_2.obf",
@@ -1020,5 +1010,5 @@
     "Zimbabwe_africa_2.obf"
   ],
   "osmand-oversized-files": [],
-  "update-date": "2026-07-28T18:42:38Z"
+  "update-date": "2026-07-28T18:51:40Z"
 }
