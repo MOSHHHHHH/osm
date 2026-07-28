@@ -1,1 +1,1458 @@
-[]
+[
+  {
+    "fileName": "Afghanistan_asia_2.obf",
+    "hebrewTags": {
+      "continent": "אסיה",
+      "country": "אפגניסטן",
+      "city": null
+    },
+    "englishTags": {
+      "continent": "Asia",
+      "country": "Afghanistan",
+      "city": null
+    },
+    "emoji": "🇦🇫"
+  },
+  {
+    "fileName": "Albania_europe_2.obf",
+    "hebrewTags": {
+      "continent": "אירופה",
+      "country": "אלבניה",
+      "city": null
+    },
+    "englishTags": {
+      "continent": "Europe",
+      "country": "Albania",
+      "city": null
+    },
+    "emoji": "🇦🇱"
+  },
+  {
+    "fileName": "Algeria_africa_2.obf",
+    "hebrewTags": {
+      "continent": "אפריקה",
+      "country": "אלג'יריה",
+      "city": null
+    },
+    "englishTags": {
+      "continent": "Africa",
+      "country": "Algeria",
+      "city": null
+    },
+    "emoji": "🇩🇿"
+  },
+  {
+    "fileName": "Andorra_europe_2.obf",
+    "hebrewTags": {
+      "continent": "אירופה",
+      "country": "אנדורה",
+      "city": null
+    },
+    "englishTags": {
+      "continent": "Europe",
+      "country": "Andorra",
+      "city": null
+    },
+    "emoji": "🇦🇩"
+  },
+  {
+    "fileName": "Angola_africa_2.obf",
+    "hebrewTags": {
+      "continent": "אפריקה",
+      "country": "אנגולה",
+      "city": null
+    },
+    "englishTags": {
+      "continent": "Africa",
+      "country": "Angola",
+      "city": null
+    },
+    "emoji": "🇦🇴"
+  },
+  {
+    "fileName": "Anguilla_centralamerica_2.obf",
+    "hebrewTags": {
+      "continent": "אמריקה הצפונית",
+      "country": "אנגווילה",
+      "city": null
+    },
+    "englishTags": {
+      "continent": "North America",
+      "country": "Anguilla",
+      "city": null
+    },
+    "emoji": "🇦🇮"
+  },
+  {
+    "fileName": "Antarctica_2.obf",
+    "hebrewTags": {
+      "continent": "אנטארקטיקה",
+      "country": null,
+      "city": null
+    },
+    "englishTags": {
+      "continent": "Antarctica",
+      "country": null,
+      "city": null
+    },
+    "emoji": "🇦🇶"
+  },
+  {
+    "fileName": "Antigua-and-barbuda_centralamerica_2.obf",
+    "hebrewTags": {
+      "continent": "אמריקה הצפונית",
+      "country": "אנטיגואה וברבודה",
+      "city": null
+    },
+    "englishTags": {
+      "continent": "North America",
+      "country": "Antigua and Barbuda",
+      "city": null
+    },
+    "emoji": "🇦🇬"
+  },
+  {
+    "fileName": "Argentina_buenos-aires_southamerica_2.obf",
+    "hebrewTags": {
+      "continent": "דרום אמריקה",
+      "country": "ארגנטינה",
+      "city": "בואנוס איירס"
+    },
+    "englishTags": {
+      "continent": "South America",
+      "country": "Argentina",
+      "city": "Buenos Aires"
+    },
+    "emoji": "🇦🇷"
+  },
+  {
+    "fileName": "Argentina_catamarca_southamerica_2.obf",
+    "hebrewTags": {
+      "continent": "דרום אמריקה",
+      "country": "ארגנטינה",
+      "city": "קטמרקה"
+    },
+    "englishTags": {
+      "continent": "South America",
+      "country": "Argentina",
+      "city": "Catamarca"
+    },
+    "emoji": "🇦🇷"
+  },
+  {
+    "fileName": "Argentina_chaco_southamerica_2.obf",
+    "hebrewTags": {
+      "continent": "דרום אמריקה",
+      "country": "ארגנטינה",
+      "city": null
+    },
+    "englishTags": {
+      "continent": "South America",
+      "country": "Argentina",
+      "city": null
+    },
+    "emoji": "🇦🇷"
+  },
+  {
+    "fileName": "Argentina_chubut_southamerica_2.obf",
+    "hebrewTags": {
+      "continent": "דרום אמריקה",
+      "country": "ארגנטינה",
+      "city": null
+    },
+    "englishTags": {
+      "continent": "South America",
+      "country": "Argentina",
+      "city": null
+    },
+    "emoji": "🇦🇷"
+  },
+  {
+    "fileName": "Argentina_cordoba_southamerica_2.obf",
+    "hebrewTags": {
+      "continent": "דרום אמריקה",
+      "country": "ארגנטינה",
+      "city": "קורדובה"
+    },
+    "englishTags": {
+      "continent": "South America",
+      "country": "Argentina",
+      "city": "Córdoba"
+    },
+    "emoji": "🇦🇷"
+  },
+  {
+    "fileName": "Argentina_corrientes_southamerica_2.obf",
+    "hebrewTags": {
+      "continent": "דרום אמריקה",
+      "country": "ארגנטינה",
+      "city": null
+    },
+    "englishTags": {
+      "continent": "South America",
+      "country": "Argentina",
+      "city": null
+    },
+    "emoji": "🇦🇷"
+  },
+  {
+    "fileName": "Argentina_entre-rios_southamerica_2.obf",
+    "hebrewTags": {
+      "continent": "דרום אמריקה",
+      "country": "ארגנטינה",
+      "city": null
+    },
+    "englishTags": {
+      "continent": "South America",
+      "country": "Argentina",
+      "city": null
+    },
+    "emoji": "🇦🇷"
+  },
+  {
+    "fileName": "Argentina_formosa_southamerica_2.obf",
+    "hebrewTags": {
+      "continent": "דרום אמריקה",
+      "country": "ארגנטינה",
+      "city": "פורמוסה"
+    },
+    "englishTags": {
+      "continent": "South America",
+      "country": "Argentina",
+      "city": "Formosa"
+    },
+    "emoji": "🇦🇷"
+  },
+  {
+    "fileName": "Argentina_jujuy_southamerica_2.obf",
+    "hebrewTags": {
+      "continent": "דרום אמריקה",
+      "country": "ארגנטינה",
+      "city": "חוחוי"
+    },
+    "englishTags": {
+      "continent": "South America",
+      "country": "Argentina",
+      "city": "Jujuy"
+    },
+    "emoji": "🇦🇷"
+  },
+  {
+    "fileName": "Argentina_la-pampa_southamerica_2.obf",
+    "hebrewTags": {
+      "continent": "דרום אמריקה",
+      "country": "ארגנטינה",
+      "city": null
+    },
+    "englishTags": {
+      "continent": "South America",
+      "country": "Argentina",
+      "city": null
+    },
+    "emoji": "🇦🇷"
+  },
+  {
+    "fileName": "Argentina_la-rioja_southamerica_2.obf",
+    "hebrewTags": {
+      "continent": "דרום אמריקה",
+      "country": "ארגנטינה",
+      "city": null
+    },
+    "englishTags": {
+      "continent": "South America",
+      "country": "Argentina",
+      "city": null
+    },
+    "emoji": "🇦🇷"
+  },
+  {
+    "fileName": "Argentina_mendoza_southamerica_2.obf",
+    "hebrewTags": {
+      "continent": "דרום אמריקה",
+      "country": "ארגנטינה",
+      "city": "מנדוסה"
+    },
+    "englishTags": {
+      "continent": "South America",
+      "country": "Argentina",
+      "city": "Mendoza"
+    },
+    "emoji": "🇦🇷"
+  },
+  {
+    "fileName": "Argentina_misiones_southamerica_2.obf",
+    "hebrewTags": {
+      "continent": "דרום אמריקה",
+      "country": "ארגנטינה",
+      "city": null
+    },
+    "englishTags": {
+      "continent": "South America",
+      "country": "Argentina",
+      "city": null
+    },
+    "emoji": "🇦🇷"
+  },
+  {
+    "fileName": "Australia-oceania_ashmore-and-cartier-islands_australia-oceania_2.obf",
+    "hebrewTags": {
+      "continent": "אוסטרלאנדיה",
+      "country": "אוסטרליה",
+      "city": null
+    },
+    "englishTags": {
+      "continent": "Australia and Oceania",
+      "country": "Australia",
+      "city": null
+    },
+    "emoji": "🏝️"
+  },
+  {
+    "fileName": "Australia-oceania_cocos-islands_australia-oceania_2.obf",
+    "hebrewTags": {
+      "continent": "אוקיאניה",
+      "country": "אוסטרליה",
+      "city": null
+    },
+    "englishTags": {
+      "continent": "Oceania",
+      "country": "Australia",
+      "city": null
+    },
+    "emoji": "🇦🇺"
+  },
+  {
+    "fileName": "Australia-oceania_coral-sea-islands_australia-oceania_2.obf",
+    "hebrewTags": {
+      "continent": "אוקיאניה",
+      "country": "איי הים התיכון",
+      "city": null
+    },
+    "englishTags": {
+      "continent": "Oceania",
+      "country": "Coral Sea Islands",
+      "city": null
+    },
+    "emoji": "🏝️"
+  },
+  {
+    "fileName": "Argentina_neuquen_southamerica_2.obf",
+    "hebrewTags": {
+      "continent": "דרום אמריקה",
+      "country": "ארגנטינה",
+      "city": null
+    },
+    "englishTags": {
+      "continent": "South America",
+      "country": "Argentina",
+      "city": null
+    },
+    "emoji": "🇦🇷"
+  },
+  {
+    "fileName": "Argentina_rio-negro_southamerica_2.obf",
+    "hebrewTags": {
+      "continent": "דרום אמריקה",
+      "country": "ארגנטינה",
+      "city": null
+    },
+    "englishTags": {
+      "continent": "South America",
+      "country": "Argentina",
+      "city": null
+    },
+    "emoji": "🇦🇷"
+  },
+  {
+    "fileName": "Argentina_salta_southamerica_2.obf",
+    "hebrewTags": {
+      "continent": "דרום אמריקה",
+      "country": "ארגנטינה",
+      "city": "סלטה"
+    },
+    "englishTags": {
+      "continent": "South America",
+      "country": "Argentina",
+      "city": "Salta"
+    },
+    "emoji": "🇦🇷"
+  },
+  {
+    "fileName": "Argentina_san-juan_southamerica_2.obf",
+    "hebrewTags": {
+      "continent": "דרום אמריקה",
+      "country": "ארגנטינה",
+      "city": "סן חואן"
+    },
+    "englishTags": {
+      "continent": "South America",
+      "country": "Argentina",
+      "city": "San Juan"
+    },
+    "emoji": "🇦🇷"
+  },
+  {
+    "fileName": "Argentina_san-luis_southamerica_2.obf",
+    "hebrewTags": {
+      "continent": "דרום אמריקה",
+      "country": "ארגנטינה",
+      "city": "סן לואיס"
+    },
+    "englishTags": {
+      "continent": "South America",
+      "country": "Argentina",
+      "city": "San Luis"
+    },
+    "emoji": "🇦🇷"
+  },
+  {
+    "fileName": "Argentina_santa-cruz_southamerica_2.obf",
+    "hebrewTags": {
+      "continent": "דרום אמריקה",
+      "country": "ארגנטינה",
+      "city": null
+    },
+    "englishTags": {
+      "continent": "South America",
+      "country": "Argentina",
+      "city": null
+    },
+    "emoji": "🇦🇷"
+  },
+  {
+    "fileName": "Argentina_santa-fe_southamerica_2.obf",
+    "hebrewTags": {
+      "continent": "דרום אמריקה",
+      "country": "ארגנטינה",
+      "city": "סנטה פה"
+    },
+    "englishTags": {
+      "continent": "South America",
+      "country": "Argentina",
+      "city": "Santa Fe"
+    },
+    "emoji": "🇦🇷"
+  },
+  {
+    "fileName": "Argentina_santiago-del-estero_southamerica_2.obf",
+    "hebrewTags": {
+      "continent": "דרום אמריקה",
+      "country": "ארגנטינה",
+      "city": "סנטיאגו דל אסטרו"
+    },
+    "englishTags": {
+      "continent": "South America",
+      "country": "Argentina",
+      "city": "Santiago del Estero"
+    },
+    "emoji": "🇦🇷"
+  },
+  {
+    "fileName": "Argentina_southamerica_2.obf",
+    "hebrewTags": {
+      "continent": "דרום אמריקה",
+      "country": "ארגנטינה",
+      "city": null
+    },
+    "englishTags": {
+      "continent": "South America",
+      "country": "Argentina",
+      "city": null
+    },
+    "emoji": "🇦🇷"
+  },
+  {
+    "fileName": "Argentina_tierra-del-fuego_southamerica_2.obf",
+    "hebrewTags": {
+      "continent": "דרום אמריקה",
+      "country": "ארגנטינה",
+      "city": null
+    },
+    "englishTags": {
+      "continent": "South America",
+      "country": "Argentina",
+      "city": null
+    },
+    "emoji": "🇦🇷"
+  },
+  {
+    "fileName": "Argentina_tucuman_southamerica_2.obf",
+    "hebrewTags": {
+      "continent": "דרום אמריקה",
+      "country": "ארגנטינה",
+      "city": "טוקומאן"
+    },
+    "englishTags": {
+      "continent": "South America",
+      "country": "Argentina",
+      "city": "Tucumán"
+    },
+    "emoji": "🇦🇷"
+  },
+  {
+    "fileName": "Armenia_asia_2.obf",
+    "hebrewTags": {
+      "continent": "אסיה",
+      "country": "ארמניה",
+      "city": null
+    },
+    "englishTags": {
+      "continent": "Asia",
+      "country": "Armenia",
+      "city": null
+    },
+    "emoji": "🇦🇲"
+  },
+  {
+    "fileName": "Aruba_centralamerica_2.obf",
+    "hebrewTags": {
+      "continent": "אמריקה הצפונית",
+      "country": "ארובה",
+      "city": null
+    },
+    "englishTags": {
+      "continent": "North America",
+      "country": "Aruba",
+      "city": null
+    },
+    "emoji": "🇦🇼"
+  },
+  {
+    "fileName": "Australia-oceania_australian-capital-territory_australia-oceania_2.obf",
+    "hebrewTags": {
+      "continent": "אוסטרליה ואוקיאניה",
+      "country": "אוסטרליה",
+      "city": "קנברה"
+    },
+    "englishTags": {
+      "continent": "Australia and Oceania",
+      "country": "Australia",
+      "city": "Canberra"
+    },
+    "emoji": "🦘"
+  },
+  {
+    "fileName": "Australia-oceania_northern-territory_australia-oceania_2.obf",
+    "hebrewTags": {
+      "continent": "אוסטרלאסיה",
+      "country": "אוסטרליה",
+      "city": null
+    },
+    "englishTags": {
+      "continent": "Australia-Oceania",
+      "country": "Australia",
+      "city": null
+    },
+    "emoji": "🦘"
+  },
+  {
+    "fileName": "Bahamas_centralamerica_2.obf",
+    "hebrewTags": {
+      "continent": "אמריקה",
+      "country": null,
+      "city": null
+    },
+    "englishTags": {
+      "continent": "Americas",
+      "country": null,
+      "city": null
+    },
+    "emoji": "🇧🇸"
+  },
+  {
+    "fileName": "Australia-oceania_new-south-wales_australia-oceania_2.obf",
+    "hebrewTags": {
+      "continent": "אוסטרליה ואוקיאניה",
+      "country": "אוסטרליה",
+      "city": null
+    },
+    "englishTags": {
+      "continent": "Australia and Oceania",
+      "country": "Australia",
+      "city": null
+    },
+    "emoji": "🇦🇺"
+  },
+  {
+    "fileName": "Australia-oceania_queensland_australia-oceania_2.obf",
+    "hebrewTags": {
+      "continent": "אוסטרליה ואוקיאניה",
+      "country": "אוסטרליה",
+      "city": null
+    },
+    "englishTags": {
+      "continent": "Australia and Oceania",
+      "country": "Australia",
+      "city": null
+    },
+    "emoji": "🦘"
+  },
+  {
+    "fileName": "Australia-oceania_south-australia_australia-oceania_2.obf",
+    "hebrewTags": {
+      "continent": "אוסטרליה ואוקיאניה",
+      "country": "אוסטרליה",
+      "city": null
+    },
+    "englishTags": {
+      "continent": "Australia and Oceania",
+      "country": "Australia",
+      "city": null
+    },
+    "emoji": "🇦🇺"
+  },
+  {
+    "fileName": "Australia-oceania_tasmania_australia-oceania_2.obf",
+    "hebrewTags": {
+      "continent": "אוקיאניה",
+      "country": "אוסטרליה",
+      "city": null
+    },
+    "englishTags": {
+      "continent": "Oceania",
+      "country": "Australia",
+      "city": null
+    },
+    "emoji": "🇦🇺"
+  },
+  {
+    "fileName": "Australia-oceania_western-australia_australia-oceania_2.obf",
+    "hebrewTags": {
+      "continent": "אוסטרליה ואוקיאניה",
+      "country": "אוסטרליה",
+      "city": null
+    },
+    "englishTags": {
+      "continent": "Australia and Oceania",
+      "country": "Australia",
+      "city": null
+    },
+    "emoji": "🦘"
+  },
+  {
+    "fileName": "Austria_burgenland_europe_2.obf",
+    "hebrewTags": {
+      "continent": "אירופה",
+      "country": "אוסטריה",
+      "city": null
+    },
+    "englishTags": {
+      "continent": "Europe",
+      "country": "Austria",
+      "city": null
+    },
+    "emoji": "🇦🇹"
+  },
+  {
+    "fileName": "Austria_carinthia_europe_2.obf",
+    "hebrewTags": {
+      "continent": "אירופה",
+      "country": "אוסטריה",
+      "city": null
+    },
+    "englishTags": {
+      "continent": "Europe",
+      "country": "Austria",
+      "city": null
+    },
+    "emoji": "🇦🇹"
+  },
+  {
+    "fileName": "Austria_vorarlberg_europe_2.obf",
+    "hebrewTags": {
+      "continent": "אירופה",
+      "country": "אוסטריה",
+      "city": null
+    },
+    "englishTags": {
+      "continent": "Europe",
+      "country": "Austria",
+      "city": null
+    },
+    "emoji": "🇦🇹"
+  },
+  {
+    "fileName": "Bahrain_asia_2.obf",
+    "hebrewTags": {
+      "continent": "אסיה",
+      "country": "בחריין",
+      "city": null
+    },
+    "englishTags": {
+      "continent": "Asia",
+      "country": "Bahrain",
+      "city": null
+    },
+    "emoji": "🇧🇭"
+  },
+  {
+    "fileName": "Bermuda_northamerica_2.obf",
+    "hebrewTags": {
+      "continent": "צפון אמריקה",
+      "country": null,
+      "city": null
+    },
+    "englishTags": {
+      "continent": "North America",
+      "country": null,
+      "city": null
+    },
+    "emoji": "🗺️"
+  },
+  {
+    "fileName": "Australia-oceania_victoria_australia-oceania_2.obf",
+    "hebrewTags": {
+      "continent": "אוסטרליה ואוקיאניה",
+      "country": "אוסטרליה",
+      "city": "מלבורן"
+    },
+    "englishTags": {
+      "continent": "Australia and Oceania",
+      "country": "Australia",
+      "city": "Melbourne"
+    },
+    "emoji": "🦘"
+  },
+  {
+    "fileName": "Austria_lower-austria_europe_2.obf",
+    "hebrewTags": {
+      "continent": "אירופה",
+      "country": "אוסטריה",
+      "city": null
+    },
+    "englishTags": {
+      "continent": "Europe",
+      "country": "Austria",
+      "city": null
+    },
+    "emoji": "🇦🇹"
+  },
+  {
+    "fileName": "Austria_salzburg_europe_2.obf",
+    "hebrewTags": {
+      "continent": "אירופה",
+      "country": "אוסטריה",
+      "city": "זלצבורג"
+    },
+    "englishTags": {
+      "continent": "Europe",
+      "country": "Austria",
+      "city": "Salzburg"
+    },
+    "emoji": "🇦🇹"
+  },
+  {
+    "fileName": "Austria_styria_europe_2.obf",
+    "hebrewTags": {
+      "continent": "אירופה",
+      "country": "אוסטריה",
+      "city": null
+    },
+    "englishTags": {
+      "continent": "Europe",
+      "country": "Austria",
+      "city": null
+    },
+    "emoji": "🇦🇹"
+  },
+  {
+    "fileName": "Austria_tyrol_europe_2.obf",
+    "hebrewTags": {
+      "continent": "אירופה",
+      "country": "אוסטריה",
+      "city": null
+    },
+    "englishTags": {
+      "continent": "Europe",
+      "country": "Austria",
+      "city": null
+    },
+    "emoji": "🇦🇹"
+  },
+  {
+    "fileName": "Barbados_centralamerica_2.obf",
+    "hebrewTags": {
+      "continent": "אמריקה הצפונית",
+      "country": "ברבדוס",
+      "city": null
+    },
+    "englishTags": {
+      "continent": "North America",
+      "country": "Barbados",
+      "city": null
+    },
+    "emoji": "🇧🇧"
+  },
+  {
+    "fileName": "Brazil_amapa_southamerica_2.obf",
+    "hebrewTags": {
+      "continent": "דרום אמריקה",
+      "country": "ברזיל",
+      "city": null
+    },
+    "englishTags": {
+      "continent": "South America",
+      "country": "Brazil",
+      "city": null
+    },
+    "emoji": "🇧🇷"
+  },
+  {
+    "fileName": "Austria_europe_2.obf",
+    "hebrewTags": {
+      "continent": "אירופה",
+      "country": "אוסטריה",
+      "city": null
+    },
+    "englishTags": {
+      "continent": "Europe",
+      "country": "Austria",
+      "city": null
+    },
+    "emoji": "🇦🇹"
+  },
+  {
+    "fileName": "Azerbaijan_asia_2.obf",
+    "hebrewTags": {
+      "continent": "אסיה",
+      "country": "אזרבייג'ן",
+      "city": null
+    },
+    "englishTags": {
+      "continent": "Asia",
+      "country": "Azerbaijan",
+      "city": null
+    },
+    "emoji": "🇦🇿"
+  },
+  {
+    "fileName": "Austria_upper-austria_europe_2.obf",
+    "hebrewTags": {
+      "continent": "אירופה",
+      "country": "אוסטריה",
+      "city": null
+    },
+    "englishTags": {
+      "continent": "Europe",
+      "country": "Austria",
+      "city": null
+    },
+    "emoji": "🇦🇹"
+  },
+  {
+    "fileName": "Azores_europe_2.obf",
+    "hebrewTags": {
+      "continent": "אירופה",
+      "country": "פורטוגל",
+      "city": null
+    },
+    "englishTags": {
+      "continent": "Europe",
+      "country": "Portugal",
+      "city": null
+    },
+    "emoji": "🇵🇹"
+  },
+  {
+    "fileName": "Bangladesh_asia_2.obf",
+    "hebrewTags": {
+      "continent": "אסיה",
+      "country": "בנגלדש",
+      "city": null
+    },
+    "englishTags": {
+      "continent": "Asia",
+      "country": "Bangladesh",
+      "city": null
+    },
+    "emoji": "🇧🇩"
+  },
+  {
+    "fileName": "Belarus_brest_europe_2.obf",
+    "hebrewTags": {
+      "continent": "אירופה",
+      "country": "בלארוס",
+      "city": "ברסט"
+    },
+    "englishTags": {
+      "continent": "Europe",
+      "country": "Belarus",
+      "city": "Brest"
+    },
+    "emoji": "🇧🇾"
+  },
+  {
+    "fileName": "Belarus_gomel_europe_2.obf",
+    "hebrewTags": {
+      "continent": "אירופה",
+      "country": "בלארוס",
+      "city": "הומל"
+    },
+    "englishTags": {
+      "continent": "Europe",
+      "country": "Belarus",
+      "city": "Gomel"
+    },
+    "emoji": "🇧🇾"
+  },
+  {
+    "fileName": "Belarus_hrodna_europe_2.obf",
+    "hebrewTags": {
+      "continent": "אירופה",
+      "country": "בלארוס",
+      "city": "גרודנה"
+    },
+    "englishTags": {
+      "continent": "Europe",
+      "country": "Belarus",
+      "city": "Hrodna"
+    },
+    "emoji": "🇧🇾"
+  },
+  {
+    "fileName": "Belarus_magilyow_europe_2.obf",
+    "hebrewTags": {
+      "continent": "אירופה",
+      "country": "בלארוס",
+      "city": "מוהילב"
+    },
+    "englishTags": {
+      "continent": "Europe",
+      "country": "Belarus",
+      "city": "Mogilev"
+    },
+    "emoji": "🇧🇾"
+  },
+  {
+    "fileName": "Belarus_minsk_europe_2.obf",
+    "hebrewTags": {
+      "continent": "אירופה",
+      "country": "בלארוס",
+      "city": "מינסק"
+    },
+    "englishTags": {
+      "continent": "Europe",
+      "country": "Belarus",
+      "city": "Minsk"
+    },
+    "emoji": "🇧🇾"
+  },
+  {
+    "fileName": "Belarus_vitebsk_europe_2.obf",
+    "hebrewTags": {
+      "continent": "אירופה",
+      "country": "בלארוס",
+      "city": "ויטבסק"
+    },
+    "englishTags": {
+      "continent": "Europe",
+      "country": "Belarus",
+      "city": "Vitebsk"
+    },
+    "emoji": "🇧🇾"
+  },
+  {
+    "fileName": "Belize_centralamerica_2.obf",
+    "hebrewTags": {
+      "continent": "אמריקה הצפונית",
+      "country": "בליז",
+      "city": null
+    },
+    "englishTags": {
+      "continent": "North America",
+      "country": "Belize",
+      "city": null
+    },
+    "emoji": "🇧🇿"
+  },
+  {
+    "fileName": "Bhutan_asia_2.obf",
+    "hebrewTags": {
+      "continent": "אסיה",
+      "country": "בהוטן",
+      "city": null
+    },
+    "englishTags": {
+      "continent": "Asia",
+      "country": "Bhutan",
+      "city": null
+    },
+    "emoji": "🇧🇹"
+  },
+  {
+    "fileName": "Belarus_europe_2.obf",
+    "hebrewTags": {
+      "continent": "אירופה",
+      "country": "בלארוס",
+      "city": null
+    },
+    "englishTags": {
+      "continent": "Europe",
+      "country": "Belarus",
+      "city": null
+    },
+    "emoji": "🇧🇾"
+  },
+  {
+    "fileName": "Belgium_flanders_europe_2.obf",
+    "hebrewTags": {
+      "continent": "אירופה",
+      "country": "בלגיה",
+      "city": null
+    },
+    "englishTags": {
+      "continent": "Europe",
+      "country": "Belgium",
+      "city": null
+    },
+    "emoji": "🇧🇪"
+  },
+  {
+    "fileName": "Benin_africa_2.obf",
+    "hebrewTags": {
+      "continent": "אפריקה",
+      "country": "בנין",
+      "city": null
+    },
+    "englishTags": {
+      "continent": "Africa",
+      "country": "Benin",
+      "city": null
+    },
+    "emoji": "🇧🇯"
+  },
+  {
+    "fileName": "Brazil_acre_southamerica_2.obf",
+    "hebrewTags": {
+      "continent": "דרום אמריקה",
+      "country": "ברזיל",
+      "city": null
+    },
+    "englishTags": {
+      "continent": "South America",
+      "country": "Brazil",
+      "city": null
+    },
+    "emoji": "🇧🇷"
+  },
+  {
+    "fileName": "British-indian-ocean-territory_asia_2.obf",
+    "hebrewTags": {
+      "continent": "אסיה",
+      "country": "הטריטוריה הבריטית באוקיינוס ​​ההודי",
+      "city": null
+    },
+    "englishTags": {
+      "continent": "Asia",
+      "country": "British Indian Ocean Territory",
+      "city": null
+    },
+    "emoji": "🇬🇧"
+  },
+  {
+    "fileName": "Belgium_europe_2.obf",
+    "hebrewTags": {
+      "continent": "אירופה",
+      "country": "בלגיה",
+      "city": null
+    },
+    "englishTags": {
+      "continent": "Europe",
+      "country": "Belgium",
+      "city": null
+    },
+    "emoji": "🇧🇪"
+  },
+  {
+    "fileName": "Bolivia_southamerica_2.obf",
+    "hebrewTags": {
+      "continent": "דרום אמריקה",
+      "country": "בוליביה",
+      "city": null
+    },
+    "englishTags": {
+      "continent": "South America",
+      "country": "Bolivia",
+      "city": null
+    },
+    "emoji": "🇧🇴"
+  },
+  {
+    "fileName": "Brazil_alagoas_southamerica_2.obf",
+    "hebrewTags": {
+      "continent": "דרום אמריקה",
+      "country": "ברזיל",
+      "city": null
+    },
+    "englishTags": {
+      "continent": "South America",
+      "country": "Brazil",
+      "city": null
+    },
+    "emoji": "🇧🇷"
+  },
+  {
+    "fileName": "Belgium_wallonia_europe_2.obf",
+    "hebrewTags": {
+      "continent": "אירופה",
+      "country": "בלגיה",
+      "city": null
+    },
+    "englishTags": {
+      "continent": "Europe",
+      "country": "Belgium",
+      "city": null
+    },
+    "emoji": "🇧🇪"
+  },
+  {
+    "fileName": "Bosnia-herzegovina_europe_2.obf",
+    "hebrewTags": {
+      "continent": "אירופה",
+      "country": "בוסניה והרצגובינה",
+      "city": null
+    },
+    "englishTags": {
+      "continent": "Europe",
+      "country": "Bosnia and Herzegovina",
+      "city": null
+    },
+    "emoji": "🇧🇦"
+  },
+  {
+    "fileName": "Botswana_africa_2.obf",
+    "hebrewTags": {
+      "continent": "אפריקה",
+      "country": "בוצוואנה",
+      "city": null
+    },
+    "englishTags": {
+      "continent": "Africa",
+      "country": "Botswana",
+      "city": null
+    },
+    "emoji": "🇧🇼"
+  },
+  {
+    "fileName": "Brazil_amazonas_southamerica_2.obf",
+    "hebrewTags": {
+      "continent": "דרום אמריקה",
+      "country": "ברזיל",
+      "city": null
+    },
+    "englishTags": {
+      "continent": "South America",
+      "country": "Brazil",
+      "city": null
+    },
+    "emoji": "🇧🇷"
+  },
+  {
+    "fileName": "Brazil_bahia_southamerica_2.obf",
+    "hebrewTags": {
+      "continent": "דרום אמריקה",
+      "country": "ברזיל",
+      "city": null
+    },
+    "englishTags": {
+      "continent": "South America",
+      "country": "Brazil",
+      "city": null
+    },
+    "emoji": "🇧🇷"
+  },
+  {
+    "fileName": "Brazil_ceara_southamerica_2.obf",
+    "hebrewTags": {
+      "continent": "דרום אמריקה",
+      "country": "ברזיל",
+      "city": null
+    },
+    "englishTags": {
+      "continent": "South America",
+      "country": "Brazil",
+      "city": null
+    },
+    "emoji": "🇧🇷"
+  },
+  {
+    "fileName": "Brazil_distrito-federal_southamerica_2.obf",
+    "hebrewTags": {
+      "continent": "דרום אמריקה",
+      "country": "ברזיל",
+      "city": "ברזיליה"
+    },
+    "englishTags": {
+      "continent": "South America",
+      "country": "Brazil",
+      "city": "Brasília"
+    },
+    "emoji": "🇧🇷"
+  },
+  {
+    "fileName": "Brazil_goias_southamerica_2.obf",
+    "hebrewTags": {
+      "continent": "דרום אמריקה",
+      "country": "ברזיל",
+      "city": null
+    },
+    "englishTags": {
+      "continent": "South America",
+      "country": "Brazil",
+      "city": null
+    },
+    "emoji": "🇧🇷"
+  },
+  {
+    "fileName": "Brazil_rondonia_southamerica_2.obf",
+    "hebrewTags": {
+      "continent": "דרום אמריקה",
+      "country": "ברזיל",
+      "city": null
+    },
+    "englishTags": {
+      "continent": "South America",
+      "country": "Brazil",
+      "city": null
+    },
+    "emoji": "🇧🇷"
+  },
+  {
+    "fileName": "Brazil_roraima_southamerica_2.obf",
+    "hebrewTags": {
+      "continent": "דרום אמריקה",
+      "country": "ברזיל",
+      "city": null
+    },
+    "englishTags": {
+      "continent": "South America",
+      "country": "Brazil",
+      "city": null
+    },
+    "emoji": "🇧🇷"
+  },
+  {
+    "fileName": "Brazil_espirito-santo_southamerica_2.obf",
+    "hebrewTags": {
+      "continent": "דרום אמריקה",
+      "country": "ברזיל",
+      "city": null
+    },
+    "englishTags": {
+      "continent": "South America",
+      "country": "Brazil",
+      "city": null
+    },
+    "emoji": "🇧🇷"
+  },
+  {
+    "fileName": "Brazil_maranhao_southamerica_2.obf",
+    "hebrewTags": {
+      "continent": "דרום אמריקה",
+      "country": "ברזיל",
+      "city": null
+    },
+    "englishTags": {
+      "continent": "South America",
+      "country": "Brazil",
+      "city": null
+    },
+    "emoji": "🇧🇷"
+  },
+  {
+    "fileName": "Brazil_mato-grosso-do-sul_southamerica_2.obf",
+    "hebrewTags": {
+      "continent": "דרום אמריקה",
+      "country": "ברזיל",
+      "city": null
+    },
+    "englishTags": {
+      "continent": "South America",
+      "country": "Brazil",
+      "city": null
+    },
+    "emoji": "🇧🇷"
+  },
+  {
+    "fileName": "Brazil_mato-grosso_southamerica_2.obf",
+    "hebrewTags": {
+      "continent": "דרום אמריקה",
+      "country": "ברזיל",
+      "city": null
+    },
+    "englishTags": {
+      "continent": "South America",
+      "country": "Brazil",
+      "city": null
+    },
+    "emoji": "🇧🇷"
+  },
+  {
+    "fileName": "Brazil_minas-gerais_southamerica_2.obf",
+    "hebrewTags": {
+      "continent": "דרום אמריקה",
+      "country": "ברזיל",
+      "city": null
+    },
+    "englishTags": {
+      "continent": "South America",
+      "country": "Brazil",
+      "city": null
+    },
+    "emoji": "🇧🇷"
+  },
+  {
+    "fileName": "Brazil_para_southamerica_2.obf",
+    "hebrewTags": {
+      "continent": "דרום אמריקה",
+      "country": "ברזיל",
+      "city": null
+    },
+    "englishTags": {
+      "continent": "South America",
+      "country": "Brazil",
+      "city": null
+    },
+    "emoji": "🇧🇷"
+  },
+  {
+    "fileName": "Brazil_paraiba_southamerica_2.obf",
+    "hebrewTags": {
+      "continent": "דרום אמריקה",
+      "country": "ברזיל",
+      "city": null
+    },
+    "englishTags": {
+      "continent": "South America",
+      "country": "Brazil",
+      "city": null
+    },
+    "emoji": "🇧🇷"
+  },
+  {
+    "fileName": "Brazil_parana_southamerica_2.obf",
+    "hebrewTags": {
+      "continent": "דרום אמריקה",
+      "country": "ברזיל",
+      "city": null
+    },
+    "englishTags": {
+      "continent": "South America",
+      "country": "Brazil",
+      "city": null
+    },
+    "emoji": "🇧🇷"
+  },
+  {
+    "fileName": "Brazil_piaui_southamerica_2.obf",
+    "hebrewTags": {
+      "continent": "דרום אמריקה",
+      "country": "ברזיל",
+      "city": null
+    },
+    "englishTags": {
+      "continent": "South America",
+      "country": "Brazil",
+      "city": null
+    },
+    "emoji": "🇧🇷"
+  },
+  {
+    "fileName": "Brazil_sergipe_southamerica_2.obf",
+    "hebrewTags": {
+      "continent": "דרום אמריקה",
+      "country": "ברזיל",
+      "city": null
+    },
+    "englishTags": {
+      "continent": "South America",
+      "country": "Brazil",
+      "city": null
+    },
+    "emoji": "🇧🇷"
+  },
+  {
+    "fileName": "Brazil_pernambuco_southamerica_2.obf",
+    "hebrewTags": {
+      "continent": "דרום אמריקה",
+      "country": "ברזיל",
+      "city": null
+    },
+    "englishTags": {
+      "continent": "South America",
+      "country": "Brazil",
+      "city": null
+    },
+    "emoji": "🇧🇷"
+  },
+  {
+    "fileName": "Brazil_rio-de-janeiro_southamerica_2.obf",
+    "hebrewTags": {
+      "continent": "דרום אמריקה",
+      "country": "ברזיל",
+      "city": "ריו דה ז'נירו"
+    },
+    "englishTags": {
+      "continent": "South America",
+      "country": "Brazil",
+      "city": "Rio de Janeiro"
+    },
+    "emoji": "🇧🇷"
+  },
+  {
+    "fileName": "Brazil_rio-grande-do-norte_southamerica_2.obf",
+    "hebrewTags": {
+      "continent": "דרום אמריקה",
+      "country": "ברזיל",
+      "city": null
+    },
+    "englishTags": {
+      "continent": "South America",
+      "country": "Brazil",
+      "city": null
+    },
+    "emoji": "🇧🇷"
+  },
+  {
+    "fileName": "Brazil_rio-grande-do-sul_southamerica_2.obf",
+    "hebrewTags": {
+      "continent": "דרום אמריקה",
+      "country": "ברזיל",
+      "city": null
+    },
+    "englishTags": {
+      "continent": "South America",
+      "country": "Brazil",
+      "city": null
+    },
+    "emoji": "🇧🇷"
+  },
+  {
+    "fileName": "Brazil_santa-catarina_southamerica_2.obf",
+    "hebrewTags": {
+      "continent": "דרום אמריקה",
+      "country": "ברזיל",
+      "city": null
+    },
+    "englishTags": {
+      "continent": "South America",
+      "country": "Brazil",
+      "city": null
+    },
+    "emoji": "🇧🇷"
+  },
+  {
+    "fileName": "Brazil_sao-paulo_southamerica_2.obf",
+    "hebrewTags": {
+      "continent": "דרום אמריקה",
+      "country": "ברזיל",
+      "city": "סאו פאולו"
+    },
+    "englishTags": {
+      "continent": "South America",
+      "country": "Brazil",
+      "city": "São Paulo"
+    },
+    "emoji": "🇧🇷"
+  }
+]
