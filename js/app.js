@@ -2,7 +2,7 @@
  * app.js — front-end logic for the offline maps hub
  *
  * Data sources (all same-origin, relative to this page):
- *   data/osmand-data.json     [{ fileName, updatedDate }]
+ *   data/osmand-data.json     [{ fileName, updatedDate, url }]
  *   data/mapsTags.json        [{ fileName, hebrewTags:{continent,country,city},
  *                                 englishTags:{...}, emoji }]
  *   data/moovitdos-link.json  { path, updatedDate }
@@ -198,7 +198,7 @@ function handleOsmandButton(keywords, label) {
     alert(`המפה עבור "${label}" עדיין לא זמינה במאגר. נסו שוב מאוחר יותר.`);
     return;
   }
-  downloadFile(match.fileName, `files/${match.fileName}`);
+  downloadFile(match.fileName, match.url);
 }
 
 function handleMoovitdosButton() {
@@ -282,7 +282,7 @@ function renderResults(query) {
       <button type="button">הורדה</button>
     `;
     row.querySelector("button").addEventListener("click", () => {
-      downloadFile(entry.fileName, `files/${entry.fileName}`);
+      downloadFile(entry.fileName, entry.url);
     });
     resultsEl.appendChild(row);
   });
