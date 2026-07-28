@@ -708,5 +708,20 @@
     "fileName": "Canada_manitoba_northamerica_2.obf",
     "updatedDate": "2026-07-01",
     "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Canada_manitoba_northamerica_2.obf"
+  },
+  {
+    "fileName": "Canada_british-columbia_northamerica_2.obf",
+    "updatedDate": "2026-06-01",
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Canada_british-columbia_northamerica_2.obf"
+  },
+  {
+    "fileName": "Canada_new-brunswick_northamerica_2.obf",
+    "updatedDate": "2026-07-01",
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Canada_new-brunswick_northamerica_2.obf"
+  },
+  {
+    "fileName": "Canada_nova-scotia_northamerica_2.obf",
+    "updatedDate": "2026-07-01",
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Canada_nova-scotia_northamerica_2.obf"
   }
 ]

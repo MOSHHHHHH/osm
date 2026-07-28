@@ -3,11 +3,8 @@
   "moovitdos-status": true,
   "osmand-in-progress": true,
   "osmand-pending-files": [
-    "Canada_british-columbia_northamerica_2.obf",
-    "Canada_new-brunswick_northamerica_2.obf",
     "Canada_newfoundland-and-labrador_northamerica_2.obf",
     "Canada_northwest-territories_northamerica_2.obf",
-    "Canada_nova-scotia_northamerica_2.obf",
     "Canada_nunavut-central-east_northamerica_2.obf",
     "Canada_nunavut-central-west_northamerica_2.obf",
     "Canada_nunavut-north-east_northamerica_2.obf",
@@ -966,5 +963,5 @@
     "Zimbabwe_africa_2.obf"
   ],
   "osmand-oversized-files": [],
-  "update-date": "2026-07-28T19:54:01Z"
+  "update-date": "2026-07-28T20:24:25Z"
 }
