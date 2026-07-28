@@ -32,7 +32,8 @@ jobs:
       - name: Run tag-generator.py
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-        run: python update-scripts/tag-generator.py
+          PYTHONUNBUFFERED: "1"
+        run: python -u update-scripts/tag-generator.py
 
       - name: Commit and push changes
         run: |
