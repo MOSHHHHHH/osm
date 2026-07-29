@@ -1428,5 +1428,45 @@
     "fileName": "Czech-republic_stredni-cechy_europe_2.obf",
     "updatedDate": "2026-07-01",
     "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Czech-republic_stredni-cechy_europe_2.obf"
+  },
+  {
+    "fileName": "Czech-republic_stredni-morava_europe_2.obf",
+    "updatedDate": "2026-07-01",
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Czech-republic_stredni-morava_europe_2.obf"
+  },
+  {
+    "fileName": "Denmark_capital-region_europe_2.obf",
+    "updatedDate": "2026-07-01",
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Denmark_capital-region_europe_2.obf"
+  },
+  {
+    "fileName": "Denmark_central-region_europe_2.obf",
+    "updatedDate": "2026-07-01",
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Denmark_central-region_europe_2.obf"
+  },
+  {
+    "fileName": "Denmark_europe_2.obf",
+    "updatedDate": "2026-06-01",
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Denmark_europe_2.obf"
+  },
+  {
+    "fileName": "Denmark_southern-region_europe_2.obf",
+    "updatedDate": "2026-07-01",
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Denmark_southern-region_europe_2.obf"
+  },
+  {
+    "fileName": "Denmark_zealand-region_europe_2.obf",
+    "updatedDate": "2026-07-01",
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Denmark_zealand-region_europe_2.obf"
+  },
+  {
+    "fileName": "East-timor_asia_2.obf",
+    "updatedDate": "2026-07-01",
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/East-timor_asia_2.obf"
+  },
+  {
+    "fileName": "Faroe-islands_europe_2.obf",
+    "updatedDate": "2026-07-01",
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Faroe-islands_europe_2.obf"
   }
 ]

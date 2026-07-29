@@ -3,21 +3,13 @@
   "moovitdos-status": true,
   "osmand-in-progress": true,
   "osmand-pending-files": [
-    "Czech-republic_stredni-morava_europe_2.obf",
-    "Denmark_capital-region_europe_2.obf",
-    "Denmark_central-region_europe_2.obf",
-    "Denmark_europe_2.obf",
-    "Denmark_southern-region_europe_2.obf",
-    "Denmark_zealand-region_europe_2.obf",
     "Dominican-republic_centralamerica_2.obf",
-    "East-timor_asia_2.obf",
     "Ecuador_southamerica_2.obf",
     "Egypt_africa_2.obf",
     "El-salvador_centralamerica_2.obf",
     "Eritrea_africa_2.obf",
     "Estonia_europe_2.obf",
     "Ethiopia_africa_2.obf",
-    "Faroe-islands_europe_2.obf",
     "Finland_aland_europe_2.obf",
     "Finland_central-finland_europe_2.obf",
     "Finland_central-ostrobothnia_europe_2.obf",
@@ -44,6 +36,7 @@
     "France_auvergne-rhone-alpes_cantal_europe_2.obf",
     "France_auvergne-rhone-alpes_drome_europe_2.obf",
     "France_auvergne-rhone-alpes_europe_2.obf",
+    "Canada_quebec_northamerica_2.obf",
     "France_auvergne-rhone-alpes_haute-loire_europe_2.obf",
     "France_auvergne-rhone-alpes_isere_europe_2.obf",
     "France_auvergne-rhone-alpes_loire_europe_2.obf",
@@ -53,7 +46,6 @@
     "France_auvergne-rhone-alpes_upper-savoy_europe_2.obf",
     "France_bourgogne-franche-comte_europe_2.obf",
     "France_brittany_europe_2.obf",
-    "Canada_quebec_northamerica_2.obf",
     "France_centre-loire-valley_europe_2.obf",
     "France_corse_europe_2.obf",
     "France_cote-dor_europe_2.obf",
@@ -822,5 +814,5 @@
     "Zimbabwe_africa_2.obf"
   ],
   "osmand-oversized-files": [],
-  "update-date": "2026-07-29T18:15:30Z"
+  "update-date": "2026-07-29T19:56:42Z"
 }
