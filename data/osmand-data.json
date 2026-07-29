@@ -1523,5 +1523,25 @@
     "fileName": "Finland_kanta-hame_europe_2.obf",
     "updatedDate": "2026-07-01",
     "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Finland_kanta-hame_europe_2.obf"
+  },
+  {
+    "fileName": "Finland_europe_2.obf",
+    "updatedDate": "2026-06-01",
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Finland_europe_2.obf"
+  },
+  {
+    "fileName": "Finland_kainuu_europe_2.obf",
+    "updatedDate": "2026-07-01",
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Finland_kainuu_europe_2.obf"
+  },
+  {
+    "fileName": "Finland_kymenlaakso_europe_2.obf",
+    "updatedDate": "2026-07-01",
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Finland_kymenlaakso_europe_2.obf"
+  },
+  {
+    "fileName": "Finland_north-ostrobothnia_europe_2.obf",
+    "updatedDate": "2026-07-01",
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Finland_north-ostrobothnia_europe_2.obf"
   }
 ]
