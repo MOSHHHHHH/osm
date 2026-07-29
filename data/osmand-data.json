@@ -1418,5 +1418,15 @@
     "fileName": "Falkland-islands_southamerica_2.obf",
     "updatedDate": "2026-07-01",
     "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Falkland-islands_southamerica_2.obf"
+  },
+  {
+    "fileName": "Czech-republic_europe_2.obf",
+    "updatedDate": "2026-06-01",
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Czech-republic_europe_2.obf"
+  },
+  {
+    "fileName": "Czech-republic_stredni-cechy_europe_2.obf",
+    "updatedDate": "2026-07-01",
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Czech-republic_stredni-cechy_europe_2.obf"
   }
 ]
