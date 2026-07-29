@@ -3,18 +3,8 @@
   "moovitdos-status": true,
   "osmand-in-progress": true,
   "osmand-pending-files": [
-    "China_jilin_asia_2.obf",
-    "China_liaoning_asia_2.obf",
-    "China_nei-mongol_asia_2.obf",
-    "China_qinghai_asia_2.obf",
-    "China_shaanxi_asia_2.obf",
-    "China_shandong_asia_2.obf",
-    "China_shanghai_asia_2.obf",
-    "China_shanxi_asia_2.obf",
     "China_sichuan_asia_2.obf",
-    "Canada_quebec_northamerica_2.obf",
     "China_xinjiang-uygur_asia_2.obf",
-    "China_xizang_asia_2.obf",
     "China_yunnan_asia_2.obf",
     "China_zhejiang_asia_2.obf",
     "Colombia_southamerica_2.obf",
@@ -57,6 +47,7 @@
     "Denmark_capital-region_europe_2.obf",
     "Denmark_central-region_europe_2.obf",
     "Denmark_europe_2.obf",
+    "Canada_quebec_northamerica_2.obf",
     "Denmark_north-region_europe_2.obf",
     "Denmark_southern-region_europe_2.obf",
     "Denmark_zealand-region_europe_2.obf",
@@ -876,5 +867,5 @@
     "Zimbabwe_africa_2.obf"
   ],
   "osmand-oversized-files": [],
-  "update-date": "2026-07-29T08:18:32Z"
+  "update-date": "2026-07-29T11:06:58Z"
 }

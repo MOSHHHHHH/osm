@@ -1158,5 +1158,50 @@
     "fileName": "China_tianjin_asia_2.obf",
     "updatedDate": "2026-07-01",
     "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/China_tianjin_asia_2.obf"
+  },
+  {
+    "fileName": "China_jilin_asia_2.obf",
+    "updatedDate": "2026-07-01",
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/China_jilin_asia_2.obf"
+  },
+  {
+    "fileName": "China_liaoning_asia_2.obf",
+    "updatedDate": "2026-07-01",
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/China_liaoning_asia_2.obf"
+  },
+  {
+    "fileName": "China_nei-mongol_asia_2.obf",
+    "updatedDate": "2026-07-01",
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/China_nei-mongol_asia_2.obf"
+  },
+  {
+    "fileName": "China_qinghai_asia_2.obf",
+    "updatedDate": "2026-07-01",
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/China_qinghai_asia_2.obf"
+  },
+  {
+    "fileName": "China_shaanxi_asia_2.obf",
+    "updatedDate": "2026-07-01",
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/China_shaanxi_asia_2.obf"
+  },
+  {
+    "fileName": "China_shandong_asia_2.obf",
+    "updatedDate": "2026-07-01",
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/China_shandong_asia_2.obf"
+  },
+  {
+    "fileName": "China_shanghai_asia_2.obf",
+    "updatedDate": "2026-07-01",
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/China_shanghai_asia_2.obf"
+  },
+  {
+    "fileName": "China_shanxi_asia_2.obf",
+    "updatedDate": "2026-07-01",
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/China_shanxi_asia_2.obf"
+  },
+  {
+    "fileName": "China_xizang_asia_2.obf",
+    "updatedDate": "2026-07-01",
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/China_xizang_asia_2.obf"
   }
 ]
