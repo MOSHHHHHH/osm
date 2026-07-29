@@ -1468,5 +1468,60 @@
     "fileName": "Faroe-islands_europe_2.obf",
     "updatedDate": "2026-07-01",
     "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Faroe-islands_europe_2.obf"
+  },
+  {
+    "fileName": "Dominican-republic_centralamerica_2.obf",
+    "updatedDate": "2026-07-01",
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Dominican-republic_centralamerica_2.obf"
+  },
+  {
+    "fileName": "Ecuador_southamerica_2.obf",
+    "updatedDate": "2026-07-01",
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Ecuador_southamerica_2.obf"
+  },
+  {
+    "fileName": "Egypt_africa_2.obf",
+    "updatedDate": "2026-07-01",
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Egypt_africa_2.obf"
+  },
+  {
+    "fileName": "El-salvador_centralamerica_2.obf",
+    "updatedDate": "2026-07-01",
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/El-salvador_centralamerica_2.obf"
+  },
+  {
+    "fileName": "Eritrea_africa_2.obf",
+    "updatedDate": "2026-07-01",
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Eritrea_africa_2.obf"
+  },
+  {
+    "fileName": "Estonia_europe_2.obf",
+    "updatedDate": "2026-07-01",
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Estonia_europe_2.obf"
+  },
+  {
+    "fileName": "Ethiopia_africa_2.obf",
+    "updatedDate": "2026-07-01",
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Ethiopia_africa_2.obf"
+  },
+  {
+    "fileName": "Finland_aland_europe_2.obf",
+    "updatedDate": "2026-07-01",
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Finland_aland_europe_2.obf"
+  },
+  {
+    "fileName": "Finland_central-finland_europe_2.obf",
+    "updatedDate": "2026-07-01",
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Finland_central-finland_europe_2.obf"
+  },
+  {
+    "fileName": "Finland_central-ostrobothnia_europe_2.obf",
+    "updatedDate": "2026-07-01",
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Finland_central-ostrobothnia_europe_2.obf"
+  },
+  {
+    "fileName": "Finland_kanta-hame_europe_2.obf",
+    "updatedDate": "2026-07-01",
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Finland_kanta-hame_europe_2.obf"
   }
 ]
