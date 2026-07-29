@@ -1363,5 +1363,60 @@
     "fileName": "Dominica_centralamerica_2.obf",
     "updatedDate": "2026-07-01",
     "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Dominica_centralamerica_2.obf"
+  },
+  {
+    "fileName": "Croatia_europe_2.obf",
+    "updatedDate": "2026-07-01",
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Croatia_europe_2.obf"
+  },
+  {
+    "fileName": "Cyprus_europe_2.obf",
+    "updatedDate": "2026-07-01",
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Cyprus_europe_2.obf"
+  },
+  {
+    "fileName": "Czech-republic_jihovychod_europe_2.obf",
+    "updatedDate": "2026-07-01",
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Czech-republic_jihovychod_europe_2.obf"
+  },
+  {
+    "fileName": "Czech-republic_jihozapad_europe_2.obf",
+    "updatedDate": "2026-07-01",
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Czech-republic_jihozapad_europe_2.obf"
+  },
+  {
+    "fileName": "Czech-republic_moravskoslezsko_europe_2.obf",
+    "updatedDate": "2026-07-01",
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Czech-republic_moravskoslezsko_europe_2.obf"
+  },
+  {
+    "fileName": "Czech-republic_praha_europe_2.obf",
+    "updatedDate": "2026-07-01",
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Czech-republic_praha_europe_2.obf"
+  },
+  {
+    "fileName": "Czech-republic_severovychod_europe_2.obf",
+    "updatedDate": "2026-07-01",
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Czech-republic_severovychod_europe_2.obf"
+  },
+  {
+    "fileName": "Czech-republic_severozapad_europe_2.obf",
+    "updatedDate": "2026-07-01",
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Czech-republic_severozapad_europe_2.obf"
+  },
+  {
+    "fileName": "Denmark_north-region_europe_2.obf",
+    "updatedDate": "2026-07-01",
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Denmark_north-region_europe_2.obf"
+  },
+  {
+    "fileName": "Equatorial-guinea_africa_2.obf",
+    "updatedDate": "2026-07-01",
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Equatorial-guinea_africa_2.obf"
+  },
+  {
+    "fileName": "Falkland-islands_southamerica_2.obf",
+    "updatedDate": "2026-07-01",
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Falkland-islands_southamerica_2.obf"
   }
 ]
