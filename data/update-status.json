@@ -3,15 +3,7 @@
   "moovitdos-status": true,
   "osmand-in-progress": true,
   "osmand-pending-files": [
-    "Colombia_southamerica_2.obf",
-    "Congo-democratic-republic_africa_2.obf",
-    "Congo-democratic-republic_nord-kivu_africa_2.obf",
-    "Congo-democratic-republic_sud-kivu_africa_2.obf",
-    "Congo-democratic-republic_tshopo_africa_2.obf",
-    "Congo-democratic-republic_tshuapa_africa_2.obf",
-    "Costa-rica_centralamerica_2.obf",
     "Croatia_europe_2.obf",
-    "Cuba_centralamerica_2.obf",
     "Cyprus_europe_2.obf",
     "Czech-republic_europe_2.obf",
     "Czech-republic_jihovychod_europe_2.obf",
@@ -28,8 +20,7 @@
     "Denmark_north-region_europe_2.obf",
     "Denmark_southern-region_europe_2.obf",
     "Denmark_zealand-region_europe_2.obf",
-    "Djibouti_africa_2.obf",
-    "Dominica_centralamerica_2.obf",
+    "Canada_quebec_northamerica_2.obf",
     "Dominican-republic_centralamerica_2.obf",
     "East-timor_asia_2.obf",
     "Ecuador_southamerica_2.obf",
@@ -45,7 +36,6 @@
     "Finland_central-finland_europe_2.obf",
     "Finland_central-ostrobothnia_europe_2.obf",
     "Finland_europe_2.obf",
-    "Canada_quebec_northamerica_2.obf",
     "Finland_kainuu_europe_2.obf",
     "Finland_kanta-hame_europe_2.obf",
     "Finland_kymenlaakso_europe_2.obf",
@@ -845,5 +835,5 @@
     "Zimbabwe_africa_2.obf"
   ],
   "osmand-oversized-files": [],
-  "update-date": "2026-07-29T13:14:04Z"
+  "update-date": "2026-07-29T15:30:55Z"
 }
