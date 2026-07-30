@@ -1638,5 +1638,25 @@
     "fileName": "France_auvergne-rhone-alpes_loire_europe_2.obf",
     "updatedDate": "2026-07-01",
     "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/France_auvergne-rhone-alpes_loire_europe_2.obf"
+  },
+  {
+    "fileName": "France_auvergne-rhone-alpes_europe_2.obf",
+    "updatedDate": "2026-06-01",
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/France_auvergne-rhone-alpes_europe_2.obf"
+  },
+  {
+    "fileName": "France_auvergne-rhone-alpes_isere_europe_2.obf",
+    "updatedDate": "2026-07-01",
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/France_auvergne-rhone-alpes_isere_europe_2.obf"
+  },
+  {
+    "fileName": "France_auvergne-rhone-alpes_lyon_europe_2.obf",
+    "updatedDate": "2026-07-01",
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/France_auvergne-rhone-alpes_lyon_europe_2.obf"
+  },
+  {
+    "fileName": "France_auvergne-rhone-alpes_puy-de-dome_europe_2.obf",
+    "updatedDate": "2026-07-01",
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/France_auvergne-rhone-alpes_puy-de-dome_europe_2.obf"
   }
 ]

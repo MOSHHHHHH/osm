@@ -3,10 +3,6 @@
   "moovitdos-status": true,
   "osmand-in-progress": true,
   "osmand-pending-files": [
-    "France_auvergne-rhone-alpes_europe_2.obf",
-    "France_auvergne-rhone-alpes_isere_europe_2.obf",
-    "France_auvergne-rhone-alpes_lyon_europe_2.obf",
-    "France_auvergne-rhone-alpes_puy-de-dome_europe_2.obf",
     "France_auvergne-rhone-alpes_savoy_europe_2.obf",
     "France_auvergne-rhone-alpes_upper-savoy_europe_2.obf",
     "France_bourgogne-franche-comte_europe_2.obf",
@@ -20,7 +16,6 @@
     "France_great-east_bas-rhin_europe_2.obf",
     "France_great-east_europe_2.obf",
     "France_great-east_haut-rhin_europe_2.obf",
-    "Canada_quebec_northamerica_2.obf",
     "France_great-east_haute-marne_europe_2.obf",
     "France_great-east_marne_europe_2.obf",
     "France_great-east_meurthe-et-moselle_europe_2.obf",
@@ -50,6 +45,7 @@
     "France_occitania_aude_europe_2.obf",
     "France_occitania_aveyron_europe_2.obf",
     "France_occitania_europe_2.obf",
+    "Canada_quebec_northamerica_2.obf",
     "France_occitania_gard_europe_2.obf",
     "France_occitania_gers_europe_2.obf",
     "France_occitania_haute-garonne_europe_2.obf",
@@ -780,5 +776,5 @@
     "Zimbabwe_africa_2.obf"
   ],
   "osmand-oversized-files": [],
-  "update-date": "2026-07-29T23:25:44Z"
+  "update-date": "2026-07-30T00:23:59Z"
 }
