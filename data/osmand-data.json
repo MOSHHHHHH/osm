@@ -1658,5 +1658,50 @@
     "fileName": "France_auvergne-rhone-alpes_puy-de-dome_europe_2.obf",
     "updatedDate": "2026-07-01",
     "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/France_auvergne-rhone-alpes_puy-de-dome_europe_2.obf"
+  },
+  {
+    "fileName": "France_auvergne-rhone-alpes_savoy_europe_2.obf",
+    "updatedDate": "2026-07-01",
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/France_auvergne-rhone-alpes_savoy_europe_2.obf"
+  },
+  {
+    "fileName": "France_auvergne-rhone-alpes_upper-savoy_europe_2.obf",
+    "updatedDate": "2026-07-01",
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/France_auvergne-rhone-alpes_upper-savoy_europe_2.obf"
+  },
+  {
+    "fileName": "France_bourgogne-franche-comte_europe_2.obf",
+    "updatedDate": "2026-07-01",
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/France_bourgogne-franche-comte_europe_2.obf"
+  },
+  {
+    "fileName": "France_brittany_europe_2.obf",
+    "updatedDate": "2026-07-01",
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/France_brittany_europe_2.obf"
+  },
+  {
+    "fileName": "France_corse_europe_2.obf",
+    "updatedDate": "2026-07-01",
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/France_corse_europe_2.obf"
+  },
+  {
+    "fileName": "France_cote-dor_europe_2.obf",
+    "updatedDate": "2026-07-01",
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/France_cote-dor_europe_2.obf"
+  },
+  {
+    "fileName": "France_doubs_europe_2.obf",
+    "updatedDate": "2026-07-01",
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/France_doubs_europe_2.obf"
+  },
+  {
+    "fileName": "France_great-east_ardennes_europe_2.obf",
+    "updatedDate": "2026-07-01",
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/France_great-east_ardennes_europe_2.obf"
+  },
+  {
+    "fileName": "France_great-east_aube_europe_2.obf",
+    "updatedDate": "2026-07-01",
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/France_great-east_aube_europe_2.obf"
   }
 ]
