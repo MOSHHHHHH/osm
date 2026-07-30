@@ -3,14 +3,6 @@
   "moovitdos-status": true,
   "osmand-in-progress": true,
   "osmand-pending-files": [
-    "France_centre-loire-valley_europe_2.obf",
-    "France_great-east_bas-rhin_europe_2.obf",
-    "France_great-east_europe_2.obf",
-    "France_great-east_haut-rhin_europe_2.obf",
-    "France_great-east_haute-marne_europe_2.obf",
-    "France_great-east_marne_europe_2.obf",
-    "France_great-east_meurthe-et-moselle_europe_2.obf",
-    "France_great-east_meuse_europe_2.obf",
     "France_great-east_moselle_europe_2.obf",
     "France_great-east_vosges_europe_2.obf",
     "France_haute-saone_europe_2.obf",
@@ -54,13 +46,13 @@
     "France_provence-alpes-cote-d-azur_hautes-alpes_europe_2.obf",
     "France_provence-alpes-cote-d-azur_var_europe_2.obf",
     "France_provence-alpes-cote-d-azur_vaucluse_europe_2.obf",
+    "Canada_quebec_northamerica_2.obf",
     "France_saone-et-loire_europe_2.obf",
     "France_territoire-de-belfort_europe_2.obf",
     "France_yonne_europe_2.obf",
     "French-guiana_southamerica_2.obf",
     "French-southern-and-antarctic-lands_africa_2.obf",
     "Gabon_africa_2.obf",
-    "Canada_quebec_northamerica_2.obf",
     "Gambia_africa_2.obf",
     "Gb_channel-islands_europe_2.obf",
     "Gb_england_east-midlands_europe_2.obf",
@@ -767,5 +759,5 @@
     "Zimbabwe_africa_2.obf"
   ],
   "osmand-oversized-files": [],
-  "update-date": "2026-07-30T03:43:13Z"
+  "update-date": "2026-07-30T06:19:15Z"
 }

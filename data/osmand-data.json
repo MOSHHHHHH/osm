@@ -1703,5 +1703,45 @@
     "fileName": "France_great-east_aube_europe_2.obf",
     "updatedDate": "2026-07-01",
     "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/France_great-east_aube_europe_2.obf"
+  },
+  {
+    "fileName": "France_centre-loire-valley_europe_2.obf",
+    "updatedDate": "2026-07-01",
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/France_centre-loire-valley_europe_2.obf"
+  },
+  {
+    "fileName": "France_great-east_bas-rhin_europe_2.obf",
+    "updatedDate": "2026-07-01",
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/France_great-east_bas-rhin_europe_2.obf"
+  },
+  {
+    "fileName": "France_great-east_europe_2.obf",
+    "updatedDate": "2026-06-01",
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/France_great-east_europe_2.obf"
+  },
+  {
+    "fileName": "France_great-east_haut-rhin_europe_2.obf",
+    "updatedDate": "2026-07-01",
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/France_great-east_haut-rhin_europe_2.obf"
+  },
+  {
+    "fileName": "France_great-east_haute-marne_europe_2.obf",
+    "updatedDate": "2026-07-01",
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/France_great-east_haute-marne_europe_2.obf"
+  },
+  {
+    "fileName": "France_great-east_marne_europe_2.obf",
+    "updatedDate": "2026-07-01",
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/France_great-east_marne_europe_2.obf"
+  },
+  {
+    "fileName": "France_great-east_meurthe-et-moselle_europe_2.obf",
+    "updatedDate": "2026-07-01",
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/France_great-east_meurthe-et-moselle_europe_2.obf"
+  },
+  {
+    "fileName": "France_great-east_meuse_europe_2.obf",
+    "updatedDate": "2026-07-01",
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/France_great-east_meuse_europe_2.obf"
   }
 ]
