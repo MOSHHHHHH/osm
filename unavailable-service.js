@@ -137,8 +137,8 @@
         setTimeout(closeToast, 7000);
     }
 
-    // 3. תזמון: מופיע 7 שניות לאחר טעינת הדף
+    // 3. תזמון: מופיע 2 שניות לאחר טעינת הדף
     window.addEventListener('load', () => {
-        setTimeout(showMaintenanceToast, 7000);
+        setTimeout(showMaintenanceToast, 2000);
     });
 })();
