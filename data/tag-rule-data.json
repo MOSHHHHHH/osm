@@ -2323,6 +2323,670 @@
     "argentina:rio-negro": {
       "en": "Rio Negro",
       "he": "ריו נגרו"
+    },
+    "argentina:salta": {
+      "en": "Salta",
+      "he": "סלטה"
+    },
+    "argentina:san-juan": {
+      "en": "San Juan",
+      "he": "סן חואן"
+    },
+    "argentina:san-luis": {
+      "en": "San Luis",
+      "he": "סן לואיס"
+    },
+    "argentina:santa-cruz": {
+      "en": "Santa Cruz",
+      "he": "סנטה קרוז"
+    },
+    "argentina:santa-fe": {
+      "en": "Santa Fe",
+      "he": "סנטה פה"
+    },
+    "argentina:santiago-del-estero": {
+      "en": "Santiago del Estero",
+      "he": "סנטיאגו דל אסטרו"
+    },
+    "argentina:tierra-del-fuego": {
+      "en": "Tierra del Fuego",
+      "he": "ארץ האש"
+    },
+    "argentina:tucuman": {
+      "en": "Tucumán",
+      "he": "טוקומאן"
+    },
+    "australia-oceania:ashmore-and-cartier-islands": {
+      "en": "Ashmore and Cartier Islands",
+      "he": "איי אשמור וקרטייה"
+    },
+    "australia-oceania:australian-capital-territory": {
+      "en": "Australian Capital Territory",
+      "he": "טריטוריית הבירה האוסטרלית"
+    },
+    "australia-oceania:cocos-islands": {
+      "en": "Cocos Islands",
+      "he": "איי קוקוס"
+    },
+    "australia-oceania:coral-sea-islands": {
+      "en": "Coral Sea Islands",
+      "he": "איי הים האלמוגים"
+    },
+    "australia-oceania:new-south-wales": {
+      "en": "New South Wales",
+      "he": "ניו סאות' ויילס"
+    },
+    "australia-oceania:northern-territory": {
+      "en": "Northern Territory",
+      "he": "הטריטוריה הצפונית"
+    },
+    "australia-oceania:queensland": {
+      "en": "Queensland",
+      "he": "קווינסלנד"
+    },
+    "australia-oceania:south-australia": {
+      "en": "South Australia",
+      "he": "אוסטרליה הדרומית"
+    },
+    "australia-oceania:tasmania": {
+      "en": "Tasmania",
+      "he": "טסמניה"
+    },
+    "australia-oceania:victoria": {
+      "en": "Victoria",
+      "he": "ויקטוריה"
+    },
+    "australia-oceania:western-australia": {
+      "en": "Western Australia",
+      "he": "אוסטרליה המערבית"
+    },
+    "austria:burgenland": {
+      "en": "Burgenland",
+      "he": "בורגנלנד"
+    },
+    "austria:carinthia": {
+      "en": "Carinthia",
+      "he": "קרינתיה"
+    },
+    "austria:lower-austria": {
+      "en": "Lower Austria",
+      "he": "אוסטריה התחתונה"
+    },
+    "austria:salzburg": {
+      "en": "Salzburg",
+      "he": "זלצבורג"
+    },
+    "austria:styria": {
+      "en": "Styria",
+      "he": "שטיריה"
+    },
+    "austria:tyrol": {
+      "en": "Tyrol",
+      "he": "טי롤"
+    },
+    "austria:upper-austria": {
+      "en": "Upper Austria",
+      "he": "אוסטריה עילית"
+    },
+    "austria:vorarlberg": {
+      "en": "Vorarlberg",
+      "he": "פורארלברג"
+    },
+    "belarus:brest": {
+      "en": "Brest",
+      "he": "ברסט"
+    },
+    "belarus:gomel": {
+      "en": "Gomel Region",
+      "he": "מחוז גומל"
+    },
+    "belarus:hrodna": {
+      "en": "Hrodna Region",
+      "he": "מחוז גרודנה"
+    },
+    "belarus:magilyow": {
+      "en": "Mogilev Region",
+      "he": "מחוז מוהילב"
+    },
+    "belarus:minsk": {
+      "en": "Minsk",
+      "he": "מינסק"
+    },
+    "belarus:vitebsk": {
+      "en": "Vitebsk",
+      "he": "ויטבסק"
+    },
+    "belgium:flanders": {
+      "en": "Flanders",
+      "he": "פלנדריה"
+    },
+    "belgium:wallonia": {
+      "en": "Wallonia",
+      "he": "ולוניה"
+    },
+    "brazil:acre": {
+      "en": "Acre",
+      "he": "אקרה"
+    },
+    "brazil:alagoas": {
+      "en": "Alagoas",
+      "he": "אלגואס"
+    },
+    "brazil:amapa": {
+      "en": "Amapá",
+      "he": "אמפפה"
+    },
+    "brazil:amazonas": {
+      "en": "Amazonas",
+      "he": "אמזונאס"
+    },
+    "brazil:bahia": {
+      "en": "Bahia",
+      "he": "באיה"
+    },
+    "brazil:ceara": {
+      "en": "Ceará",
+      "he": "סארה"
+    },
+    "brazil:distrito-federal": {
+      "en": "Federal District",
+      "he": "הפדרלי המחוזי"
+    },
+    "brazil:espirito-santo": {
+      "en": "Espírito Santo",
+      "he": "אספיריטו סאנטו"
+    },
+    "brazil:goias": {
+      "en": "Goiás",
+      "he": "גויאס"
+    },
+    "brazil:maranhao": {
+      "en": "Maranhão",
+      "he": "מרניאו"
+    },
+    "brazil:mato-grosso-do-sul": {
+      "en": "Mato Grosso do Sul",
+      "he": "מטו גרוסו דו סול"
+    },
+    "brazil:mato-grosso": {
+      "en": "Mato Grosso",
+      "he": "מטו גרוסו"
+    },
+    "brazil:minas-gerais": {
+      "en": "Minas Gerais",
+      "he": "מינאס ז'ראיס"
+    },
+    "brazil:para": {
+      "en": "Pará",
+      "he": "פארה"
+    },
+    "brazil:paraiba": {
+      "en": "Paraíba",
+      "he": "פאראיבה"
+    },
+    "brazil:parana": {
+      "en": "Paraná",
+      "he": "פרנה"
+    },
+    "brazil:pernambuco": {
+      "en": "Pernambuco",
+      "he": "פרנאמבוקו"
+    },
+    "brazil:piaui": {
+      "en": "Piauí",
+      "he": "פياואי"
+    },
+    "brazil:rio-de-janeiro": {
+      "en": "Rio de Janeiro",
+      "he": "ריו דה ז'ניירו"
+    },
+    "brazil:rio-grande-do-norte": {
+      "en": "Rio Grande do Norte",
+      "he": "ריו גראנדה דו נורטה"
+    },
+    "brazil:rio-grande-do-sul": {
+      "en": "Rio Grande do Sul",
+      "he": "ריו גראנדה דו סול"
+    },
+    "brazil:rondonia": {
+      "en": "Rondônia",
+      "he": "רונדוניה"
+    },
+    "brazil:roraima": {
+      "en": "Roraima",
+      "he": "רוראימה"
+    },
+    "brazil:santa-catarina": {
+      "en": "Santa Catarina",
+      "he": "סנטה קטרינה"
+    },
+    "brazil:sao-paulo": {
+      "en": "São Paulo",
+      "he": "סאו פאולו"
+    },
+    "brazil:sergipe": {
+      "en": "Sergipe",
+      "he": "סרז'יפה"
+    },
+    "brazil:tocantins": {
+      "en": "Tocantins",
+      "he": "טוקנטינס"
+    },
+    "canada:alberta": {
+      "en": "Alberta",
+      "he": "אלברטה"
+    },
+    "canada:british-columbia": {
+      "en": "British Columbia",
+      "he": "קולומביה הבריטית"
+    },
+    "canada:british-columbia/alberni-clayoquot": {
+      "en": "Alberni-Clayoquot",
+      "he": "אלברני-קלייוקוט"
+    },
+    "canada:british-columbia/bulkley-nechako": {
+      "en": "Bulkley-Nechako",
+      "he": "בולקלי-נצ'אקו"
+    },
+    "canada:british-columbia/capital-regional": {
+      "en": "Capital Regional District",
+      "he": "האזור הפדרלי הקפיטליסטי"
+    },
+    "canada:british-columbia/cariboo": {
+      "en": "Cariboo",
+      "he": "קאריבו"
+    },
+    "canada:british-columbia/central-coast": {
+      "en": "Central Coast",
+      "he": "החוף המרכזי"
+    },
+    "canada:british-columbia/central-kootenay": {
+      "en": "Central Kootenay",
+      "he": "צ'נטראל קוטני"
+    },
+    "canada:british-columbia/central-okanagan": {
+      "en": "Central Okanagan",
+      "he": "סנטראל אוקנגן"
+    },
+    "canada:british-columbia/columbia-shuswap": {
+      "en": "Columbia-Shuswap",
+      "he": "קולומביה-שושוואפ"
+    },
+    "canada:british-columbia/comox-valley": {
+      "en": "Comox Valley",
+      "he": "עמק קומוקס"
+    },
+    "canada:british-columbia/cowichan-valley": {
+      "en": "Cowichan Valley",
+      "he": "קואוצ'אן ואלי"
+    },
+    "canada:british-columbia/east-kootenay": {
+      "en": "East Kootenay",
+      "he": "איסט קוטני"
+    },
+    "canada:british-columbia/fraser-fort-george": {
+      "en": "Fraser-Fort George",
+      "he": "פרייזר-פורט ג'ורג'"
+    },
+    "canada:british-columbia/fraser-valley": {
+      "en": "Fraser Valley",
+      "he": "פרייזר ואלי"
+    },
+    "canada:british-columbia/greater-vancouver": {
+      "en": "Greater Vancouver",
+      "he": "מטרופולין ונקו버"
+    },
+    "canada:british-columbia/kitimat-stikine": {
+      "en": "Kitimat-Stikine",
+      "he": "קיטימט-סטיקין"
+    },
+    "canada:british-columbia/kootenay-boundary": {
+      "en": "Kootenay Boundary",
+      "he": "קוטני-באונדרי"
+    },
+    "canada:british-columbia/mount-waddington": {
+      "en": "Mount Waddington",
+      "he": "מאונט וואדינגטון"
+    },
+    "canada:british-columbia/nanaimo": {
+      "en": "Nanaimo",
+      "he": "ננאימו"
+    },
+    "canada:british-columbia/north-okanagan": {
+      "en": "North Okanagan",
+      "he": "נורת' אוקנגן"
+    },
+    "canada:british-columbia/northern-rockies": {
+      "en": "Northern Rockies",
+      "he": "הרי הרוקי הצפוניים"
+    },
+    "canada:british-columbia/okanagan-similkameen": {
+      "en": "Okanagan-Similkameen",
+      "he": "אוקאנאגן-סימילקאמין"
+    },
+    "canada:british-columbia/peace-river": {
+      "en": "Peace River",
+      "he": "פיס ריבר"
+    },
+    "canada:british-columbia/powell-river": {
+      "en": "Powell River",
+      "he": "פאוול ריבר"
+    },
+    "canada:british-columbia/skeena-queen-charlotte": {
+      "en": "Skeena-Queen Charlotte",
+      "he": "סקינה-קווין שארלוט"
+    },
+    "canada:british-columbia/squamish-lillooet": {
+      "en": "Squamish-Lillooet",
+      "he": "סקוומיש-לילוט"
+    },
+    "canada:british-columbia/stikine": {
+      "en": "Stikine Region",
+      "he": "מחוז סטיקין"
+    },
+    "canada:british-columbia/strathcona": {
+      "en": "Strathcona",
+      "he": "סטראת'קונה"
+    },
+    "canada:british-columbia/sunshine-coast": {
+      "en": "Sunshine Coast",
+      "he": "סאנשיין קוסט"
+    },
+    "canada:british-columbia/thompson-nicola": {
+      "en": "Thompson-Nicola",
+      "he": "תומפסון-ניקולה"
+    },
+    "canada:manitoba": {
+      "en": "Manitoba",
+      "he": "מניטובה"
+    },
+    "canada:new-brunswick": {
+      "en": "New Brunswick",
+      "he": "ניו ברנזוויק"
+    },
+    "canada:newfoundland-and-labrador": {
+      "en": "Newfoundland and Labrador",
+      "he": "ניופאונדלנד ולברדור"
+    },
+    "canada:northwest-territories": {
+      "en": "Northwest Territories",
+      "he": "הטריטוריות הצפון-מערביות"
+    },
+    "canada:nova-scotia": {
+      "en": "Nova Scotia",
+      "he": "נובה סקוטיה"
+    },
+    "canada:nunavut-central-east": {
+      "en": "Central East Nunavut",
+      "he": "מרכז-מזרח נונאווט"
+    },
+    "canada:nunavut-central-west": {
+      "en": "Central West Nunavut",
+      "he": "נונאווט מרכז-מערב"
+    },
+    "canada:nunavut-north-east": {
+      "en": "Northeast Nunavut",
+      "he": "צפון-מזרח נונאווט"
+    },
+    "canada:nunavut-north-west": {
+      "en": "Northwest Nunavut",
+      "he": "צפון-מערב נונאווט"
+    },
+    "canada:nunavut-se": {
+      "en": "Southeast Nunavut",
+      "he": "דרום-מזרח נונאווט"
+    },
+    "canada:nunavut-sw": {
+      "en": "Southwest Nunavut",
+      "he": "דרום-מערב נונאווט"
+    },
+    "canada:ontario": {
+      "en": "Ontario",
+      "he": "אונטריו"
+    },
+    "canada:ontario/barrie": {
+      "en": "Barrie",
+      "he": "בארי"
+    },
+    "canada:ontario/kingston": {
+      "en": "Kingston",
+      "he": "קינגסטון"
+    },
+    "canada:ontario/london": {
+      "en": "London",
+      "he": "לונדון"
+    },
+    "canada:ontario/moosonee": {
+      "en": "Moosonee",
+      "he": "מוסוני"
+    },
+    "canada:ontario/northwestern": {
+      "en": "Northwestern Ontario",
+      "he": "צפון-מערב אונטריו"
+    },
+    "canada:ontario/sault-ste-marie": {
+      "en": "Sault Ste. Marie",
+      "he": "סו סיינט מארי"
+    },
+    "canada:ontario/sudbury": {
+      "en": "Sudbury",
+      "he": "סדברי"
+    },
+    "canada:ontario/temiskaming-shores": {
+      "en": "Temiskaming Shores",
+      "he": "טמיסקמינג שורס"
+    },
+    "canada:ontario/thunder-bay": {
+      "en": "Thunder Bay",
+      "he": "ת'אנדר ביי"
+    },
+    "canada:ontario/timmins": {
+      "en": "Timmins",
+      "he": "טימינס"
+    },
+    "canada:ontario/toronto": {
+      "en": "Toronto",
+      "he": "טורונטו"
+    },
+    "canada:ontario/wawa": {
+      "en": "Wawa",
+      "he": "וואווה"
+    },
+    "canada:prince-edward-island": {
+      "en": "Prince Edward Island",
+      "he": "אי הנסיך אדוארד"
+    },
+    "canada:quebec": {
+      "en": "Quebec",
+      "he": "קוויבק"
+    },
+    "canada:quebec/abitibi-temiscamingue": {
+      "en": "Abitibi-Témiscamingue",
+      "he": "אביטיבי-טמיסקאמינג"
+    },
+    "canada:quebec/bas-saint-laurent": {
+      "en": "Bas-Saint-Laurent",
+      "he": "בָּה-סֶן-לָורָן"
+    },
+    "canada:quebec/capitale-nationale": {
+      "en": "Capitale-Nationale",
+      "he": "קאפיטל-נאסיונאל"
+    },
+    "canada:quebec/centre-du-quebec": {
+      "en": "Centre-du-Québec",
+      "he": "סנטר-די-קבק"
+    },
+    "canada:quebec/chaudiere-appalaches": {
+      "en": "Chaudière-Appalaches",
+      "he": "שאודיר-אפאלאש"
+    },
+    "canada:quebec/cote-nord": {
+      "en": "Côte-Nord",
+      "he": "קוט-נור"
+    },
+    "canada:quebec/estrie": {
+      "en": "Estrie",
+      "he": "אסטרי"
+    },
+    "canada:quebec/gaspesie-iles-de-la-madeleine": {
+      "en": "Gaspésie–Îles-de-la-Madeleine",
+      "he": "גאספזי - איים-דה-לה-מאדלן"
+    },
+    "canada:quebec/lanaudiere": {
+      "en": "Lanaudière",
+      "he": "לנאודיֶיר"
+    },
+    "canada:quebec/laurentides": {
+      "en": "Laurentides",
+      "he": "לורנטיד"
+    },
+    "canada:quebec/mauricie": {
+      "en": "Mauricie",
+      "he": "מוריסי"
+    },
+    "canada:quebec/monteregie": {
+      "en": "Montérégie",
+      "he": "מונטרז'י"
+    },
+    "canada:quebec/montreal": {
+      "en": "Montreal",
+      "he": "מונטריאול"
+    },
+    "canada:quebec/nord-du-quebec": {
+      "en": "Nord-du-Québec",
+      "he": "נור-די-קבק"
+    },
+    "canada:quebec/outaouais": {
+      "en": "Outaouais",
+      "he": "אוטווה"
+    },
+    "canada:quebec/saguenay-lac-saint-jean": {
+      "en": "Saguenay–Lac-Saint-Jean",
+      "he": "סאגינה-לאק-סן-ז'אן"
+    },
+    "canada:saskatchewan": {
+      "en": "Saskatchewan",
+      "he": "ססקצ'ואן"
+    },
+    "canada:yukon": {
+      "en": "Yukon",
+      "he": "יוקון"
+    },
+    "chile:antofagasta": {
+      "en": "Antofagasta",
+      "he": "אנטופגסטה"
+    },
+    "chile:araucania": {
+      "en": "Araucanía",
+      "he": "אראוקאניה"
+    },
+    "chile:arica-y-parinacota": {
+      "en": "Arica y Parinacota",
+      "he": "אריקה ופרינקוטה"
+    },
+    "chile:atacama": {
+      "en": "Atacama",
+      "he": "אטקמה"
+    },
+    "chile:aysen-del-general-carlos-ibanez-del-campo": {
+      "en": "Aysén del General Carlos Ibáñez del Campo",
+      "he": "אייסן דל ג'נרל קרלוס איבנייס דל קמפו"
+    },
+    "chile:biobio": {
+      "en": "Biobío",
+      "he": "ביוביו"
+    },
+    "chile:coquimbo": {
+      "en": "Coquimbo",
+      "he": "קוקימבו"
+    },
+    "chile:libertador-bernardo-ohiggins": {
+      "en": "Libertador General Bernardo O'Higgins",
+      "he": "ליברטדור גנרל ברנרדו או'היגינס"
+    },
+    "chile:los-lagos": {
+      "en": "Los Lagos",
+      "he": "לוס לאגוס"
+    },
+    "chile:los-rios": {
+      "en": "Los Ríos",
+      "he": "לוס ריוס"
+    },
+    "chile:magallanes-and-chilean-antarctica": {
+      "en": "Magallanes and Chilean Antarctica",
+      "he": "מגאיאנס ואנטארקטיקה הצ'יליאנית"
+    },
+    "chile:maule": {
+      "en": "Maule",
+      "he": "מאולה"
+    },
+    "chile:metropolitana-de-santiago": {
+      "en": "Metropolitana de Santiago",
+      "he": "המטרופוליטן של סנטיאגו"
+    },
+    "chile:tarapaca": {
+      "en": "Tarapacá",
+      "he": "טרפקה"
+    },
+    "chile:valparaiso": {
+      "en": "Valparaíso",
+      "he": "ולפראיסו"
+    },
+    "china:anhui": {
+      "en": "Anhui",
+      "he": "אנהוי"
+    },
+    "china:beijing": {
+      "en": "Beijing",
+      "he": "בייג'ינג"
+    },
+    "china:chongqing": {
+      "en": "Chongqing",
+      "he": "צ'ונגצ'ינג"
+    },
+    "china:fujian": {
+      "en": "Fujian",
+      "he": "פוג'יאן"
+    },
+    "china:gansu": {
+      "en": "Gansu",
+      "he": "גאנסו"
+    },
+    "china:guangdong": {
+      "en": "Guangdong",
+      "he": "גואנגדונג"
+    },
+    "china:guangxi": {
+      "en": "Guangxi",
+      "he": "גואנגשי"
+    },
+    "china:guizhou": {
+      "en": "Guizhou",
+      "he": "גויג'ואו"
+    },
+    "china:hainan": {
+      "en": "Hainan",
+      "he": "האינאן"
+    },
+    "china:hebei": {
+      "en": "Hebei",
+      "he": "חביי"
+    },
+    "china:heilongjiang": {
+      "en": "Heilongjiang",
+      "he": "חיילונגג'יאנג"
+    },
+    "china:henan": {
+      "en": "Henan",
+      "he": "חנאן"
+    },
+    "china:hubei": {
+      "en": "Hubei",
+      "he": "חוביי"
+    },
+    "china:hunan": {
+      "en": "Hunan",
+      "he": "חונאן"
     }
   },
   "specialFiles": {
