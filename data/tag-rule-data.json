@@ -4339,6 +4339,14 @@
     "japan:chubu/toyama": {
       "en": "Toyama",
       "he": "טויאמה"
+    },
+    "japan:chubu/yamanashi": {
+      "en": "Yamanashi",
+      "he": "ימאנאשי"
+    },
+    "japan:chugoku": {
+      "en": "Chugoku",
+      "he": "צ'וגוקו"
     }
   },
   "specialFiles": {
