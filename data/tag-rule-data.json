@@ -4307,6 +4307,22 @@
     "japan:chubu": {
       "en": "Chubu",
       "he": "צ'וּבּוּ"
+    },
+    "japan:chubu/aichi": {
+      "en": "Aichi",
+      "he": "אאיצ'י"
+    },
+    "japan:chubu/fukui": {
+      "en": "Fukui",
+      "he": "פוקואי"
+    },
+    "japan:chubu/gifu": {
+      "en": "Gifu",
+      "he": "גיפו"
+    },
+    "japan:chubu/ishikawa": {
+      "en": "Ishikawa",
+      "he": "אישיקווה"
     }
   },
   "specialFiles": {
