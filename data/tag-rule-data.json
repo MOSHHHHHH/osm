@@ -2987,6 +2987,602 @@
     "china:hunan": {
       "en": "Hunan",
       "he": "חונאן"
+    },
+    "china:jiangsu": {
+      "en": "Jiangsu",
+      "he": "ג'יאנגסו"
+    },
+    "china:jiangxi": {
+      "en": "Jiangxi",
+      "he": "ג'יאנגשי"
+    },
+    "china:jilin": {
+      "en": "Jilin",
+      "he": "ג'ילין"
+    },
+    "china:liaoning": {
+      "en": "Liaoning",
+      "he": "ליאונינג"
+    },
+    "china:nei-mongol": {
+      "en": "Inner Mongolia",
+      "he": "מונגוליה הפנימית"
+    },
+    "china:ningxia-hui": {
+      "en": "Ningxia Hui",
+      "he": "נינגשיה"
+    },
+    "china:qinghai": {
+      "en": "Qinghai",
+      "he": "צิงהאי"
+    },
+    "china:shaanxi": {
+      "en": "Shaanxi",
+      "he": "שאאנשי"
+    },
+    "china:shandong": {
+      "en": "Shandong",
+      "he": "שאנדונג"
+    },
+    "china:shanghai": {
+      "en": "Shanghai",
+      "he": "שנגחאי"
+    },
+    "china:shanxi": {
+      "en": "Shanxi",
+      "he": "שאנשי"
+    },
+    "china:sichuan": {
+      "en": "Sichuan",
+      "he": "סצ'ואן"
+    },
+    "china:tianjin": {
+      "en": "Tianjin",
+      "he": "טיינג'ין"
+    },
+    "china:xinjiang-uygur": {
+      "en": "Xinjiang Uyghur",
+      "he": "שינג'יאנג אוויגור"
+    },
+    "china:xizang": {
+      "en": "Xizang",
+      "he": "טיבט"
+    },
+    "china:yunnan": {
+      "en": "Yunnan",
+      "he": "יונאן"
+    },
+    "china:zhejiang": {
+      "en": "Zhejiang",
+      "he": "ג'ג'יאנג"
+    },
+    "congo-democratic-republic:bas-uele": {
+      "en": "Bas-Uélé",
+      "he": "באס-ואלֶה"
+    },
+    "congo-democratic-republic:equateur": {
+      "en": "Équateur",
+      "he": "אקוואטור"
+    },
+    "congo-democratic-republic:haut-katanga": {
+      "en": "Haut-Katanga",
+      "he": "או-קטנגה"
+    },
+    "congo-democratic-republic:haut-lomami": {
+      "en": "Haut-Lomami",
+      "he": "או-לומאמי"
+    },
+    "congo-democratic-republic:haut-uele": {
+      "en": "Haut-Uélé",
+      "he": "או-ואלה"
+    },
+    "congo-democratic-republic:ituri": {
+      "en": "Ituri",
+      "he": "איטורי"
+    },
+    "congo-democratic-republic:kasai-central": {
+      "en": "Kasaï-Central",
+      "he": "קאסאי מרכז"
+    },
+    "congo-democratic-republic:kasai-oriental": {
+      "en": "Kasai-Oriental",
+      "he": "קאסאי המזרחית"
+    },
+    "congo-democratic-republic:kasai": {
+      "en": "Kasai",
+      "he": "קסאי"
+    },
+    "congo-democratic-republic:kinshasa": {
+      "en": "Kinshasa",
+      "he": "קינשאסה"
+    },
+    "congo-democratic-republic:kongo-central": {
+      "en": "Kongo Central",
+      "he": "קונגו המרכזית"
+    },
+    "congo-democratic-republic:kwango": {
+      "en": "Kwango",
+      "he": "קוואנגו"
+    },
+    "congo-democratic-republic:kwilu": {
+      "en": "Kwilu",
+      "he": "קוויליו"
+    },
+    "congo-democratic-republic:lomami": {
+      "en": "Lomami",
+      "he": "לומאמי"
+    },
+    "congo-democratic-republic:lualaba": {
+      "en": "Lualaba",
+      "he": "לואלבה"
+    },
+    "congo-democratic-republic:mai-ndombe": {
+      "en": "Mai-Ndombe",
+      "he": "מאי-נדומבה"
+    },
+    "congo-democratic-republic:maniema": {
+      "en": "Maniema",
+      "he": "מניאמה"
+    },
+    "congo-democratic-republic:mongala": {
+      "en": "Mongala",
+      "he": "מונגאלה"
+    },
+    "congo-democratic-republic:nord-kivu": {
+      "en": "North Kivu",
+      "he": "קיוו הצפונית"
+    },
+    "congo-democratic-republic:nord-ubangi": {
+      "en": "Nord-Ubangi",
+      "he": "נור-אובנגי"
+    },
+    "congo-democratic-republic:sankuru": {
+      "en": "Sankuru",
+      "he": "סנקורו"
+    },
+    "congo-democratic-republic:sud-kivu": {
+      "en": "South Kivu",
+      "he": "קיוו הדרומית"
+    },
+    "congo-democratic-republic:sud-ubangi": {
+      "en": "Sud-Ubangi",
+      "he": "סוד-אובנגי"
+    },
+    "congo-democratic-republic:tanganyika": {
+      "en": "Tanganyika",
+      "he": "טנגניקה"
+    },
+    "congo-democratic-republic:tshopo": {
+      "en": "Tshopo",
+      "he": "צ'ופו"
+    },
+    "congo-democratic-republic:tshuapa": {
+      "en": "Tshuapa",
+      "he": "צ'ואפה"
+    },
+    "czech-republic:jihovychod": {
+      "en": "Southeast",
+      "he": "מזרח מוראביה"
+    },
+    "czech-republic:jihozapad": {
+      "en": "Southwest",
+      "he": "דרום-מערב"
+    },
+    "czech-republic:moravskoslezsko": {
+      "en": "Moravian-Silesian Region",
+      "he": "מחוז מורביה-שלזיה"
+    },
+    "czech-republic:praha": {
+      "en": "Prague",
+      "he": "פראג"
+    },
+    "czech-republic:severovychod": {
+      "en": "Northeast",
+      "he": "צפון-מזרח"
+    },
+    "czech-republic:severozapad": {
+      "en": "Northwest",
+      "he": "צפון-מערב"
+    },
+    "czech-republic:stredni-cechy": {
+      "en": "Central Bohemia",
+      "he": "מרכז בוהמיה"
+    },
+    "czech-republic:stredni-morava": {
+      "en": "Central Moravia",
+      "he": "מוראביה המרכזית"
+    },
+    "denmark:capital-region": {
+      "en": "Capital Region",
+      "he": "האזור העירוני"
+    },
+    "denmark:central-region": {
+      "en": "Central Denmark Region",
+      "he": "המחוז הראשי של דנמרק"
+    },
+    "denmark:north-region": {
+      "en": "North Denmark Region",
+      "he": "מחוז צפון דנמרק"
+    },
+    "denmark:southern-region": {
+      "en": "Southern Region",
+      "he": "הדרום"
+    },
+    "denmark:zealand-region": {
+      "en": "Zealand Region",
+      "he": "מחוז זילנד"
+    },
+    "finland:aland": {
+      "en": "Åland",
+      "he": "אולנד"
+    },
+    "finland:central-finland": {
+      "en": "Central Finland",
+      "he": "מרכז פינלנד"
+    },
+    "finland:central-ostrobothnia": {
+      "en": "Central Ostrobothnia",
+      "he": "הפוטוסטרובוטניה המרכזית"
+    },
+    "finland:kainuu": {
+      "en": "Kainuu",
+      "he": "קאינו"
+    },
+    "finland:kanta-hame": {
+      "en": "Kanta-Häme",
+      "he": "קאנטה-המה"
+    },
+    "finland:kymenlaakso": {
+      "en": "Kymenlaakso",
+      "he": "קיםנלאקסו"
+    },
+    "finland:lapland": {
+      "en": "Lapland",
+      "he": "לפלנד"
+    },
+    "finland:north-karelia": {
+      "en": "North Karelia",
+      "he": "צפון קרליה"
+    },
+    "finland:north-ostrobothnia": {
+      "en": "North Ostrobothnia",
+      "he": "אוסטרובוטניה הצפונית"
+    },
+    "finland:north-savo": {
+      "en": "North Savo",
+      "he": "סאבו הצפונית"
+    },
+    "finland:ostrobothnia": {
+      "en": "Ostrobothnia",
+      "he": "אוסטרובוטניה"
+    },
+    "finland:paijat-hame": {
+      "en": "Päijänne Tavastia",
+      "he": "päijät-häme"
+    },
+    "finland:pirkanmaa": {
+      "en": "Pirkanmaa",
+      "he": "פירקנמאה"
+    },
+    "finland:satakunta": {
+      "en": "Satakunta",
+      "he": "סאטקונטה"
+    },
+    "finland:south-karelia": {
+      "en": "South Karelia",
+      "he": "דרום קרליה"
+    },
+    "finland:south-ostrobothnia": {
+      "en": "South Ostrobothnia",
+      "he": "דרום אוסטרובוטניה"
+    },
+    "finland:south-savo": {
+      "en": "South Savo",
+      "he": "דרום סאבו"
+    },
+    "finland:southwest-finland": {
+      "en": "Southwest Finland",
+      "he": "דרום-מערב פינלנד"
+    },
+    "finland:uusimaa": {
+      "en": "Uusimaa",
+      "he": "אוסִימאה"
+    },
+    "france:auvergne-rhone-alpes": {
+      "en": "Auvergne-Rhône-Alpes",
+      "he": "אוברן-רון-אלפ"
+    },
+    "france:auvergne-rhone-alpes/ain": {
+      "en": "Ain",
+      "he": "אן"
+    },
+    "france:auvergne-rhone-alpes/allier": {
+      "en": "Allier",
+      "he": "אולייה"
+    },
+    "france:auvergne-rhone-alpes/ardeche": {
+      "en": "Ardèche",
+      "he": "ארדש"
+    },
+    "france:auvergne-rhone-alpes/cantal": {
+      "en": "Cantal",
+      "he": "קנטאל"
+    },
+    "france:auvergne-rhone-alpes/drome": {
+      "en": "Drôme",
+      "he": "דרום"
+    },
+    "france:auvergne-rhone-alpes/haute-loire": {
+      "en": "Haute-Loire",
+      "he": "הוט-לואה"
+    },
+    "france:auvergne-rhone-alpes/isere": {
+      "en": "Isère",
+      "he": "איזר"
+    },
+    "france:auvergne-rhone-alpes/loire": {
+      "en": "Loire",
+      "he": "לואר"
+    },
+    "france:auvergne-rhone-alpes/lyon": {
+      "en": "Lyon",
+      "he": "ליון"
+    },
+    "france:auvergne-rhone-alpes/puy-de-dome": {
+      "en": "Puy-de-Dôme",
+      "he": "פוי-דה-דום"
+    },
+    "france:auvergne-rhone-alpes/savoy": {
+      "en": "Savoy",
+      "he": "סבויה"
+    },
+    "france:auvergne-rhone-alpes/upper-savoy": {
+      "en": "Upper Savoy",
+      "he": "הוט-סבואה"
+    },
+    "france:bourgogne-franche-comte": {
+      "en": "Bourgogne-Franche-Comté",
+      "he": "בורגון-פראנש-קונטה"
+    },
+    "france:brittany": {
+      "en": "Brittany",
+      "he": "ברטאן"
+    },
+    "france:centre-loire-valley": {
+      "en": "Centre-Loire Valley",
+      "he": "מרכז-עמק הלואר"
+    },
+    "france:corse": {
+      "en": "Corsica",
+      "he": "קורסיקה"
+    },
+    "france:cote-dor": {
+      "en": "Côte-d'Or",
+      "he": "קוט-ד'ור"
+    },
+    "france:doubs": {
+      "en": "Doubs",
+      "he": "דו"
+    },
+    "france:great-east": {
+      "en": "Grand Est",
+      "he": "גראנד אסט"
+    },
+    "france:great-east/ardennes": {
+      "en": "Ardennes",
+      "he": "ארדנים"
+    },
+    "france:great-east/aube": {
+      "en": "Aube",
+      "he": "אוב"
+    },
+    "france:great-east/bas-rhin": {
+      "en": "Bas-Rhin",
+      "he": "בָּה-רֶן"
+    },
+    "france:great-east/haut-rhin": {
+      "en": "Haut-Rhin",
+      "he": "האו-ריין"
+    },
+    "france:great-east/haute-marne": {
+      "en": "Haute-Marne",
+      "he": "הוט-מארן"
+    },
+    "france:great-east/marne": {
+      "en": "Marne",
+      "he": "מארן"
+    },
+    "france:great-east/meurthe-et-moselle": {
+      "en": "Meurthe-et-Moselle",
+      "he": "מירת ומוזל"
+    },
+    "france:great-east/meuse": {
+      "en": "Meuse",
+      "he": "מёз"
+    },
+    "france:great-east/moselle": {
+      "en": "Moselle",
+      "he": "מוזל"
+    },
+    "france:great-east/vosges": {
+      "en": "Vosges",
+      "he": "ווג"
+    },
+    "france:haute-saone": {
+      "en": "Haute-Saône",
+      "he": "הוט-סון"
+    },
+    "france:hauts-de-france": {
+      "en": "Hauts-de-France",
+      "he": "או-דה-פראנס"
+    },
+    "france:ile-de-france": {
+      "en": "Île-de-France",
+      "he": "איל-דה-פראנס"
+    },
+    "france:jura": {
+      "en": "Jura",
+      "he": "ז'ורה"
+    },
+    "france:new-aquitaine": {
+      "en": "New Aquitaine",
+      "he": "אקיטן החדשה"
+    },
+    "france:new-aquitaine/charente-maritime": {
+      "en": "Charente-Maritime",
+      "he": "שארנט-מריטים"
+    },
+    "france:new-aquitaine/charente": {
+      "en": "Charente",
+      "he": "שראנט"
+    },
+    "france:new-aquitaine/correze": {
+      "en": "Corrèze",
+      "he": "קורז'"
+    },
+    "france:new-aquitaine/creuse": {
+      "en": "Creuse",
+      "he": "קרז"
+    },
+    "france:new-aquitaine/deux-sevres": {
+      "en": "Deux-Sèvres",
+      "he": "דֶּ-סֶבְּר"
+    },
+    "france:new-aquitaine/dordogne": {
+      "en": "Dordogne",
+      "he": "דורדון"
+    },
+    "france:new-aquitaine/gironde": {
+      "en": "Gironde",
+      "he": "ז'ירונד"
+    },
+    "france:new-aquitaine/haute-vienne": {
+      "en": "Haute-Vienne",
+      "he": "הוט-ויין"
+    },
+    "france:new-aquitaine/landes": {
+      "en": "Landes",
+      "he": "לנד"
+    },
+    "france:new-aquitaine/lot-et-garonne": {
+      "en": "Lot-et-Garonne",
+      "he": "לוט וגארון"
+    },
+    "france:new-aquitaine/pyrenees-atlantiques": {
+      "en": "Pyrénées-Atlantiques",
+      "he": "פירנאה-אטלנטיק"
+    },
+    "france:new-aquitaine/vienne": {
+      "en": "Vienne",
+      "he": "ויין"
+    },
+    "france:nievre": {
+      "en": "Nièvre",
+      "he": "נייֶיבֶּר"
+    },
+    "france:normandy": {
+      "en": "Normandy",
+      "he": "נורמנדי"
+    },
+    "france:occitania": {
+      "en": "Occitanie",
+      "he": "אוקסיטניה"
+    },
+    "france:occitania/ariege": {
+      "en": "Ariège",
+      "he": "אריאז'"
+    },
+    "france:occitania/aude": {
+      "en": "Aude",
+      "he": "אוד"
+    },
+    "france:occitania/aveyron": {
+      "en": "Aveyron",
+      "he": "אבררון"
+    },
+    "france:occitania/gard": {
+      "en": "Gard",
+      "he": "גאר"
+    },
+    "france:occitania/gers": {
+      "en": "Gers",
+      "he": "ז'ר"
+    },
+    "france:occitania/haute-garonne": {
+      "en": "Haute-Garonne",
+      "he": "הוט-גארון"
+    },
+    "france:occitania/hautes-pyrenees": {
+      "en": "Hautes-Pyrénées",
+      "he": "הוט-פירנה"
+    },
+    "france:occitania/herault": {
+      "en": "Hérault",
+      "he": "ארו"
+    },
+    "france:occitania/lot": {
+      "en": "Lot",
+      "he": "לוט"
+    },
+    "france:occitania/lozere": {
+      "en": "Lozère",
+      "he": "לוזר"
+    },
+    "france:occitania/pyrenees-orientales": {
+      "en": "Pyrénées-Orientales",
+      "he": "פיראנים מזרחיים"
+    },
+    "france:occitania/tarn-et-garonne": {
+      "en": "Tarn-et-Garonne",
+      "he": "טרן וגארון"
+    },
+    "france:occitania/tarn": {
+      "en": "Tarn",
+      "he": "טרן"
+    },
+    "france:pays-de-la-loire": {
+      "en": "Pays de la Loire",
+      "he": "פיי דה לה לואר"
+    },
+    "france:provence-alpes-cote-d-azur": {
+      "en": "Provence-Alpes-Côte d'Azur",
+      "he": "פרובאנס-אלפ-קוט ד'אזור"
+    },
+    "france:provence-alpes-cote-d-azur/alpes-de-haute-provence": {
+      "en": "Alpes-de-Haute-Provence",
+      "he": "אלפ-דה-הוט-פרובאנס"
+    },
+    "france:provence-alpes-cote-d-azur/alpes-maritimes": {
+      "en": "Alpes-Maritimes",
+      "he": "האלפים הימיים"
+    },
+    "france:provence-alpes-cote-d-azur/bouches-du-rhone": {
+      "en": "Bouches-du-Rhône",
+      "he": "בוש-דּי-רון"
+    },
+    "france:provence-alpes-cote-d-azur/hautes-alpes": {
+      "en": "Hautes-Alpes",
+      "he": "הוט-אלפ"
+    },
+    "france:provence-alpes-cote-d-azur/var": {
+      "en": "Var",
+      "he": "ואר"
+    },
+    "france:provence-alpes-cote-d-azur/vaucluse": {
+      "en": "Vaucluse",
+      "he": "ווקלוז"
+    },
+    "france:saone-et-loire": {
+      "en": "Saône-et-Loire",
+      "he": "סון א לוארה"
+    },
+    "france:territoire-de-belfort": {
+      "en": "Territoire de Belfort",
+      "he": "טריטואר דה בלפור"
+    },
+    "france:yonne": {
+      "en": "Yonne",
+      "he": "יון"
     }
   },
   "specialFiles": {
