@@ -4295,6 +4295,18 @@
     "italy:umbria": {
       "en": "Umbria",
       "he": "אומבריה"
+    },
+    "italy:valle-aosta": {
+      "en": "Valle d'Aosta",
+      "he": "ואלה ד'אוסטה"
+    },
+    "italy:veneto": {
+      "en": "Veneto",
+      "he": "וונטו"
+    },
+    "japan:chubu": {
+      "en": "Chubu",
+      "he": "צ'וּבּוּ"
     }
   },
   "specialFiles": {
