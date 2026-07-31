@@ -2263,7 +2263,68 @@
       "aliasOf": null
     }
   },
-  "regions": {},
+  "regions": {
+    "argentina:buenos-aires": {
+      "en": "Buenos Aires",
+      "he": "בואנוס איירס"
+    },
+    "argentina:catamarca": {
+      "en": "Catamarca",
+      "he": "קטמרקה"
+    },
+    "argentina:chaco": {
+      "en": "Chaco",
+      "he": "צ'אקו"
+    },
+    "argentina:chubut": {
+      "en": "Chubut",
+      "he": "צ'ובוט"
+    },
+    "argentina:cordoba": {
+      "en": "Córdoba",
+      "he": "קורדובה"
+    },
+    "argentina:corrientes": {
+      "en": "Corrientes",
+      "he": "קוריאנטס"
+    },
+    "argentina:entre-rios": {
+      "en": "Entre Ríos",
+      "he": "אנטרה ריוס"
+    },
+    "argentina:formosa": {
+      "en": "Formosa",
+      "he": "פורמוסה"
+    },
+    "argentina:jujuy": {
+      "en": "Jujuy",
+      "he": "חוחוי"
+    },
+    "argentina:la-pampa": {
+      "en": "La Pampa",
+      "he": "לה פמפה"
+    },
+    "argentina:la-rioja": {
+      "en": "La Rioja",
+      "he": "לה ריוחה"
+    },
+    "argentina:mendoza": {
+      "en": "Mendoza",
+      "he": "מנדוסה"
+    },
+    "argentina:misiones": {
+      "en": "Misiones",
+      "he": "מיסיונס"
+    },
+    "argentina:neuquen": {
+      "en": "Neuquén",
+      "he": "נאוקן"
+    },
+    "argentina:rio-negro": {
+      "en": "Rio Negro",
+      "he": "ריו נגרו"
+    }
+  },
   "specialFiles": {
     "basemap": {
       "continentEn": "World",
