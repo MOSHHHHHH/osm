@@ -4279,6 +4279,22 @@
     "italy:sardegna": {
       "en": "Sardinia",
       "he": "סרדיניה"
+    },
+    "italy:sicilia": {
+      "en": "Sicily",
+      "he": "סיציליה"
+    },
+    "italy:toscana": {
+      "en": "Tuscany",
+      "he": "טוסקנה"
+    },
+    "italy:trentino-alto-adige": {
+      "en": "Trentino-Alto Adige",
+      "he": "טרנטינו-אלטו אדיג'ה"
+    },
+    "italy:umbria": {
+      "en": "Umbria",
+      "he": "אומבריה"
     }
   },
   "specialFiles": {
