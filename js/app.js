@@ -2,12 +2,19 @@
  * app.js — front-end logic for the offline maps hub
  *
  * Data sources (all same-origin, relative to this page):
- *   data/osmand-data.json     [{ fileName, updatedDate, url }]
- *   data/mapsTags.json        [{ fileName, hebrewTags:{continent,country,city},
- *                                 englishTags:{...}, emoji }]
+ *   data/osmand-data.json     [{ fileName, updatedDate, url, "zip-osm-file", originalZipUrl }]
+ *     - url: best current download link. If "zip-osm-file" is true, url points to OsmAnd's
+ *       own .zip (not yet mirrored here) and the file must be extracted before use; if false,
+ *       url points to our own hosted, ready-to-use .obf file.
+ *     - originalZipUrl: OsmAnd's own .zip link, ALWAYS present regardless of hosting status.
+ *   data/mapsTags.json        [{ fileName, geo:[{en,he}, ...], emoji }]
+ *     - geo is ordered broadest-to-most-specific (continent, country, region, ...) with only
+ *       as many levels as are actually known - no fixed shape, nothing padded with nulls.
  *   data/moovitdos-link.json  { path, updatedDate }
- *   data/update-status.json   { osmand-status, moovitdos-status, osmand-in-progress,
- *                                 osmand-pending-files, osmand-oversized-files, update-date }
+ *   data/update-status.json   { osmand-status, moovitdos-status, update-date }
+ *     - Binary per service: true means the last check succeeded, false means it didn't
+ *       (e.g. OsmAnd's own site was unreachable). Individual files still being served as a
+ *       .zip fallback is normal/expected and is not reflected here.
  *
  * Analytics: every download fires a fire-and-forget POST to the Google Form
  * below with the file name and this browser's running download counter
@@ -19,20 +26,16 @@ const FORM_ACTION_URL =
 const FORM_ENTRY_FILE_NAME = "entry.1612470091";
 const FORM_ENTRY_DOWNLOAD_COUNTER = "entry.307147373";
 
-const OSMAND_ISRAEL_KEYWORDS = ["israel"];
-const OSMAND_YOSH_KEYWORDS = ["west-bank", "west bank", "palestine", "judea", "samaria", "yosh"];
+// Fixed, exact file names - the Israel/Yosh buttons always use these, no searching/guessing.
+const ISRAEL_FILE_NAME = "israel_asia_2.obf";
+const YOSH_FILE_NAME = "palestine_asia_2.obf";
+
+const ZIP_WARNING_SECONDS = 7;
 
 let osmandData = [];
 let mapsTags = [];
 let moovitdosLink = { path: null, updatedDate: null };
-let updateStatus = {
-  "osmand-status": true,
-  "moovitdos-status": true,
-  "osmand-in-progress": false,
-  "osmand-pending-files": [],
-  "osmand-oversized-files": [],
-  "update-date": null,
-};
+let updateStatus = { "osmand-status": true, "moovitdos-status": true, "update-date": null };
 
 // ------------------------------------------------------------------
 // Data loading
@@ -57,69 +60,43 @@ async function loadAllData() {
     fetchJson("data/update-status.json", {
       "osmand-status": true,
       "moovitdos-status": true,
-      "osmand-in-progress": false,
-      "osmand-pending-files": [],
-      "osmand-oversized-files": [],
       "update-date": null,
     }),
   ]);
 
   renderStatus();
+  renderButtonDates();
+}
+
+function findOsmandEntry(fileName) {
+  const lower = fileName.toLowerCase();
+  return osmandData.find((e) => e.fileName.toLowerCase() === lower) || null;
 }
 
 // ------------------------------------------------------------------
-// Status pill + modal
+// Status pill + modal (binary: ok / error, per service)
 // ------------------------------------------------------------------
 
 function renderStatus() {
   const osmandOk = updateStatus["osmand-status"];
   const moovitdosOk = updateStatus["moovitdos-status"];
   const hasError = !osmandOk || !moovitdosOk;
-  // "Updating now" only applies when there's no error - a real error always wins.
-  const isUpdatingNow = !hasError && updateStatus["osmand-in-progress"];
 
   const pill = document.getElementById("statusPill");
   pill.classList.remove("loading");
-  pill.classList.toggle("in-progress", isUpdatingNow);
 
-  let topBadge = "✅";
-  let topText = "כל הנתונים מעודכנים";
-  if (hasError) {
-    topBadge = "❎";
-    topText = "יתכן שחלק מהנתונים לא מעודכנים";
-  } else if (isUpdatingNow) {
-    topBadge = "🔄";
-    topText = "עדכון הנתונים מתבצע כעת";
-  }
-  document.getElementById("statusBadge").textContent = topBadge;
-  document.getElementById("statusText").textContent = topText;
+  document.getElementById("statusBadge").textContent = hasError ? "❎" : "✅";
+  document.getElementById("statusText").textContent = hasError
+    ? "יתכן שחלק מהנתונים לא מעודכנים"
+    : "כל הנתונים מעודכנים";
 
   const dateStr = formatDate(updateStatus["update-date"]);
 
-  // OsmAnd row: error > updating now > all good.
-  let osmandBadge = "✅";
-  let osmandText = "כל התוכן מעודכן, נבדק לאחרונה";
-  if (!osmandOk) {
-    osmandBadge = "❎";
-    osmandText = "תקלה בעדכון, יתכן שחלק מהנתונים לא מעודכנים. אנו פועלים לתקן את התקלה.";
-  } else if (updateStatus["osmand-in-progress"]) {
-    osmandBadge = "🔄";
-    osmandText =
-      "עדכון הנתונים מתבצע כעת - השרתים שלנו עובדים במלא המרץ לעדכן את כל הקבצים. " +
-      "ניתן לנסות שוב בעוד מספר שעות או להוריד כעת את הגרסה האחרונה שעודכנה.";
-  }
-  document.getElementById("modalOsmandBadge").textContent = osmandBadge;
-  document.getElementById("modalOsmandText").textContent = osmandText;
+  document.getElementById("modalOsmandBadge").textContent = osmandOk ? "✅" : "❎";
+  document.getElementById("modalOsmandText").textContent = osmandOk
+    ? "כל התוכן מעודכן, נבדק לאחרונה"
+    : "תקלה בעדכון, יתכן שחלק מהנתונים לא מעודכנים. אנו פועלים לתקן את התקלה.";
   document.getElementById("modalOsmandDate").textContent = dateStr;
-
-  const pendingFiles = updateStatus["osmand-pending-files"] || [];
-  const pendingLink = document.getElementById("osmandPendingLink");
-  if (osmandOk && updateStatus["osmand-in-progress"] && pendingFiles.length > 0) {
-    pendingLink.style.display = "inline-block";
-    document.getElementById("osmandPendingCount").textContent = pendingFiles.length;
-  } else {
-    pendingLink.style.display = "none";
-  }
 
   document.getElementById("modalMoovitdosBadge").textContent = moovitdosOk ? "✅" : "❎";
   document.getElementById("modalMoovitdosText").textContent = moovitdosOk
@@ -154,35 +131,39 @@ function setupModal() {
   });
 }
 
-function renderPendingFilesList() {
-  const listEl = document.getElementById("pendingFilesList");
-  const pendingFiles = updateStatus["osmand-pending-files"] || [];
-  listEl.innerHTML = "";
+// ------------------------------------------------------------------
+// Zip-extraction warning modal (OsmAnd .zip fallback downloads only - never for Moovitdos)
+// ------------------------------------------------------------------
 
-  if (pendingFiles.length === 0) {
-    listEl.innerHTML = `<li class="pending-files-empty">אין כרגע קבצים הממתינים לעדכון.</li>`;
-    return;
-  }
+let zipWarningTimer = null;
 
-  pendingFiles.forEach((fileName) => {
-    const li = document.createElement("li");
-    li.textContent = fileName;
-    listEl.appendChild(li);
-  });
+function showZipWarningModal() {
+  const overlay = document.getElementById("zipWarningModal");
+  const countdownEl = document.getElementById("zipWarningCountdown");
+  let remaining = ZIP_WARNING_SECONDS;
+  countdownEl.textContent = remaining;
+
+  overlay.classList.add("open");
+  clearInterval(zipWarningTimer);
+  zipWarningTimer = setInterval(() => {
+    remaining -= 1;
+    if (remaining <= 0) {
+      closeZipWarningModal();
+      return;
+    }
+    countdownEl.textContent = remaining;
+  }, 1000);
 }
 
-function setupPendingFilesModal() {
-  const overlay = document.getElementById("pendingFilesModal");
-  document.getElementById("osmandPendingLink").addEventListener("click", (e) => {
-    e.preventDefault();
-    renderPendingFilesList();
-    overlay.classList.add("open");
-  });
-  document.getElementById("pendingFilesCloseBtn").addEventListener("click", () => {
-    overlay.classList.remove("open");
-  });
-  overlay.addEventListener("click", (e) => {
-    if (e.target === overlay) overlay.classList.remove("open");
+function closeZipWarningModal() {
+  clearInterval(zipWarningTimer);
+  document.getElementById("zipWarningModal").classList.remove("open");
+}
+
+function setupZipWarningModal() {
+  document.getElementById("zipWarningCloseBtn").addEventListener("click", closeZipWarningModal);
+  document.getElementById("zipWarningModal").addEventListener("click", (e) => {
+    if (e.target === e.currentTarget) closeZipWarningModal();
   });
 }
 
@@ -218,30 +199,33 @@ function triggerDownload(url, suggestedName) {
   link.remove();
 }
 
-function downloadFile(fileName, url) {
+/**
+ * @param {string} fileName - used for the analytics ping and suggested download name.
+ * @param {string} url - the actual URL to download.
+ * @param {boolean} isOsmandZipFallback - true when this is an OsmAnd .zip that still needs
+ *        manual extraction; triggers the warning modal. Never true for Moovitdos.
+ */
+function downloadFile(fileName, url, isOsmandZipFallback) {
   const counter = bumpDownloadCounter();
   pingAnalytics(fileName, counter);
   triggerDownload(url, fileName);
+  if (isOsmandZipFallback) {
+    showZipWarningModal();
+  }
 }
 
 // ------------------------------------------------------------------
 // Big buttons: OsmAnd Israel / Yosh / Moovitdos
 // ------------------------------------------------------------------
 
-function findOsmandFile(keywords) {
-  const lowerKeywords = keywords.map((k) => k.toLowerCase());
-  return osmandData.find((entry) =>
-    lowerKeywords.some((k) => entry.fileName.toLowerCase().includes(k))
-  );
-}
-
-function handleOsmandButton(keywords, label) {
-  const match = findOsmandFile(keywords);
-  if (!match) {
+function handleFixedOsmandButton(fixedFileName, label) {
+  const entry = findOsmandEntry(fixedFileName);
+  if (!entry || !entry.originalZipUrl) {
     alert(`המפה עבור "${label}" עדיין לא זמינה במאגר. נסו שוב מאוחר יותר.`);
     return;
   }
-  downloadFile(match.fileName, match.url);
+  // Always the original OsmAnd .zip, by design - no dependency on our own hosting pipeline.
+  downloadFile(entry.fileName + ".zip", entry.originalZipUrl, true);
 }
 
 function handleMoovitdosButton() {
@@ -249,17 +233,32 @@ function handleMoovitdosButton() {
     alert("קובץ הנתונים למובידוס עדיין לא זמין. נסו שוב מאוחר יותר.");
     return;
   }
-  downloadFile(moovitdosLink.path.split("/").pop(), moovitdosLink.path);
+  downloadFile(moovitdosLink.path.split("/").pop(), moovitdosLink.path, false);
 }
 
 function setupBigButtons() {
   document
     .getElementById("btnIsrael")
-    .addEventListener("click", () => handleOsmandButton(OSMAND_ISRAEL_KEYWORDS, "ישראל"));
+    .addEventListener("click", () => handleFixedOsmandButton(ISRAEL_FILE_NAME, "ישראל"));
   document
     .getElementById("btnYosh")
-    .addEventListener("click", () => handleOsmandButton(OSMAND_YOSH_KEYWORDS, "יהודה ושומרון"));
+    .addEventListener("click", () => handleFixedOsmandButton(YOSH_FILE_NAME, "יהודה ושומרון"));
   document.getElementById("btnMoovitdos").addEventListener("click", handleMoovitdosButton);
+}
+
+function renderButtonDates() {
+  const israel = findOsmandEntry(ISRAEL_FILE_NAME);
+  const yosh = findOsmandEntry(YOSH_FILE_NAME);
+
+  document.getElementById("israelUpdatedDate").textContent = israel
+    ? `עודכן: ${formatDate(israel.updatedDate)}`
+    : "";
+  document.getElementById("yoshUpdatedDate").textContent = yosh
+    ? `עודכן: ${formatDate(yosh.updatedDate)}`
+    : "";
+  document.getElementById("moovitdosUpdatedDate").textContent = moovitdosLink.updatedDate
+    ? `עודכן: ${formatDate(moovitdosLink.updatedDate)}`
+    : "";
 }
 
 // ------------------------------------------------------------------
@@ -273,16 +272,12 @@ function tagsFor(fileName) {
 function matchesQuery(fileName, tags, query) {
   const q = query.toLowerCase();
   if (fileName.toLowerCase().includes(q)) return true;
-  if (!tags) return false;
-  const fields = [
-    tags.hebrewTags?.continent,
-    tags.hebrewTags?.country,
-    tags.hebrewTags?.city,
-    tags.englishTags?.continent,
-    tags.englishTags?.country,
-    tags.englishTags?.city,
-  ];
-  return fields.some((f) => f && f.toLowerCase().includes(q));
+  if (!tags || !Array.isArray(tags.geo)) return false;
+  return tags.geo.some(
+    (level) =>
+      (level.he && level.he.toLowerCase().includes(q)) ||
+      (level.en && level.en.toLowerCase().includes(q))
+  );
 }
 
 function stripObfExtension(fileName) {
@@ -290,11 +285,11 @@ function stripObfExtension(fileName) {
 }
 
 function renderResultTagsLine(tags) {
-  if (!tags) return "";
-  const parts = [tags.hebrewTags?.continent, tags.hebrewTags?.country, tags.hebrewTags?.city].filter(
-    Boolean
-  );
-  return parts.join(" · ");
+  if (!tags || !Array.isArray(tags.geo)) return "";
+  return tags.geo
+    .map((level) => level.he)
+    .filter(Boolean)
+    .join(" · ");
 }
 
 function renderResults(query) {
@@ -324,6 +319,7 @@ function renderResults(query) {
     const emoji = tags?.emoji || "🗂️";
     const tagsLine = renderResultTagsLine(tags);
     const fileLine = stripObfExtension(entry.fileName);
+    const dateLine = `עודכן: ${formatDate(entry.updatedDate)}`;
 
     const row = document.createElement("div");
     row.className = "result-item";
@@ -333,12 +329,13 @@ function renderResults(query) {
         <span class="label-text">
           ${tagsLine ? `<span class="tags-line">${tagsLine}</span>` : ""}
           <span class="file-line">${fileLine}</span>
+          <span class="date-line">${dateLine}</span>
         </span>
       </span>
       <button type="button">הורדה</button>
     `;
     row.querySelector("button").addEventListener("click", () => {
-      downloadFile(entry.fileName, entry.url);
+      downloadFile(entry.fileName, entry.url, Boolean(entry["zip-osm-file"]));
     });
     resultsEl.appendChild(row);
   });
@@ -358,7 +355,7 @@ function setupSearch() {
 
 document.addEventListener("DOMContentLoaded", async () => {
   setupModal();
-  setupPendingFilesModal();
+  setupZipWarningModal();
   setupBigButtons();
   setupSearch();
   await loadAllData();

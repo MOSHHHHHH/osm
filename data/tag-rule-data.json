@@ -1,0 +1,2279 @@
+{
+  "schemaVersion": 1,
+  "continentSuffixMap": {
+    "asia": {
+      "en": "Asia",
+      "he": "אסיה"
+    },
+    "europe": {
+      "en": "Europe",
+      "he": "אירופה"
+    },
+    "africa": {
+      "en": "Africa",
+      "he": "אפריקה"
+    },
+    "northamerica": {
+      "en": "North America",
+      "he": "צפון אמריקה"
+    },
+    "centralamerica": {
+      "en": "North America",
+      "he": "צפון אמריקה"
+    },
+    "southamerica": {
+      "en": "South America",
+      "he": "דרום אמריקה"
+    },
+    "australia-oceania": {
+      "en": "Australia and Oceania",
+      "he": "אוסטרליה ואוקיאניה"
+    }
+  },
+  "continentOverridesBySlug": {},
+  "countries": {
+    "afghanistan": {
+      "en": "Afghanistan",
+      "he": "אפגניסטן",
+      "continentEn": "Asia",
+      "continentHe": "אסיה",
+      "iso2": "AF",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "albania": {
+      "en": "Albania",
+      "he": "אלבניה",
+      "continentEn": "Europe",
+      "continentHe": "אירופה",
+      "iso2": "AL",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "algeria": {
+      "en": "Algeria",
+      "he": "אלג'יריה",
+      "continentEn": "Africa",
+      "continentHe": "אפריקה",
+      "iso2": "DZ",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "andorra": {
+      "en": "Andorra",
+      "he": "אנדורה",
+      "continentEn": "Europe",
+      "continentHe": "אירופה",
+      "iso2": "AD",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "angola": {
+      "en": "Angola",
+      "he": "אנגולה",
+      "continentEn": "Africa",
+      "continentHe": "אפריקה",
+      "iso2": "AO",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "anguilla": {
+      "en": "Anguilla",
+      "he": "אנגווילה",
+      "continentEn": "North America",
+      "continentHe": "צפון אמריקה",
+      "iso2": "AI",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "antarctica": {
+      "en": "Antarctica",
+      "he": "אנטארקטיקה",
+      "continentEn": "Antarctica",
+      "continentHe": "אנטארקטיקה",
+      "iso2": "AQ",
+      "isRegionNotCountry": true,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "antigua-and-barbuda": {
+      "en": "Antigua and Barbuda",
+      "he": "אנטיגואה וברבודה",
+      "continentEn": "North America",
+      "continentHe": "צפון אמריקה",
+      "iso2": "AG",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "argentina": {
+      "en": "Argentina",
+      "he": "ארגנטינה",
+      "continentEn": "South America",
+      "continentHe": "דרום אמריקה",
+      "iso2": "AR",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "armenia": {
+      "en": "Armenia",
+      "he": "ארמניה",
+      "continentEn": "Asia",
+      "continentHe": "אסיה",
+      "iso2": "AM",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "aruba": {
+      "en": "Aruba",
+      "he": "ארובה",
+      "continentEn": "North America",
+      "continentHe": "צפון אמריקה",
+      "iso2": "AW",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "australia-oceania": {
+      "en": "Australia",
+      "he": "אוסטרליה",
+      "continentEn": "Australia and Oceania",
+      "continentHe": "אוסטרליה ואוקיאניה",
+      "iso2": "AU",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "austria": {
+      "en": "Austria",
+      "he": "אוסטריה",
+      "continentEn": "Europe",
+      "continentHe": "אירופה",
+      "iso2": "AT",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "azerbaijan": {
+      "en": "Azerbaijan",
+      "he": "אזרבייג'ן",
+      "continentEn": "Asia",
+      "continentHe": "אסיה",
+      "iso2": "AZ",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "azores": {
+      "en": "Portugal (Azores)",
+      "he": "פורטוגל (האיים האזוריים)",
+      "continentEn": "Europe",
+      "continentHe": "אירופה",
+      "iso2": "PT",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "bahamas": {
+      "en": "Bahamas",
+      "he": "איי בהאמה",
+      "continentEn": "North America",
+      "continentHe": "צפון אמריקה",
+      "iso2": "BS",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "bahrain": {
+      "en": "Bahrain",
+      "he": "בחריין",
+      "continentEn": "Asia",
+      "continentHe": "אסיה",
+      "iso2": "BH",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "bangladesh": {
+      "en": "Bangladesh",
+      "he": "בנגלדש",
+      "continentEn": "Asia",
+      "continentHe": "אסיה",
+      "iso2": "BD",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "barbados": {
+      "en": "Barbados",
+      "he": "ברבדוס",
+      "continentEn": "North America",
+      "continentHe": "צפון אמריקה",
+      "iso2": "BB",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "belarus": {
+      "en": "Belarus",
+      "he": "בלארוס",
+      "continentEn": "Europe",
+      "continentHe": "אירופה",
+      "iso2": "BY",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "belgium": {
+      "en": "Belgium",
+      "he": "בלגיה",
+      "continentEn": "Europe",
+      "continentHe": "אירופה",
+      "iso2": "BE",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "belize": {
+      "en": "Belize",
+      "he": "בליז",
+      "continentEn": "North America",
+      "continentHe": "צפון אמריקה",
+      "iso2": "BZ",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "benin": {
+      "en": "Benin",
+      "he": "בנין",
+      "continentEn": "Africa",
+      "continentHe": "אפריקה",
+      "iso2": "BJ",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "bermuda": {
+      "en": "Bermuda",
+      "he": "ברמודה",
+      "continentEn": "North America",
+      "continentHe": "צפון אמריקה",
+      "iso2": "BM",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "bhutan": {
+      "en": "Bhutan",
+      "he": "בהוטן",
+      "continentEn": "Asia",
+      "continentHe": "אסיה",
+      "iso2": "BT",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "bolivia": {
+      "en": "Bolivia",
+      "he": "בוליביה",
+      "continentEn": "South America",
+      "continentHe": "דרום אמריקה",
+      "iso2": "BO",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "bosnia-herzegovina": {
+      "en": "Bosnia and Herzegovina",
+      "he": "בוסניה והרצגובינה",
+      "continentEn": "Europe",
+      "continentHe": "אירופה",
+      "iso2": "BA",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "botswana": {
+      "en": "Botswana",
+      "he": "בוצואנה",
+      "continentEn": "Africa",
+      "continentHe": "אפריקה",
+      "iso2": "BW",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "brazil": {
+      "en": "Brazil",
+      "he": "ברזיל",
+      "continentEn": "South America",
+      "continentHe": "דרום אמריקה",
+      "iso2": "BR",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "british-indian-ocean-territory": {
+      "en": "British Indian Ocean Territory",
+      "he": "הטריטוריה הבריטית באוקיינוס ההודי",
+      "continentEn": "Asia",
+      "continentHe": "אסיה",
+      "iso2": "IO",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "brunei": {
+      "en": "Brunei",
+      "he": "ברוניי",
+      "continentEn": "Asia",
+      "continentHe": "אסיה",
+      "iso2": "BN",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "bulgaria": {
+      "en": "Bulgaria",
+      "he": "בולגריה",
+      "continentEn": "Europe",
+      "continentHe": "אירופה",
+      "iso2": "BG",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "burkina-faso": {
+      "en": "Burkina Faso",
+      "he": "בורקינה פאסו",
+      "continentEn": "Africa",
+      "continentHe": "אפריקה",
+      "iso2": "BF",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "burundi": {
+      "en": "Burundi",
+      "he": "בורונדי",
+      "continentEn": "Africa",
+      "continentHe": "אפריקה",
+      "iso2": "BI",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "cambodia": {
+      "en": "Cambodia",
+      "he": "קמבודיה",
+      "continentEn": "Asia",
+      "continentHe": "אסיה",
+      "iso2": "KH",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "cameroon": {
+      "en": "Cameroon",
+      "he": "קמרון",
+      "continentEn": "Africa",
+      "continentHe": "אפריקה",
+      "iso2": "CM",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "canada": {
+      "en": "Canada",
+      "he": "קנדה",
+      "continentEn": "North America",
+      "continentHe": "צפון אמריקה",
+      "iso2": "CA",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "cape-verde": {
+      "en": "Cape Verde",
+      "he": "כף ורדה",
+      "continentEn": "Africa",
+      "continentHe": "אפריקה",
+      "iso2": "CV",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "carribean-archipelago-all": {
+      "en": "Caribbean",
+      "he": "האיים הקריביים",
+      "continentEn": "North America",
+      "continentHe": "צפון אמריקה",
+      "iso2": null,
+      "isRegionNotCountry": true,
+      "thematicEmoji": "🏝️",
+      "aliasOf": null
+    },
+    "cayman-islands": {
+      "en": "Cayman Islands",
+      "he": "איי קיימן",
+      "continentEn": "North America",
+      "continentHe": "צפון אמריקה",
+      "iso2": "KY",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "central-african-republic": {
+      "en": "Central African Republic",
+      "he": "הרפובליקה המרכז-אפריקאית",
+      "continentEn": "Africa",
+      "continentHe": "אפריקה",
+      "iso2": "CF",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "chad": {
+      "en": "Chad",
+      "he": "צ'אד",
+      "continentEn": "Africa",
+      "continentHe": "אפריקה",
+      "iso2": "TD",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "channel-islands": {
+      "en": "Channel Islands",
+      "he": "איי התעלה",
+      "continentEn": "Europe",
+      "continentHe": "אירופה",
+      "iso2": null,
+      "isRegionNotCountry": false,
+      "thematicEmoji": "🇬🇧",
+      "aliasOf": null
+    },
+    "chile": {
+      "en": "Chile",
+      "he": "צ'ילה",
+      "continentEn": "South America",
+      "continentHe": "דרום אמריקה",
+      "iso2": "CL",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "china": {
+      "en": "China",
+      "he": "סין",
+      "continentEn": "Asia",
+      "continentHe": "אסיה",
+      "iso2": "CN",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "christmas-island": {
+      "en": "Christmas Island",
+      "he": "האי כריסמס",
+      "continentEn": "Asia",
+      "continentHe": "אסיה",
+      "iso2": "CX",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "colombia": {
+      "en": "Colombia",
+      "he": "קולומביה",
+      "continentEn": "South America",
+      "continentHe": "דרום אמריקה",
+      "iso2": "CO",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "comoros": {
+      "en": "Comoros",
+      "he": "קומורו",
+      "continentEn": "Africa",
+      "continentHe": "אפריקה",
+      "iso2": "KM",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "congo-brazzaville": {
+      "en": "Republic of the Congo",
+      "he": "הרפובליקה של קונגו",
+      "continentEn": "Africa",
+      "continentHe": "אפריקה",
+      "iso2": "CG",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "congo-democratic-republic": {
+      "en": "Democratic Republic of the Congo",
+      "he": "הרפובליקה הדמוקרטית של קונגו",
+      "continentEn": "Africa",
+      "continentHe": "אפריקה",
+      "iso2": "CD",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "costa-rica": {
+      "en": "Costa Rica",
+      "he": "קוסטה ריקה",
+      "continentEn": "North America",
+      "continentHe": "צפון אמריקה",
+      "iso2": "CR",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "croatia": {
+      "en": "Croatia",
+      "he": "קרואטיה",
+      "continentEn": "Europe",
+      "continentHe": "אירופה",
+      "iso2": "HR",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "cuba": {
+      "en": "Cuba",
+      "he": "קובה",
+      "continentEn": "North America",
+      "continentHe": "צפון אמריקה",
+      "iso2": "CU",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "cyprus": {
+      "en": "Cyprus",
+      "he": "קפריסין",
+      "continentEn": "Europe",
+      "continentHe": "אירופה",
+      "iso2": "CY",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "czech-republic": {
+      "en": "Czech Republic",
+      "he": "צ'כיה",
+      "continentEn": "Europe",
+      "continentHe": "אירופה",
+      "iso2": "CZ",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "denmark": {
+      "en": "Denmark",
+      "he": "דנמרק",
+      "continentEn": "Europe",
+      "continentHe": "אירופה",
+      "iso2": "DK",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "djibouti": {
+      "en": "Djibouti",
+      "he": "ג'יבוטי",
+      "continentEn": "Africa",
+      "continentHe": "אפריקה",
+      "iso2": "DJ",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "dominica": {
+      "en": "Dominica",
+      "he": "דומיניקה",
+      "continentEn": "North America",
+      "continentHe": "צפון אמריקה",
+      "iso2": "DM",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "dominican-republic": {
+      "en": "Dominican Republic",
+      "he": "הרפובליקה הדומיניקנית",
+      "continentEn": "North America",
+      "continentHe": "צפון אמריקה",
+      "iso2": "DO",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "east-timor": {
+      "en": "Timor-Leste",
+      "he": "טימור-לסטה",
+      "continentEn": "Asia",
+      "continentHe": "אסיה",
+      "iso2": "TL",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "ecuador": {
+      "en": "Ecuador",
+      "he": "אקוודור",
+      "continentEn": "South America",
+      "continentHe": "דרום אמריקה",
+      "iso2": "EC",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "egypt": {
+      "en": "Egypt",
+      "he": "מצרים",
+      "continentEn": "Africa",
+      "continentHe": "אפריקה",
+      "iso2": "EG",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "el-salvador": {
+      "en": "El Salvador",
+      "he": "אל סלוודור",
+      "continentEn": "North America",
+      "continentHe": "צפון אמריקה",
+      "iso2": "SV",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "equatorial-guinea": {
+      "en": "Equatorial Guinea",
+      "he": "גינאה המשוונית",
+      "continentEn": "Africa",
+      "continentHe": "אפריקה",
+      "iso2": "GQ",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "eritrea": {
+      "en": "Eritrea",
+      "he": "אריתריאה",
+      "continentEn": "Africa",
+      "continentHe": "אפריקה",
+      "iso2": "ER",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "estonia": {
+      "en": "Estonia",
+      "he": "אסטוניה",
+      "continentEn": "Europe",
+      "continentHe": "אירופה",
+      "iso2": "EE",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "ethiopia": {
+      "en": "Ethiopia",
+      "he": "אתיופיה",
+      "continentEn": "Africa",
+      "continentHe": "אפריקה",
+      "iso2": "ET",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "falkland-islands": {
+      "en": "Falkland Islands",
+      "he": "איי פוקלנד",
+      "continentEn": "South America",
+      "continentHe": "דרום אמריקה",
+      "iso2": "FK",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "faroe-islands": {
+      "en": "Faroe Islands",
+      "he": "איי פארו",
+      "continentEn": "Europe",
+      "continentHe": "אירופה",
+      "iso2": "FO",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "finland": {
+      "en": "Finland",
+      "he": "פינלנד",
+      "continentEn": "Europe",
+      "continentHe": "אירופה",
+      "iso2": "FI",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "france": {
+      "en": "France",
+      "he": "צרפת",
+      "continentEn": "Europe",
+      "continentHe": "אירופה",
+      "iso2": "FR",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "french-guiana": {
+      "en": "French Guiana",
+      "he": "גיאנה הצרפתית",
+      "continentEn": "South America",
+      "continentHe": "דרום אמריקה",
+      "iso2": "GF",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "french-southern-and-antarctic-lands": {
+      "en": "French Southern and Antarctic Lands",
+      "he": "הטריטוריות הדרומיות והאנטארקטיות הצרפתיות",
+      "continentEn": "Africa",
+      "continentHe": "אפריקה",
+      "iso2": "TF",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "gabon": {
+      "en": "Gabon",
+      "he": "גבון",
+      "continentEn": "Africa",
+      "continentHe": "אפריקה",
+      "iso2": "GA",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "gambia": {
+      "en": "Gambia",
+      "he": "גמביה",
+      "continentEn": "Africa",
+      "continentHe": "אפריקה",
+      "iso2": "GM",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "gb": {
+      "en": "United Kingdom",
+      "he": "בריטניה",
+      "continentEn": "Europe",
+      "continentHe": "אירופה",
+      "iso2": "GB",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "georgia": {
+      "en": "Georgia",
+      "he": "גאורגיה",
+      "continentEn": "Asia",
+      "continentHe": "אסיה",
+      "iso2": "GE",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "germany": {
+      "en": "Germany",
+      "he": "גרמניה",
+      "continentEn": "Europe",
+      "continentHe": "אירופה",
+      "iso2": "DE",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "ghana": {
+      "en": "Ghana",
+      "he": "גאנה",
+      "continentEn": "Africa",
+      "continentHe": "אפריקה",
+      "iso2": "GH",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "greece": {
+      "en": "Greece",
+      "he": "יוון",
+      "continentEn": "Europe",
+      "continentHe": "אירופה",
+      "iso2": "GR",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "greenland": {
+      "en": "Greenland",
+      "he": "גרינלנד",
+      "continentEn": "North America",
+      "continentHe": "צפון אמריקה",
+      "iso2": "GL",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "grenada": {
+      "en": "Grenada",
+      "he": "גרנדה",
+      "continentEn": "North America",
+      "continentHe": "צפון אמריקה",
+      "iso2": "GD",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "guadeloupe": {
+      "en": "Guadeloupe",
+      "he": "גוואדלופ",
+      "continentEn": "North America",
+      "continentHe": "צפון אמריקה",
+      "iso2": "GP",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "guatemala": {
+      "en": "Guatemala",
+      "he": "גואטמלה",
+      "continentEn": "North America",
+      "continentHe": "צפון אמריקה",
+      "iso2": "GT",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "guinea-bissau": {
+      "en": "Guinea-Bissau",
+      "he": "גינאה ביסאו",
+      "continentEn": "Africa",
+      "continentHe": "אפריקה",
+      "iso2": "GW",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "guinea": {
+      "en": "Guinea",
+      "he": "גינאה",
+      "continentEn": "Africa",
+      "continentHe": "אפריקה",
+      "iso2": "GN",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "guyana": {
+      "en": "Guyana",
+      "he": "גיאנה",
+      "continentEn": "South America",
+      "continentHe": "דרום אמריקה",
+      "iso2": "GY",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "haiti": {
+      "en": "Haiti",
+      "he": "האיטי",
+      "continentEn": "North America",
+      "continentHe": "צפון אמריקה",
+      "iso2": "HT",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "honduras": {
+      "en": "Honduras",
+      "he": "הונדורס",
+      "continentEn": "North America",
+      "continentHe": "צפון אמריקה",
+      "iso2": "HN",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "hong-kong": {
+      "en": "Hong Kong",
+      "he": "הונג קונג",
+      "continentEn": "Asia",
+      "continentHe": "אסיה",
+      "iso2": "HK",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "hungary": {
+      "en": "Hungary",
+      "he": "הונגריה",
+      "continentEn": "Europe",
+      "continentHe": "אירופה",
+      "iso2": "HU",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "iceland": {
+      "en": "Iceland",
+      "he": "איסלנד",
+      "continentEn": "Europe",
+      "continentHe": "אירופה",
+      "iso2": "IS",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "india": {
+      "en": "India",
+      "he": "הודו",
+      "continentEn": "Asia",
+      "continentHe": "אסיה",
+      "iso2": "IN",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "indonesia": {
+      "en": "Indonesia",
+      "he": "אינדונזיה",
+      "continentEn": "Asia",
+      "continentHe": "אסיה",
+      "iso2": "ID",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "iran": {
+      "en": "Iran",
+      "he": "איראן",
+      "continentEn": "Asia",
+      "continentHe": "אסיה",
+      "iso2": "IR",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "iraq": {
+      "en": "Iraq",
+      "he": "עיראק",
+      "continentEn": "Asia",
+      "continentHe": "אסיה",
+      "iso2": "IQ",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "ireland": {
+      "en": "Ireland",
+      "he": "אירלנד",
+      "continentEn": "Europe",
+      "continentHe": "אירופה",
+      "iso2": "IE",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "isle-of-man": {
+      "en": "Isle of Man",
+      "he": "האי מאן",
+      "continentEn": "Europe",
+      "continentHe": "אירופה",
+      "iso2": "IM",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "israel": {
+      "en": "Israel",
+      "he": "ישראל",
+      "continentEn": "Asia",
+      "continentHe": "אסיה",
+      "iso2": "IL",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "italy": {
+      "en": "Italy",
+      "he": "איטליה",
+      "continentEn": "Europe",
+      "continentHe": "אירופה",
+      "iso2": "IT",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "ivory-coast": {
+      "en": "Ivory Coast",
+      "he": "חוף השנהב",
+      "continentEn": "Africa",
+      "continentHe": "אפריקה",
+      "iso2": "CI",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "jamaica": {
+      "en": "Jamaica",
+      "he": "ג'מייקה",
+      "continentEn": "North America",
+      "continentHe": "צפון אמריקה",
+      "iso2": "JM",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "japan": {
+      "en": "Japan",
+      "he": "יפן",
+      "continentEn": "Asia",
+      "continentHe": "אסיה",
+      "iso2": "JP",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "jordan": {
+      "en": "Jordan",
+      "he": "ירדן",
+      "continentEn": "Asia",
+      "continentHe": "אסיה",
+      "iso2": "JO",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "kazakhstan": {
+      "en": "Kazakhstan",
+      "he": "קזחסטן",
+      "continentEn": "Asia",
+      "continentHe": "אסיה",
+      "iso2": "KZ",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "kenya": {
+      "en": "Kenya",
+      "he": "קניה",
+      "continentEn": "Africa",
+      "continentHe": "אפריקה",
+      "iso2": "KE",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "kosovo": {
+      "en": "Kosovo",
+      "he": "קוסובו",
+      "continentEn": "Europe",
+      "continentHe": "אירופה",
+      "iso2": "XK",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "kuwait": {
+      "en": "Kuwait",
+      "he": "כווית",
+      "continentEn": "Asia",
+      "continentHe": "אסיה",
+      "iso2": "KW",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "kyrgyzstan": {
+      "en": "Kyrgyzstan",
+      "he": "קירגיזסטן",
+      "continentEn": "Asia",
+      "continentHe": "אסיה",
+      "iso2": "KG",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "laos": {
+      "en": "Laos",
+      "he": "לאוס",
+      "continentEn": "Asia",
+      "continentHe": "אסיה",
+      "iso2": "LA",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "latvia": {
+      "en": "Latvia",
+      "he": "לטביה",
+      "continentEn": "Europe",
+      "continentHe": "אירופה",
+      "iso2": "LV",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "lebanon": {
+      "en": "Lebanon",
+      "he": "לבנון",
+      "continentEn": "Asia",
+      "continentHe": "אסיה",
+      "iso2": "LB",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "lesotho": {
+      "en": "Lesotho",
+      "he": "לסוטו",
+      "continentEn": "Africa",
+      "continentHe": "אפריקה",
+      "iso2": "LS",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "liberia": {
+      "en": "Liberia",
+      "he": "ליבריה",
+      "continentEn": "Africa",
+      "continentHe": "אפריקה",
+      "iso2": "LR",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "libya": {
+      "en": "Libya",
+      "he": "לוב",
+      "continentEn": "Africa",
+      "continentHe": "אפריקה",
+      "iso2": "LY",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "liechtenstein": {
+      "en": "Liechtenstein",
+      "he": "ליכטנשטיין",
+      "continentEn": "Europe",
+      "continentHe": "אירופה",
+      "iso2": "LI",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "lithuania": {
+      "en": "Lithuania",
+      "he": "ליטא",
+      "continentEn": "Europe",
+      "continentHe": "אירופה",
+      "iso2": "LT",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "luxembourg": {
+      "en": "Luxembourg",
+      "he": "לוקסמבורג",
+      "continentEn": "Europe",
+      "continentHe": "אירופה",
+      "iso2": "LU",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "macao": {
+      "en": "Macao",
+      "he": "מקאו",
+      "continentEn": "Asia",
+      "continentHe": "אסיה",
+      "iso2": "MO",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "macedonia": {
+      "en": "North Macedonia",
+      "he": "צפון מקדוניה",
+      "continentEn": "Europe",
+      "continentHe": "אירופה",
+      "iso2": "MK",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "madagascar": {
+      "en": "Madagascar",
+      "he": "מדגסקר",
+      "continentEn": "Africa",
+      "continentHe": "אפריקה",
+      "iso2": "MG",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "madeira": {
+      "en": "Portugal (Madeira)",
+      "he": "פורטוגל (מדיירה)",
+      "continentEn": "Europe",
+      "continentHe": "אירופה",
+      "iso2": "PT",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "malawi": {
+      "en": "Malawi",
+      "he": "מלאווי",
+      "continentEn": "Africa",
+      "continentHe": "אפריקה",
+      "iso2": "MW",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "malaysia": {
+      "en": "Malaysia",
+      "he": "מלזיה",
+      "continentEn": "Asia",
+      "continentHe": "אסיה",
+      "iso2": "MY",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "maldives": {
+      "en": "Maldives",
+      "he": "האיים המלדיביים",
+      "continentEn": "Asia",
+      "continentHe": "אסיה",
+      "iso2": "MV",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "mali": {
+      "en": "Mali",
+      "he": "מאלי",
+      "continentEn": "Africa",
+      "continentHe": "אפריקה",
+      "iso2": "ML",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "malta": {
+      "en": "Malta",
+      "he": "מלטה",
+      "continentEn": "Europe",
+      "continentHe": "אירופה",
+      "iso2": "MT",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "martinique": {
+      "en": "Martinique",
+      "he": "מרטיניק",
+      "continentEn": "North America",
+      "continentHe": "צפון אמריקה",
+      "iso2": "MQ",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "mauritania": {
+      "en": "Mauritania",
+      "he": "מאוריטניה",
+      "continentEn": "Africa",
+      "continentHe": "אפריקה",
+      "iso2": "MR",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "mauritius": {
+      "en": "Mauritius",
+      "he": "מאוריציוס",
+      "continentEn": "Africa",
+      "continentHe": "אפריקה",
+      "iso2": "MU",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "mayotte": {
+      "en": "Mayotte",
+      "he": "מאיוט",
+      "continentEn": "Africa",
+      "continentHe": "אפריקה",
+      "iso2": "YT",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "mexico": {
+      "en": "Mexico",
+      "he": "מקסיקו",
+      "continentEn": "North America",
+      "continentHe": "צפון אמריקה",
+      "iso2": "MX",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "moldova": {
+      "en": "Moldova",
+      "he": "מולדובה",
+      "continentEn": "Europe",
+      "continentHe": "אירופה",
+      "iso2": "MD",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "monaco": {
+      "en": "Monaco",
+      "he": "מונקו",
+      "continentEn": "Europe",
+      "continentHe": "אירופה",
+      "iso2": "MC",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "mongolia": {
+      "en": "Mongolia",
+      "he": "מונגוליה",
+      "continentEn": "Asia",
+      "continentHe": "אסיה",
+      "iso2": "MN",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "montenegro": {
+      "en": "Montenegro",
+      "he": "מונטנגרו",
+      "continentEn": "Europe",
+      "continentHe": "אירופה",
+      "iso2": "ME",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "montserrat": {
+      "en": "Montserrat",
+      "he": "מונטסראט",
+      "continentEn": "North America",
+      "continentHe": "צפון אמריקה",
+      "iso2": "MS",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "morocco": {
+      "en": "Morocco",
+      "he": "מרוקו",
+      "continentEn": "Africa",
+      "continentHe": "אפריקה",
+      "iso2": "MA",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "mozambique": {
+      "en": "Mozambique",
+      "he": "מוזמביק",
+      "continentEn": "Africa",
+      "continentHe": "אפריקה",
+      "iso2": "MZ",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "myanmar": {
+      "en": "Myanmar",
+      "he": "מיאנמר",
+      "continentEn": "Asia",
+      "continentHe": "אסיה",
+      "iso2": "MM",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "namibia": {
+      "en": "Namibia",
+      "he": "נמיביה",
+      "continentEn": "Africa",
+      "continentHe": "אפריקה",
+      "iso2": "NA",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "nepal": {
+      "en": "Nepal",
+      "he": "נפאל",
+      "continentEn": "Asia",
+      "continentHe": "אסיה",
+      "iso2": "NP",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "netherlands-antilles": {
+      "en": "Netherlands Antilles",
+      "he": "האנטילים ההולנדיים",
+      "continentEn": "North America",
+      "continentHe": "צפון אמריקה",
+      "iso2": null,
+      "isRegionNotCountry": false,
+      "thematicEmoji": "🇳🇱",
+      "aliasOf": null
+    },
+    "netherlands": {
+      "en": "Netherlands",
+      "he": "הולנד",
+      "continentEn": "Europe",
+      "continentHe": "אירופה",
+      "iso2": "NL",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "new-zealand": {
+      "en": "New Zealand",
+      "he": "ניו זילנד",
+      "continentEn": "Australia and Oceania",
+      "continentHe": "אוסטרליה ואוקיאניה",
+      "iso2": "NZ",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "nicaragua": {
+      "en": "Nicaragua",
+      "he": "ניקרגואה",
+      "continentEn": "North America",
+      "continentHe": "צפון אמריקה",
+      "iso2": "NI",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "niger": {
+      "en": "Niger",
+      "he": "ניז'ר",
+      "continentEn": "Africa",
+      "continentHe": "אפריקה",
+      "iso2": "NE",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "nigeria": {
+      "en": "Nigeria",
+      "he": "ניגריה",
+      "continentEn": "Africa",
+      "continentHe": "אפריקה",
+      "iso2": "NG",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "north-korea": {
+      "en": "North Korea",
+      "he": "צפון קוריאה",
+      "continentEn": "Asia",
+      "continentHe": "אסיה",
+      "iso2": "KP",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "norway": {
+      "en": "Norway",
+      "he": "נורווגיה",
+      "continentEn": "Europe",
+      "continentHe": "אירופה",
+      "iso2": "NO",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "oceania": {
+      "en": "Oceania",
+      "he": "אוקיאניה",
+      "continentEn": "Australia and Oceania",
+      "continentHe": "אוסטרליה ואוקיאניה",
+      "iso2": null,
+      "isRegionNotCountry": true,
+      "thematicEmoji": "🏝️",
+      "aliasOf": null
+    },
+    "oman": {
+      "en": "Oman",
+      "he": "עומאן",
+      "continentEn": "Asia",
+      "continentHe": "אסיה",
+      "iso2": "OM",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "pakistan": {
+      "en": "Pakistan",
+      "he": "פקיסטן",
+      "continentEn": "Asia",
+      "continentHe": "אסיה",
+      "iso2": "PK",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "palestine": {
+      "en": "Palestine",
+      "he": "פלסטין",
+      "continentEn": "Asia",
+      "continentHe": "אסיה",
+      "iso2": "PS",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "panama": {
+      "en": "Panama",
+      "he": "פנמה",
+      "continentEn": "North America",
+      "continentHe": "צפון אמריקה",
+      "iso2": "PA",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "papua-new-guinea": {
+      "en": "Papua New Guinea",
+      "he": "פפואה גינאה החדשה",
+      "continentEn": "Australia and Oceania",
+      "continentHe": "אוסטרליה ואוקיאניה",
+      "iso2": "PG",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "paraguay": {
+      "en": "Paraguay",
+      "he": "פרגוואי",
+      "continentEn": "South America",
+      "continentHe": "דרום אמריקה",
+      "iso2": "PY",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "peru": {
+      "en": "Peru",
+      "he": "פרו",
+      "continentEn": "South America",
+      "continentHe": "דרום אמריקה",
+      "iso2": "PE",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "philippines": {
+      "en": "Philippines",
+      "he": "הפיליפינים",
+      "continentEn": "Asia",
+      "continentHe": "אסיה",
+      "iso2": "PH",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "poland": {
+      "en": "Poland",
+      "he": "פולין",
+      "continentEn": "Europe",
+      "continentHe": "אירופה",
+      "iso2": "PL",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "portugal": {
+      "en": "Portugal",
+      "he": "פורטוגל",
+      "continentEn": "Europe",
+      "continentHe": "אירופה",
+      "iso2": "PT",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "puerto-rico": {
+      "en": "Puerto Rico",
+      "he": "פוארטו ריקו",
+      "continentEn": "North America",
+      "continentHe": "צפון אמריקה",
+      "iso2": "PR",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "qatar": {
+      "en": "Qatar",
+      "he": "קטאר",
+      "continentEn": "Asia",
+      "continentHe": "אסיה",
+      "iso2": "QA",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "reunion": {
+      "en": "Reunion",
+      "he": "ראוניון",
+      "continentEn": "Africa",
+      "continentHe": "אפריקה",
+      "iso2": "RE",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "romania": {
+      "en": "Romania",
+      "he": "רומניה",
+      "continentEn": "Europe",
+      "continentHe": "אירופה",
+      "iso2": "RO",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "russia": {
+      "en": "Russia",
+      "he": "רוסיה",
+      "continentEn": "Asia",
+      "continentHe": "אסיה",
+      "iso2": "RU",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "rwanda": {
+      "en": "Rwanda",
+      "he": "רואנדה",
+      "continentEn": "Africa",
+      "continentHe": "אפריקה",
+      "iso2": "RW",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "saint-barthelemy": {
+      "en": "Saint Barthelemy",
+      "he": "סן ברתלמי",
+      "continentEn": "North America",
+      "continentHe": "צפון אמריקה",
+      "iso2": "BL",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "saint-helena-ascension-and-tristan-da-cunha": {
+      "en": "Saint Helena, Ascension and Tristan da Cunha",
+      "he": "סנט הלנה",
+      "continentEn": "Africa",
+      "continentHe": "אפריקה",
+      "iso2": "SH",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "saint-kitts-and-nevis": {
+      "en": "Saint Kitts and Nevis",
+      "he": "סנט קיטס ונוויס",
+      "continentEn": "North America",
+      "continentHe": "צפון אמריקה",
+      "iso2": "KN",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "saint-lucia": {
+      "en": "Saint Lucia",
+      "he": "סנט לוסיה",
+      "continentEn": "North America",
+      "continentHe": "צפון אמריקה",
+      "iso2": "LC",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "saint-martin": {
+      "en": "Saint Martin",
+      "he": "סן מארטן",
+      "continentEn": "North America",
+      "continentHe": "צפון אמריקה",
+      "iso2": "MF",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "saint-pierre-and-miquelon": {
+      "en": "Saint Pierre and Miquelon",
+      "he": "סן פייר ומיקלון",
+      "continentEn": "North America",
+      "continentHe": "צפון אמריקה",
+      "iso2": "PM",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "saint-vincent-and-the-grenadines": {
+      "en": "Saint Vincent and the Grenadines",
+      "he": "סנט וינסנט והגרנדינים",
+      "continentEn": "North America",
+      "continentHe": "צפון אמריקה",
+      "iso2": "VC",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "san-marino": {
+      "en": "San Marino",
+      "he": "סן מרינו",
+      "continentEn": "Europe",
+      "continentHe": "אירופה",
+      "iso2": "SM",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "sao-tome-and-principe": {
+      "en": "Sao Tome and Principe",
+      "he": "סאו טומה ופרינסיפה",
+      "continentEn": "Africa",
+      "continentHe": "אפריקה",
+      "iso2": "ST",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "saudi-arabia": {
+      "en": "Saudi Arabia",
+      "he": "ערב הסעודית",
+      "continentEn": "Asia",
+      "continentHe": "אסיה",
+      "iso2": "SA",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "senegal": {
+      "en": "Senegal",
+      "he": "סנגל",
+      "continentEn": "Africa",
+      "continentHe": "אפריקה",
+      "iso2": "SN",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "serbia": {
+      "en": "Serbia",
+      "he": "סרביה",
+      "continentEn": "Europe",
+      "continentHe": "אירופה",
+      "iso2": "RS",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "seychelles": {
+      "en": "Seychelles",
+      "he": "איי סיישל",
+      "continentEn": "Africa",
+      "continentHe": "אפריקה",
+      "iso2": "SC",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "sierra-leone": {
+      "en": "Sierra Leone",
+      "he": "סיירה לאון",
+      "continentEn": "Africa",
+      "continentHe": "אפריקה",
+      "iso2": "SL",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "singapore": {
+      "en": "Singapore",
+      "he": "סינגפור",
+      "continentEn": "Asia",
+      "continentHe": "אסיה",
+      "iso2": "SG",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "slovakia": {
+      "en": "Slovakia",
+      "he": "סלובקיה",
+      "continentEn": "Europe",
+      "continentHe": "אירופה",
+      "iso2": "SK",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "slovenia": {
+      "en": "Slovenia",
+      "he": "סלובניה",
+      "continentEn": "Europe",
+      "continentHe": "אירופה",
+      "iso2": "SI",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "somalia": {
+      "en": "Somalia",
+      "he": "סומליה",
+      "continentEn": "Africa",
+      "continentHe": "אפריקה",
+      "iso2": "SO",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "south-africa": {
+      "en": "South Africa",
+      "he": "דרום אפריקה",
+      "continentEn": "Africa",
+      "continentHe": "אפריקה",
+      "iso2": "ZA",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "south-georgia-and-south-sandwich-islands": {
+      "en": "South Georgia and the South Sandwich Islands",
+      "he": "ג'ורג'יה הדרומית ואיי סנדוויץ' הדרומיים",
+      "continentEn": "South America",
+      "continentHe": "דרום אמריקה",
+      "iso2": "GS",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "south-korea": {
+      "en": "South Korea",
+      "he": "דרום קוריאה",
+      "continentEn": "Asia",
+      "continentHe": "אסיה",
+      "iso2": "KR",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "south-sudan": {
+      "en": "South Sudan",
+      "he": "דרום סודן",
+      "continentEn": "Africa",
+      "continentHe": "אפריקה",
+      "iso2": "SS",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "spain": {
+      "en": "Spain",
+      "he": "ספרד",
+      "continentEn": "Europe",
+      "continentHe": "אירופה",
+      "iso2": "ES",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "spratly-islands": {
+      "en": "Spratly Islands",
+      "he": "איי ספרטלי",
+      "continentEn": "Asia",
+      "continentHe": "אסיה",
+      "iso2": null,
+      "isRegionNotCountry": true,
+      "thematicEmoji": "🏝️",
+      "aliasOf": null
+    },
+    "sri-lanka": {
+      "en": "Sri Lanka",
+      "he": "סרי לנקה",
+      "continentEn": "Asia",
+      "continentHe": "אסיה",
+      "iso2": "LK",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "sudan": {
+      "en": "Sudan",
+      "he": "סודן",
+      "continentEn": "Africa",
+      "continentHe": "אפריקה",
+      "iso2": "SD",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "suriname": {
+      "en": "Suriname",
+      "he": "סורינאם",
+      "continentEn": "South America",
+      "continentHe": "דרום אמריקה",
+      "iso2": "SR",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "swaziland": {
+      "en": "Eswatini",
+      "he": "אסוואטיני",
+      "continentEn": "Africa",
+      "continentHe": "אפריקה",
+      "iso2": "SZ",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "sweden": {
+      "en": "Sweden",
+      "he": "שוודיה",
+      "continentEn": "Europe",
+      "continentHe": "אירופה",
+      "iso2": "SE",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "switzerland": {
+      "en": "Switzerland",
+      "he": "שווייץ",
+      "continentEn": "Europe",
+      "continentHe": "אירופה",
+      "iso2": "CH",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "syria": {
+      "en": "Syria",
+      "he": "סוריה",
+      "continentEn": "Asia",
+      "continentHe": "אסיה",
+      "iso2": "SY",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "taiwan": {
+      "en": "Taiwan",
+      "he": "טייוואן",
+      "continentEn": "Asia",
+      "continentHe": "אסיה",
+      "iso2": "TW",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "tajikistan": {
+      "en": "Tajikistan",
+      "he": "טג'יקיסטן",
+      "continentEn": "Asia",
+      "continentHe": "אסיה",
+      "iso2": "TJ",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "tanzania": {
+      "en": "Tanzania",
+      "he": "טנזניה",
+      "continentEn": "Africa",
+      "continentHe": "אפריקה",
+      "iso2": "TZ",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "thailand": {
+      "en": "Thailand",
+      "he": "תאילנד",
+      "continentEn": "Asia",
+      "continentHe": "אסיה",
+      "iso2": "TH",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "togo": {
+      "en": "Togo",
+      "he": "טוגו",
+      "continentEn": "Africa",
+      "continentHe": "אפריקה",
+      "iso2": "TG",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "transnistria": {
+      "en": "Transnistria",
+      "he": "טרנסניסטריה",
+      "continentEn": "Europe",
+      "continentHe": "אירופה",
+      "iso2": null,
+      "isRegionNotCountry": false,
+      "thematicEmoji": "🏳️",
+      "aliasOf": null
+    },
+    "trinidad-and-tobago": {
+      "en": "Trinidad and Tobago",
+      "he": "טרינידד וטובגו",
+      "continentEn": "North America",
+      "continentHe": "צפון אמריקה",
+      "iso2": "TT",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "tunisia": {
+      "en": "Tunisia",
+      "he": "תוניסיה",
+      "continentEn": "Africa",
+      "continentHe": "אפריקה",
+      "iso2": "TN",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "turkey": {
+      "en": "Turkey",
+      "he": "טורקיה",
+      "continentEn": "Asia",
+      "continentHe": "אסיה",
+      "iso2": "TR",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "turkmenistan": {
+      "en": "Turkmenistan",
+      "he": "טורקמניסטן",
+      "continentEn": "Asia",
+      "continentHe": "אסיה",
+      "iso2": "TM",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "turks-and-caicos-islands": {
+      "en": "Turks and Caicos Islands",
+      "he": "איי טורקס וקאיקוס",
+      "continentEn": "North America",
+      "continentHe": "צפון אמריקה",
+      "iso2": "TC",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "uganda": {
+      "en": "Uganda",
+      "he": "אוגנדה",
+      "continentEn": "Africa",
+      "continentHe": "אפריקה",
+      "iso2": "UG",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "ukraine": {
+      "en": "Ukraine",
+      "he": "אוקראינה",
+      "continentEn": "Europe",
+      "continentHe": "אירופה",
+      "iso2": "UA",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "united-arab-emirates": {
+      "en": "United Arab Emirates",
+      "he": "איחוד האמירויות הערביות",
+      "continentEn": "Asia",
+      "continentHe": "אסיה",
+      "iso2": "AE",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "uruguay": {
+      "en": "Uruguay",
+      "he": "אורוגוואי",
+      "continentEn": "South America",
+      "continentHe": "דרום אמריקה",
+      "iso2": "UY",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "us": {
+      "en": "United States",
+      "he": "ארצות הברית",
+      "continentEn": "North America",
+      "continentHe": "צפון אמריקה",
+      "iso2": "US",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "uzbekistan": {
+      "en": "Uzbekistan",
+      "he": "אוזבקיסטן",
+      "continentEn": "Asia",
+      "continentHe": "אסיה",
+      "iso2": "UZ",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "venezuela": {
+      "en": "Venezuela",
+      "he": "ונצואלה",
+      "continentEn": "South America",
+      "continentHe": "דרום אמריקה",
+      "iso2": "VE",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "vietnam": {
+      "en": "Vietnam",
+      "he": "וייטנאם",
+      "continentEn": "Asia",
+      "continentHe": "אסיה",
+      "iso2": "VN",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "virgin-islands-british": {
+      "en": "British Virgin Islands",
+      "he": "איי הבתולה הבריטיים",
+      "continentEn": "North America",
+      "continentHe": "צפון אמריקה",
+      "iso2": "VG",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "virgin-islands-us": {
+      "en": "United States Virgin Islands",
+      "he": "איי הבתולה האמריקאיים",
+      "continentEn": "North America",
+      "continentHe": "צפון אמריקה",
+      "iso2": "VI",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "western-sahara": {
+      "en": "Western Sahara",
+      "he": "סהרה המערבית",
+      "continentEn": "Africa",
+      "continentHe": "אפריקה",
+      "iso2": "EH",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "yemen": {
+      "en": "Yemen",
+      "he": "תימן",
+      "continentEn": "Asia",
+      "continentHe": "אסיה",
+      "iso2": "YE",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "zambia": {
+      "en": "Zambia",
+      "he": "זמביה",
+      "continentEn": "Africa",
+      "continentHe": "אפריקה",
+      "iso2": "ZM",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    },
+    "zimbabwe": {
+      "en": "Zimbabwe",
+      "he": "זימבבואה",
+      "continentEn": "Africa",
+      "continentHe": "אפריקה",
+      "iso2": "ZW",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
+    }
+  },
+  "regions": {},
+  "specialFiles": {
+    "basemap": {
+      "continentEn": "World",
+      "continentHe": "עולם",
+      "emoji": "🌐"
+    },
+    "seamarks": {
+      "continentEn": "World",
+      "continentHe": "עולם",
+      "emoji": "⚓"
+    }
+  }
+}

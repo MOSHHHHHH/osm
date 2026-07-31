@@ -12,7 +12,7 @@
 <!-- Twemoji: Windows' default emoji font doesn't render flag emoji as flags (falls back to
      showing the raw two-letter country code) - Twemoji replaces every emoji character with a
      consistent image so flags (and all other emoji) look the same on every OS/browser. -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/twemoji.min.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/16.0.1/twemoji.min.js" crossorigin="anonymous"></script>
 <style>
   :root{
     --ink:#221D1A;
@@ -55,7 +55,6 @@
   .status-pill:hover{transform:translateY(-1px);box-shadow:var(--shadow)}
   .status-pill .badge{font-size:1rem}
 
-  .status-pill.in-progress{color:var(--orange-deep);border-color:var(--amber)}
   .status-pill.loading{color:var(--muted);animation:status-pulse 1.4s ease-in-out infinite}
   @keyframes status-pulse{0%,100%{opacity:1}50%{opacity:.45}}
 
@@ -104,6 +103,7 @@
   .stop-btn:active{transform:translateY(-1px) scale(.99)}
   .stop-btn .icon{font-size:1.8rem}
   .stop-btn .sub{font-family:'Heebo',sans-serif;font-weight:400;font-size:.78rem;opacity:.9}
+  .stop-btn .updated-date{font-family:'Space Mono',monospace;font-weight:400;font-size:.72rem;opacity:.8}
   .stop-orange{background:linear-gradient(160deg,var(--orange),var(--orange-deep))}
   .stop-blue{background:linear-gradient(160deg,var(--teal),var(--teal-deep))}
 
@@ -128,6 +128,7 @@
   .result-item .label-text{display:flex;flex-direction:column;gap:1px;text-align:right}
   .result-item .tags-line{color:var(--ink)}
   .result-item .file-line{font-size:.72rem;color:var(--muted);font-family:'Space Mono',monospace}
+  .result-item .date-line{font-size:.7rem;color:var(--muted);font-family:'Space Mono',monospace}
   .result-item .emoji{font-size:1.3rem}
   img.twemoji{height:1.15em;width:1.15em;margin:0 .06em 0 .1em;vertical-align:-0.2em}
   .result-item button{
@@ -170,19 +171,8 @@
     background:var(--ink);color:#fff;font-family:'Heebo',sans-serif;font-weight:500;
     cursor:pointer;font-size:.9rem;
   }
-  .pending-link{
-    display:inline-block;margin-top:6px;color:var(--orange-deep);font-size:.82rem;
-    text-decoration:underline;cursor:pointer;
-  }
-  .pending-files-list{
-    list-style:none;margin:0;padding:0;max-height:340px;overflow-y:auto;
-    border-top:1px solid var(--line);
-  }
-  .pending-files-list li{
-    padding:9px 2px;border-bottom:1px solid var(--line);font-size:.85rem;
-    font-family:'Space Mono',monospace;color:var(--ink);
-  }
-  .pending-files-empty{color:var(--muted);font-size:.88rem;padding:12px 2px;font-family:'Heebo',sans-serif}
+  .zip-warning-text{font-size:.92rem;color:var(--ink);line-height:1.7;margin-bottom:8px}
+  .zip-warning-countdown{color:var(--muted);font-size:.82rem;margin-bottom:18px}
 
   @media (prefers-reduced-motion: reduce){
     .trail path{animation:none;stroke-dashoffset:0}
@@ -192,7 +182,7 @@
 </style>
 </head>
 <body>
-<script src="unavailable-service.js"></script>
+
 <div class="wrap">
 
   <div class="topbar">
@@ -235,16 +225,19 @@
       <span class="icon">🗺️</span>
       מפת OsmAnd — ישראל
       <span class="sub">Map · Roads · POI · Transport</span>
+      <span class="updated-date" id="israelUpdatedDate"></span>
     </button>
     <button class="stop-btn stop-orange" id="btnYosh" type="button">
       <span class="icon">🗺️</span>
       מפת OsmAnd — יו״ש
       <span class="sub">Map · Roads · POI · Transport</span>
+      <span class="updated-date" id="yoshUpdatedDate"></span>
     </button>
     <button class="stop-btn stop-blue" id="btnMoovitdos" type="button">
       <span class="icon">🚌</span>
       נתונים למובידוס
       <span class="sub">קובץ הנתונים העדכני ביותר</span>
+      <span class="updated-date" id="moovitdosUpdatedDate"></span>
     </button>
   </div>
 
@@ -279,7 +272,6 @@
         <strong>OsmAnd</strong>
         <span id="modalOsmandText">כל התוכן מעודכן</span>
         <small id="modalOsmandDate"></small>
-        <a href="#" id="osmandPendingLink" class="pending-link" style="display:none">קבצים שממתינים לעדכון: <span id="osmandPendingCount">0</span>. להצגת שמות הקבצים הממתינים</a>
       </div>
     </div>
     <div class="modal-row">
@@ -294,11 +286,14 @@
   </div>
 </div>
 
-<div class="modal-overlay" id="pendingFilesModal">
+<div class="modal-overlay" id="zipWarningModal">
   <div class="modal">
-    <h3>קבצים שממתינים לעדכון</h3>
-    <ul class="pending-files-list" id="pendingFilesList"></ul>
-    <button class="modal-close" id="pendingFilesCloseBtn" type="button">סגירה</button>
+    <h3>שימו לב</h3>
+    <p class="zip-warning-text">
+      שים לב! מסיבות טכניות הקובץ ירד בפורמט ‎.zip‎, יש לחלץ את הקובץ לפני ההעתקה לטלפון.
+    </p>
+    <p class="zip-warning-countdown">חלון זה יסגר בעוד <span id="zipWarningCountdown">7</span> שניות</p>
+    <button class="modal-close" id="zipWarningCloseBtn" type="button">סגור כעת</button>
   </div>
 </div>
 
