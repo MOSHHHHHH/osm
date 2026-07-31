@@ -3583,6 +3583,550 @@
     "france:yonne": {
       "en": "Yonne",
       "he": "יון"
+    },
+    "gb:channel-islands": {
+      "en": "Channel Islands",
+      "he": "איי התעלה"
+    },
+    "gb:england": {
+      "en": "England",
+      "he": "אנגליה"
+    },
+    "gb:england/east-midlands": {
+      "en": "East Midlands",
+      "he": "איסט מידלנדס"
+    },
+    "gb:england/east-of-england": {
+      "en": "East of England",
+      "he": "מזרח אנגליה"
+    },
+    "gb:england/greater-london": {
+      "en": "Greater London",
+      "he": "לונדון רבתי"
+    },
+    "gb:england/north-east-england": {
+      "en": "North East England",
+      "he": "צפון-מזרח אנגליה"
+    },
+    "gb:england/north-west-england": {
+      "en": "North West England",
+      "he": "צפון-מערב אנגליה"
+    },
+    "gb:england/south-east-england": {
+      "en": "South East England",
+      "he": "דרום-מזרח אנגליה"
+    },
+    "gb:england/south-west-england": {
+      "en": "South West England",
+      "he": "דרום-מערב אנגליה"
+    },
+    "gb:england/west-midlands": {
+      "en": "West Midlands",
+      "he": "הפאת' המערביים"
+    },
+    "gb:england/yorkshire-and-the-humber": {
+      "en": "Yorkshire and the Humber",
+      "he": "יורקשייר והאמבר"
+    },
+    "gb:northern": {
+      "en": "Northern England",
+      "he": "צפון אנגליה"
+    },
+    "gb:northern/ireland": {
+      "en": "Northern Ireland",
+      "he": "צפון אירלנד"
+    },
+    "gb:scotland": {
+      "en": "Scotland",
+      "he": "סקוטלנד"
+    },
+    "gb:wales": {
+      "en": "Wales",
+      "he": "וויילס"
+    },
+    "germany:baden-wuerttemberg": {
+      "en": "Baden-Württemberg",
+      "he": "באדן-וירטמברג"
+    },
+    "germany:baden-wuerttemberg/freiburg": {
+      "en": "Freiburg",
+      "he": "פרייבורג"
+    },
+    "germany:baden-wuerttemberg/karlsruhe": {
+      "en": "Karlsruhe",
+      "he": "קרלסרוהה"
+    },
+    "germany:baden-wuerttemberg/stuttgart": {
+      "en": "Stuttgart",
+      "he": "שטוטגרט"
+    },
+    "germany:baden-wuerttemberg/tubingen": {
+      "en": "Tübingen",
+      "he": "טיבינגן"
+    },
+    "germany:bayern": {
+      "en": "Bavaria",
+      "he": "בוואריה"
+    },
+    "germany:bayern/lower-bavaria": {
+      "en": "Lower Bavaria",
+      "he": "בוואריה התחתונה"
+    },
+    "germany:bayern/lower-franconia": {
+      "en": "Lower Franconia",
+      "he": "תחתית פרנקוניה"
+    },
+    "germany:bayern/middle-franconia": {
+      "en": "Middle Franconia",
+      "he": "מיטフランケン"
+    },
+    "germany:bayern/swabia": {
+      "en": "Swabia",
+      "he": "שואביה"
+    },
+    "germany:bayern/upper-bavaria": {
+      "en": "Upper Bavaria",
+      "he": "בוואריה עילית"
+    },
+    "germany:bayern/upper-franconia": {
+      "en": "Upper Franconia",
+      "he": "אוברפרנקיה"
+    },
+    "germany:bayern/upper-palatinate": {
+      "en": "Upper Palatinate",
+      "he": "הפאלץ העליון"
+    },
+    "germany:berlin": {
+      "en": "Berlin",
+      "he": "ברלין"
+    },
+    "germany:brandenburg": {
+      "en": "Brandenburg",
+      "he": "ברנדנבורג"
+    },
+    "germany:bremen-city": {
+      "en": "Bremen City",
+      "he": "עיר ברמן"
+    },
+    "germany:hamburg": {
+      "en": "Hamburg",
+      "he": "המבורג"
+    },
+    "germany:hessen": {
+      "en": "Hesse",
+      "he": "הסן"
+    },
+    "germany:hessen/darmstadt": {
+      "en": "Darmstadt",
+      "he": "דרמשטאדט"
+    },
+    "germany:hessen/giessen": {
+      "en": "Giessen",
+      "he": "גיסן"
+    },
+    "germany:hessen/kassel": {
+      "en": "Kassel",
+      "he": "קאסל"
+    },
+    "germany:mecklenburg-vorpommern": {
+      "en": "Mecklenburg-Vorpommern",
+      "he": "מקלנבורג-פומרניה עילית"
+    },
+    "germany:niedersachsen": {
+      "en": "Lower Saxony",
+      "he": "נידרזקסן"
+    },
+    "germany:niedersachsen/braunschweig": {
+      "en": "Braunschweig",
+      "he": "בראונשווייג"
+    },
+    "germany:niedersachsen/bremen": {
+      "en": "Bremen",
+      "he": "ברמן"
+    },
+    "germany:niedersachsen/buchholz-in-der-nordheide": {
+      "en": "Buchholz in der Nordheide",
+      "he": "בוכחולץ אין דר נורדהיידה"
+    },
+    "germany:niedersachsen/hannover": {
+      "en": "Hannover",
+      "he": "הנובר"
+    },
+    "germany:niedersachsen/oldenburg": {
+      "en": "Oldenburg",
+      "he": "אולדנבורג"
+    },
+    "germany:nordrhein-westfalen": {
+      "en": "North Rhine-Westphalia",
+      "he": "נורדריין-וסטפאליה"
+    },
+    "germany:nordrhein-westfalen/arnsberg": {
+      "en": "Arnsberg",
+      "he": "ארנסברג"
+    },
+    "germany:nordrhein-westfalen/cologne-government-region": {
+      "en": "Cologne Government Region",
+      "he": "מחוז קלן"
+    },
+    "germany:nordrhein-westfalen/detmold": {
+      "en": "Detmold",
+      "he": "דטמולד"
+    },
+    "germany:nordrhein-westfalen/dusseldorf": {
+      "en": "Düsseldorf",
+      "he": "דיסלדורף"
+    },
+    "germany:nordrhein-westfalen/munster": {
+      "en": "Münster",
+      "he": "מינסטר"
+    },
+    "germany:rheinland-pfalz": {
+      "en": "Rhineland-Palatinate",
+      "he": "ריינלנד-פאלץ"
+    },
+    "germany:saarland": {
+      "en": "Saarland",
+      "he": "חבל סאר"
+    },
+    "germany:sachsen-anhalt": {
+      "en": "Saxony-Anhalt",
+      "he": "סקסוניה-אנהלט"
+    },
+    "germany:sachsen": {
+      "en": "Saxony",
+      "he": "סקסוניה"
+    },
+    "germany:schleswig-holstein": {
+      "en": "Schleswig-Holstein",
+      "he": "שלזוויג-הולשטיין"
+    },
+    "germany:thueringen": {
+      "en": "Thuringia",
+      "he": "תורינגיה"
+    },
+    "india:aksai-chin": {
+      "en": "Aksai Chin",
+      "he": "אקסאי צ'ין"
+    },
+    "india:andaman-and-nicobar-islands": {
+      "en": "Andaman and Nicobar Islands",
+      "he": "איי אנדמן וניקובר"
+    },
+    "india:andhra-pradesh": {
+      "en": "Andhra Pradesh",
+      "he": "אנדרה פרדש"
+    },
+    "india:arunachal-pradesh": {
+      "en": "Arunachal Pradesh",
+      "he": "ארונאצ'אל פרדש"
+    },
+    "india:assam": {
+      "en": "Assam",
+      "he": "אאסאם"
+    },
+    "india:azad-kashmir": {
+      "en": "Azad Kashmir",
+      "he": "אזאד קשמיר"
+    },
+    "india:bihar": {
+      "en": "Bihar",
+      "he": "ביהאר"
+    },
+    "india:chandigarh": {
+      "en": "Chandigarh",
+      "he": "צ'אנדיגאר"
+    },
+    "india:chhattisgarh": {
+      "en": "Chhattisgarh",
+      "he": "צ'האטיסגאר"
+    },
+    "india:dadra-and-nagar-haveli": {
+      "en": "Dadra and Nagar Haveli",
+      "he": "דאדרה ונאגר האוולי"
+    },
+    "india:daman-and-diu": {
+      "en": "Daman and Diu",
+      "he": "דאמן ודיו"
+    },
+    "india:delhi": {
+      "en": "Delhi",
+      "he": "דלהי"
+    },
+    "india:gilgit-baltistan": {
+      "en": "Gilgit-Baltistan",
+      "he": "גילגיט-בלטיסטן"
+    },
+    "india:goa": {
+      "en": "Goa",
+      "he": "גואה"
+    },
+    "india:gujarat": {
+      "en": "Gujarat",
+      "he": "גוג'אראט"
+    },
+    "india:haryana": {
+      "en": "Haryana",
+      "he": "הריאנה"
+    },
+    "india:himachal-pradesh": {
+      "en": "Himachal Pradesh",
+      "he": "הימאצ'אל פרדש"
+    },
+    "india:jammu-and-kashmir": {
+      "en": "Jammu and Kashmir",
+      "he": "ג'אמו וקשמיר"
+    },
+    "india:jharkhand": {
+      "en": "Jharkhand",
+      "he": "ג'הארקהאנד"
+    },
+    "india:karnataka": {
+      "en": "Karnataka",
+      "he": "קרנטקה"
+    },
+    "india:kerala": {
+      "en": "Kerala",
+      "he": "קראלה"
+    },
+    "india:ladakh": {
+      "en": "Ladakh",
+      "he": "לאדאך"
+    },
+    "india:lakshadweep": {
+      "en": "Lakshadweep",
+      "he": "לקשאדוויפ"
+    },
+    "india:madhya-pradesh": {
+      "en": "Madhya Pradesh",
+      "he": "מדהיה פרדש"
+    },
+    "india:maharashtra": {
+      "en": "Maharashtra",
+      "he": "מהאראשטרה"
+    },
+    "india:manipur": {
+      "en": "Manipur",
+      "he": "מניפור"
+    },
+    "india:meghalaya": {
+      "en": "Meghalaya",
+      "he": "מגהאלאיה"
+    },
+    "india:mizoram": {
+      "en": "Mizoram",
+      "he": "מיזוראם"
+    },
+    "india:nagaland": {
+      "en": "Nagaland",
+      "he": "נאגאלנד"
+    },
+    "india:odisha": {
+      "en": "Odisha",
+      "he": "אודישה"
+    },
+    "india:puducherry": {
+      "en": "Puducherry",
+      "he": "פודוצ'ירי"
+    },
+    "india:punjab": {
+      "en": "Punjab",
+      "he": "פנג'אב"
+    },
+    "india:rajasthan": {
+      "en": "Rajasthan",
+      "he": "ראג'אסטאן"
+    },
+    "india:sikkim": {
+      "en": "Sikkim",
+      "he": "סיקים"
+    },
+    "india:tamil-nadu": {
+      "en": "Tamil Nadu",
+      "he": "טמיל נאדו"
+    },
+    "india:telangana": {
+      "en": "Telangana",
+      "he": "טלנגאנה"
+    },
+    "india:tripura": {
+      "en": "Tripura",
+      "he": "טריפורה"
+    },
+    "india:uttar-pradesh": {
+      "en": "Uttar Pradesh",
+      "he": "אוטאר פרדש"
+    },
+    "india:uttarakhand": {
+      "en": "Uttarakhand",
+      "he": "אוטראקהאנד"
+    },
+    "india:west-bengal": {
+      "en": "West Bengal",
+      "he": "מערב בנגל"
+    },
+    "indonesia:aceh": {
+      "en": "Aceh",
+      "he": "אצ'ה"
+    },
+    "indonesia:bali": {
+      "en": "Bali",
+      "he": "באלי"
+    },
+    "indonesia:bangka-belitung": {
+      "en": "Bangka Belitung",
+      "he": "באנגקה-בּעליטונג"
+    },
+    "indonesia:banten": {
+      "en": "Banten",
+      "he": "בנטן"
+    },
+    "indonesia:bengkulu": {
+      "en": "Bengkulu",
+      "he": "בנקולו"
+    },
+    "indonesia:gorontalo": {
+      "en": "Gorontalo",
+      "he": "גורונטלו"
+    },
+    "indonesia:irian-jaya-barat": {
+      "en": "West Papua",
+      "he": "פפואה המערבית"
+    },
+    "indonesia:jakarta-raya": {
+      "en": "Jakarta",
+      "he": "ג'קרטה"
+    },
+    "indonesia:jambi": {
+      "en": "Jambi",
+      "he": "ג'אמבי"
+    },
+    "indonesia:jawa-barat": {
+      "en": "West Java",
+      "he": "ג'אווה המערבית"
+    },
+    "indonesia:jawa-tengah": {
+      "en": "Central Java",
+      "he": "ג'אווה המרכזית"
+    },
+    "indonesia:jawa-timur": {
+      "en": "East Java",
+      "he": "ג'אווה המזרחית"
+    },
+    "indonesia:kalimantan-barat": {
+      "en": "West Kalimantan",
+      "he": "קאלימנטן המערבית"
+    },
+    "indonesia:kalimantan-selatan": {
+      "en": "South Kalimantan",
+      "he": "דרום קאלימנטן"
+    },
+    "indonesia:kalimantan-tengah": {
+      "en": "Central Kalimantan",
+      "he": "קאלימנטן המרכזית"
+    },
+    "indonesia:kalimantan-timur": {
+      "en": "East Kalimantan",
+      "he": "מזרח קאלימנטן"
+    },
+    "indonesia:kalimantan-utara": {
+      "en": "North Kalimantan",
+      "he": "קלימנטן הצפונית"
+    },
+    "indonesia:kepulauan-riau": {
+      "en": "Kepulauan Riau",
+      "he": "איי ריאו"
+    },
+    "indonesia:lampung": {
+      "en": "Lampung",
+      "he": "לאמפונג"
+    },
+    "indonesia:maluku-utara": {
+      "en": "North Maluku",
+      "he": "מאלוקו הצפונית"
+    },
+    "indonesia:maluku": {
+      "en": "Maluku",
+      "he": "מאלוקו"
+    },
+    "indonesia:nusa-tenggara-barat": {
+      "en": "West Nusa Tenggara",
+      "he": "נוסה טנגארה המערבית"
+    },
+    "indonesia:nusa-tenggara-timur": {
+      "en": "East Nusa Tenggara",
+      "he": "נוסה טנגרה המזרחית"
+    },
+    "indonesia:papua": {
+      "en": "Papua",
+      "he": "פפואה"
+    },
+    "indonesia:riau": {
+      "en": "Riau",
+      "he": "ריאו"
+    },
+    "indonesia:sulawesi-barat": {
+      "en": "West Sulawesi",
+      "he": "מערב סולאווסי"
+    },
+    "indonesia:sulawesi-selatan": {
+      "en": "South Sulawesi",
+      "he": "דרום סולאווסי"
+    },
+    "indonesia:sulawesi-tengah": {
+      "en": "Central Sulawesi",
+      "he": "סולאווסי המרכזית"
+    },
+    "indonesia:sulawesi-tenggara": {
+      "en": "Southeast Sulawesi",
+      "he": "דרום-מזרח סולאווסי"
+    },
+    "indonesia:sulawesi-utara": {
+      "en": "North Sulawesi",
+      "he": "סולאווסי הצפונית"
+    },
+    "indonesia:sumatera-barat": {
+      "en": "West Sumatra",
+      "he": "סומטרה המערבית"
+    },
+    "indonesia:sumatera-selatan": {
+      "en": "South Sumatra",
+      "he": "דרום סומטרה"
+    },
+    "indonesia:sumatera-utara": {
+      "en": "North Sumatra",
+      "he": "צפון סומטרה"
+    },
+    "indonesia:yogyakarta": {
+      "en": "Yogyakarta",
+      "he": "ג'וקג'רטה"
+    },
+    "iran:alborz": {
+      "en": "Alborz",
+      "he": "אלבורז"
+    },
+    "iran:ardebil": {
+      "en": "Ardabil",
+      "he": "ארדביל"
+    },
+    "iran:bushehr": {
+      "en": "Bushehr",
+      "he": "בושהר"
+    },
+    "iran:chahar-mahall-and-bakhtiari": {
+      "en": "Chahar Mahal and Bakhtiari",
+      "he": "צ'האר מחאל ובחטיארי"
+    },
+    "iran:east-azarbaijan": {
+      "en": "East Azerbaijan",
+      "he": "מזרח אזרבייג'ן"
+    },
+    "iran:esfahan": {
+      "en": "Esfahan",
+      "he": "אספהאן"
+    },
+    "iran:fars": {
+      "en": "Fars",
+      "he": "פארס"
     }
   },
   "specialFiles": {
