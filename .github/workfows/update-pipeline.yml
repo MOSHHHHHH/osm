@@ -1,0 +1,127 @@
+name: Update pipeline (links + tags)
+
+on:
+  schedule:
+    # Every 25 minutes. GitHub Actions has a hard floor of 5 minutes between scheduled runs
+    # (more frequent cron expressions are simply not honored), so this stays comfortably
+    # above that while still catching OsmAnd's monthly release window (usually the 2nd-5th
+    # of the month) reasonably quickly.
+    - cron: "*/25 * * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  # Ensures the whole pipeline never overlaps itself: if a previous run (scheduled or
+  # manual) is still going, a new trigger queues instead of racing it.
+  group: update-pipeline
+  cancel-in-progress: false
+
+jobs:
+  update-links:
+    name: Find/update OsmAnd + Moovitdos links
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r update-scripts/requirements.txt
+      - name: Run data-update.py
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PYTHONUNBUFFERED: "1"
+        run: python -u update-scripts/data-update.py
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/osmand-data.json data/moovitdos-link.json data/update-status.json
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+          git commit -m "chore: update links ($(date -u +%Y-%m-%dT%H:%M:%SZ))"
+          # This job runs in parallel with update-tag-rules, which may push at the same
+          # time - retry with a rebase on top of whatever the other job just pushed.
+          for i in 1 2 3 4 5; do
+            if git push; then
+              exit 0
+            fi
+            echo "Push rejected, pulling and retrying ($i/5)..."
+            git pull --rebase origin "${GITHUB_REF_NAME}"
+          done
+          git push
+
+  update-tag-rules:
+    name: Fill missing tag rules (AI)
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r update-scripts/requirements.txt
+      - name: Run tag-rule-generator.py
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          PYTHONUNBUFFERED: "1"
+        run: python -u update-scripts/tag-rule-generator.py
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/tag-rule-data.json
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+          git commit -m "chore: fill missing tag rules ($(date -u +%Y-%m-%dT%H:%M:%SZ))"
+          for i in 1 2 3 4 5; do
+            if git push; then
+              exit 0
+            fi
+            echo "Push rejected, pulling and retrying ($i/5)..."
+            git pull --rebase origin "${GITHUB_REF_NAME}"
+          done
+          git push
+
+  rebuild-tags:
+    name: Rebuild mapsTags.json (pure logic)
+    needs: [update-links, update-tag-rules]
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      # Explicitly checks out the branch (not the fixed commit that triggered this workflow),
+      # so this sees the commits update-links/update-tag-rules just pushed above.
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Run tag-generator.py
+        env:
+          PYTHONUNBUFFERED: "1"
+        run: python -u update-scripts/tag-generator.py
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/mapsTags.json
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+          git commit -m "chore: rebuild tags ($(date -u +%Y-%m-%dT%H:%M:%SZ))"
+          for i in 1 2 3 4 5; do
+            if git push; then
+              exit 0
+            fi
+            echo "Push rejected, pulling and retrying ($i/5)..."
+            git pull --rebase origin "${GITHUB_REF_NAME}"
+          done
+          git push
