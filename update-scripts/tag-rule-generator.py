@@ -29,7 +29,7 @@ from pathlib import Path
 import requests
 
 from osmand_filename import parse_filename, region_prefix_keys, resolve_country
-MAX_RUN_TIME_SECONDS = 30  # 5 דקות
+MAX_RUN_TIME_SECONDS = 600  # 10 דקות
 ROOT_DIR = Path(__file__).resolve().parent.parent
 DATA_DIR = ROOT_DIR / "data"
 
