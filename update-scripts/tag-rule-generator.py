@@ -29,7 +29,7 @@ from pathlib import Path
 import requests
 
 from osmand_filename import parse_filename, region_prefix_keys, resolve_country
-
+MAX_RUN_TIME_SECONDS = 300  # 5 דקות
 ROOT_DIR = Path(__file__).resolve().parent.parent
 DATA_DIR = ROOT_DIR / "data"
 
@@ -245,10 +245,15 @@ def find_missing_items(osmand_files, rule_data):
 # Entry point
 # ---------------------------------------------------------------------------
 
+MAX_RUN_TIME_SECONDS = 300  # 5 minutes timeout
+
+
 def main():
     if not GEMINI_API_KEY:
         print("[rules] GEMINI_API_KEY is not set, aborting", file=sys.stderr)
         sys.exit(1)
+
+    start_time = time.time()  # תחילת מדידת הזמן
 
     osmand_files = load_json(OSMAND_DATA_JSON, [])
     rule_data = load_json(TAG_RULE_DATA_JSON, {
@@ -268,9 +273,14 @@ def main():
     consecutive_failures = [0]
     stopped_early = False
 
-    # --- Resolve missing countries first, so freshly-resolved names are available for
-    #     region prompts later in this same run. ---
+    # --- Resolve missing countries ---
     for slug in missing_countries:
+        # בדיקה אם חלפו 5 דקות לפני תחילת בקשה חדשה
+        if time.time() - start_time >= MAX_RUN_TIME_SECONDS:
+            print("[rules] 5 minutes limit reached. Stopping and saving progress...", file=sys.stderr)
+            stopped_early = True
+            break
+
         prompt = COUNTRY_PROMPT_TEMPLATE.format(slug=slug, continent_list=CONTINENT_LIST_TEXT)
         try:
             result = resolve_item(prompt, f"country '{slug}'", consecutive_failures)
@@ -292,8 +302,15 @@ def main():
         save_json(TAG_RULE_DATA_JSON, rule_data)
         print(f"[rules] resolved country '{slug}' -> {countries[slug]['en']}")
 
+    # --- Resolve missing regions ---
     if not stopped_early:
         for key, country_slug, path_prefix in missing_regions:
+            # בדיקה אם חלפו 5 דקות לפני תחילת בקשה חדשה
+            if time.time() - start_time >= MAX_RUN_TIME_SECONDS:
+                print("[rules] 5 minutes limit reached. Stopping and saving progress...", file=sys.stderr)
+                stopped_early = True
+                break
+
             resolved_slug, country_entry = resolve_country(countries, country_slug)
             country_en = country_entry.get("en") if country_entry else country_slug
             country_he = country_entry.get("he") if country_entry else country_slug
@@ -325,13 +342,13 @@ def main():
             save_json(TAG_RULE_DATA_JSON, rule_data)
             print(f"[rules] resolved region '{key}' -> {regions[key]['en']}")
 
+    # שמירה סופית של כל מה שעובד עד לרגע העצירה
     save_json(TAG_RULE_DATA_JSON, rule_data)
 
     if stopped_early:
-        print(f"[rules] stopped after {MAX_CONSECUTIVE_FAILURES} consecutive failures - "
-              "saved progress so far (this is a normal stopping condition, not an error)")
+        print("[rules] stopped early (timeout or consecutive failures) - "
+              "saved progress so far.")
     print("[rules] done")
-
 
 if __name__ == "__main__":
     main()
