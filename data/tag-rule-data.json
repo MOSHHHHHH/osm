@@ -4127,6 +4127,158 @@
     "iran:fars": {
       "en": "Fars",
       "he": "פארס"
+    },
+    "iran:gilan": {
+      "en": "Gilan",
+      "he": "גילאן"
+    },
+    "iran:golestan": {
+      "en": "Golestan",
+      "he": "גלסתאן"
+    },
+    "iran:hamadan": {
+      "en": "Hamadan",
+      "he": "הממדאן"
+    },
+    "iran:hormozgan": {
+      "en": "Hormozgan",
+      "he": "הורמוזגאן"
+    },
+    "iran:ilam": {
+      "en": "Ilam",
+      "he": "אילאם"
+    },
+    "iran:kerman": {
+      "en": "Kerman",
+      "he": "כרמאן"
+    },
+    "iran:kermanshah": {
+      "en": "Kermanshah",
+      "he": "כרמאנשאה"
+    },
+    "iran:khuzestan": {
+      "en": "Khuzestan",
+      "he": "חוז'סטאן"
+    },
+    "iran:kohgiluyeh-and-buyer-ahmad": {
+      "en": "Kohgiluyeh and Buyer Ahmad",
+      "he": "קוהگیلویه و بویر احمد"
+    },
+    "iran:kordestan": {
+      "en": "Kurdistan Province",
+      "he": "מחוז כורדיסתאן"
+    },
+    "iran:lorestan": {
+      "en": "Lorestan",
+      "he": "לורסתאן"
+    },
+    "iran:markazi": {
+      "en": "Markazi",
+      "he": "מרכזי"
+    },
+    "iran:mazandaran": {
+      "en": "Mazandaran",
+      "he": "מאזנדראן"
+    },
+    "iran:north-khorasan": {
+      "en": "North Khorasan",
+      "he": "خراسان شمالی"
+    },
+    "iran:qazvin": {
+      "en": "Qazvin",
+      "he": "קזווין"
+    },
+    "iran:qom": {
+      "en": "Qom",
+      "he": "קום"
+    },
+    "iran:razavi-khorasan": {
+      "en": "Razavi Khorasan",
+      "he": "ח'וראסאן רזאווי"
+    },
+    "iran:semnan": {
+      "en": "Semnan",
+      "he": "סמנאן"
+    },
+    "iran:sistan-and-baluchestan": {
+      "en": "Sistan and Baluchestan",
+      "he": "סיסתאן ובלוצ'סתאן"
+    },
+    "iran:south-khorasan": {
+      "en": "South Khorasan",
+      "he": "דרום ח'וראסאן"
+    },
+    "iran:tehran": {
+      "en": "Tehran",
+      "he": "טהראן"
+    },
+    "iran:west-azarbaijan": {
+      "en": "West Azerbaijan",
+      "he": "אזרבייג'אן המערבית"
+    },
+    "iran:yazd": {
+      "en": "Yazd",
+      "he": "יזד"
+    },
+    "iran:zanjan": {
+      "en": "Zanjan",
+      "he": "זנג'אן"
+    },
+    "italy:abruzzo": {
+      "en": "Abruzzo",
+      "he": "אברוצו"
+    },
+    "italy:basilicata": {
+      "en": "Basilicata",
+      "he": "בזיליקטה"
+    },
+    "italy:calabria": {
+      "en": "Calabria",
+      "he": "קלבריה"
+    },
+    "italy:campania": {
+      "en": "Campania",
+      "he": "קמפניה"
+    },
+    "italy:emilia-romagna": {
+      "en": "Emilia-Romagna",
+      "he": "אמיליה-רומאניה"
+    },
+    "italy:friuli-venezia-giulia": {
+      "en": "Friuli-Venezia Giulia",
+      "he": "פריולי-ונציה ג'וליה"
+    },
+    "italy:lazio": {
+      "en": "Lazio",
+      "he": "לאציו"
+    },
+    "italy:liguria": {
+      "en": "Liguria",
+      "he": "ליגוריה"
+    },
+    "italy:lombardia": {
+      "en": "Lombardy",
+      "he": "לומברדיה"
+    },
+    "italy:marche": {
+      "en": "Marche",
+      "he": "מארקה"
+    },
+    "italy:molise": {
+      "en": "Molise",
+      "he": "מוליזה"
+    },
+    "italy:piemonte": {
+      "en": "Piedmont",
+      "he": "פיימונטה"
+    },
+    "italy:puglia": {
+      "en": "Puglia",
+      "he": "פוליה"
+    },
+    "italy:sardegna": {
+      "en": "Sardinia",
+      "he": "סרדיניה"
     }
   },
   "specialFiles": {
