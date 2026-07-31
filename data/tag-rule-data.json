@@ -4351,6 +4351,14 @@
     "japan:hokkaido": {
       "en": "Hokkaido",
       "he": "הוקאידו"
+    },
+    "japan:kanto": {
+      "en": "Kanto",
+      "he": "קאנטו"
+    },
+    "japan:kanto/chiba": {
+      "en": "Chiba",
+      "he": "צ'יבה"
     }
   },
   "specialFiles": {
