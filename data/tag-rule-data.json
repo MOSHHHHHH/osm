@@ -4347,6 +4347,10 @@
     "japan:chugoku": {
       "en": "Chugoku",
       "he": "צ'וגוקו"
+    },
+    "japan:hokkaido": {
+      "en": "Hokkaido",
+      "he": "הוקאידו"
     }
   },
   "specialFiles": {
