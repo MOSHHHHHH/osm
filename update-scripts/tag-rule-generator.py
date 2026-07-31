@@ -245,7 +245,6 @@ def find_missing_items(osmand_files, rule_data):
 # Entry point
 # ---------------------------------------------------------------------------
 
-MAX_RUN_TIME_SECONDS = 300  # 5 minutes timeout
 
 
 def main():
