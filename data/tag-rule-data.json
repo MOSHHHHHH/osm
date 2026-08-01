@@ -4359,6 +4359,14 @@
     "japan:kanto/chiba": {
       "en": "Chiba",
       "he": "צ'יבה"
+    },
+    "japan:kanto/gunma": {
+      "en": "Gunma",
+      "he": "גונמה"
+    },
+    "japan:kanto/ibaraki": {
+      "en": "Ibaraki",
+      "he": "איבאראקי"
     }
   },
   "specialFiles": {
