@@ -4367,6 +4367,22 @@
     "japan:kanto/ibaraki": {
       "en": "Ibaraki",
       "he": "איבאראקי"
+    },
+    "japan:kanto/kanagawa": {
+      "en": "Kanagawa",
+      "he": "קאנאגאווה"
+    },
+    "japan:kanto/saitama": {
+      "en": "Saitama",
+      "he": "סאיטאמה"
+    },
+    "japan:kanto/tochigi": {
+      "en": "Tochigi",
+      "he": "טוצ'יגי"
+    },
+    "japan:kanto/tokyo": {
+      "en": "Tokyo",
+      "he": "טוקיו"
     }
   },
   "specialFiles": {
