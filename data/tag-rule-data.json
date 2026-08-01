@@ -4867,6 +4867,290 @@
     "russia:kalmykia": {
       "en": "Kalmykia",
       "he": "קלמיקיה"
+    },
+    "russia:kaluga": {
+      "en": "Kaluga",
+      "he": "קלוגה"
+    },
+    "russia:kamchatka": {
+      "en": "Kamchatka Krai",
+      "he": "חבל קמצ'טקה"
+    },
+    "russia:karachaevo": {
+      "en": "Karachay-Cherkessia",
+      "he": "קראצ'אי-צ'רקסיה"
+    },
+    "russia:karelia": {
+      "en": "Karelia",
+      "he": "קרליה"
+    },
+    "russia:kemerovo": {
+      "en": "Kemerovo",
+      "he": "קמרובו"
+    },
+    "russia:khabarovsk": {
+      "en": "Khabarovsk",
+      "he": "חברובסק"
+    },
+    "russia:khakasia": {
+      "en": "Khakassia",
+      "he": "חקאסיה"
+    },
+    "russia:khanty-mansiisk": {
+      "en": "Khanty-Mansiysk",
+      "he": "חאנטי-מנסיסק"
+    },
+    "russia:kirov": {
+      "en": "Kirov",
+      "he": "קירוב"
+    },
+    "russia:komi": {
+      "en": "Komi Republic",
+      "he": "רפובליקת קומי"
+    },
+    "russia:kostroma": {
+      "en": "Kostroma",
+      "he": "קוסטרומה"
+    },
+    "russia:krasnodar": {
+      "en": "Krasnodar",
+      "he": "קרסנודאר"
+    },
+    "russia:krasnoyarsk": {
+      "en": "Krasnoyarsk",
+      "he": "קרסנויארסק"
+    },
+    "russia:kurgan": {
+      "en": "Kurgan",
+      "he": "קורגן"
+    },
+    "russia:kursk": {
+      "en": "Kursk",
+      "he": "קורסק"
+    },
+    "russia:leningradskaya": {
+      "en": "Leningrad Oblast",
+      "he": "מחוז לנינגרד"
+    },
+    "russia:lipetsk": {
+      "en": "Lipetsk",
+      "he": "ליפצק"
+    },
+    "russia:magadan": {
+      "en": "Magadan",
+      "he": "מגדן"
+    },
+    "russia:mariyel": {
+      "en": "Mari El",
+      "he": "מארי אל"
+    },
+    "russia:mordovia": {
+      "en": "Mordovia",
+      "he": "מורדוביה"
+    },
+    "russia:moscow": {
+      "en": "Moscow",
+      "he": "מוסקבה"
+    },
+    "russia:moskovskaya-oblast": {
+      "en": "Moscow Oblast",
+      "he": "מחוז מוסקבה"
+    },
+    "russia:murmansk": {
+      "en": "Murmansk",
+      "he": "מורמנסק"
+    },
+    "russia:neneckaya": {
+      "en": "Nenets Autonomous Okrug",
+      "he": "האוקרוג האוטונומי של ננץ"
+    },
+    "russia:nizhegorod": {
+      "en": "Nizhny Novgorod",
+      "he": "ניז'ני נובגורוד"
+    },
+    "russia:north-caucasus-federal-district": {
+      "en": "North Caucasus Federal District",
+      "he": "מחוז הקווקז הצפוני הפדרלי"
+    },
+    "russia:northwestern-federal-district": {
+      "en": "Northwestern Federal District",
+      "he": "המחוז הפדרלי הצפון-מערבי"
+    },
+    "russia:novgorod": {
+      "en": "Novgorod",
+      "he": "נובגורוד"
+    },
+    "russia:novosibirsk": {
+      "en": "Novosibirsk",
+      "he": "נובוסיבירסק"
+    },
+    "russia:omsk": {
+      "en": "Omsk",
+      "he": "ומסק"
+    },
+    "russia:orel": {
+      "en": "Oryol",
+      "he": "אוריול"
+    },
+    "russia:orenburg": {
+      "en": "Orenburg",
+      "he": "אורנבורג"
+    },
+    "russia:osetiya": {
+      "en": "Ossetia",
+      "he": "אוסטיה"
+    },
+    "russia:penza": {
+      "en": "Penza",
+      "he": "פנזה"
+    },
+    "russia:perm": {
+      "en": "Perm",
+      "he": "פרם"
+    },
+    "russia:primorskii": {
+      "en": "Primorsky Krai",
+      "he": "מחוז פרימוריה"
+    },
+    "russia:pskov": {
+      "en": "Pskov",
+      "he": "פסקוב"
+    },
+    "russia:rostovskaya": {
+      "en": "Rostov Oblast",
+      "he": "מחוז רוסטוב"
+    },
+    "russia:ryazan": {
+      "en": "Ryazan",
+      "he": "ריאזאן"
+    },
+    "russia:sakhalin": {
+      "en": "Sakhalin Oblast",
+      "he": "מחוז סח'אלין"
+    },
+    "russia:samara": {
+      "en": "Samara",
+      "he": "סמרה"
+    },
+    "russia:sankt-peterburg": {
+      "en": "Saint Petersburg",
+      "he": "סנקט פטרבורג"
+    },
+    "russia:saratov": {
+      "en": "Saratov",
+      "he": "סרטוב"
+    },
+    "russia:siberian-federal-district": {
+      "en": "Siberian Federal District",
+      "he": "הפדרציה המחוזית סיביריה"
+    },
+    "russia:smolensk": {
+      "en": "Smolensk",
+      "he": "סמולנסק"
+    },
+    "russia:south-federal-district": {
+      "en": "Southern Federal District",
+      "he": "החוזקה הפדרלית הדרומית"
+    },
+    "russia:stavropol": {
+      "en": "Stavropol",
+      "he": "סטברופול"
+    },
+    "russia:sverdlovsk": {
+      "en": "Sverdlovsk Oblast",
+      "he": "מחוז סברדלובסק"
+    },
+    "russia:tambov": {
+      "en": "Tambov",
+      "he": "טמבוב"
+    },
+    "russia:tatarstan": {
+      "en": "Tatarstan",
+      "he": "טרטסטן"
+    },
+    "russia:tomsk": {
+      "en": "Tomsk",
+      "he": "טומסק"
+    },
+    "russia:tula": {
+      "en": "Tula",
+      "he": "טולה"
+    },
+    "russia:tumen": {
+      "en": "Tyumen",
+      "he": "טימן"
+    },
+    "russia:tver": {
+      "en": "Tver",
+      "he": "טבר"
+    },
+    "russia:tyva": {
+      "en": "Tuva",
+      "he": "טובא"
+    },
+    "russia:udmurtia": {
+      "en": "Udmurtia",
+      "he": "ודמורטיה"
+    },
+    "russia:ulyanovsk": {
+      "en": "Ulyanovsk",
+      "he": "וליאנובסק"
+    },
+    "russia:ural-federal-district": {
+      "en": "Ural Federal District",
+      "he": "הפדרציה המחוזית של אורל"
+    },
+    "russia:vladimir": {
+      "en": "Vladimir",
+      "he": "ולדימיר"
+    },
+    "russia:volga-federal-district": {
+      "en": "Volga Federal District",
+      "he": "הפדרציה המחוזית של וולגה"
+    },
+    "russia:volgograd": {
+      "en": "Volgograd",
+      "he": "וולגוגרד"
+    },
+    "russia:vologda": {
+      "en": "Vologda",
+      "he": "וולוגדה"
+    },
+    "russia:voronezh": {
+      "en": "Voronezh",
+      "he": "וורונז'"
+    },
+    "russia:yakutia": {
+      "en": "Yakutia",
+      "he": "יקוטיה"
+    },
+    "russia:yamal": {
+      "en": "Yamal",
+      "he": "ימאל"
+    },
+    "russia:yaroslavl": {
+      "en": "Yaroslavl",
+      "he": "ירוסלבל"
+    },
+    "russia:zabaikalie": {
+      "en": "Zabaykalsky Krai",
+      "he": "מחוז זבאיקלסק"
+    },
+    "south-africa:eastern-cape": {
+      "en": "Eastern Cape",
+      "he": "הכף המזרחי"
+    },
+    "south-africa:gauteng": {
+      "en": "Gauteng",
+      "he": "חאוטנג"
+    },
+    "south-africa:kwazulu-natal": {
+      "en": "KwaZulu-Natal",
+      "he": "קוואזולו-נטאל"
+    },
+    "south-africa:limpopo": {
+      "en": "Limpopo",
+      "he": "לימפופו"
     }
   },
   "specialFiles": {
