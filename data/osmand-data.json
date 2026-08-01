@@ -422,8 +422,8 @@
   {
     "fileName": "Belarus_brest_europe_2.obf",
     "updatedDate": "2026-07-01",
-    "url": "https://download.osmand.net/download?standard=yes&file=Belarus_brest_europe_2.obf.zip",
-    "zip-osm-file": true,
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Belarus_brest_europe_2.obf",
+    "zip-osm-file": false,
     "originalZipUrl": "https://download.osmand.net/download?standard=yes&file=Belarus_brest_europe_2.obf.zip"
   },
   {
@@ -618,8 +618,8 @@
   {
     "fileName": "Brazil_mato-grosso_southamerica_2.obf",
     "updatedDate": "2026-07-01",
-    "url": "https://download.osmand.net/download?standard=yes&file=Brazil_mato-grosso_southamerica_2.obf.zip",
-    "zip-osm-file": true,
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Brazil_mato-grosso_southamerica_2.obf",
+    "zip-osm-file": false,
     "originalZipUrl": "https://download.osmand.net/download?standard=yes&file=Brazil_mato-grosso_southamerica_2.obf.zip"
   },
   {
@@ -1465,8 +1465,8 @@
   {
     "fileName": "China_beijing_asia_2.obf",
     "updatedDate": "2026-07-01",
-    "url": "https://download.osmand.net/download?standard=yes&file=China_beijing_asia_2.obf.zip",
-    "zip-osm-file": true,
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/China_beijing_asia_2.obf",
+    "zip-osm-file": false,
     "originalZipUrl": "https://download.osmand.net/download?standard=yes&file=China_beijing_asia_2.obf.zip"
   },
   {
@@ -1479,8 +1479,8 @@
   {
     "fileName": "China_fujian_asia_2.obf",
     "updatedDate": "2026-07-01",
-    "url": "https://download.osmand.net/download?standard=yes&file=China_fujian_asia_2.obf.zip",
-    "zip-osm-file": true,
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/China_fujian_asia_2.obf",
+    "zip-osm-file": false,
     "originalZipUrl": "https://download.osmand.net/download?standard=yes&file=China_fujian_asia_2.obf.zip"
   },
   {
@@ -1983,8 +1983,8 @@
   {
     "fileName": "Denmark_capital-region_europe_2.obf",
     "updatedDate": "2026-07-01",
-    "url": "https://download.osmand.net/download?standard=yes&file=Denmark_capital-region_europe_2.obf.zip",
-    "zip-osm-file": true,
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Denmark_capital-region_europe_2.obf",
+    "zip-osm-file": false,
     "originalZipUrl": "https://download.osmand.net/download?standard=yes&file=Denmark_capital-region_europe_2.obf.zip"
   },
   {
@@ -4881,8 +4881,8 @@
   {
     "fileName": "Netherlands_friesland_europe_2.obf",
     "updatedDate": "2026-07-01",
-    "url": "https://download.osmand.net/download?standard=yes&file=Netherlands_friesland_europe_2.obf.zip",
-    "zip-osm-file": true,
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Netherlands_friesland_europe_2.obf",
+    "zip-osm-file": false,
     "originalZipUrl": "https://download.osmand.net/download?standard=yes&file=Netherlands_friesland_europe_2.obf.zip"
   },
   {
@@ -5791,8 +5791,8 @@
   {
     "fileName": "Russia_novosibirsk_asia_2.obf",
     "updatedDate": "2026-07-01",
-    "url": "https://download.osmand.net/download?standard=yes&file=Russia_novosibirsk_asia_2.obf.zip",
-    "zip-osm-file": true,
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Russia_novosibirsk_asia_2.obf",
+    "zip-osm-file": false,
     "originalZipUrl": "https://download.osmand.net/download?standard=yes&file=Russia_novosibirsk_asia_2.obf.zip"
   },
   {
@@ -6827,8 +6827,8 @@
   {
     "fileName": "Turkey_southeastern-anatolia_europe_2.obf",
     "updatedDate": "2026-07-01",
-    "url": "https://download.osmand.net/download?standard=yes&file=Turkey_southeastern-anatolia_europe_2.obf.zip",
-    "zip-osm-file": true,
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Turkey_southeastern-anatolia_europe_2.obf",
+    "zip-osm-file": false,
     "originalZipUrl": "https://download.osmand.net/download?standard=yes&file=Turkey_southeastern-anatolia_europe_2.obf.zip"
   },
   {
@@ -7100,8 +7100,8 @@
   {
     "fileName": "Us_california_lancaster_northamerica_2.obf",
     "updatedDate": "2026-07-01",
-    "url": "https://download.osmand.net/download?standard=yes&file=Us_california_lancaster_northamerica_2.obf.zip",
-    "zip-osm-file": true,
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Us_california_lancaster_northamerica_2.obf",
+    "zip-osm-file": false,
     "originalZipUrl": "https://download.osmand.net/download?standard=yes&file=Us_california_lancaster_northamerica_2.obf.zip"
   },
   {
@@ -7240,8 +7240,8 @@
   {
     "fileName": "Us_florida_tallahassee_northamerica_2.obf",
     "updatedDate": "2026-07-01",
-    "url": "https://download.osmand.net/download?standard=yes&file=Us_florida_tallahassee_northamerica_2.obf.zip",
-    "zip-osm-file": true,
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Us_florida_tallahassee_northamerica_2.obf",
+    "zip-osm-file": false,
     "originalZipUrl": "https://download.osmand.net/download?standard=yes&file=Us_florida_tallahassee_northamerica_2.obf.zip"
   },
   {
@@ -7506,8 +7506,8 @@
   {
     "fileName": "Us_south-dakota_northamerica_2.obf",
     "updatedDate": "2026-07-01",
-    "url": "https://download.osmand.net/download?standard=yes&file=Us_south-dakota_northamerica_2.obf.zip",
-    "zip-osm-file": true,
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Us_south-dakota_northamerica_2.obf",
+    "zip-osm-file": false,
     "originalZipUrl": "https://download.osmand.net/download?standard=yes&file=Us_south-dakota_northamerica_2.obf.zip"
   },
   {
