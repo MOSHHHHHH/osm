@@ -1052,8 +1052,8 @@
   {
     "fileName": "Canada_nunavut-north-west_northamerica_2.obf",
     "updatedDate": "2026-07-01",
-    "url": "https://download.osmand.net/download?standard=yes&file=Canada_nunavut-north-west_northamerica_2.obf.zip",
-    "zip-osm-file": true,
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Canada_nunavut-north-west_northamerica_2.obf",
+    "zip-osm-file": false,
     "originalZipUrl": "https://download.osmand.net/download?standard=yes&file=Canada_nunavut-north-west_northamerica_2.obf.zip"
   },
   {
@@ -2179,8 +2179,8 @@
   {
     "fileName": "Finland_north-ostrobothnia_europe_2.obf",
     "updatedDate": "2026-07-01",
-    "url": "https://download.osmand.net/download?standard=yes&file=Finland_north-ostrobothnia_europe_2.obf.zip",
-    "zip-osm-file": true,
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Finland_north-ostrobothnia_europe_2.obf",
+    "zip-osm-file": false,
     "originalZipUrl": "https://download.osmand.net/download?standard=yes&file=Finland_north-ostrobothnia_europe_2.obf.zip"
   },
   {
@@ -2207,8 +2207,8 @@
   {
     "fileName": "Finland_pirkanmaa_europe_2.obf",
     "updatedDate": "2026-07-01",
-    "url": "https://download.osmand.net/download?standard=yes&file=Finland_pirkanmaa_europe_2.obf.zip",
-    "zip-osm-file": true,
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Finland_pirkanmaa_europe_2.obf",
+    "zip-osm-file": false,
     "originalZipUrl": "https://download.osmand.net/download?standard=yes&file=Finland_pirkanmaa_europe_2.obf.zip"
   },
   {
@@ -2417,8 +2417,8 @@
   {
     "fileName": "France_great-east_haut-rhin_europe_2.obf",
     "updatedDate": "2026-07-01",
-    "url": "https://download.osmand.net/download?standard=yes&file=France_great-east_haut-rhin_europe_2.obf.zip",
-    "zip-osm-file": true,
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/France_great-east_haut-rhin_europe_2.obf",
+    "zip-osm-file": false,
     "originalZipUrl": "https://download.osmand.net/download?standard=yes&file=France_great-east_haut-rhin_europe_2.obf.zip"
   },
   {
@@ -2557,8 +2557,8 @@
   {
     "fileName": "France_new-aquitaine_landes_europe_2.obf",
     "updatedDate": "2026-07-31",
-    "url": "https://download.osmand.net/download?standard=yes&file=France_new-aquitaine_landes_europe_2.obf.zip",
-    "zip-osm-file": true,
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/France_new-aquitaine_landes_europe_2.obf",
+    "zip-osm-file": false,
     "originalZipUrl": "https://download.osmand.net/download?standard=yes&file=France_new-aquitaine_landes_europe_2.obf.zip"
   },
   {
@@ -3138,8 +3138,8 @@
   {
     "fileName": "Germany_saarland_europe_2.obf",
     "updatedDate": "2026-07-01",
-    "url": "https://download.osmand.net/download?standard=yes&file=Germany_saarland_europe_2.obf.zip",
-    "zip-osm-file": true,
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Germany_saarland_europe_2.obf",
+    "zip-osm-file": false,
     "originalZipUrl": "https://download.osmand.net/download?standard=yes&file=Germany_saarland_europe_2.obf.zip"
   },
   {
@@ -3376,8 +3376,8 @@
   {
     "fileName": "India_haryana_asia_2.obf",
     "updatedDate": "2026-07-01",
-    "url": "https://download.osmand.net/download?standard=yes&file=India_haryana_asia_2.obf.zip",
-    "zip-osm-file": true,
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/India_haryana_asia_2.obf",
+    "zip-osm-file": false,
     "originalZipUrl": "https://download.osmand.net/download?standard=yes&file=India_haryana_asia_2.obf.zip"
   },
   {
@@ -4055,8 +4055,8 @@
   {
     "fileName": "Italy_calabria_europe_2.obf",
     "updatedDate": "2026-07-01",
-    "url": "https://download.osmand.net/download?standard=yes&file=Italy_calabria_europe_2.obf.zip",
-    "zip-osm-file": true,
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Italy_calabria_europe_2.obf",
+    "zip-osm-file": false,
     "originalZipUrl": "https://download.osmand.net/download?standard=yes&file=Italy_calabria_europe_2.obf.zip"
   },
   {
@@ -4216,8 +4216,8 @@
   {
     "fileName": "Japan_chubu_gifu_asia_2.obf",
     "updatedDate": "2026-07-01",
-    "url": "https://download.osmand.net/download?standard=yes&file=Japan_chubu_gifu_asia_2.obf.zip",
-    "zip-osm-file": true,
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Japan_chubu_gifu_asia_2.obf",
+    "zip-osm-file": false,
     "originalZipUrl": "https://download.osmand.net/download?standard=yes&file=Japan_chubu_gifu_asia_2.obf.zip"
   },
   {
@@ -4461,8 +4461,8 @@
   {
     "fileName": "Luxembourg_europe_2.obf",
     "updatedDate": "2026-07-01",
-    "url": "https://download.osmand.net/download?standard=yes&file=Luxembourg_europe_2.obf.zip",
-    "zip-osm-file": true,
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Luxembourg_europe_2.obf",
+    "zip-osm-file": false,
     "originalZipUrl": "https://download.osmand.net/download?standard=yes&file=Luxembourg_europe_2.obf.zip"
   },
   {
@@ -4650,8 +4650,8 @@
   {
     "fileName": "Mexico_jalisco_northamerica_2.obf",
     "updatedDate": "2026-07-01",
-    "url": "https://download.osmand.net/download?standard=yes&file=Mexico_jalisco_northamerica_2.obf.zip",
-    "zip-osm-file": true,
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Mexico_jalisco_northamerica_2.obf",
+    "zip-osm-file": false,
     "originalZipUrl": "https://download.osmand.net/download?standard=yes&file=Mexico_jalisco_northamerica_2.obf.zip"
   },
   {
@@ -4769,8 +4769,8 @@
   {
     "fileName": "Mexico_veracruz_northamerica_2.obf",
     "updatedDate": "2026-07-01",
-    "url": "https://download.osmand.net/download?standard=yes&file=Mexico_veracruz_northamerica_2.obf.zip",
-    "zip-osm-file": true,
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Mexico_veracruz_northamerica_2.obf",
+    "zip-osm-file": false,
     "originalZipUrl": "https://download.osmand.net/download?standard=yes&file=Mexico_veracruz_northamerica_2.obf.zip"
   },
   {
@@ -5840,8 +5840,8 @@
   {
     "fileName": "Russia_primorskii_asia_2.obf",
     "updatedDate": "2026-07-01",
-    "url": "https://download.osmand.net/download?standard=yes&file=Russia_primorskii_asia_2.obf.zip",
-    "zip-osm-file": true,
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Russia_primorskii_asia_2.obf",
+    "zip-osm-file": false,
     "originalZipUrl": "https://download.osmand.net/download?standard=yes&file=Russia_primorskii_asia_2.obf.zip"
   },
   {
@@ -6372,8 +6372,8 @@
   {
     "fileName": "Spain_extremadura_europe_2.obf",
     "updatedDate": "2026-07-01",
-    "url": "https://download.osmand.net/download?standard=yes&file=Spain_extremadura_europe_2.obf.zip",
-    "zip-osm-file": true,
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Spain_extremadura_europe_2.obf",
+    "zip-osm-file": false,
     "originalZipUrl": "https://download.osmand.net/download?standard=yes&file=Spain_extremadura_europe_2.obf.zip"
   },
   {
@@ -6533,8 +6533,8 @@
   {
     "fileName": "Sweden_norrbotten_europe_2.obf",
     "updatedDate": "2026-07-01",
-    "url": "https://download.osmand.net/download?standard=yes&file=Sweden_norrbotten_europe_2.obf.zip",
-    "zip-osm-file": true,
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Sweden_norrbotten_europe_2.obf",
+    "zip-osm-file": false,
     "originalZipUrl": "https://download.osmand.net/download?standard=yes&file=Sweden_norrbotten_europe_2.obf.zip"
   },
   {
@@ -6687,8 +6687,8 @@
   {
     "fileName": "Tajikistan_asia_2.obf",
     "updatedDate": "2026-07-01",
-    "url": "https://download.osmand.net/download?standard=yes&file=Tajikistan_asia_2.obf.zip",
-    "zip-osm-file": true,
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Tajikistan_asia_2.obf",
+    "zip-osm-file": false,
     "originalZipUrl": "https://download.osmand.net/download?standard=yes&file=Tajikistan_asia_2.obf.zip"
   },
   {
@@ -7079,8 +7079,8 @@
   {
     "fileName": "Us_california_bakersfield_northamerica_2.obf",
     "updatedDate": "2026-07-01",
-    "url": "https://download.osmand.net/download?standard=yes&file=Us_california_bakersfield_northamerica_2.obf.zip",
-    "zip-osm-file": true,
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Us_california_bakersfield_northamerica_2.obf",
+    "zip-osm-file": false,
     "originalZipUrl": "https://download.osmand.net/download?standard=yes&file=Us_california_bakersfield_northamerica_2.obf.zip"
   },
   {
