@@ -5515,6 +5515,362 @@
     "ukraine:volyn": {
       "en": "Volyn",
       "he": "מחוז ווהלין"
+    },
+    "ukraine:zaporizhzhya": {
+      "en": "Zaporizhzhia",
+      "he": "זפוריז'יה"
+    },
+    "ukraine:zhytomyr": {
+      "en": "Zhytomyr",
+      "he": "ז'יטומיר"
+    },
+    "us:alabama": {
+      "en": "Alabama",
+      "he": "אלבמה"
+    },
+    "us:alaska": {
+      "en": "Alaska",
+      "he": "אלאסקה"
+    },
+    "us:arizona": {
+      "en": "Arizona",
+      "he": "אריזונה"
+    },
+    "us:arkansas": {
+      "en": "Arkansas",
+      "he": "ארקנסו"
+    },
+    "us:california": {
+      "en": "California",
+      "he": "קליפורניה"
+    },
+    "us:california/bakersfield": {
+      "en": "Bakersfield",
+      "he": "בייקרספילד"
+    },
+    "us:california/chico": {
+      "en": "Chico",
+      "he": "צ'יקו"
+    },
+    "us:california/fresno": {
+      "en": "Fresno",
+      "he": "פרזנו"
+    },
+    "us:california/lancaster": {
+      "en": "Lancaster",
+      "he": "לנקסטר"
+    },
+    "us:california/los-angeles-north": {
+      "en": "North Los Angeles",
+      "he": "לוס אנג'לס הצפונית"
+    },
+    "us:california/los-angeles": {
+      "en": "Los Angeles",
+      "he": "לוס אנג'לס"
+    },
+    "us:california/redding": {
+      "en": "Redding",
+      "he": "רדינג"
+    },
+    "us:california/sacramento": {
+      "en": "Sacramento",
+      "he": "סקרמנטו"
+    },
+    "us:california/san-diego": {
+      "en": "San Diego",
+      "he": "סן דייגו"
+    },
+    "us:california/san-francisco": {
+      "en": "San Francisco",
+      "he": "סן פרנסיסקו"
+    },
+    "us:california/santa-cruz": {
+      "en": "Santa Cruz",
+      "he": "סנטה קרוז"
+    },
+    "us:california/stockton": {
+      "en": "Stockton",
+      "he": "סטוקטון"
+    },
+    "us:colorado": {
+      "en": "Colorado",
+      "he": "קולורדו"
+    },
+    "us:connecticut": {
+      "en": "Connecticut",
+      "he": "קונטיקט"
+    },
+    "us:delaware": {
+      "en": "Delaware",
+      "he": "דלאוור"
+    },
+    "us:district-of-columbia": {
+      "en": "District of Columbia",
+      "he": "מחוז קולומביה"
+    },
+    "us:florida": {
+      "en": "Florida",
+      "he": "פלורידה"
+    },
+    "us:florida/cape-coral": {
+      "en": "Cape Coral",
+      "he": "קייפ קורל"
+    },
+    "us:florida/jacksonville": {
+      "en": "Jacksonville",
+      "he": "ג'קסונוויל"
+    },
+    "us:florida/miami": {
+      "en": "Miami",
+      "he": "מיאמי"
+    },
+    "us:florida/orlando": {
+      "en": "Orlando",
+      "he": "אורלנדו"
+    },
+    "us:florida/pensacola": {
+      "en": "Pensacola",
+      "he": "פנסקולה"
+    },
+    "us:florida/port-saint-lucie": {
+      "en": "Port St. Lucie",
+      "he": "פורט סנט לוסי"
+    },
+    "us:florida/tallahassee": {
+      "en": "Tallahassee",
+      "he": "להאסי"
+    },
+    "us:florida/tampa": {
+      "en": "Tampa",
+      "he": "טמפה"
+    },
+    "us:georgia": {
+      "en": "Georgia",
+      "he": "ג'ורג'יה"
+    },
+    "us:hawaii": {
+      "en": "Hawaii",
+      "he": "הוואי"
+    },
+    "us:idaho": {
+      "en": "Idaho",
+      "he": "איידהו"
+    },
+    "us:illinois": {
+      "en": "Illinois",
+      "he": "אילינוי"
+    },
+    "us:indiana": {
+      "en": "Indiana",
+      "he": "אינדיאנה"
+    },
+    "us:iowa": {
+      "en": "Iowa",
+      "he": "איווה"
+    },
+    "us:kansas": {
+      "en": "Kansas",
+      "he": "קנזס"
+    },
+    "us:kentucky": {
+      "en": "Kentucky",
+      "he": "קנטקי"
+    },
+    "us:louisiana": {
+      "en": "Louisiana",
+      "he": "לואיזיאנה"
+    },
+    "us:maine": {
+      "en": "Maine",
+      "he": "מיין"
+    },
+    "us:maryland": {
+      "en": "Maryland",
+      "he": "מרילנד"
+    },
+    "us:massachusetts": {
+      "en": "Massachusetts",
+      "he": "מסצ'וסטס"
+    },
+    "us:michigan": {
+      "en": "Michigan",
+      "he": "מישיגן"
+    },
+    "us:minnesota": {
+      "en": "Minnesota",
+      "he": "מינסוטה"
+    },
+    "us:mississippi": {
+      "en": "Mississippi",
+      "he": "מיסיסיפי"
+    },
+    "us:missouri": {
+      "en": "Missouri",
+      "he": "מיזורי"
+    },
+    "us:montana": {
+      "en": "Montana",
+      "he": "מונטנה"
+    },
+    "us:nebraska": {
+      "en": "Nebraska",
+      "he": "נברסקה"
+    },
+    "us:nevada": {
+      "en": "Nevada",
+      "he": "נבדה"
+    },
+    "us:new-hampshire": {
+      "en": "New Hampshire",
+      "he": "ניו המפשייר"
+    },
+    "us:new-jersey": {
+      "en": "New Jersey",
+      "he": "ניו ג'רזי"
+    },
+    "us:new-mexico": {
+      "en": "New Mexico",
+      "he": "ניו מקסיקו"
+    },
+    "us:new-york": {
+      "en": "New York",
+      "he": "ניו יורק"
+    },
+    "us:new-york/albany": {
+      "en": "Albany",
+      "he": "אולבני"
+    },
+    "us:new-york/buffalo": {
+      "en": "Buffalo",
+      "he": "באפלו"
+    },
+    "us:new-york/new-york-city": {
+      "en": "New York City",
+      "he": "ניו יורק סיטי"
+    },
+    "us:new-york/syracuse": {
+      "en": "Syracuse",
+      "he": "סירקיוז"
+    },
+    "us:new-york/utica": {
+      "en": "Utica",
+      "he": "יוטיקה"
+    },
+    "us:north-carolina": {
+      "en": "North Carolina",
+      "he": "קרוליינה הצפונית"
+    },
+    "us:north-dakota": {
+      "en": "North Dakota",
+      "he": "צפון דקוטה"
+    },
+    "us:ohio": {
+      "en": "Ohio",
+      "he": "אוהיו"
+    },
+    "us:oklahoma": {
+      "en": "Oklahoma",
+      "he": "אוקלהומה"
+    },
+    "us:oregon": {
+      "en": "Oregon",
+      "he": "אורגון"
+    },
+    "us:pennsylvania": {
+      "en": "Pennsylvania",
+      "he": "פנסילבניה"
+    },
+    "us:rhode-island": {
+      "en": "Rhode Island",
+      "he": "רוד איילנד"
+    },
+    "us:south-carolina": {
+      "en": "South Carolina",
+      "he": "קרוליינה הדרומית"
+    },
+    "us:south-dakota": {
+      "en": "South Dakota",
+      "he": "דרום דקוטה"
+    },
+    "us:tennessee": {
+      "en": "Tennessee",
+      "he": "טנסי"
+    },
+    "us:texas": {
+      "en": "Texas",
+      "he": "טקסס"
+    },
+    "us:texas/amarillo": {
+      "en": "Amarillo",
+      "he": "אמריליו"
+    },
+    "us:texas/austin": {
+      "en": "Austin",
+      "he": "אוסטין"
+    },
+    "us:texas/dallas": {
+      "en": "Dallas",
+      "he": "דאלאס"
+    },
+    "us:texas/del-rio": {
+      "en": "Del Rio",
+      "he": "דל ריו"
+    },
+    "us:texas/houston": {
+      "en": "Houston",
+      "he": "יוסטון"
+    },
+    "us:texas/lubbock": {
+      "en": "Lubbock",
+      "he": "לאבק"
+    },
+    "us:texas/san-angelo": {
+      "en": "San Angelo",
+      "he": "סן אנג'לו"
+    },
+    "us:texas/san-antonio": {
+      "en": "San Antonio",
+      "he": "סן אנטוניו"
+    },
+    "us:texas/tyler": {
+      "en": "Tyler",
+      "he": "טיילר"
+    },
+    "us:texas/victoria": {
+      "en": "Victoria",
+      "he": "ויקטוריה"
+    },
+    "us:texas/waco": {
+      "en": "Waco",
+      "he": "ווייקו"
+    },
+    "us:utah": {
+      "en": "Utah",
+      "he": "יוטה"
+    },
+    "us:vermont": {
+      "en": "Vermont",
+      "he": "ורמונט"
+    },
+    "us:virginia": {
+      "en": "Virginia",
+      "he": "וירג'יניה"
+    },
+    "us:washington": {
+      "en": "Washington",
+      "he": "וושינגטון"
+    },
+    "us:west-virginia": {
+      "en": "West Virginia",
+      "he": "וירג'יניה המערבית"
+    },
+    "us:wisconsin": {
+      "en": "Wisconsin",
+      "he": "ויסקונסין"
+    },
+    "us:wyoming": {
+      "en": "Wyoming",
+      "he": "וויומינג"
     }
   },
   "specialFiles": {
