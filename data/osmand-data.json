@@ -345,8 +345,8 @@
   {
     "fileName": "Austria_salzburg_europe_2.obf",
     "updatedDate": "2026-07-01",
-    "url": "https://download.osmand.net/download?standard=yes&file=Austria_salzburg_europe_2.obf.zip",
-    "zip-osm-file": true,
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Austria_salzburg_europe_2.obf",
+    "zip-osm-file": false,
     "originalZipUrl": "https://download.osmand.net/download?standard=yes&file=Austria_salzburg_europe_2.obf.zip"
   },
   {
@@ -380,8 +380,8 @@
   {
     "fileName": "Azerbaijan_asia_2.obf",
     "updatedDate": "2026-07-01",
-    "url": "https://download.osmand.net/download?standard=yes&file=Azerbaijan_asia_2.obf.zip",
-    "zip-osm-file": true,
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Azerbaijan_asia_2.obf",
+    "zip-osm-file": false,
     "originalZipUrl": "https://download.osmand.net/download?standard=yes&file=Azerbaijan_asia_2.obf.zip"
   },
   {
@@ -632,8 +632,8 @@
   {
     "fileName": "Brazil_para_southamerica_2.obf",
     "updatedDate": "2026-07-01",
-    "url": "https://download.osmand.net/download?standard=yes&file=Brazil_para_southamerica_2.obf.zip",
-    "zip-osm-file": true,
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Brazil_para_southamerica_2.obf",
+    "zip-osm-file": false,
     "originalZipUrl": "https://download.osmand.net/download?standard=yes&file=Brazil_para_southamerica_2.obf.zip"
   },
   {
@@ -1941,8 +1941,8 @@
   {
     "fileName": "Czech-republic_moravskoslezsko_europe_2.obf",
     "updatedDate": "2026-07-01",
-    "url": "https://download.osmand.net/download?standard=yes&file=Czech-republic_moravskoslezsko_europe_2.obf.zip",
-    "zip-osm-file": true,
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Czech-republic_moravskoslezsko_europe_2.obf",
+    "zip-osm-file": false,
     "originalZipUrl": "https://download.osmand.net/download?standard=yes&file=Czech-republic_moravskoslezsko_europe_2.obf.zip"
   },
   {
@@ -2333,8 +2333,8 @@
   {
     "fileName": "France_auvergne-rhone-alpes_savoy_europe_2.obf",
     "updatedDate": "2026-07-01",
-    "url": "https://download.osmand.net/download?standard=yes&file=France_auvergne-rhone-alpes_savoy_europe_2.obf.zip",
-    "zip-osm-file": true,
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/France_auvergne-rhone-alpes_savoy_europe_2.obf",
+    "zip-osm-file": false,
     "originalZipUrl": "https://download.osmand.net/download?standard=yes&file=France_auvergne-rhone-alpes_savoy_europe_2.obf.zip"
   },
   {
@@ -4804,8 +4804,8 @@
   {
     "fileName": "Mongolia_asia_2.obf",
     "updatedDate": "2026-07-01",
-    "url": "https://download.osmand.net/download?standard=yes&file=Mongolia_asia_2.obf.zip",
-    "zip-osm-file": true,
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Mongolia_asia_2.obf",
+    "zip-osm-file": false,
     "originalZipUrl": "https://download.osmand.net/download?standard=yes&file=Mongolia_asia_2.obf.zip"
   },
   {
@@ -5070,8 +5070,8 @@
   {
     "fileName": "Norway_telemark_europe_2.obf",
     "updatedDate": "2026-07-01",
-    "url": "https://download.osmand.net/download?standard=yes&file=Norway_telemark_europe_2.obf.zip",
-    "zip-osm-file": true,
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Norway_telemark_europe_2.obf",
+    "zip-osm-file": false,
     "originalZipUrl": "https://download.osmand.net/download?standard=yes&file=Norway_telemark_europe_2.obf.zip"
   },
   {
@@ -5329,8 +5329,8 @@
   {
     "fileName": "Poland_lubusz_europe_2.obf",
     "updatedDate": "2026-07-01",
-    "url": "https://download.osmand.net/download?standard=yes&file=Poland_lubusz_europe_2.obf.zip",
-    "zip-osm-file": true,
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Poland_lubusz_europe_2.obf",
+    "zip-osm-file": false,
     "originalZipUrl": "https://download.osmand.net/download?standard=yes&file=Poland_lubusz_europe_2.obf.zip"
   },
   {
@@ -5406,8 +5406,8 @@
   {
     "fileName": "Puerto-rico_centralamerica_2.obf",
     "updatedDate": "2026-07-01",
-    "url": "https://download.osmand.net/download?standard=yes&file=Puerto-rico_centralamerica_2.obf.zip",
-    "zip-osm-file": true,
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Puerto-rico_centralamerica_2.obf",
+    "zip-osm-file": false,
     "originalZipUrl": "https://download.osmand.net/download?standard=yes&file=Puerto-rico_centralamerica_2.obf.zip"
   },
   {
@@ -6015,8 +6015,8 @@
   {
     "fileName": "Russia_volgograd_asia_2.obf",
     "updatedDate": "2026-07-01",
-    "url": "https://download.osmand.net/download?standard=yes&file=Russia_volgograd_asia_2.obf.zip",
-    "zip-osm-file": true,
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Russia_volgograd_asia_2.obf",
+    "zip-osm-file": false,
     "originalZipUrl": "https://download.osmand.net/download?standard=yes&file=Russia_volgograd_asia_2.obf.zip"
   },
   {
@@ -6029,8 +6029,8 @@
   {
     "fileName": "Russia_voronezh_asia_2.obf",
     "updatedDate": "2026-07-01",
-    "url": "https://download.osmand.net/download?standard=yes&file=Russia_voronezh_asia_2.obf.zip",
-    "zip-osm-file": true,
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Russia_voronezh_asia_2.obf",
+    "zip-osm-file": false,
     "originalZipUrl": "https://download.osmand.net/download?standard=yes&file=Russia_voronezh_asia_2.obf.zip"
   },
   {
@@ -6330,8 +6330,8 @@
   {
     "fileName": "Spain_canarias_europe_2.obf",
     "updatedDate": "2026-07-01",
-    "url": "https://download.osmand.net/download?standard=yes&file=Spain_canarias_europe_2.obf.zip",
-    "zip-osm-file": true,
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Spain_canarias_europe_2.obf",
+    "zip-osm-file": false,
     "originalZipUrl": "https://download.osmand.net/download?standard=yes&file=Spain_canarias_europe_2.obf.zip"
   },
   {
@@ -7044,8 +7044,8 @@
   {
     "fileName": "Uruguay_southamerica_2.obf",
     "updatedDate": "2026-07-01",
-    "url": "https://download.osmand.net/download?standard=yes&file=Uruguay_southamerica_2.obf.zip",
-    "zip-osm-file": true,
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Uruguay_southamerica_2.obf",
+    "zip-osm-file": false,
     "originalZipUrl": "https://download.osmand.net/download?standard=yes&file=Uruguay_southamerica_2.obf.zip"
   },
   {
@@ -7086,8 +7086,8 @@
   {
     "fileName": "Us_california_chico_northamerica_2.obf",
     "updatedDate": "2026-07-01",
-    "url": "https://download.osmand.net/download?standard=yes&file=Us_california_chico_northamerica_2.obf.zip",
-    "zip-osm-file": true,
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Us_california_chico_northamerica_2.obf",
+    "zip-osm-file": false,
     "originalZipUrl": "https://download.osmand.net/download?standard=yes&file=Us_california_chico_northamerica_2.obf.zip"
   },
   {
