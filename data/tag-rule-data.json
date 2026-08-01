@@ -4383,6 +4383,490 @@
     "japan:kanto/tokyo": {
       "en": "Tokyo",
       "he": "טוקיו"
+    },
+    "japan:kinki": {
+      "en": "Kinki",
+      "he": "קინקי"
+    },
+    "japan:kyushu": {
+      "en": "Kyushu",
+      "he": "קיושו"
+    },
+    "japan:shikoku": {
+      "en": "Shikoku",
+      "he": "שיקוקו"
+    },
+    "japan:tohoku": {
+      "en": "Tohoku",
+      "he": "מחוז טוהוקו"
+    },
+    "mexico:aguascalientes": {
+      "en": "Aguascalientes",
+      "he": "אגואסקליינטס"
+    },
+    "mexico:baja-california-sur": {
+      "en": "Baja California Sur",
+      "he": "באחה קליפורניה דרום"
+    },
+    "mexico:baja-california": {
+      "en": "Baja California",
+      "he": "באחה קליפורניה"
+    },
+    "mexico:campeche": {
+      "en": "Campeche",
+      "he": "קמפצ'ה"
+    },
+    "mexico:chiapas": {
+      "en": "Chiapas",
+      "he": "צ'יאפאס"
+    },
+    "mexico:chihuahua": {
+      "en": "Chihuahua",
+      "he": "צ'יוואווה"
+    },
+    "mexico:coahuila": {
+      "en": "Coahuila",
+      "he": "קואווילה"
+    },
+    "mexico:colima": {
+      "en": "Colima",
+      "he": "קולימה"
+    },
+    "mexico:distrito-federal": {
+      "en": "Federal District",
+      "he": "הפדרלי המחוז"
+    },
+    "mexico:durango": {
+      "en": "Durango",
+      "he": "דורנגו"
+    },
+    "mexico:guanajuato": {
+      "en": "Guanajuato",
+      "he": "גואנחואטו"
+    },
+    "mexico:guerrero": {
+      "en": "Guerrero",
+      "he": "גררו"
+    },
+    "mexico:hidalgo": {
+      "en": "Hidalgo",
+      "he": "אידאלגו"
+    },
+    "mexico:jalisco": {
+      "en": "Jalisco",
+      "he": "חלי스코"
+    },
+    "mexico:mexico": {
+      "en": "Mexico",
+      "he": "מקסיקו"
+    },
+    "mexico:michoacan": {
+      "en": "Michoacán",
+      "he": "מיצ'ואקאן"
+    },
+    "mexico:morelos": {
+      "en": "Morelos",
+      "he": "מורלוס"
+    },
+    "mexico:nayarit": {
+      "en": "Nayarit",
+      "he": "נאיאריט"
+    },
+    "mexico:nuevo-leon": {
+      "en": "Nuevo León",
+      "he": "נואבו לאון"
+    },
+    "mexico:oaxaca": {
+      "en": "Oaxaca",
+      "he": "ואחאקה"
+    },
+    "mexico:puebla": {
+      "en": "Puebla",
+      "he": "פואבלה"
+    },
+    "mexico:queretaro": {
+      "en": "Querétaro",
+      "he": "קרטרו"
+    },
+    "mexico:quintana-roo": {
+      "en": "Quintana Roo",
+      "he": "קינטנה רו"
+    },
+    "mexico:san-luis-potosi": {
+      "en": "San Luis Potosí",
+      "he": "סן לואיס פוטוסי"
+    },
+    "mexico:sinaloa": {
+      "en": "Sinaloa",
+      "he": "סינלואה"
+    },
+    "mexico:sonora": {
+      "en": "Sonora",
+      "he": "סונורה"
+    },
+    "mexico:tabasco": {
+      "en": "Tabasco",
+      "he": "טאבסקו"
+    },
+    "mexico:tamaulipas": {
+      "en": "Tamaulipas",
+      "he": "טאמאוליפס"
+    },
+    "mexico:tlaxcala": {
+      "en": "Tlaxcala",
+      "he": "תלקסקלה"
+    },
+    "mexico:veracruz": {
+      "en": "Veracruz",
+      "he": "ווקראקרוס"
+    },
+    "mexico:yucatan": {
+      "en": "Yucatán",
+      "he": "יוקטן"
+    },
+    "mexico:zacatecas": {
+      "en": "Zacatecas",
+      "he": "סקקטקס"
+    },
+    "netherlands:drenthe": {
+      "en": "Drenthe",
+      "he": "דרנתה"
+    },
+    "netherlands:flevoland": {
+      "en": "Flevoland",
+      "he": "פלבולנד"
+    },
+    "netherlands:friesland": {
+      "en": "Friesland",
+      "he": "פריזלנד"
+    },
+    "netherlands:gelderland": {
+      "en": "Gelderland",
+      "he": "חלדרלנד"
+    },
+    "netherlands:groningen": {
+      "en": "Groningen",
+      "he": "חרונינגן"
+    },
+    "netherlands:limburg": {
+      "en": "Limburg",
+      "he": "לימבורג"
+    },
+    "netherlands:noord-brabant": {
+      "en": "North Brabant",
+      "he": "צפון בראבנט"
+    },
+    "netherlands:noord-holland": {
+      "en": "Noord-Holland",
+      "he": "צפון הולנד"
+    },
+    "netherlands:overijssel": {
+      "en": "Overijssel",
+      "he": "אוברייסל"
+    },
+    "netherlands:utrecht": {
+      "en": "Utrecht",
+      "he": "אוטרכט"
+    },
+    "netherlands:zeeland": {
+      "en": "Zeeland",
+      "he": "זيلנד"
+    },
+    "netherlands:zuid-holland": {
+      "en": "South Holland",
+      "he": "דרום הולנד"
+    },
+    "norway:agder": {
+      "en": "Agder",
+      "he": "אגדר"
+    },
+    "norway:akershus": {
+      "en": "Akershus",
+      "he": "אקרסהוס"
+    },
+    "norway:bouvet": {
+      "en": "Bouvet Island",
+      "he": "האי בובה"
+    },
+    "norway:buskerud": {
+      "en": "Buskerud",
+      "he": "בוסקרוד"
+    },
+    "norway:finnmark": {
+      "en": "Finnmark",
+      "he": "פינמרק"
+    },
+    "norway:innlandet": {
+      "en": "Innlandet",
+      "he": "ינלנדט"
+    },
+    "norway:more-og-romsdal": {
+      "en": "Møre og Romsdal",
+      "he": "מורה או רומסדל"
+    },
+    "norway:nordland": {
+      "en": "Nordland",
+      "he": "נורדלנד"
+    },
+    "norway:oslo": {
+      "en": "Oslo",
+      "he": "אוסלו"
+    },
+    "norway:ostfold": {
+      "en": "Østfold",
+      "he": "אסטפולד"
+    },
+    "norway:rogaland": {
+      "en": "Rogaland",
+      "he": "רוגלנד"
+    },
+    "norway:svalbard-and-jan-mayen": {
+      "en": "Svalbard and Jan Mayen",
+      "he": "סוואלבארד ויאן מאיין"
+    },
+    "norway:telemark": {
+      "en": "Telemark",
+      "he": "טלמרק"
+    },
+    "norway:troms": {
+      "en": "Troms",
+      "he": "טרומס"
+    },
+    "norway:trondelag": {
+      "en": "Trøndelag",
+      "he": "טרנדלג"
+    },
+    "norway:vestfold": {
+      "en": "Vestfold",
+      "he": "וסטפולד"
+    },
+    "norway:vestland": {
+      "en": "Vestland",
+      "he": "וסטלנד"
+    },
+    "philippines:bangsamoro": {
+      "en": "Bangsamoro",
+      "he": "בנגסמורו"
+    },
+    "philippines:bicol-region": {
+      "en": "Bicol Region",
+      "he": "אזור ביקול"
+    },
+    "philippines:cagayan-valley": {
+      "en": "Cagayan Valley",
+      "he": "עמק קגאיאן"
+    },
+    "philippines:calabarzon": {
+      "en": "Calabarzon",
+      "he": "קלברזון"
+    },
+    "philippines:caraga": {
+      "en": "Caraga",
+      "he": "קאראגה"
+    },
+    "philippines:central-luzon": {
+      "en": "Central Luzon",
+      "he": "לוזון המרכזית"
+    },
+    "philippines:central-visayas": {
+      "en": "Central Visayas",
+      "he": "מרכז ויסאיאס"
+    },
+    "philippines:cordillera-region": {
+      "en": "Cordillera Administrative Region",
+      "he": "מחוז קורדילרה"
+    },
+    "philippines:davao-region": {
+      "en": "Davao Region",
+      "he": "מחוז דבאו"
+    },
+    "philippines:eastern-visayas": {
+      "en": "Eastern Visayas",
+      "he": "מזרח ויסאיאס"
+    },
+    "philippines:ilocos-region": {
+      "en": "Ilocos Region",
+      "he": "אזור אילוקוס"
+    },
+    "philippines:metro-manila": {
+      "en": "Metro Manila",
+      "he": "מטרו מנילה"
+    },
+    "philippines:mimaropa": {
+      "en": "MIMAROPA",
+      "he": "מימרופה"
+    },
+    "philippines:northern-mindanao": {
+      "en": "Northern Mindanao",
+      "he": "צפון מינדנאו"
+    },
+    "philippines:soccsksargen": {
+      "en": "SOCCSKSARGEN",
+      "he": "סוקסקארחן"
+    },
+    "philippines:western-visayas": {
+      "en": "Western Visayas",
+      "he": "ויסקאיאס המערבית"
+    },
+    "philippines:zamboanga-peninsula": {
+      "en": "Zamboanga Peninsula",
+      "he": "חצי האי זמבואנגה"
+    },
+    "poland:greater-poland": {
+      "en": "Greater Poland",
+      "he": "פולין גדול"
+    },
+    "poland:kuyavian-pomeranian": {
+      "en": "Kuyavian-Pomeranian Voivodeship",
+      "he": "פרובינציית קויאווה-פומרניה"
+    },
+    "poland:lesser-poland": {
+      "en": "Lesser Poland",
+      "he": "פולין קטן"
+    },
+    "poland:lodz": {
+      "en": "Łódź",
+      "he": "לודז'"
+    },
+    "poland:lower-silesian": {
+      "en": "Lower Silesian Voivodeship",
+      "he": "פרובינציית שלזיה תחתית"
+    },
+    "poland:lublin": {
+      "en": "Lublin",
+      "he": "לובלין"
+    },
+    "poland:lubusz": {
+      "en": "Lubusz",
+      "he": "לובוש"
+    },
+    "poland:masovian": {
+      "en": "Masovian Voivodeship",
+      "he": "פרובינציית מזוביה"
+    },
+    "poland:opole": {
+      "en": "Opole",
+      "he": "אופולה"
+    },
+    "poland:podlachian": {
+      "en": "Podlachian Voivodeship",
+      "he": "פודלסיה"
+    },
+    "poland:pomeranian": {
+      "en": "Pomeranian Voivodeship",
+      "he": "פומרניה"
+    },
+    "poland:silesian": {
+      "en": "Silesian",
+      "he": "שלזיה"
+    },
+    "poland:subcarpathian": {
+      "en": "Subcarpathian Voivodeship",
+      "he": "פודקרפצקיה"
+    },
+    "poland:swietokrzyskie": {
+      "en": "Świętokrzyskie",
+      "he": "פרובינציית שוויינטוקז'יסק"
+    },
+    "poland:warmian-masurian": {
+      "en": "Warmian-Masurian",
+      "he": "וארמיה-מזוריה"
+    },
+    "poland:west-pomeranian": {
+      "en": "West Pomeranian",
+      "he": "מערב פומרניה"
+    },
+    "russia:adygeya": {
+      "en": "Adygea",
+      "he": "אדיגיה"
+    },
+    "russia:altay": {
+      "en": "Altai Krai",
+      "he": "מחוז אלטאי"
+    },
+    "russia:altayskiy": {
+      "en": "Altai Krai",
+      "he": "מחוז אלטאי"
+    },
+    "russia:amur": {
+      "en": "Amur Oblast",
+      "he": "מחוז אמור"
+    },
+    "russia:arkhangelsk": {
+      "en": "Arkhangelsk",
+      "he": "ארכנגלסק"
+    },
+    "russia:astrakhan": {
+      "en": "Astrakhan",
+      "he": "אסטרחן"
+    },
+    "russia:bashkiria": {
+      "en": "Bashkortostan",
+      "he": "בשקורטוסטן"
+    },
+    "russia:belgorod": {
+      "en": "Belgorod",
+      "he": "בלגורוד"
+    },
+    "russia:bryansk": {
+      "en": "Bryansk",
+      "he": "בריאנסק"
+    },
+    "russia:buryatia": {
+      "en": "Buryatia",
+      "he": "בוריאטיה"
+    },
+    "russia:chechenskaya": {
+      "en": "Chechen Republic",
+      "he": "רפובליקת צ'צ'ניה"
+    },
+    "russia:cheliabinsk": {
+      "en": "Chelyabinsk",
+      "he": "צ'ליאבינסק"
+    },
+    "russia:chukotka": {
+      "en": "Chukotka",
+      "he": "צ'וקוטקה"
+    },
+    "russia:chuvashia": {
+      "en": "Chuvashia",
+      "he": "צ'ובשיה"
+    },
+    "russia:dagestan": {
+      "en": "Dagestan",
+      "he": "דאגסטן"
+    },
+    "russia:evreyskaya": {
+      "en": "Jewish Autonomous Oblast",
+      "he": "האוובלאסט היהודי האוטונומי"
+    },
+    "russia:far-eastern-federal-district": {
+      "en": "Far Eastern Federal District",
+      "he": "המחוז הפדרלי המזרחי-הרחוק"
+    },
+    "russia:ingushetia": {
+      "en": "Ingushetia",
+      "he": "אינגושטיה"
+    },
+    "russia:irkutsk": {
+      "en": "Irkutsk",
+      "he": "אירקוטסק"
+    },
+    "russia:ivanov": {
+      "en": "Ivanovo",
+      "he": "איבנובו"
+    },
+    "russia:kabardino-balkaria": {
+      "en": "Kabardino-Balkaria",
+      "he": "קברדינו-בלקריה"
+    },
+    "russia:kaliningrad": {
+      "en": "Kaliningrad",
+      "he": "קלינינגרד"
+    },
+    "russia:kalmykia": {
+      "en": "Kalmykia",
+      "he": "קלמיקיה"
     }
   },
   "specialFiles": {
