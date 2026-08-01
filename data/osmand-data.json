@@ -9,8 +9,8 @@
   {
     "fileName": "Albania_europe_2.obf",
     "updatedDate": "2026-07-01",
-    "url": "https://download.osmand.net/download?standard=yes&file=Albania_europe_2.obf.zip",
-    "zip-osm-file": true,
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Albania_europe_2.obf",
+    "zip-osm-file": false,
     "originalZipUrl": "https://download.osmand.net/download?standard=yes&file=Albania_europe_2.obf.zip"
   },
   {
@@ -1073,8 +1073,8 @@
   {
     "fileName": "Canada_ontario_barrie_northamerica_2.obf",
     "updatedDate": "2026-07-01",
-    "url": "https://download.osmand.net/download?standard=yes&file=Canada_ontario_barrie_northamerica_2.obf.zip",
-    "zip-osm-file": true,
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Canada_ontario_barrie_northamerica_2.obf",
+    "zip-osm-file": false,
     "originalZipUrl": "https://download.osmand.net/download?standard=yes&file=Canada_ontario_barrie_northamerica_2.obf.zip"
   },
   {
@@ -1836,8 +1836,8 @@
   {
     "fileName": "Congo-democratic-republic_nord-kivu_africa_2.obf",
     "updatedDate": "2026-07-01",
-    "url": "https://download.osmand.net/download?standard=yes&file=Congo-democratic-republic_nord-kivu_africa_2.obf.zip",
-    "zip-osm-file": true,
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Congo-democratic-republic_nord-kivu_africa_2.obf",
+    "zip-osm-file": false,
     "originalZipUrl": "https://download.osmand.net/download?standard=yes&file=Congo-democratic-republic_nord-kivu_africa_2.obf.zip"
   },
   {
@@ -1857,8 +1857,8 @@
   {
     "fileName": "Congo-democratic-republic_sud-kivu_africa_2.obf",
     "updatedDate": "2026-07-01",
-    "url": "https://download.osmand.net/download?standard=yes&file=Congo-democratic-republic_sud-kivu_africa_2.obf.zip",
-    "zip-osm-file": true,
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Congo-democratic-republic_sud-kivu_africa_2.obf",
+    "zip-osm-file": false,
     "originalZipUrl": "https://download.osmand.net/download?standard=yes&file=Congo-democratic-republic_sud-kivu_africa_2.obf.zip"
   },
   {
@@ -2256,8 +2256,8 @@
   {
     "fileName": "France_auvergne-rhone-alpes_ain_europe_2.obf",
     "updatedDate": "2026-07-01",
-    "url": "https://download.osmand.net/download?standard=yes&file=France_auvergne-rhone-alpes_ain_europe_2.obf.zip",
-    "zip-osm-file": true,
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/France_auvergne-rhone-alpes_ain_europe_2.obf",
+    "zip-osm-file": false,
     "originalZipUrl": "https://download.osmand.net/download?standard=yes&file=France_auvergne-rhone-alpes_ain_europe_2.obf.zip"
   },
   {
@@ -2739,8 +2739,8 @@
   {
     "fileName": "France_provence-alpes-cote-d-azur_var_europe_2.obf",
     "updatedDate": "2026-07-01",
-    "url": "https://download.osmand.net/download?standard=yes&file=France_provence-alpes-cote-d-azur_var_europe_2.obf.zip",
-    "zip-osm-file": true,
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/France_provence-alpes-cote-d-azur_var_europe_2.obf",
+    "zip-osm-file": false,
     "originalZipUrl": "https://download.osmand.net/download?standard=yes&file=France_provence-alpes-cote-d-azur_var_europe_2.obf.zip"
   },
   {
@@ -4398,8 +4398,8 @@
   {
     "fileName": "Kyrgyzstan_asia_2.obf",
     "updatedDate": "2026-07-01",
-    "url": "https://download.osmand.net/download?standard=yes&file=Kyrgyzstan_asia_2.obf.zip",
-    "zip-osm-file": true,
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Kyrgyzstan_asia_2.obf",
+    "zip-osm-file": false,
     "originalZipUrl": "https://download.osmand.net/download?standard=yes&file=Kyrgyzstan_asia_2.obf.zip"
   },
   {
@@ -6001,8 +6001,8 @@
   {
     "fileName": "Russia_vladimir_asia_2.obf",
     "updatedDate": "2026-07-01",
-    "url": "https://download.osmand.net/download?standard=yes&file=Russia_vladimir_asia_2.obf.zip",
-    "zip-osm-file": true,
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Russia_vladimir_asia_2.obf",
+    "zip-osm-file": false,
     "originalZipUrl": "https://download.osmand.net/download?standard=yes&file=Russia_vladimir_asia_2.obf.zip"
   },
   {
@@ -6022,8 +6022,8 @@
   {
     "fileName": "Russia_vologda_asia_2.obf",
     "updatedDate": "2026-07-01",
-    "url": "https://download.osmand.net/download?standard=yes&file=Russia_vologda_asia_2.obf.zip",
-    "zip-osm-file": true,
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Russia_vologda_asia_2.obf",
+    "zip-osm-file": false,
     "originalZipUrl": "https://download.osmand.net/download?standard=yes&file=Russia_vologda_asia_2.obf.zip"
   },
   {
@@ -6204,8 +6204,8 @@
   {
     "fileName": "South-africa_eastern-cape_africa_2.obf",
     "updatedDate": "2026-07-01",
-    "url": "https://download.osmand.net/download?standard=yes&file=South-africa_eastern-cape_africa_2.obf.zip",
-    "zip-osm-file": true,
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/South-africa_eastern-cape_africa_2.obf",
+    "zip-osm-file": false,
     "originalZipUrl": "https://download.osmand.net/download?standard=yes&file=South-africa_eastern-cape_africa_2.obf.zip"
   },
   {
@@ -6554,8 +6554,8 @@
   {
     "fileName": "Sweden_skane_europe_2.obf",
     "updatedDate": "2026-07-01",
-    "url": "https://download.osmand.net/download?standard=yes&file=Sweden_skane_europe_2.obf.zip",
-    "zip-osm-file": true,
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Sweden_skane_europe_2.obf",
+    "zip-osm-file": false,
     "originalZipUrl": "https://download.osmand.net/download?standard=yes&file=Sweden_skane_europe_2.obf.zip"
   },
   {
@@ -6617,8 +6617,8 @@
   {
     "fileName": "Switzerland_basel_europe_2.obf",
     "updatedDate": "2026-07-01",
-    "url": "https://download.osmand.net/download?standard=yes&file=Switzerland_basel_europe_2.obf.zip",
-    "zip-osm-file": true,
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Switzerland_basel_europe_2.obf",
+    "zip-osm-file": false,
     "originalZipUrl": "https://download.osmand.net/download?standard=yes&file=Switzerland_basel_europe_2.obf.zip"
   },
   {
@@ -6631,8 +6631,8 @@
   {
     "fileName": "Switzerland_central_europe_2.obf",
     "updatedDate": "2026-07-01",
-    "url": "https://download.osmand.net/download?standard=yes&file=Switzerland_central_europe_2.obf.zip",
-    "zip-osm-file": true,
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Switzerland_central_europe_2.obf",
+    "zip-osm-file": false,
     "originalZipUrl": "https://download.osmand.net/download?standard=yes&file=Switzerland_central_europe_2.obf.zip"
   },
   {
@@ -6806,8 +6806,8 @@
   {
     "fileName": "Turkey_eastern-anatolia_europe_2.obf",
     "updatedDate": "2026-07-01",
-    "url": "https://download.osmand.net/download?standard=yes&file=Turkey_eastern-anatolia_europe_2.obf.zip",
-    "zip-osm-file": true,
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Turkey_eastern-anatolia_europe_2.obf",
+    "zip-osm-file": false,
     "originalZipUrl": "https://download.osmand.net/download?standard=yes&file=Turkey_eastern-anatolia_europe_2.obf.zip"
   },
   {
@@ -7604,8 +7604,8 @@
   {
     "fileName": "Us_vermont_northamerica_2.obf",
     "updatedDate": "2026-07-01",
-    "url": "https://download.osmand.net/download?standard=yes&file=Us_vermont_northamerica_2.obf.zip",
-    "zip-osm-file": true,
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Us_vermont_northamerica_2.obf",
+    "zip-osm-file": false,
     "originalZipUrl": "https://download.osmand.net/download?standard=yes&file=Us_vermont_northamerica_2.obf.zip"
   },
   {
