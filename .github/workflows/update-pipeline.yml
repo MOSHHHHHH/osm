@@ -2,11 +2,10 @@ name: Update pipeline (links + tags)
 
 on:
   schedule:
-    # Every 25 minutes. GitHub Actions has a hard floor of 5 minutes between scheduled runs
-    # (more frequent cron expressions are simply not honored), so this stays comfortably
-    # above that while still catching OsmAnd's monthly release window (usually the 2nd-5th
-    # of the month) reasonably quickly.
-    - cron: "*/25 * * * *"
+    # 4 times a day (every 6 hours). The new size-based hosting policy (only Israel/Palestine
+    # or files under 40MB are ever uploaded) makes each run far lighter than before, so there's
+    # no need to run nearly as often.
+    - cron: "0 */6 * * *"
   workflow_dispatch: {}
 
 permissions:
@@ -22,7 +21,7 @@ jobs:
   update-links:
     name: Find/update OsmAnd + Moovitdos links
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 180
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -58,7 +57,7 @@ jobs:
   update-tag-rules:
     name: Fill missing tag rules (AI)
     runs-on: ubuntu-latest
-    timeout-minutes: 333
+    timeout-minutes: 180
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -93,7 +92,7 @@ jobs:
     name: Rebuild mapsTags.json (pure logic)
     needs: [update-links, update-tag-rules]
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 15
     steps:
       # Explicitly checks out the branch (not the fixed commit that triggered this workflow),
       # so this sees the commits update-links/update-tag-rules just pushed above.
