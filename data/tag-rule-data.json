@@ -5151,6 +5151,370 @@
     "south-africa:limpopo": {
       "en": "Limpopo",
       "he": "לימפופו"
+    },
+    "south-africa:mpumalanga": {
+      "en": "Mpumalanga",
+      "he": "מפומלנגה"
+    },
+    "south-africa:north-west": {
+      "en": "North West",
+      "he": "צפון-מערב"
+    },
+    "south-africa:northern-cape": {
+      "en": "Northern Cape",
+      "he": "כף הצפוני"
+    },
+    "south-africa:orange-free-state": {
+      "en": "Orange Free State",
+      "he": "אורנג' פרי סטייט"
+    },
+    "south-africa:prince-edward-islands": {
+      "en": "Prince Edward Islands",
+      "he": "איי פרינס אדוורד"
+    },
+    "south-africa:western-cape": {
+      "en": "Western Cape",
+      "he": "הכף המערבי"
+    },
+    "spain:andalusia": {
+      "en": "Andalusia",
+      "he": "אנדלוסיה"
+    },
+    "spain:aragon": {
+      "en": "Aragon",
+      "he": "אראגון"
+    },
+    "spain:asturias": {
+      "en": "Asturias",
+      "he": "אסטוריאס"
+    },
+    "spain:baleares": {
+      "en": "Balearic Islands",
+      "he": "האיים הבלאריים"
+    },
+    "spain:basque-country": {
+      "en": "Basque Country",
+      "he": "חבל הבסקים"
+    },
+    "spain:canarias": {
+      "en": "Canary Islands",
+      "he": "האיים הקנריים"
+    },
+    "spain:cantabria": {
+      "en": "Cantabria",
+      "he": "קנטבריה"
+    },
+    "spain:castilla-la-mancha": {
+      "en": "Castilla-La Mancha",
+      "he": "קסטיליה-לה מנצ'ה"
+    },
+    "spain:castilla-leon": {
+      "en": "Castile and León",
+      "he": "קסטיליה ולאון"
+    },
+    "spain:catalunya": {
+      "en": "Catalonia",
+      "he": "קטלוניה"
+    },
+    "spain:ceuta": {
+      "en": "Ceuta",
+      "he": "סאוטה"
+    },
+    "spain:extremadura": {
+      "en": "Extremadura",
+      "he": "אקסטרמדורה"
+    },
+    "spain:galicia": {
+      "en": "Galicia",
+      "he": "גליציה"
+    },
+    "spain:madrid": {
+      "en": "Madrid",
+      "he": "מדריד"
+    },
+    "spain:melilla": {
+      "en": "Melilla",
+      "he": "מלייה"
+    },
+    "spain:murcia": {
+      "en": "Murcia",
+      "he": "מורסיה"
+    },
+    "spain:navarra": {
+      "en": "Navarre",
+      "he": "נווארה"
+    },
+    "spain:rioja": {
+      "en": "La Rioja",
+      "he": "לה ריוחה"
+    },
+    "spain:valencia": {
+      "en": "Valencia",
+      "he": "ולנסיה"
+    },
+    "sweden:blekinge": {
+      "en": "Blekinge",
+      "he": "בלקינגה"
+    },
+    "sweden:dalarna": {
+      "en": "Dalarna",
+      "he": "דאלארנה"
+    },
+    "sweden:gavleborg": {
+      "en": "Gävleborg",
+      "he": "יבלהבורג"
+    },
+    "sweden:gotland": {
+      "en": "Gotland",
+      "he": "גוטלנד"
+    },
+    "sweden:halland": {
+      "en": "Halland",
+      "he": "האלנד"
+    },
+    "sweden:jamtland": {
+      "en": "Jämtland",
+      "he": "ימטלנד"
+    },
+    "sweden:jonkoping": {
+      "en": "Jönköping",
+      "he": "ינשפינג"
+    },
+    "sweden:kalmar": {
+      "en": "Kalmar",
+      "he": "קלמאר"
+    },
+    "sweden:kronoberg": {
+      "en": "Kronoberg",
+      "he": "קרונוברי"
+    },
+    "sweden:norrbotten": {
+      "en": "Norrbotten",
+      "he": "נורבוטן"
+    },
+    "sweden:orebro": {
+      "en": "Örebro",
+      "he": "אורברו"
+    },
+    "sweden:ostergotland": {
+      "en": "Östergötland",
+      "he": "אסטרגוטלנד"
+    },
+    "sweden:skane": {
+      "en": "Skåne",
+      "he": "סקונה"
+    },
+    "sweden:sodermanland": {
+      "en": "Södermanland",
+      "he": "סודרמלנד"
+    },
+    "sweden:stockholm": {
+      "en": "Stockholm",
+      "he": "שטוקהולם"
+    },
+    "sweden:uppsala": {
+      "en": "Uppsala",
+      "he": "אופסלה"
+    },
+    "sweden:varmland": {
+      "en": "Värmland",
+      "he": "וורמלנד"
+    },
+    "sweden:vasterbotten": {
+      "en": "Västerbotten",
+      "he": "וסטរបוטן"
+    },
+    "sweden:vasternorrland": {
+      "en": "Västernorrland",
+      "he": "וסטרנורלנד"
+    },
+    "sweden:vastmanland": {
+      "en": "Västmanland",
+      "he": "וסטמנלנד"
+    },
+    "sweden:vastra-gotaland": {
+      "en": "Västra Götaland",
+      "he": "וסטרה גוטלנד"
+    },
+    "switzerland:basel": {
+      "en": "Basel",
+      "he": "בזל"
+    },
+    "switzerland:bern": {
+      "en": "Bern",
+      "he": "ברן"
+    },
+    "switzerland:central": {
+      "en": "Central Switzerland",
+      "he": "מרכז שוויץ"
+    },
+    "switzerland:eastern": {
+      "en": "Eastern Switzerland",
+      "he": "מזרח שווייץ"
+    },
+    "switzerland:lake-geneva": {
+      "en": "Lake Geneva",
+      "he": "אגם ז'נבה"
+    },
+    "switzerland:ticino": {
+      "en": "Ticino",
+      "he": "טיצ'ינו"
+    },
+    "switzerland:zurich": {
+      "en": "Zurich",
+      "he": "ציריך"
+    },
+    "tanzania:central": {
+      "en": "Central Zone",
+      "he": "האזור המרכזי"
+    },
+    "tanzania:coastal": {
+      "en": "Coastal",
+      "he": "החוף"
+    },
+    "tanzania:lake": {
+      "en": "Lake",
+      "he": "אגם"
+    },
+    "tanzania:northern": {
+      "en": "Northern Region",
+      "he": "האזור הצפוני"
+    },
+    "tanzania:southern-highlands": {
+      "en": "Southern Highlands",
+      "he": "הדרום הגבוה"
+    },
+    "tanzania:western": {
+      "en": "Western Region",
+      "he": "האזור המערבי"
+    },
+    "tanzania:zanzibar": {
+      "en": "Zanzibar",
+      "he": "זנזיבר"
+    },
+    "turkey:aegean": {
+      "en": "Aegean Region",
+      "he": "האזור האגאי"
+    },
+    "turkey:black-sea": {
+      "en": "Black Sea Region",
+      "he": "אזור הים הבלקן"
+    },
+    "turkey:central-anatolia": {
+      "en": "Central Anatolia",
+      "he": "מרכז אנטוליה"
+    },
+    "turkey:eastern-anatolia": {
+      "en": "Eastern Anatolia",
+      "he": "מזרח אנטוליה"
+    },
+    "turkey:marmara": {
+      "en": "Marmara",
+      "he": "מרמרה"
+    },
+    "turkey:mediterranean": {
+      "en": "Mediterranean Region",
+      "he": "האזור הים-תיכוני"
+    },
+    "turkey:southeastern-anatolia": {
+      "en": "Southeastern Anatolia",
+      "he": "דרום-מזרח אנטוליה"
+    },
+    "ukraine:cherkasy": {
+      "en": "Cherkasy",
+      "he": "צ'רקאסי"
+    },
+    "ukraine:chernihiv": {
+      "en": "Chernihiv",
+      "he": "צ'רניהיב"
+    },
+    "ukraine:chernivtsi": {
+      "en": "Chernivtsi",
+      "he": "צ'רנוביץ'"
+    },
+    "ukraine:crimea": {
+      "en": "Crimea",
+      "he": "קרים"
+    },
+    "ukraine:dnipro": {
+      "en": "Dnipro",
+      "he": "דניפרו"
+    },
+    "ukraine:donetsk": {
+      "en": "Donetsk",
+      "he": "דונייצק"
+    },
+    "ukraine:ivano-frankivsk": {
+      "en": "Ivano-Frankivsk",
+      "he": "איוונו-פרנקיבסק"
+    },
+    "ukraine:kharkiv": {
+      "en": "Kharkiv",
+      "he": "חרקיב"
+    },
+    "ukraine:kherson": {
+      "en": "Kherson",
+      "he": "חרסון"
+    },
+    "ukraine:khmelnytskyy": {
+      "en": "Khmelnytskyi",
+      "he": "חמלניצקי"
+    },
+    "ukraine:kropyvnytskyi": {
+      "en": "Kropyvnytskyi",
+      "he": "קרוпиבניצקי"
+    },
+    "ukraine:kyiv-city": {
+      "en": "Kyiv City",
+      "he": "העיר קייב"
+    },
+    "ukraine:kyiv": {
+      "en": "Kyiv",
+      "he": "קייב"
+    },
+    "ukraine:luhansk": {
+      "en": "Luhansk",
+      "he": "לוהנסק"
+    },
+    "ukraine:lviv": {
+      "en": "Lviv",
+      "he": "לבוב"
+    },
+    "ukraine:mykolayiv": {
+      "en": "Mykolaiv",
+      "he": "מיקולאייב"
+    },
+    "ukraine:odesa": {
+      "en": "Odesa",
+      "he": "אודסה"
+    },
+    "ukraine:poltava": {
+      "en": "Poltava",
+      "he": "פולטבה"
+    },
+    "ukraine:rivne": {
+      "en": "Rivne",
+      "he": "ריבנה"
+    },
+    "ukraine:sumy": {
+      "en": "Sumy",
+      "he": "סומי"
+    },
+    "ukraine:ternopil": {
+      "en": "Ternopil",
+      "he": "טרנופול"
+    },
+    "ukraine:transcarpathia": {
+      "en": "Transcarpathia",
+      "he": "זקרפטיה"
+    },
+    "ukraine:vinnytsya": {
+      "en": "Vinnytsia",
+      "he": "ויניצה"
+    },
+    "ukraine:volyn": {
+      "en": "Volyn",
+      "he": "מחוז ווהלין"
     }
   },
   "specialFiles": {
