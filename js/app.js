@@ -220,12 +220,19 @@ function downloadFile(fileName, url, isOsmandZipFallback) {
 
 function handleFixedOsmandButton(fixedFileName, label) {
   const entry = findOsmandEntry(fixedFileName);
-  if (!entry || !entry.originalZipUrl) {
+  if (!entry) {
     alert(`המפה עבור "${label}" עדיין לא זמינה במאגר. נסו שוב מאוחר יותר.`);
     return;
   }
-  // Always the original OsmAnd .zip, by design - no dependency on our own hosting pipeline.
-  downloadFile(entry.fileName + ".zip", entry.originalZipUrl, true);
+  if (entry["zip-osm-file"] === false && entry.url) {
+    // Already hosted by us as a ready-to-use .obf - prefer it, no extraction needed.
+    downloadFile(entry.fileName, entry.url, false);
+  } else if (entry.originalZipUrl) {
+    // Not hosted yet (or never will be) - fall back to OsmAnd's own .zip.
+    downloadFile(entry.fileName + ".zip", entry.originalZipUrl, true);
+  } else {
+    alert(`המפה עבור "${label}" עדיין לא זמינה במאגר. נסו שוב מאוחר יותר.`);
+  }
 }
 
 function handleMoovitdosButton() {

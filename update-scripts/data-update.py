@@ -2,23 +2,29 @@
 """
 data-update.py
 ==============
-Runs every 20 minutes (or manually). Its only job is finding working download links for both
+Runs every 6 hours (or manually). Its only job is finding working download links for both
 apps - not necessarily hosting every file ourselves:
 
 1. OsmAnd  - compares https://download.osmand.net/list.php against data/osmand-data.json.
-             For every *.obf.zip that is new, updated, or still only available via OsmAnd's own
-             URL (see below), the script tries - within this run's time/size budget - to
-             download the zip, extract the .obf, and upload it as an asset on this repo's own
-             GitHub Release (so it can be served as a plain, ready-to-use .obf file). If that
-             succeeds, data/osmand-data.json records our own Release URL and "zip-osm-file":
-             false. If it doesn't succeed for any reason (ran out of time this run, the file is
-             too large for a Release asset, a network error, anything) - that is NOT treated as
-             an error - the script instead records OsmAnd's own original .zip URL directly and
-             "zip-osm-file": true, so the file is always immediately downloadable either way,
-             just sometimes as a .zip the user has to extract themselves. Every entry ALSO
-             always stores "originalZipUrl" (OsmAnd's own link) regardless of hosting status,
-             so the front-end can rely on it directly for the two flagship buttons (Israel/Yosh)
-             without needing to search anything.
+             Only Israel, Palestine (Yosh), or any file under MAX_HOSTED_ZIP_SIZE_MB (40MB)
+             compressed are ever candidates for being uploaded to our own GitHub Release -
+             everything else always links straight to OsmAnd's own .zip, and is never even
+             downloaded to decide this, since the compressed size from list.php alone is
+             enough. For an eligible file that's new, updated, or still only linking to
+             OsmAnd, the script tries - within this run's time/size budget - to download the
+             zip, extract the .obf, and upload it as an asset on this repo's own GitHub
+             Release. If that succeeds, data/osmand-data.json records our own Release URL and
+             "zip-osm-file": false. If it doesn't succeed for any reason - that is NOT treated
+             as an error - the script instead records OsmAnd's own original .zip URL and
+             "zip-osm-file": true, so the file is always immediately downloadable either way.
+             Every entry ALSO always stores "originalZipUrl" (OsmAnd's own link) regardless of
+             hosting status, so the front-end can rely on it directly for the two flagship
+             buttons (Israel/Yosh) without needing to search anything - and prefers our own
+             hosted copy over the raw zip whenever one is available.
+
+             If a previously-hosted file no longer meets the eligibility policy (e.g. the
+             policy just changed, or a later OsmAnd release made it bigger), its Release asset
+             is deleted and it reverts to linking straight to OsmAnd.
 
              If OsmAnd's list no longer contains a file we previously had, and this run's fetch
              of the list itself succeeded (see below), that file is removed from
@@ -89,13 +95,21 @@ GH_TOKEN = os.environ.get("GITHUB_TOKEN", "")
 GH_REPO = os.environ.get("GITHUB_REPOSITORY", "")  # "owner/repo", set automatically in Actions
 
 # Files that must always resolve to a fixed, well-known name, regardless of upload status -
-# the front-end's Israel/Yosh buttons look these two up directly by exact fileName.
+# the front-end's Israel/Yosh buttons look these two up directly by exact fileName. These two
+# are ALWAYS eligible for hosting on our own Release, regardless of size.
 PRIORITY_FILE_NAMES = ["israel_asia_2.obf", "palestine_asia_2.obf"]
+
+# Hosting policy: only Israel/Palestine (above) or files under this compressed (.zip) size are
+# ever uploaded to our own Release. Everything else always links directly to OsmAnd's own zip
+# (with the front-end's "please extract this" notice) - this keeps our Release small and keeps
+# every run fast, since ineligible files never need to be downloaded at all to decide this: the
+# compressed size is already given directly by OsmAnd's list.php.
+MAX_HOSTED_ZIP_SIZE_MB = 40
 
 MAX_OBF_FILE_SIZE_BYTES = 1900 * 1024 * 1024      # ~1.9GB, margin under GitHub's ~2GB per-asset cap
 MAX_RUN_DOWNLOAD_BUDGET_BYTES = 2000 * 1024 * 1024  # bounds one run's network/runtime
 MAX_ZIP_DOWNLOAD_BYTES = 1200 * 1024 * 1024       # sanity cap while streaming a zip to disk
-MAX_RUN_SECONDS = 8 * 60  # internal deadline, safely under the job's timeout-minutes
+MAX_RUN_SECONDS = 165 * 60  # internal deadline, safely under the job's 3-hour timeout-minutes
 
 
 def now_iso() -> str:
@@ -310,9 +324,12 @@ def extract_obf_to_temp(zip_path: Path, zip_info) -> Path:
 # OsmAnd update
 # ---------------------------------------------------------------------------
 
+def is_hosting_eligible(obf_name: str, size_mb: float) -> bool:
+    return obf_name.lower() in PRIORITY_FILE_NAMES or size_mb < MAX_HOSTED_ZIP_SIZE_MB
+
+
 def priority_sort_key(entry):
-    expected_obf_name = entry["zip_name"][:-4] if entry["zip_name"].lower().endswith(".zip") else entry["zip_name"]
-    is_priority = expected_obf_name.lower() in PRIORITY_FILE_NAMES
+    is_priority = entry["expected_obf_name"].lower() in PRIORITY_FILE_NAMES
     return (0 if is_priority else 1, entry.get("size_mb", 0.0))
 
 
@@ -347,10 +364,9 @@ def update_osmand():
         existing = stored_by_name.get(obf_name)
         is_new = existing is None
         is_updated = (not is_new) and remote["updatedDate"] > existing.get("updatedDate", "")
+        eligible = is_hosting_eligible(obf_name, remote["size_mb"])
 
         if is_new or is_updated:
-            # New or changed upstream: reset to the safe baseline (OsmAnd's own zip). This
-            # may get upgraded to our own Release hosting below, budget permitting.
             stored_by_name[obf_name] = {
                 "fileName": obf_name,
                 "updatedDate": remote["updatedDate"],
@@ -359,16 +375,35 @@ def update_osmand():
                 "originalZipUrl": remote["zip_url"],
             }
         else:
-            # Unchanged - just keep originalZipUrl/updatedDate fresh without touching hosting.
             existing["originalZipUrl"] = remote["zip_url"]
             existing["updatedDate"] = remote["updatedDate"]
 
-    # --- Candidates to (re)upload this run: anything still on the OsmAnd fallback ---
-    candidates = [
-        {**remote_by_obf_name[name], "expected_obf_name": name}
-        for name, item in stored_by_name.items()
-        if item.get("zip-osm-file") and name in remote_by_obf_name
-    ]
+        # Retroactively un-host anything that no longer qualifies (e.g. policy just changed,
+        # or the file grew past the size threshold in a later OsmAnd release).
+        item = stored_by_name[obf_name]
+        if not eligible and item.get("zip-osm-file") is False:
+            if gh_release_ready and obf_name in existing_assets:
+                try:
+                    delete_asset(existing_assets[obf_name])
+                    existing_assets[obf_name] = None
+                    print(f"[osmand] un-hosted {obf_name} (no longer under the "
+                          f"{MAX_HOSTED_ZIP_SIZE_MB}MB hosting threshold)")
+                except Exception as exc:
+                    print(f"[osmand] failed to delete now-ineligible asset {obf_name}: {exc}", file=sys.stderr)
+            item["url"] = remote["zip_url"]
+            item["zip-osm-file"] = True
+
+    # --- Candidates to (re)upload this run: only eligible files still on the OsmAnd fallback.
+    #     Ineligible files never even get downloaded - their size alone (already known from
+    #     list.php) is enough to decide they'll always link straight to OsmAnd. ---
+    candidates = []
+    for name, item in stored_by_name.items():
+        if not item.get("zip-osm-file") or name not in remote_by_obf_name:
+            continue
+        remote = remote_by_obf_name[name]
+        if not is_hosting_eligible(name, remote["size_mb"]):
+            continue
+        candidates.append({**remote, "expected_obf_name": name})
     candidates.sort(key=priority_sort_key)
 
     budget_used = 0
