@@ -2254,10 +2254,10 @@
     },
     "palestine": {
       "en": "Palestine",
-      "he": "פלסטין",
+      "he": "יהודה ושומרון",
       "continentEn": "Asia",
       "continentHe": "אסיה",
-      "iso2": "PS",
+      "iso2": "IL",
       "isRegionNotCountry": false,
       "thematicEmoji": null,
       "aliasOf": null
