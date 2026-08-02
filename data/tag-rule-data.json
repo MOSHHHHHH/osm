@@ -2251,6 +2251,16 @@
       "isRegionNotCountry": false,
       "thematicEmoji": null,
       "aliasOf": null
+    },
+    "palestine": {
+      "en": "Palestine",
+      "he": "פלסטין",
+      "continentEn": "Asia",
+      "continentHe": "אסיה",
+      "iso2": "PS",
+      "isRegionNotCountry": false,
+      "thematicEmoji": null,
+      "aliasOf": null
     }
   },
   "regions": {
