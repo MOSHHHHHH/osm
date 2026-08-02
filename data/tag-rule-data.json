@@ -1564,12 +1564,12 @@
     },
     "palestine": {
       "en": "Palestine",
-      "he": "פלסטין",
+      "he": "יהודה ושומרון",
       "continentEn": "Asia",
       "continentHe": "אסיה",
-      "iso2": "PS",
-      "isRegionNotCountry": false,
-      "thematicEmoji": null,
+      "iso2": null,
+      "isRegionNotCountry": true,
+      "thematicEmoji": "⛰️",
       "aliasOf": null
     },
     "panama": {
