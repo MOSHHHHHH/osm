@@ -1562,16 +1562,6 @@
       "thematicEmoji": null,
       "aliasOf": null
     },
-    "palestine": {
-      "en": "Palestine",
-      "he": "יהודה ושומרון",
-      "continentEn": "Asia",
-      "continentHe": "אסיה",
-      "iso2": null,
-      "isRegionNotCountry": true,
-      "thematicEmoji": "⛰️",
-      "aliasOf": null
-    },
     "panama": {
       "en": "Panama",
       "he": "פנמה",
