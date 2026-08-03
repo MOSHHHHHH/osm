@@ -784,20 +784,6 @@
     "emoji": "🇦🇹"
   },
   {
-    "fileName": "Austria_europe_2.obf",
-    "geo": [
-      {
-        "en": "Europe",
-        "he": "אירופה"
-      },
-      {
-        "en": "Austria",
-        "he": "אוסטריה"
-      }
-    ],
-    "emoji": "🇦🇹"
-  },
-  {
     "fileName": "Austria_lower-austria_europe_2.obf",
     "geo": [
       {
@@ -1008,20 +994,6 @@
     "emoji": "🇧🇾"
   },
   {
-    "fileName": "Belarus_europe_2.obf",
-    "geo": [
-      {
-        "en": "Europe",
-        "he": "אירופה"
-      },
-      {
-        "en": "Belarus",
-        "he": "בלארוס"
-      }
-    ],
-    "emoji": "🇧🇾"
-  },
-  {
     "fileName": "Belarus_gomel_europe_2.obf",
     "geo": [
       {
@@ -1110,20 +1082,6 @@
       }
     ],
     "emoji": "🇧🇾"
-  },
-  {
-    "fileName": "Belgium_europe_2.obf",
-    "geo": [
-      {
-        "en": "Europe",
-        "he": "אירופה"
-      },
-      {
-        "en": "Belgium",
-        "he": "בלגיה"
-      }
-    ],
-    "emoji": "🇧🇪"
   },
   {
     "fileName": "Belgium_flanders_europe_2.obf",
@@ -2280,24 +2238,6 @@
     "emoji": "🇨🇦"
   },
   {
-    "fileName": "Canada_british-columbia_northamerica_2.obf",
-    "geo": [
-      {
-        "en": "North America",
-        "he": "צפון אמריקה"
-      },
-      {
-        "en": "Canada",
-        "he": "קנדה"
-      },
-      {
-        "en": "British Columbia",
-        "he": "קולומביה הבריטית"
-      }
-    ],
-    "emoji": "🇨🇦"
-  },
-  {
     "fileName": "Canada_british-columbia_northern-rockies_northamerica_2.obf",
     "geo": [
       {
@@ -2799,24 +2739,6 @@
       {
         "en": "Moosonee",
         "he": "מוסוני"
-      }
-    ],
-    "emoji": "🇨🇦"
-  },
-  {
-    "fileName": "Canada_ontario_northamerica_2.obf",
-    "geo": [
-      {
-        "en": "North America",
-        "he": "צפון אמריקה"
-      },
-      {
-        "en": "Canada",
-        "he": "קנדה"
-      },
-      {
-        "en": "Ontario",
-        "he": "אונטריו"
       }
     ],
     "emoji": "🇨🇦"
@@ -3324,24 +3246,6 @@
     "emoji": "🇨🇦"
   },
   {
-    "fileName": "Canada_quebec_northamerica_2.obf",
-    "geo": [
-      {
-        "en": "North America",
-        "he": "צפון אמריקה"
-      },
-      {
-        "en": "Canada",
-        "he": "קנדה"
-      },
-      {
-        "en": "Quebec",
-        "he": "קוויבק"
-      }
-    ],
-    "emoji": "🇨🇦"
-  },
-  {
     "fileName": "Canada_quebec_outaouais_northamerica_2.obf",
     "geo": [
       {
@@ -3731,20 +3635,6 @@
       {
         "en": "Metropolitana de Santiago",
         "he": "המטרופוליטן של סנטיאגו"
-      }
-    ],
-    "emoji": "🇨🇱"
-  },
-  {
-    "fileName": "Chile_southamerica_2.obf",
-    "geo": [
-      {
-        "en": "South America",
-        "he": "דרום אמריקה"
-      },
-      {
-        "en": "Chile",
-        "he": "צ'ילה"
       }
     ],
     "emoji": "🇨🇱"
@@ -4400,20 +4290,6 @@
     "emoji": "🇨🇬"
   },
   {
-    "fileName": "Congo-democratic-republic_africa_2.obf",
-    "geo": [
-      {
-        "en": "Africa",
-        "he": "אפריקה"
-      },
-      {
-        "en": "Democratic Republic of the Congo",
-        "he": "הרפובליקה הדמוקרטית של קונגו"
-      }
-    ],
-    "emoji": "🇨🇩"
-  },
-  {
     "fileName": "Congo-democratic-republic_bas-uele_africa_2.obf",
     "geo": [
       {
@@ -4938,20 +4814,6 @@
     "emoji": "🇨🇾"
   },
   {
-    "fileName": "Czech-republic_europe_2.obf",
-    "geo": [
-      {
-        "en": "Europe",
-        "he": "אירופה"
-      },
-      {
-        "en": "Czech Republic",
-        "he": "צ'כיה"
-      }
-    ],
-    "emoji": "🇨🇿"
-  },
-  {
     "fileName": "Czech-republic_jihovychod_europe_2.obf",
     "geo": [
       {
@@ -5127,20 +4989,6 @@
       {
         "en": "Central Denmark Region",
         "he": "המחוז הראשי של דנמרק"
-      }
-    ],
-    "emoji": "🇩🇰"
-  },
-  {
-    "fileName": "Denmark_europe_2.obf",
-    "geo": [
-      {
-        "en": "Europe",
-        "he": "אירופה"
-      },
-      {
-        "en": "Denmark",
-        "he": "דנמרק"
       }
     ],
     "emoji": "🇩🇰"
@@ -5431,20 +5279,6 @@
       {
         "en": "Central Ostrobothnia",
         "he": "הפוטוסטרובוטניה המרכזית"
-      }
-    ],
-    "emoji": "🇫🇮"
-  },
-  {
-    "fileName": "Finland_europe_2.obf",
-    "geo": [
-      {
-        "en": "Europe",
-        "he": "אירופה"
-      },
-      {
-        "en": "Finland",
-        "he": "פינלנד"
       }
     ],
     "emoji": "🇫🇮"
@@ -5848,24 +5682,6 @@
     "emoji": "🇫🇷"
   },
   {
-    "fileName": "France_auvergne-rhone-alpes_europe_2.obf",
-    "geo": [
-      {
-        "en": "Europe",
-        "he": "אירופה"
-      },
-      {
-        "en": "France",
-        "he": "צרפת"
-      },
-      {
-        "en": "Auvergne-Rhône-Alpes",
-        "he": "אוברן-רון-אלפ"
-      }
-    ],
-    "emoji": "🇫🇷"
-  },
-  {
     "fileName": "France_auvergne-rhone-alpes_haute-loire_europe_2.obf",
     "geo": [
       {
@@ -6189,24 +6005,6 @@
       {
         "en": "Bas-Rhin",
         "he": "בָּה-רֶן"
-      }
-    ],
-    "emoji": "🇫🇷"
-  },
-  {
-    "fileName": "France_great-east_europe_2.obf",
-    "geo": [
-      {
-        "en": "Europe",
-        "he": "אירופה"
-      },
-      {
-        "en": "France",
-        "he": "צרפת"
-      },
-      {
-        "en": "Grand Est",
-        "he": "גראנד אסט"
       }
     ],
     "emoji": "🇫🇷"
@@ -6570,24 +6368,6 @@
     "emoji": "🇫🇷"
   },
   {
-    "fileName": "France_new-aquitaine_europe_2.obf",
-    "geo": [
-      {
-        "en": "Europe",
-        "he": "אירופה"
-      },
-      {
-        "en": "France",
-        "he": "צרפת"
-      },
-      {
-        "en": "New Aquitaine",
-        "he": "אקיטן החדשה"
-      }
-    ],
-    "emoji": "🇫🇷"
-  },
-  {
     "fileName": "France_new-aquitaine_gironde_europe_2.obf",
     "geo": [
       {
@@ -6817,24 +6597,6 @@
       {
         "en": "Aveyron",
         "he": "אבררון"
-      }
-    ],
-    "emoji": "🇫🇷"
-  },
-  {
-    "fileName": "France_occitania_europe_2.obf",
-    "geo": [
-      {
-        "en": "Europe",
-        "he": "אירופה"
-      },
-      {
-        "en": "France",
-        "he": "צרפת"
-      },
-      {
-        "en": "Occitanie",
-        "he": "אוקסיטניה"
       }
     ],
     "emoji": "🇫🇷"
@@ -7139,24 +6901,6 @@
       {
         "en": "Bouches-du-Rhône",
         "he": "בוש-דּי-רון"
-      }
-    ],
-    "emoji": "🇫🇷"
-  },
-  {
-    "fileName": "France_provence-alpes-cote-d-azur_europe_2.obf",
-    "geo": [
-      {
-        "en": "Europe",
-        "he": "אירופה"
-      },
-      {
-        "en": "France",
-        "he": "צרפת"
-      },
-      {
-        "en": "Provence-Alpes-Côte d'Azur",
-        "he": "פרובאנס-אלפ-קוט ד'אזור"
       }
     ],
     "emoji": "🇫🇷"
@@ -7626,24 +7370,6 @@
     "emoji": "🇬🇪"
   },
   {
-    "fileName": "Germany_baden-wuerttemberg_europe_2.obf",
-    "geo": [
-      {
-        "en": "Europe",
-        "he": "אירופה"
-      },
-      {
-        "en": "Germany",
-        "he": "גרמניה"
-      },
-      {
-        "en": "Baden-Württemberg",
-        "he": "באדן-וירטמברג"
-      }
-    ],
-    "emoji": "🇩🇪"
-  },
-  {
     "fileName": "Germany_baden-wuerttemberg_freiburg_europe_2.obf",
     "geo": [
       {
@@ -7727,24 +7453,6 @@
       {
         "en": "Tübingen",
         "he": "טיבינגן"
-      }
-    ],
-    "emoji": "🇩🇪"
-  },
-  {
-    "fileName": "Germany_bayern_europe_2.obf",
-    "geo": [
-      {
-        "en": "Europe",
-        "he": "אירופה"
-      },
-      {
-        "en": "Germany",
-        "he": "גרמניה"
-      },
-      {
-        "en": "Bavaria",
-        "he": "בוואריה"
       }
     ],
     "emoji": "🇩🇪"
@@ -7998,24 +7706,6 @@
     "emoji": "🇩🇪"
   },
   {
-    "fileName": "Germany_hessen_europe_2.obf",
-    "geo": [
-      {
-        "en": "Europe",
-        "he": "אירופה"
-      },
-      {
-        "en": "Germany",
-        "he": "גרמניה"
-      },
-      {
-        "en": "Hesse",
-        "he": "הסן"
-      }
-    ],
-    "emoji": "🇩🇪"
-  },
-  {
     "fileName": "Germany_hessen_giessen_europe_2.obf",
     "geo": [
       {
@@ -8139,24 +7829,6 @@
       {
         "en": "Buchholz in der Nordheide",
         "he": "בוכחולץ אין דר נורדהיידה"
-      }
-    ],
-    "emoji": "🇩🇪"
-  },
-  {
-    "fileName": "Germany_niedersachsen_europe_2.obf",
-    "geo": [
-      {
-        "en": "Europe",
-        "he": "אירופה"
-      },
-      {
-        "en": "Germany",
-        "he": "גרמניה"
-      },
-      {
-        "en": "Lower Saxony",
-        "he": "נידרזקסן"
       }
     ],
     "emoji": "🇩🇪"
@@ -9988,20 +9660,6 @@
     "emoji": "🇮🇷"
   },
   {
-    "fileName": "Iran_asia_2.obf",
-    "geo": [
-      {
-        "en": "Asia",
-        "he": "אסיה"
-      },
-      {
-        "en": "Iran",
-        "he": "איראן"
-      }
-    ],
-    "emoji": "🇮🇷"
-  },
-  {
     "fileName": "Iran_bushehr_asia_2.obf",
     "geo": [
       {
@@ -10990,24 +10648,6 @@
     "emoji": "🇯🇵"
   },
   {
-    "fileName": "Japan_chubu_asia_2.obf",
-    "geo": [
-      {
-        "en": "Asia",
-        "he": "אסיה"
-      },
-      {
-        "en": "Japan",
-        "he": "יפן"
-      },
-      {
-        "en": "Chubu",
-        "he": "צ'וּבּוּ"
-      }
-    ],
-    "emoji": "🇯🇵"
-  },
-  {
     "fileName": "Japan_chubu_fukui_asia_2.obf",
     "geo": [
       {
@@ -11215,24 +10855,6 @@
       {
         "en": "Hokkaido",
         "he": "הוקאידו"
-      }
-    ],
-    "emoji": "🇯🇵"
-  },
-  {
-    "fileName": "Japan_kanto_asia_2.obf",
-    "geo": [
-      {
-        "en": "Asia",
-        "he": "אסיה"
-      },
-      {
-        "en": "Japan",
-        "he": "יפן"
-      },
-      {
-        "en": "Kanto",
-        "he": "קאנטו"
       }
     ],
     "emoji": "🇯🇵"
@@ -12175,20 +11797,6 @@
       {
         "en": "Nayarit",
         "he": "נאיאריט"
-      }
-    ],
-    "emoji": "🇲🇽"
-  },
-  {
-    "fileName": "Mexico_northamerica_2.obf",
-    "geo": [
-      {
-        "en": "North America",
-        "he": "צפון אמריקה"
-      },
-      {
-        "en": "Mexico",
-        "he": "מקסיקו"
       }
     ],
     "emoji": "🇲🇽"
@@ -13300,20 +12908,6 @@
     "emoji": "🇵🇪"
   },
   {
-    "fileName": "Philippines_asia_2.obf",
-    "geo": [
-      {
-        "en": "Asia",
-        "he": "אסיה"
-      },
-      {
-        "en": "Philippines",
-        "he": "הפיליפינים"
-      }
-    ],
-    "emoji": "🇵🇭"
-  },
-  {
     "fileName": "Philippines_bangsamoro_asia_2.obf",
     "geo": [
       {
@@ -14266,24 +13860,6 @@
     "emoji": "🇷🇺"
   },
   {
-    "fileName": "Russia_far-eastern-federal-district_asia_2.obf",
-    "geo": [
-      {
-        "en": "Asia",
-        "he": "אסיה"
-      },
-      {
-        "en": "Russia",
-        "he": "רוסיה"
-      },
-      {
-        "en": "Far Eastern Federal District",
-        "he": "המחוז הפדרלי המזרחי-הרחוק"
-      }
-    ],
-    "emoji": "🇷🇺"
-  },
-  {
     "fileName": "Russia_ingushetia_asia_2.obf",
     "geo": [
       {
@@ -14842,42 +14418,6 @@
     "emoji": "🇷🇺"
   },
   {
-    "fileName": "Russia_north-caucasus-federal-district_asia_2.obf",
-    "geo": [
-      {
-        "en": "Asia",
-        "he": "אסיה"
-      },
-      {
-        "en": "Russia",
-        "he": "רוסיה"
-      },
-      {
-        "en": "North Caucasus Federal District",
-        "he": "מחוז הקווקז הצפוני הפדרלי"
-      }
-    ],
-    "emoji": "🇷🇺"
-  },
-  {
-    "fileName": "Russia_northwestern-federal-district_asia_2.obf",
-    "geo": [
-      {
-        "en": "Asia",
-        "he": "אסיה"
-      },
-      {
-        "en": "Russia",
-        "he": "רוסיה"
-      },
-      {
-        "en": "Northwestern Federal District",
-        "he": "המחוז הפדרלי הצפון-מערבי"
-      }
-    ],
-    "emoji": "🇷🇺"
-  },
-  {
     "fileName": "Russia_novgorod_asia_2.obf",
     "geo": [
       {
@@ -15166,24 +14706,6 @@
     "emoji": "🇷🇺"
   },
   {
-    "fileName": "Russia_siberian-federal-district_asia_2.obf",
-    "geo": [
-      {
-        "en": "Asia",
-        "he": "אסיה"
-      },
-      {
-        "en": "Russia",
-        "he": "רוסיה"
-      },
-      {
-        "en": "Siberian Federal District",
-        "he": "הפדרציה המחוזית סיביריה"
-      }
-    ],
-    "emoji": "🇷🇺"
-  },
-  {
     "fileName": "Russia_smolensk_asia_2.obf",
     "geo": [
       {
@@ -15197,24 +14719,6 @@
       {
         "en": "Smolensk",
         "he": "סמולנסק"
-      }
-    ],
-    "emoji": "🇷🇺"
-  },
-  {
-    "fileName": "Russia_south-federal-district_asia_2.obf",
-    "geo": [
-      {
-        "en": "Asia",
-        "he": "אסיה"
-      },
-      {
-        "en": "Russia",
-        "he": "רוסיה"
-      },
-      {
-        "en": "Southern Federal District",
-        "he": "החוזקה הפדרלית הדרומית"
       }
     ],
     "emoji": "🇷🇺"
@@ -15418,24 +14922,6 @@
     "emoji": "🇷🇺"
   },
   {
-    "fileName": "Russia_ural-federal-district_asia_2.obf",
-    "geo": [
-      {
-        "en": "Asia",
-        "he": "אסיה"
-      },
-      {
-        "en": "Russia",
-        "he": "רוסיה"
-      },
-      {
-        "en": "Ural Federal District",
-        "he": "הפדרציה המחוזית של אורל"
-      }
-    ],
-    "emoji": "🇷🇺"
-  },
-  {
     "fileName": "Russia_vladimir_asia_2.obf",
     "geo": [
       {
@@ -15449,24 +14935,6 @@
       {
         "en": "Vladimir",
         "he": "ולדימיר"
-      }
-    ],
-    "emoji": "🇷🇺"
-  },
-  {
-    "fileName": "Russia_volga-federal-district_asia_2.obf",
-    "geo": [
-      {
-        "en": "Asia",
-        "he": "אסיה"
-      },
-      {
-        "en": "Russia",
-        "he": "רוסיה"
-      },
-      {
-        "en": "Volga Federal District",
-        "he": "הפדרציה המחוזית של וולגה"
       }
     ],
     "emoji": "🇷🇺"
@@ -15862,20 +15330,6 @@
       }
     ],
     "emoji": "🇸🇴"
-  },
-  {
-    "fileName": "South-africa_africa_2.obf",
-    "geo": [
-      {
-        "en": "Africa",
-        "he": "אפריקה"
-      },
-      {
-        "en": "South Africa",
-        "he": "דרום אפריקה"
-      }
-    ],
-    "emoji": "🇿🇦"
   },
   {
     "fileName": "South-africa_eastern-cape_africa_2.obf",
@@ -16544,20 +15998,6 @@
     "emoji": "🇸🇪"
   },
   {
-    "fileName": "Sweden_europe_2.obf",
-    "geo": [
-      {
-        "en": "Europe",
-        "he": "אירופה"
-      },
-      {
-        "en": "Sweden",
-        "he": "שוודיה"
-      }
-    ],
-    "emoji": "🇸🇪"
-  },
-  {
     "fileName": "Sweden_gavleborg_europe_2.obf",
     "geo": [
       {
@@ -16972,20 +16412,6 @@
     "emoji": "🇨🇭"
   },
   {
-    "fileName": "Switzerland_europe_2.obf",
-    "geo": [
-      {
-        "en": "Europe",
-        "he": "אירופה"
-      },
-      {
-        "en": "Switzerland",
-        "he": "שווייץ"
-      }
-    ],
-    "emoji": "🇨🇭"
-  },
-  {
     "fileName": "Switzerland_lake-geneva_europe_2.obf",
     "geo": [
       {
@@ -17080,20 +16506,6 @@
       }
     ],
     "emoji": "🇹🇯"
-  },
-  {
-    "fileName": "Tanzania_africa_2.obf",
-    "geo": [
-      {
-        "en": "Africa",
-        "he": "אפריקה"
-      },
-      {
-        "en": "Tanzania",
-        "he": "טנזניה"
-      }
-    ],
-    "emoji": "🇹🇿"
   },
   {
     "fileName": "Tanzania_central_africa_2.obf",
@@ -18430,24 +17842,6 @@
     "emoji": "🇺🇸"
   },
   {
-    "fileName": "Us_florida_northamerica_2.obf",
-    "geo": [
-      {
-        "en": "North America",
-        "he": "צפון אמריקה"
-      },
-      {
-        "en": "United States",
-        "he": "ארצות הברית"
-      },
-      {
-        "en": "Florida",
-        "he": "פלורידה"
-      }
-    ],
-    "emoji": "🇺🇸"
-  },
-  {
     "fileName": "Us_florida_orlando_northamerica_2.obf",
     "geo": [
       {
@@ -19015,24 +18409,6 @@
       {
         "en": "New York City",
         "he": "ניו יורק סיטי"
-      }
-    ],
-    "emoji": "🇺🇸"
-  },
-  {
-    "fileName": "Us_new-york_northamerica_2.obf",
-    "geo": [
-      {
-        "en": "North America",
-        "he": "צפון אמריקה"
-      },
-      {
-        "en": "United States",
-        "he": "ארצות הברית"
-      },
-      {
-        "en": "New York",
-        "he": "ניו יורק"
       }
     ],
     "emoji": "🇺🇸"
