@@ -7446,5 +7446,47 @@
     "url": "https://download.osmand.net/download?standard=yes&file=Zimbabwe_africa_2.obf.zip",
     "zip-osm-file": true,
     "originalZipUrl": "https://download.osmand.net/download?standard=yes&file=Zimbabwe_africa_2.obf.zip"
+  },
+  {
+    "fileName": "Canada_british-columbia_cariboo-chilcotin-coast_northamerica_2.obf",
+    "updatedDate": "2026-08-01",
+    "url": "https://download.osmand.net/download?standard=yes&file=Canada_british-columbia_cariboo-chilcotin-coast_northamerica_2.obf.zip",
+    "zip-osm-file": true,
+    "originalZipUrl": "https://download.osmand.net/download?standard=yes&file=Canada_british-columbia_cariboo-chilcotin-coast_northamerica_2.obf.zip"
+  },
+  {
+    "fileName": "Canada_british-columbia_kootenay-rockies_northamerica_2.obf",
+    "updatedDate": "2026-08-01",
+    "url": "https://download.osmand.net/download?standard=yes&file=Canada_british-columbia_kootenay-rockies_northamerica_2.obf.zip",
+    "zip-osm-file": true,
+    "originalZipUrl": "https://download.osmand.net/download?standard=yes&file=Canada_british-columbia_kootenay-rockies_northamerica_2.obf.zip"
+  },
+  {
+    "fileName": "Canada_british-columbia_northern-british-columbia_northamerica_2.obf",
+    "updatedDate": "2026-08-01",
+    "url": "https://download.osmand.net/download?standard=yes&file=Canada_british-columbia_northern-british-columbia_northamerica_2.obf.zip",
+    "zip-osm-file": true,
+    "originalZipUrl": "https://download.osmand.net/download?standard=yes&file=Canada_british-columbia_northern-british-columbia_northamerica_2.obf.zip"
+  },
+  {
+    "fileName": "Canada_british-columbia_thompson-okanagan_northamerica_2.obf",
+    "updatedDate": "2026-08-01",
+    "url": "https://download.osmand.net/download?standard=yes&file=Canada_british-columbia_thompson-okanagan_northamerica_2.obf.zip",
+    "zip-osm-file": true,
+    "originalZipUrl": "https://download.osmand.net/download?standard=yes&file=Canada_british-columbia_thompson-okanagan_northamerica_2.obf.zip"
+  },
+  {
+    "fileName": "Canada_british-columbia_vancouver-coast-and-mountains_northamerica_2.obf",
+    "updatedDate": "2026-08-01",
+    "url": "https://download.osmand.net/download?standard=yes&file=Canada_british-columbia_vancouver-coast-and-mountains_northamerica_2.obf.zip",
+    "zip-osm-file": true,
+    "originalZipUrl": "https://download.osmand.net/download?standard=yes&file=Canada_british-columbia_vancouver-coast-and-mountains_northamerica_2.obf.zip"
+  },
+  {
+    "fileName": "Canada_british-columbia_vancouver-island_northamerica_2.obf",
+    "updatedDate": "2026-08-01",
+    "url": "https://download.osmand.net/download?standard=yes&file=Canada_british-columbia_vancouver-island_northamerica_2.obf.zip",
+    "zip-osm-file": true,
+    "originalZipUrl": "https://download.osmand.net/download?standard=yes&file=Canada_british-columbia_vancouver-island_northamerica_2.obf.zip"
   }
 ]
