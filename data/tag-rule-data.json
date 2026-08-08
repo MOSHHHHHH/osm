@@ -5871,6 +5871,30 @@
     "us:wyoming": {
       "en": "Wyoming",
       "he": "וויומינג"
+    },
+    "canada:british-columbia/cariboo-chilcotin-coast": {
+      "en": "Cariboo Chilcotin Coast",
+      "he": "קאריבו-צ'ילקוטין-קוסט"
+    },
+    "canada:british-columbia/kootenay-rockies": {
+      "en": "Kootenay Rockies",
+      "he": "קוטני רוקיז"
+    },
+    "canada:british-columbia/northern-british-columbia": {
+      "en": "Northern British Columbia",
+      "he": "צפון קולומביה הבריטית"
+    },
+    "canada:british-columbia/thompson-okanagan": {
+      "en": "Thompson-Okanagan",
+      "he": "תומפסון-אוקנגן"
+    },
+    "canada:british-columbia/vancouver-coast-and-mountains": {
+      "en": "Vancouver, Coast and Mountains",
+      "he": "נקובר, חוף והרים"
+    },
+    "canada:british-columbia/vancouver-island": {
+      "en": "Vancouver Island",
+      "he": "אי ונקובר"
     }
   },
   "specialFiles": {
