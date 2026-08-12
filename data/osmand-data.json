@@ -1625,7 +1625,7 @@
   },
   {
     "fileName": "Colombia_southamerica_2.obf",
-    "updatedDate": "2026-08-01",
+    "updatedDate": "2026-08-12",
     "url": "https://download.osmand.net/download?standard=yes&file=Colombia_southamerica_2.obf.zip",
     "zip-osm-file": true,
     "originalZipUrl": "https://download.osmand.net/download?standard=yes&file=Colombia_southamerica_2.obf.zip"
@@ -2438,8 +2438,8 @@
   {
     "fileName": "France_new-aquitaine_gironde_europe_2.obf",
     "updatedDate": "2026-08-12",
-    "url": "https://download.osmand.net/download?standard=yes&file=France_new-aquitaine_gironde_europe_2.obf.zip",
-    "zip-osm-file": true,
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/France_new-aquitaine_gironde_europe_2.obf",
+    "zip-osm-file": false,
     "originalZipUrl": "https://download.osmand.net/download?standard=yes&file=France_new-aquitaine_gironde_europe_2.obf.zip"
   },
   {
