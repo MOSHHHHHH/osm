@@ -19282,5 +19282,117 @@
       }
     ],
     "emoji": "🇨🇦"
+  },
+  {
+    "fileName": "Hungary_budapest_europe_2.obf",
+    "geo": [
+      {
+        "en": "Europe",
+        "he": "אירופה"
+      },
+      {
+        "en": "Hungary",
+        "he": "הונגריה"
+      }
+    ],
+    "emoji": "🇭🇺"
+  },
+  {
+    "fileName": "Hungary_del-alfold_europe_2.obf",
+    "geo": [
+      {
+        "en": "Europe",
+        "he": "אירופה"
+      },
+      {
+        "en": "Hungary",
+        "he": "הונגריה"
+      }
+    ],
+    "emoji": "🇭🇺"
+  },
+  {
+    "fileName": "Hungary_del-dunantul_europe_2.obf",
+    "geo": [
+      {
+        "en": "Europe",
+        "he": "אירופה"
+      },
+      {
+        "en": "Hungary",
+        "he": "הונגריה"
+      }
+    ],
+    "emoji": "🇭🇺"
+  },
+  {
+    "fileName": "Hungary_eszak-alfold_europe_2.obf",
+    "geo": [
+      {
+        "en": "Europe",
+        "he": "אירופה"
+      },
+      {
+        "en": "Hungary",
+        "he": "הונגריה"
+      }
+    ],
+    "emoji": "🇭🇺"
+  },
+  {
+    "fileName": "Hungary_eszak-magyarorszag_europe_2.obf",
+    "geo": [
+      {
+        "en": "Europe",
+        "he": "אירופה"
+      },
+      {
+        "en": "Hungary",
+        "he": "הונגריה"
+      }
+    ],
+    "emoji": "🇭🇺"
+  },
+  {
+    "fileName": "Hungary_kozep-dunantul_europe_2.obf",
+    "geo": [
+      {
+        "en": "Europe",
+        "he": "אירופה"
+      },
+      {
+        "en": "Hungary",
+        "he": "הונגריה"
+      }
+    ],
+    "emoji": "🇭🇺"
+  },
+  {
+    "fileName": "Hungary_nyugat-dunantul_europe_2.obf",
+    "geo": [
+      {
+        "en": "Europe",
+        "he": "אירופה"
+      },
+      {
+        "en": "Hungary",
+        "he": "הונגריה"
+      }
+    ],
+    "emoji": "🇭🇺"
+  },
+  {
+    "fileName": "Hungary_pest_europe_2.obf",
+    "geo": [
+      {
+        "en": "Europe",
+        "he": "אירופה"
+      },
+      {
+        "en": "Hungary",
+        "he": "הונגריה"
+      }
+    ],
+    "emoji": "🇭🇺"
   }
 ]
