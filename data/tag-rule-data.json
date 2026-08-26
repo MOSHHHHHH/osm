@@ -5895,6 +5895,38 @@
     "canada:british-columbia/vancouver-island": {
       "en": "Vancouver Island",
       "he": "אי ונקובר"
+    },
+    "hungary:budapest": {
+      "en": "Budapest",
+      "he": "בודפשט"
+    },
+    "hungary:del-alfold": {
+      "en": "Southern Great Plain",
+      "he": "האלפולד הדרומי"
+    },
+    "hungary:del-dunantul": {
+      "en": "South Transdanubia",
+      "he": "דרום טרנסדנוביה"
+    },
+    "hungary:eszak-alfold": {
+      "en": "Northern Great Plain",
+      "he": "האלפולד הצפוני"
+    },
+    "hungary:eszak-magyarorszag": {
+      "en": "Northern Hungary",
+      "he": "צפון הונגריה"
+    },
+    "hungary:kozep-dunantul": {
+      "en": "Central Transdanubia",
+      "he": "קוספ-דוננטול"
+    },
+    "hungary:nyugat-dunantul": {
+      "en": "Western Transdanubia",
+      "he": "דרום-טרנסדנוביה המערבית"
+    },
+    "hungary:pest": {
+      "en": "Pest",
+      "he": "פשט"
     }
   },
   "specialFiles": {
