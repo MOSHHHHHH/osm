@@ -100,8 +100,8 @@
   {
     "fileName": "Argentina_entre-rios_southamerica_2.obf",
     "updatedDate": "2026-09-01",
-    "url": "https://download.osmand.net/download?standard=yes&file=Argentina_entre-rios_southamerica_2.obf.zip",
-    "zip-osm-file": true,
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Argentina_entre-rios_southamerica_2.obf",
+    "zip-osm-file": false,
     "originalZipUrl": "https://download.osmand.net/download?standard=yes&file=Argentina_entre-rios_southamerica_2.obf.zip"
   },
   {
@@ -135,8 +135,8 @@
   {
     "fileName": "Argentina_mendoza_southamerica_2.obf",
     "updatedDate": "2026-09-01",
-    "url": "https://download.osmand.net/download?standard=yes&file=Argentina_mendoza_southamerica_2.obf.zip",
-    "zip-osm-file": true,
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Argentina_mendoza_southamerica_2.obf",
+    "zip-osm-file": false,
     "originalZipUrl": "https://download.osmand.net/download?standard=yes&file=Argentina_mendoza_southamerica_2.obf.zip"
   },
   {
@@ -156,8 +156,8 @@
   {
     "fileName": "Argentina_rio-negro_southamerica_2.obf",
     "updatedDate": "2026-09-01",
-    "url": "https://download.osmand.net/download?standard=yes&file=Argentina_rio-negro_southamerica_2.obf.zip",
-    "zip-osm-file": true,
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Argentina_rio-negro_southamerica_2.obf",
+    "zip-osm-file": false,
     "originalZipUrl": "https://download.osmand.net/download?standard=yes&file=Argentina_rio-negro_southamerica_2.obf.zip"
   },
   {
@@ -240,8 +240,8 @@
   {
     "fileName": "Australia-oceania_australian-capital-territory_australia-oceania_2.obf",
     "updatedDate": "2026-09-01",
-    "url": "https://download.osmand.net/download?standard=yes&file=Australia-oceania_australian-capital-territory_australia-oceania_2.obf.zip",
-    "zip-osm-file": true,
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Australia-oceania_australian-capital-territory_australia-oceania_2.obf",
+    "zip-osm-file": false,
     "originalZipUrl": "https://download.osmand.net/download?standard=yes&file=Australia-oceania_australian-capital-territory_australia-oceania_2.obf.zip"
   },
   {
@@ -268,8 +268,8 @@
   {
     "fileName": "Australia-oceania_northern-territory_australia-oceania_2.obf",
     "updatedDate": "2026-09-01",
-    "url": "https://download.osmand.net/download?standard=yes&file=Australia-oceania_northern-territory_australia-oceania_2.obf.zip",
-    "zip-osm-file": true,
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Australia-oceania_northern-territory_australia-oceania_2.obf",
+    "zip-osm-file": false,
     "originalZipUrl": "https://download.osmand.net/download?standard=yes&file=Australia-oceania_northern-territory_australia-oceania_2.obf.zip"
   },
   {
@@ -464,8 +464,8 @@
   {
     "fileName": "Belize_centralamerica_2.obf",
     "updatedDate": "2026-09-01",
-    "url": "https://download.osmand.net/download?standard=yes&file=Belize_centralamerica_2.obf.zip",
-    "zip-osm-file": true,
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Belize_centralamerica_2.obf",
+    "zip-osm-file": false,
     "originalZipUrl": "https://download.osmand.net/download?standard=yes&file=Belize_centralamerica_2.obf.zip"
   },
   {
@@ -513,15 +513,15 @@
   {
     "fileName": "Brazil_acre_southamerica_2.obf",
     "updatedDate": "2026-09-01",
-    "url": "https://download.osmand.net/download?standard=yes&file=Brazil_acre_southamerica_2.obf.zip",
-    "zip-osm-file": true,
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Brazil_acre_southamerica_2.obf",
+    "zip-osm-file": false,
     "originalZipUrl": "https://download.osmand.net/download?standard=yes&file=Brazil_acre_southamerica_2.obf.zip"
   },
   {
     "fileName": "Brazil_alagoas_southamerica_2.obf",
     "updatedDate": "2026-09-01",
-    "url": "https://download.osmand.net/download?standard=yes&file=Brazil_alagoas_southamerica_2.obf.zip",
-    "zip-osm-file": true,
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Brazil_alagoas_southamerica_2.obf",
+    "zip-osm-file": false,
     "originalZipUrl": "https://download.osmand.net/download?standard=yes&file=Brazil_alagoas_southamerica_2.obf.zip"
   },
   {
@@ -688,15 +688,15 @@
   {
     "fileName": "Brazil_sergipe_southamerica_2.obf",
     "updatedDate": "2026-09-01",
-    "url": "https://download.osmand.net/download?standard=yes&file=Brazil_sergipe_southamerica_2.obf.zip",
-    "zip-osm-file": true,
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Brazil_sergipe_southamerica_2.obf",
+    "zip-osm-file": false,
     "originalZipUrl": "https://download.osmand.net/download?standard=yes&file=Brazil_sergipe_southamerica_2.obf.zip"
   },
   {
     "fileName": "Brazil_tocantins_southamerica_2.obf",
     "updatedDate": "2026-09-01",
-    "url": "https://download.osmand.net/download?standard=yes&file=Brazil_tocantins_southamerica_2.obf.zip",
-    "zip-osm-file": true,
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Brazil_tocantins_southamerica_2.obf",
+    "zip-osm-file": false,
     "originalZipUrl": "https://download.osmand.net/download?standard=yes&file=Brazil_tocantins_southamerica_2.obf.zip"
   },
   {
@@ -1136,8 +1136,8 @@
   {
     "fileName": "Canada_quebec_bas-saint-laurent_northamerica_2.obf",
     "updatedDate": "2026-09-01",
-    "url": "https://download.osmand.net/download?standard=yes&file=Canada_quebec_bas-saint-laurent_northamerica_2.obf.zip",
-    "zip-osm-file": true,
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Canada_quebec_bas-saint-laurent_northamerica_2.obf",
+    "zip-osm-file": false,
     "originalZipUrl": "https://download.osmand.net/download?standard=yes&file=Canada_quebec_bas-saint-laurent_northamerica_2.obf.zip"
   },
   {
@@ -1185,8 +1185,8 @@
   {
     "fileName": "Canada_quebec_lanaudiere_northamerica_2.obf",
     "updatedDate": "2026-09-01",
-    "url": "https://download.osmand.net/download?standard=yes&file=Canada_quebec_lanaudiere_northamerica_2.obf.zip",
-    "zip-osm-file": true,
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Canada_quebec_lanaudiere_northamerica_2.obf",
+    "zip-osm-file": false,
     "originalZipUrl": "https://download.osmand.net/download?standard=yes&file=Canada_quebec_lanaudiere_northamerica_2.obf.zip"
   },
   {
@@ -1325,8 +1325,8 @@
   {
     "fileName": "Chile_aysen-del-general-carlos-ibanez-del-campo_southamerica_2.obf",
     "updatedDate": "2026-09-01",
-    "url": "https://download.osmand.net/download?standard=yes&file=Chile_aysen-del-general-carlos-ibanez-del-campo_southamerica_2.obf.zip",
-    "zip-osm-file": true,
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Chile_aysen-del-general-carlos-ibanez-del-campo_southamerica_2.obf",
+    "zip-osm-file": false,
     "originalZipUrl": "https://download.osmand.net/download?standard=yes&file=Chile_aysen-del-general-carlos-ibanez-del-campo_southamerica_2.obf.zip"
   },
   {
@@ -1374,8 +1374,8 @@
   {
     "fileName": "Chile_maule_southamerica_2.obf",
     "updatedDate": "2026-09-01",
-    "url": "https://download.osmand.net/download?standard=yes&file=Chile_maule_southamerica_2.obf.zip",
-    "zip-osm-file": true,
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Chile_maule_southamerica_2.obf",
+    "zip-osm-file": false,
     "originalZipUrl": "https://download.osmand.net/download?standard=yes&file=Chile_maule_southamerica_2.obf.zip"
   },
   {
@@ -1661,8 +1661,8 @@
   {
     "fileName": "Congo-democratic-republic_haut-katanga_africa_2.obf",
     "updatedDate": "2026-09-01",
-    "url": "https://download.osmand.net/download?standard=yes&file=Congo-democratic-republic_haut-katanga_africa_2.obf.zip",
-    "zip-osm-file": true,
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Congo-democratic-republic_haut-katanga_africa_2.obf",
+    "zip-osm-file": false,
     "originalZipUrl": "https://download.osmand.net/download?standard=yes&file=Congo-democratic-republic_haut-katanga_africa_2.obf.zip"
   },
   {
@@ -2326,8 +2326,8 @@
   {
     "fileName": "France_great-east_haute-marne_europe_2.obf",
     "updatedDate": "2026-09-01",
-    "url": "https://download.osmand.net/download?standard=yes&file=France_great-east_haute-marne_europe_2.obf.zip",
-    "zip-osm-file": true,
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/France_great-east_haute-marne_europe_2.obf",
+    "zip-osm-file": false,
     "originalZipUrl": "https://download.osmand.net/download?standard=yes&file=France_great-east_haute-marne_europe_2.obf.zip"
   },
   {
@@ -2557,8 +2557,8 @@
   {
     "fileName": "France_occitania_lozere_europe_2.obf",
     "updatedDate": "2026-09-01",
-    "url": "https://download.osmand.net/download?standard=yes&file=France_occitania_lozere_europe_2.obf.zip",
-    "zip-osm-file": true,
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/France_occitania_lozere_europe_2.obf",
+    "zip-osm-file": false,
     "originalZipUrl": "https://download.osmand.net/download?standard=yes&file=France_occitania_lozere_europe_2.obf.zip"
   },
   {
@@ -2872,8 +2872,8 @@
   {
     "fileName": "Germany_bremen-city_europe_2.obf",
     "updatedDate": "2026-09-01",
-    "url": "https://download.osmand.net/download?standard=yes&file=Germany_bremen-city_europe_2.obf.zip",
-    "zip-osm-file": true,
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Germany_bremen-city_europe_2.obf",
+    "zip-osm-file": false,
     "originalZipUrl": "https://download.osmand.net/download?standard=yes&file=Germany_bremen-city_europe_2.obf.zip"
   },
   {
@@ -3054,8 +3054,8 @@
   {
     "fileName": "Guadeloupe_centralamerica_2.obf",
     "updatedDate": "2026-09-01",
-    "url": "https://download.osmand.net/download?standard=yes&file=Guadeloupe_centralamerica_2.obf.zip",
-    "zip-osm-file": true,
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Guadeloupe_centralamerica_2.obf",
+    "zip-osm-file": false,
     "originalZipUrl": "https://download.osmand.net/download?standard=yes&file=Guadeloupe_centralamerica_2.obf.zip"
   },
   {
@@ -3460,8 +3460,8 @@
   {
     "fileName": "Indonesia_jambi_asia_2.obf",
     "updatedDate": "2026-09-01",
-    "url": "https://download.osmand.net/download?standard=yes&file=Indonesia_jambi_asia_2.obf.zip",
-    "zip-osm-file": true,
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Indonesia_jambi_asia_2.obf",
+    "zip-osm-file": false,
     "originalZipUrl": "https://download.osmand.net/download?standard=yes&file=Indonesia_jambi_asia_2.obf.zip"
   },
   {
@@ -3502,8 +3502,8 @@
   {
     "fileName": "Indonesia_kalimantan-tengah_asia_2.obf",
     "updatedDate": "2026-09-01",
-    "url": "https://download.osmand.net/download?standard=yes&file=Indonesia_kalimantan-tengah_asia_2.obf.zip",
-    "zip-osm-file": true,
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Indonesia_kalimantan-tengah_asia_2.obf",
+    "zip-osm-file": false,
     "originalZipUrl": "https://download.osmand.net/download?standard=yes&file=Indonesia_kalimantan-tengah_asia_2.obf.zip"
   },
   {
@@ -3593,8 +3593,8 @@
   {
     "fileName": "Indonesia_sulawesi-tengah_asia_2.obf",
     "updatedDate": "2026-09-01",
-    "url": "https://download.osmand.net/download?standard=yes&file=Indonesia_sulawesi-tengah_asia_2.obf.zip",
-    "zip-osm-file": true,
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Indonesia_sulawesi-tengah_asia_2.obf",
+    "zip-osm-file": false,
     "originalZipUrl": "https://download.osmand.net/download?standard=yes&file=Indonesia_sulawesi-tengah_asia_2.obf.zip"
   },
   {
@@ -3740,8 +3740,8 @@
   {
     "fileName": "Iran_khuzestan_asia_2.obf",
     "updatedDate": "2026-09-01",
-    "url": "https://download.osmand.net/download?standard=yes&file=Iran_khuzestan_asia_2.obf.zip",
-    "zip-osm-file": true,
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Iran_khuzestan_asia_2.obf",
+    "zip-osm-file": false,
     "originalZipUrl": "https://download.osmand.net/download?standard=yes&file=Iran_khuzestan_asia_2.obf.zip"
   },
   {
@@ -3775,8 +3775,8 @@
   {
     "fileName": "Iran_mazandaran_asia_2.obf",
     "updatedDate": "2026-09-01",
-    "url": "https://download.osmand.net/download?standard=yes&file=Iran_mazandaran_asia_2.obf.zip",
-    "zip-osm-file": true,
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Iran_mazandaran_asia_2.obf",
+    "zip-osm-file": false,
     "originalZipUrl": "https://download.osmand.net/download?standard=yes&file=Iran_mazandaran_asia_2.obf.zip"
   },
   {
@@ -3957,8 +3957,8 @@
   {
     "fileName": "Italy_molise_europe_2.obf",
     "updatedDate": "2026-09-01",
-    "url": "https://download.osmand.net/download?standard=yes&file=Italy_molise_europe_2.obf.zip",
-    "zip-osm-file": true,
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Italy_molise_europe_2.obf",
+    "zip-osm-file": false,
     "originalZipUrl": "https://download.osmand.net/download?standard=yes&file=Italy_molise_europe_2.obf.zip"
   },
   {
@@ -4013,8 +4013,8 @@
   {
     "fileName": "Italy_valle-aosta_europe_2.obf",
     "updatedDate": "2026-09-01",
-    "url": "https://download.osmand.net/download?standard=yes&file=Italy_valle-aosta_europe_2.obf.zip",
-    "zip-osm-file": true,
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Italy_valle-aosta_europe_2.obf",
+    "zip-osm-file": false,
     "originalZipUrl": "https://download.osmand.net/download?standard=yes&file=Italy_valle-aosta_europe_2.obf.zip"
   },
   {
@@ -4223,8 +4223,8 @@
   {
     "fileName": "Kuwait_asia_2.obf",
     "updatedDate": "2026-09-01",
-    "url": "https://download.osmand.net/download?standard=yes&file=Kuwait_asia_2.obf.zip",
-    "zip-osm-file": true,
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Kuwait_asia_2.obf",
+    "zip-osm-file": false,
     "originalZipUrl": "https://download.osmand.net/download?standard=yes&file=Kuwait_asia_2.obf.zip"
   },
   {
@@ -4433,8 +4433,8 @@
   {
     "fileName": "Mexico_coahuila_northamerica_2.obf",
     "updatedDate": "2026-09-01",
-    "url": "https://download.osmand.net/download?standard=yes&file=Mexico_coahuila_northamerica_2.obf.zip",
-    "zip-osm-file": true,
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Mexico_coahuila_northamerica_2.obf",
+    "zip-osm-file": false,
     "originalZipUrl": "https://download.osmand.net/download?standard=yes&file=Mexico_coahuila_northamerica_2.obf.zip"
   },
   {
@@ -4454,8 +4454,8 @@
   {
     "fileName": "Mexico_durango_northamerica_2.obf",
     "updatedDate": "2026-09-01",
-    "url": "https://download.osmand.net/download?standard=yes&file=Mexico_durango_northamerica_2.obf.zip",
-    "zip-osm-file": true,
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Mexico_durango_northamerica_2.obf",
+    "zip-osm-file": false,
     "originalZipUrl": "https://download.osmand.net/download?standard=yes&file=Mexico_durango_northamerica_2.obf.zip"
   },
   {
@@ -4552,8 +4552,8 @@
   {
     "fileName": "Mexico_san-luis-potosi_northamerica_2.obf",
     "updatedDate": "2026-09-01",
-    "url": "https://download.osmand.net/download?standard=yes&file=Mexico_san-luis-potosi_northamerica_2.obf.zip",
-    "zip-osm-file": true,
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Mexico_san-luis-potosi_northamerica_2.obf",
+    "zip-osm-file": false,
     "originalZipUrl": "https://download.osmand.net/download?standard=yes&file=Mexico_san-luis-potosi_northamerica_2.obf.zip"
   },
   {
@@ -4580,8 +4580,8 @@
   {
     "fileName": "Mexico_tamaulipas_northamerica_2.obf",
     "updatedDate": "2026-09-01",
-    "url": "https://download.osmand.net/download?standard=yes&file=Mexico_tamaulipas_northamerica_2.obf.zip",
-    "zip-osm-file": true,
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Mexico_tamaulipas_northamerica_2.obf",
+    "zip-osm-file": false,
     "originalZipUrl": "https://download.osmand.net/download?standard=yes&file=Mexico_tamaulipas_northamerica_2.obf.zip"
   },
   {
@@ -4916,8 +4916,8 @@
   {
     "fileName": "Norway_vestfold_europe_2.obf",
     "updatedDate": "2026-09-01",
-    "url": "https://download.osmand.net/download?standard=yes&file=Norway_vestfold_europe_2.obf.zip",
-    "zip-osm-file": true,
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Norway_vestfold_europe_2.obf",
+    "zip-osm-file": false,
     "originalZipUrl": "https://download.osmand.net/download?standard=yes&file=Norway_vestfold_europe_2.obf.zip"
   },
   {
@@ -5014,8 +5014,8 @@
   {
     "fileName": "Philippines_caraga_asia_2.obf",
     "updatedDate": "2026-09-01",
-    "url": "https://download.osmand.net/download?standard=yes&file=Philippines_caraga_asia_2.obf.zip",
-    "zip-osm-file": true,
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Philippines_caraga_asia_2.obf",
+    "zip-osm-file": false,
     "originalZipUrl": "https://download.osmand.net/download?standard=yes&file=Philippines_caraga_asia_2.obf.zip"
   },
   {
@@ -5238,8 +5238,8 @@
   {
     "fileName": "Reunion_africa_2.obf",
     "updatedDate": "2026-09-01",
-    "url": "https://download.osmand.net/download?standard=yes&file=Reunion_africa_2.obf.zip",
-    "zip-osm-file": true,
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Reunion_africa_2.obf",
+    "zip-osm-file": false,
     "originalZipUrl": "https://download.osmand.net/download?standard=yes&file=Reunion_africa_2.obf.zip"
   },
   {
@@ -5252,8 +5252,8 @@
   {
     "fileName": "Russia_adygeya_asia_2.obf",
     "updatedDate": "2026-09-01",
-    "url": "https://download.osmand.net/download?standard=yes&file=Russia_adygeya_asia_2.obf.zip",
-    "zip-osm-file": true,
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Russia_adygeya_asia_2.obf",
+    "zip-osm-file": false,
     "originalZipUrl": "https://download.osmand.net/download?standard=yes&file=Russia_adygeya_asia_2.obf.zip"
   },
   {
@@ -5385,8 +5385,8 @@
   {
     "fileName": "Russia_kabardino-balkaria_asia_2.obf",
     "updatedDate": "2026-09-01",
-    "url": "https://download.osmand.net/download?standard=yes&file=Russia_kabardino-balkaria_asia_2.obf.zip",
-    "zip-osm-file": true,
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Russia_kabardino-balkaria_asia_2.obf",
+    "zip-osm-file": false,
     "originalZipUrl": "https://download.osmand.net/download?standard=yes&file=Russia_kabardino-balkaria_asia_2.obf.zip"
   },
   {
@@ -5420,8 +5420,8 @@
   {
     "fileName": "Russia_karachaevo_asia_2.obf",
     "updatedDate": "2026-09-01",
-    "url": "https://download.osmand.net/download?standard=yes&file=Russia_karachaevo_asia_2.obf.zip",
-    "zip-osm-file": true,
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Russia_karachaevo_asia_2.obf",
+    "zip-osm-file": false,
     "originalZipUrl": "https://download.osmand.net/download?standard=yes&file=Russia_karachaevo_asia_2.obf.zip"
   },
   {
@@ -5602,8 +5602,8 @@
   {
     "fileName": "Russia_orel_asia_2.obf",
     "updatedDate": "2026-09-01",
-    "url": "https://download.osmand.net/download?standard=yes&file=Russia_orel_asia_2.obf.zip",
-    "zip-osm-file": true,
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Russia_orel_asia_2.obf",
+    "zip-osm-file": false,
     "originalZipUrl": "https://download.osmand.net/download?standard=yes&file=Russia_orel_asia_2.obf.zip"
   },
   {
@@ -6211,15 +6211,15 @@
   {
     "fileName": "Suriname_southamerica_2.obf",
     "updatedDate": "2026-09-01",
-    "url": "https://download.osmand.net/download?standard=yes&file=Suriname_southamerica_2.obf.zip",
-    "zip-osm-file": true,
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Suriname_southamerica_2.obf",
+    "zip-osm-file": false,
     "originalZipUrl": "https://download.osmand.net/download?standard=yes&file=Suriname_southamerica_2.obf.zip"
   },
   {
     "fileName": "Swaziland_africa_2.obf",
     "updatedDate": "2026-09-01",
-    "url": "https://download.osmand.net/download?standard=yes&file=Swaziland_africa_2.obf.zip",
-    "zip-osm-file": true,
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Swaziland_africa_2.obf",
+    "zip-osm-file": false,
     "originalZipUrl": "https://download.osmand.net/download?standard=yes&file=Swaziland_africa_2.obf.zip"
   },
   {
@@ -6253,8 +6253,8 @@
   {
     "fileName": "Sweden_halland_europe_2.obf",
     "updatedDate": "2026-09-01",
-    "url": "https://download.osmand.net/download?standard=yes&file=Sweden_halland_europe_2.obf.zip",
-    "zip-osm-file": true,
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Sweden_halland_europe_2.obf",
+    "zip-osm-file": false,
     "originalZipUrl": "https://download.osmand.net/download?standard=yes&file=Sweden_halland_europe_2.obf.zip"
   },
   {
@@ -6281,8 +6281,8 @@
   {
     "fileName": "Sweden_kronoberg_europe_2.obf",
     "updatedDate": "2026-09-01",
-    "url": "https://download.osmand.net/download?standard=yes&file=Sweden_kronoberg_europe_2.obf.zip",
-    "zip-osm-file": true,
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Sweden_kronoberg_europe_2.obf",
+    "zip-osm-file": false,
     "originalZipUrl": "https://download.osmand.net/download?standard=yes&file=Sweden_kronoberg_europe_2.obf.zip"
   },
   {
@@ -6358,8 +6358,8 @@
   {
     "fileName": "Sweden_vastmanland_europe_2.obf",
     "updatedDate": "2026-09-01",
-    "url": "https://download.osmand.net/download?standard=yes&file=Sweden_vastmanland_europe_2.obf.zip",
-    "zip-osm-file": true,
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Sweden_vastmanland_europe_2.obf",
+    "zip-osm-file": false,
     "originalZipUrl": "https://download.osmand.net/download?standard=yes&file=Sweden_vastmanland_europe_2.obf.zip"
   },
   {
@@ -6652,8 +6652,8 @@
   {
     "fileName": "Ukraine_kherson_europe_2.obf",
     "updatedDate": "2026-09-01",
-    "url": "https://download.osmand.net/download?standard=yes&file=Ukraine_kherson_europe_2.obf.zip",
-    "zip-osm-file": true,
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Ukraine_kherson_europe_2.obf",
+    "zip-osm-file": false,
     "originalZipUrl": "https://download.osmand.net/download?standard=yes&file=Ukraine_kherson_europe_2.obf.zip"
   },
   {
@@ -6925,8 +6925,8 @@
   {
     "fileName": "Us_district-of-columbia_northamerica_2.obf",
     "updatedDate": "2026-09-01",
-    "url": "https://download.osmand.net/download?standard=yes&file=Us_district-of-columbia_northamerica_2.obf.zip",
-    "zip-osm-file": true,
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/Us_district-of-columbia_northamerica_2.obf",
+    "zip-osm-file": false,
     "originalZipUrl": "https://download.osmand.net/download?standard=yes&file=Us_district-of-columbia_northamerica_2.obf.zip"
   },
   {
