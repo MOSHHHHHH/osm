@@ -5927,6 +5927,10 @@
     "hungary:pest": {
       "en": "Pest",
       "he": "פשט"
+    },
+    "austria:wien": {
+      "en": "Vienna",
+      "he": "וינה"
     }
   },
   "specialFiles": {
