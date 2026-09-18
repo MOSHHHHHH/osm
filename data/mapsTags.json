@@ -18756,5 +18756,19 @@
       }
     ],
     "emoji": "🇭🇺"
+  },
+  {
+    "fileName": "Austria_wien_europe_2.obf",
+    "geo": [
+      {
+        "en": "Europe",
+        "he": "אירופה"
+      },
+      {
+        "en": "Austria",
+        "he": "אוסטריה"
+      }
+    ],
+    "emoji": "🇦🇹"
   }
 ]
