@@ -7334,5 +7334,12 @@
     "url": "https://download.osmand.net/download?standard=yes&file=Austria_wien_europe_2.obf.zip",
     "zip-osm-file": true,
     "originalZipUrl": "https://download.osmand.net/download?standard=yes&file=Austria_wien_europe_2.obf.zip"
+  },
+  {
+    "fileName": "Hungary_europe_2.obf",
+    "updatedDate": "2026-08-01",
+    "url": "https://download.osmand.net/download?standard=yes&file=Hungary_europe_2.obf.zip",
+    "zip-osm-file": true,
+    "originalZipUrl": "https://download.osmand.net/download?standard=yes&file=Hungary_europe_2.obf.zip"
   }
 ]
