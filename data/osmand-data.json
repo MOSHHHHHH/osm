@@ -288,14 +288,14 @@
   },
   {
     "fileName": "Australia-oceania_tasmania_australia-oceania_2.obf",
-    "updatedDate": "2026-09-01",
+    "updatedDate": "2026-09-29",
     "url": "https://download.osmand.net/download?standard=yes&file=Australia-oceania_tasmania_australia-oceania_2.obf.zip",
     "zip-osm-file": true,
     "originalZipUrl": "https://download.osmand.net/download?standard=yes&file=Australia-oceania_tasmania_australia-oceania_2.obf.zip"
   },
   {
     "fileName": "Australia-oceania_victoria_australia-oceania_2.obf",
-    "updatedDate": "2026-09-01",
+    "updatedDate": "2026-09-29",
     "url": "https://download.osmand.net/download?standard=yes&file=Australia-oceania_victoria_australia-oceania_2.obf.zip",
     "zip-osm-file": true,
     "originalZipUrl": "https://download.osmand.net/download?standard=yes&file=Australia-oceania_victoria_australia-oceania_2.obf.zip"
@@ -792,14 +792,14 @@
   },
   {
     "fileName": "Canada_nunavut-central-east_northamerica_2.obf",
-    "updatedDate": "2026-09-01",
+    "updatedDate": "2026-09-29",
     "url": "https://download.osmand.net/download?standard=yes&file=Canada_nunavut-central-east_northamerica_2.obf.zip",
     "zip-osm-file": true,
     "originalZipUrl": "https://download.osmand.net/download?standard=yes&file=Canada_nunavut-central-east_northamerica_2.obf.zip"
   },
   {
     "fileName": "Canada_nunavut-central-west_northamerica_2.obf",
-    "updatedDate": "2026-09-01",
+    "updatedDate": "2026-09-29",
     "url": "https://download.osmand.net/download?standard=yes&file=Canada_nunavut-central-west_northamerica_2.obf.zip",
     "zip-osm-file": true,
     "originalZipUrl": "https://download.osmand.net/download?standard=yes&file=Canada_nunavut-central-west_northamerica_2.obf.zip"
@@ -813,14 +813,14 @@
   },
   {
     "fileName": "Canada_nunavut-north-west_northamerica_2.obf",
-    "updatedDate": "2026-09-01",
+    "updatedDate": "2026-09-29",
     "url": "https://download.osmand.net/download?standard=yes&file=Canada_nunavut-north-west_northamerica_2.obf.zip",
     "zip-osm-file": true,
     "originalZipUrl": "https://download.osmand.net/download?standard=yes&file=Canada_nunavut-north-west_northamerica_2.obf.zip"
   },
   {
     "fileName": "Canada_nunavut-se_northamerica_2.obf",
-    "updatedDate": "2026-09-01",
+    "updatedDate": "2026-09-29",
     "url": "https://download.osmand.net/download?standard=yes&file=Canada_nunavut-se_northamerica_2.obf.zip",
     "zip-osm-file": true,
     "originalZipUrl": "https://download.osmand.net/download?standard=yes&file=Canada_nunavut-se_northamerica_2.obf.zip"
@@ -862,7 +862,7 @@
   },
   {
     "fileName": "Canada_ontario_northwestern_northamerica_2.obf",
-    "updatedDate": "2026-09-01",
+    "updatedDate": "2026-09-29",
     "url": "https://download.osmand.net/download?standard=yes&file=Canada_ontario_northwestern_northamerica_2.obf.zip",
     "zip-osm-file": true,
     "originalZipUrl": "https://download.osmand.net/download?standard=yes&file=Canada_ontario_northwestern_northamerica_2.obf.zip"
@@ -1016,7 +1016,7 @@
   },
   {
     "fileName": "Canada_quebec_nord-du-quebec_northamerica_2.obf",
-    "updatedDate": "2026-09-01",
+    "updatedDate": "2026-09-29",
     "url": "https://download.osmand.net/download?standard=yes&file=Canada_quebec_nord-du-quebec_northamerica_2.obf.zip",
     "zip-osm-file": true,
     "originalZipUrl": "https://download.osmand.net/download?standard=yes&file=Canada_quebec_nord-du-quebec_northamerica_2.obf.zip"
@@ -2829,7 +2829,7 @@
   },
   {
     "fileName": "Greenland_northamerica_2.obf",
-    "updatedDate": "2026-09-01",
+    "updatedDate": "2026-09-29",
     "url": "https://download.osmand.net/download?standard=yes&file=Greenland_northamerica_2.obf.zip",
     "zip-osm-file": true,
     "originalZipUrl": "https://download.osmand.net/download?standard=yes&file=Greenland_northamerica_2.obf.zip"
@@ -4712,7 +4712,7 @@
   },
   {
     "fileName": "Oceania_australia-oceania_2.obf",
-    "updatedDate": "2026-09-01",
+    "updatedDate": "2026-09-29",
     "url": "https://download.osmand.net/download?standard=yes&file=Oceania_australia-oceania_2.obf.zip",
     "zip-osm-file": true,
     "originalZipUrl": "https://download.osmand.net/download?standard=yes&file=Oceania_australia-oceania_2.obf.zip"
@@ -7197,7 +7197,7 @@
   },
   {
     "fileName": "World_basemap_2.obf",
-    "updatedDate": "2026-09-27",
+    "updatedDate": "2026-09-29",
     "url": "https://download.osmand.net/download?standard=yes&file=World_basemap_2.obf.zip",
     "zip-osm-file": true,
     "originalZipUrl": "https://download.osmand.net/download?standard=yes&file=World_basemap_2.obf.zip"
@@ -7341,5 +7341,12 @@
     "url": "https://download.osmand.net/download?standard=yes&file=Hungary_europe_2.obf.zip",
     "zip-osm-file": true,
     "originalZipUrl": "https://download.osmand.net/download?standard=yes&file=Hungary_europe_2.obf.zip"
+  },
+  {
+    "fileName": "World_basemap_mini_2.obf",
+    "updatedDate": "2026-09-29",
+    "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/World_basemap_mini_2.obf",
+    "zip-osm-file": false,
+    "originalZipUrl": "https://download.osmand.net/download?standard=yes&file=World_basemap_mini_2.obf.zip"
   }
 ]
