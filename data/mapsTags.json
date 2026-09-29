@@ -18788,5 +18788,15 @@
       }
     ],
     "emoji": "🇭🇺"
+  },
+  {
+    "fileName": "World_basemap_mini_2.obf",
+    "geo": [
+      {
+        "en": "World",
+        "he": "עולם"
+      }
+    ],
+    "emoji": "🌐"
   }
 ]
