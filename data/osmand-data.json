@@ -7336,13 +7336,6 @@
     "originalZipUrl": "https://download.osmand.net/download?standard=yes&file=Austria_wien_europe_2.obf.zip"
   },
   {
-    "fileName": "Hungary_europe_2.obf",
-    "updatedDate": "2026-08-01",
-    "url": "https://download.osmand.net/download?standard=yes&file=Hungary_europe_2.obf.zip",
-    "zip-osm-file": true,
-    "originalZipUrl": "https://download.osmand.net/download?standard=yes&file=Hungary_europe_2.obf.zip"
-  },
-  {
     "fileName": "World_basemap_mini_2.obf",
     "updatedDate": "2026-09-30",
     "url": "https://github.com/MOSHHHHHH/osm/releases/download/osmand-maps/World_basemap_mini_2.obf",
